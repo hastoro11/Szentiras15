@@ -1,0 +1,14 @@
+{
+    "keres": {
+        "feladat": "idezet",
+        "hivatkozas": "1Sám 175",
+        "forma": "json"
+    },
+    "valasz": {
+        "versek": [],
+        "forditas": {
+            "nev": "Káldi-Neovulgáta",
+            "rov": "KNB"
+        }
+    }
+}

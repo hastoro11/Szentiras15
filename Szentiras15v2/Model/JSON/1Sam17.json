@@ -1,0 +1,513 @@
+{
+    "keres": {
+        "feladat": "idezet",
+        "hivatkozas": "1Sám 17",
+        "forma": "json"
+    },
+    "valasz": {
+        "versek": [
+            {
+                "szoveg": "Ám a filiszteusok ismét harcra gyűjtötték hadaikat. A júdabeli Szókóban gyűltek össze és Szókó és Azeka között, Dommím határában ütöttek tábort.",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "Az itt elbeszélt történet szerint Dávid egy hőstettel hívta fel magára a király figyelmét, és így került az udvarba."
+                    },
+                    {
+                        "position": null,
+                        "text": "Szókó Betlehemtől nyugatra fekszik."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901700100,
+                    "szep": "1Sám 17,1"
+                }
+            },
+            {
+                "szoveg": "Erre összegyűltek Saul és Izrael fiai és elmentek a Terebint völgybe és csatasorba álltak, hogy hadakozzanak a filiszteusokkal.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700200,
+                    "szep": "1Sám 17,2"
+                }
+            },
+            {
+                "szoveg": "A filiszteusok az egyik hegyoldalon álltak, Izrael pedig a másik hegyoldalon állt, úgyhogy a völgy közöttük volt.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700300,
+                    "szep": "1Sám 17,3"
+                }
+            },
+            {
+                "szoveg": "Ekkor kijött a filiszteusok táborából egy harcos férfi, akit Góliátnak hívtak, s Gátból való volt. Hat könyöknyi és egy arasznyi volt a magassága,",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "Góliát leírása jelzi a filiszteusok óriási erőfölényét is az izraelitákkal szemben."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901700400,
+                    "szep": "1Sám 17,4"
+                }
+            },
+            {
+                "szoveg": "rézsisak volt a fején, s pikkelyes páncélt viselt: páncéljának súlya ötezer rézsékel volt.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700500,
+                    "szep": "1Sám 17,5"
+                }
+            },
+            {
+                "szoveg": "Lábszárán rézvért volt, s vállát rézpajzs fedte.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700600,
+                    "szep": "1Sám 17,6"
+                }
+            },
+            {
+                "szoveg": "Dárdájának nyele olyan volt, mint a takácsok zugolyfája, dárdájának vasa hatszáz vassékel volt és fegyverhordozó járt előtte.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700700,
+                    "szep": "1Sám 17,7"
+                }
+            },
+            {
+                "szoveg": "Megállt, átkiáltott Izrael csatasorainak, és azt mondta nekik: »Miért vonultatok fel, s miért készülődtök harcra? Hát nem vagyok-e én filiszteus, ti meg Saul szolgái? Válasszatok ki magatok közül valakit, s az jöjjön le hozzám páros viadalra.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700800,
+                    "szep": "1Sám 17,8"
+                }
+            },
+            {
+                "szoveg": "Ha meg tud velem vívni és megver: szolgáitok leszünk; ha én kerekedek felül, s verem meg őt, ti lesztek szolgák, s ti fogtok szolgálni nekünk.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901700900,
+                    "szep": "1Sám 17,9"
+                }
+            },
+            {
+                "szoveg": "Majd azt mondta a filiszteus: »Íme, én ma gyalázattal illettem Izrael hadait: adjatok elém valakit, hogy páros viadalra keljen velem.«<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701000,
+                    "szep": "1Sám 17,10"
+                }
+            },
+            {
+                "szoveg": "Amikor Saul és az izraeliták mindnyájan meghallották a filiszteusnak ezt a beszédét, meghökkentek és nagyon nagy félelem fogta el őket.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701100,
+                    "szep": "1Sám 17,11"
+                }
+            },
+            {
+                "szoveg": "Dávid annak a júdabeli Betlehemből való efratai embernek volt a fia, akiről fentebb szóltunk. Ezt Izájnak hívták, s nyolc fia volt, de ő Saul napjaiban már öregember volt és az élemedett korú férfiak közé tartozott.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701200,
+                    "szep": "1Sám 17,12"
+                }
+            },
+            {
+                "szoveg": "Három idősebb fia azonban elment Saullal a harcba; hadbavonult három fiának a neve: Eliáb, az elsőszülött, Abinádáb a második és Sámma a harmadik.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701300,
+                    "szep": "1Sám 17,13"
+                }
+            },
+            {
+                "szoveg": "Dávid volt a legfiatalabb. Minthogy a három legidősebb fiú követte Sault,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701400,
+                    "szep": "1Sám 17,14"
+                }
+            },
+            {
+                "szoveg": "Dávid vissza-visszatért Saul mellől, hogy legeltesse apja nyáját Betlehemben.<br>",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "A vers későbbi kiegészítés, megteremti a kapcsolatot a 16. fejezetben leírtakkal."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901701500,
+                    "szep": "1Sám 17,15"
+                }
+            },
+            {
+                "szoveg": "A filiszteus negyven napon át minden reggel és este előjött és kiállt.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701600,
+                    "szep": "1Sám 17,16"
+                }
+            },
+            {
+                "szoveg": "Azt mondta egyszer Izáj Dávidnak, a fiának: »Fogd ezt az éfa árpadarát s ezt a tíz kenyeret a testvéreid számára, s fuss el vele a táborba testvéreidhez,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701700,
+                    "szep": "1Sám 17,17"
+                }
+            },
+            {
+                "szoveg": "ezt a tíz darab sajtot pedig vidd el az ezredesnek, aztán nézd meg testvéreidet, jól vannak-e, s tudd meg, kikkel vannak egy sorban.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701800,
+                    "szep": "1Sám 17,18"
+                }
+            },
+            {
+                "szoveg": "Saul meg ők, és Izrael fiai mindnyájan ekkor éppen a Terebint völgyben hadakoztak a filiszteusokkal.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901701900,
+                    "szep": "1Sám 17,19"
+                }
+            },
+            {
+                "szoveg": "Erre Dávid kora reggel felkelt, rábízta a nyájat egy pásztorra, felrakodott és elment, amint Izáj parancsolta neki. El is jutott a Magála helyéhez és a sereghez, de az éppen kivonult a harcra és csatakiáltásba tört ki.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702000,
+                    "szep": "1Sám 17,20"
+                }
+            },
+            {
+                "szoveg": "Izrael ugyanis csatarendben állt, de velük szemben a filiszteusok is harcra készülődtek.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702100,
+                    "szep": "1Sám 17,21"
+                }
+            },
+            {
+                "szoveg": "Erre Dávid rábízta a hozott holmit a poggyászőr kezére, aztán elfutott a harctérre, és megkérdezte, rendben van-e minden a testvéreivel kapcsolatban.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702200,
+                    "szep": "1Sám 17,22"
+                }
+            },
+            {
+                "szoveg": "Miközben beszélgetett velük, megjelent az a harcos férfi, a Góliát nevű, Gátból való filiszteus és kijött a filiszteusok táborából és megismételte szavait Dávid hallatára.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702300,
+                    "szep": "1Sám 17,23"
+                }
+            },
+            {
+                "szoveg": "Amint az izraeliták meglátták azt az embert, valamennyien elfutottak színe elől, mert igen féltek tőle.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702400,
+                    "szep": "1Sám 17,24"
+                }
+            },
+            {
+                "szoveg": "Valaki azonban azt mondta Izraelből: »Látjátok ezt az embert, aki előjött? Azért jött elő, hogy gyalázza Izraelt! Éppen azért azt az embert, aki őt megveri, nagy gazdagsággal ajándékozza meg a király, sőt neki adja lányát, és adómentessé teszi apai házát Izraelben!«<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702500,
+                    "szep": "1Sám 17,25"
+                }
+            },
+            {
+                "szoveg": "Odaszólt erre Dávid a körülötte álló embereknek: »Mit is adnak annak az embernek, aki megveri ezt a filiszteust, s elhárítja a gyalázatot Izraelről? Ugyan ki ez a körülmetéletlen filiszteus, hogy gyalázni meri az élő Isten hadsorait?«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702600,
+                    "szep": "1Sám 17,26"
+                }
+            },
+            {
+                "szoveg": "Elmondta erre neki a nép a dolgot: »Ezt és ezt adják annak az embernek, aki őt megveri.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702700,
+                    "szep": "1Sám 17,27"
+                }
+            },
+            {
+                "szoveg": "Amikor Eliáb, legidősebb bátyja meghallotta, hogy erről beszél a többiekkel, haragra gerjedt Dávid ellen és azt mondta: »Miért jöttél ide, s miért hagytad azt a néhány juhot a pusztában? Ismerem nagyravágyásodat és szíved gonoszságát; azért jöttél le, hogy lásd a harcot!«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702800,
+                    "szep": "1Sám 17,28"
+                }
+            },
+            {
+                "szoveg": "Azt mondta erre Dávid: »Mit követtem el? Nem beszélgetés-e ez csupán?«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901702900,
+                    "szep": "1Sám 17,29"
+                }
+            },
+            {
+                "szoveg": "Majd eltávozott tőle egy kevéssé és másfelé fordult, s ugyanazokat a szavakat mondta, s a nép is ugyanazokat a szavakat felelte neki, mint az előbb.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703000,
+                    "szep": "1Sám 17,30"
+                }
+            },
+            {
+                "szoveg": "Híre ment azoknak a szavaknak, amelyeket Dávid mondott, s elbeszélték őket Saul színe előtt.",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "A pásztorfiú elmondja a hadvezérnek, miért és hogyan harcol egy izraelita."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901703100,
+                    "szep": "1Sám 17,31"
+                }
+            },
+            {
+                "szoveg": "Amikor aztán eléje vitték, Dávid így szólt hozzá: »Senkinek se csüggedjen el a szíve e miatt; én, a te szolgád, elmegyek és megvívok a filiszteussal.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703200,
+                    "szep": "1Sám 17,32"
+                }
+            },
+            {
+                "szoveg": "Azt mondta erre Saul Dávidnak: »Nem bírsz te szembeszállni és megvívni ezzel a filiszteussal, mert te gyermek vagy, az meg harchoz szokott ember kora ifjúságától kezdve.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703300,
+                    "szep": "1Sám 17,33"
+                }
+            },
+            {
+                "szoveg": "Dávid azt felelte Saulnak: »Amikor szolgád legeltette az apja nyáját, ha oroszlán vagy medve jött, és elvitt egy kost a nyájból,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703400,
+                    "szep": "1Sám 17,34"
+                }
+            },
+            {
+                "szoveg": "utánamentem és leütöttem, s kiszabadítottam szájából; ha rám támadt, megragadtam az állát, megfojtottam és megöltem.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703500,
+                    "szep": "1Sám 17,35"
+                }
+            },
+            {
+                "szoveg": "Oroszlánt is, medvét is megöltem én, a te szolgád: úgy jár tehát majd ez a körülmetéletlen filiszteus is, mint azok. Nos, megyek és elhárítom népemről a gyalázatot, elvégre is ki ez a körülmetéletlen filiszteus, hogy gyalázni merte az élő Isten seregét.«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703600,
+                    "szep": "1Sám 17,36"
+                }
+            },
+            {
+                "szoveg": "Majd azt mondta Dávid: »Az Úr, aki megszabadított az oroszlán mancsai meg a medve mancsai közül, Ő fog megszabadítani engem e filiszteus kezéből.« Azt mondta erre Saul Dávidnak: »Eredj, s az Úr legyen veled!«<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703700,
+                    "szep": "1Sám 17,37"
+                }
+            },
+            {
+                "szoveg": "Aztán Saul felöltöztette Dávidot a maga ruháiba, rézsisakot tett a fejére, s páncélt adott rá.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703800,
+                    "szep": "1Sám 17,38"
+                }
+            },
+            {
+                "szoveg": "Ekkor Dávid felcsatolta kardját a ruhái fölé, s elkezdte próbálgatni, tud-e így felfegyverkezve járni, mert nem szokta meg. Azt mondta Dávid Saulnak: »Nem tudok így járni, mert nem szoktam meg.« Azzal lerakta ezeket,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901703900,
+                    "szep": "1Sám 17,39"
+                }
+            },
+            {
+                "szoveg": "s vette botját, amelyet mindig a kezében hordott, kiválasztott magának öt jó sima követ a patakból, s betette azokat pásztortáskájába, amely nála volt, s kezébe vette parittyáját, s kiment a filiszteus elé.<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704000,
+                    "szep": "1Sám 17,40"
+                }
+            },
+            {
+                "szoveg": "Erre a filiszteus, előtte haladó fegyverhordozójával együtt, ballagva és egyre jobban közeledve Dávid felé tartott.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704100,
+                    "szep": "1Sám 17,41"
+                }
+            },
+            {
+                "szoveg": "Amikor aztán a filiszteus feltekintett és meglátta Dávidot, semmibe sem vette, hiszen egy vörös, szép külsejű ifjú volt előtte.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704200,
+                    "szep": "1Sám 17,42"
+                }
+            },
+            {
+                "szoveg": "Erre a filiszteus így szólt Dávidhoz: »Hát kutya vagyok én, hogy bottal jössz ellenem?« Aztán a filiszteus megátkozta isteneivel Dávidot,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704300,
+                    "szep": "1Sám 17,43"
+                }
+            },
+            {
+                "szoveg": "és azt mondta Dávidnak: »Gyere csak ide hozzám, hadd adjam húsodat az ég madarainak s a mező vadjainak!«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704400,
+                    "szep": "1Sám 17,44"
+                }
+            },
+            {
+                "szoveg": "Dávid ekkor így szólt a filiszteushoz: »Te karddal, dárdával s pajzzsal jössz ellenem, én pedig a Seregek Urának, Izrael hadainak Istene nevével megyek ellened, amelyeket te gyalázattal illettél",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704500,
+                    "szep": "1Sám 17,45"
+                }
+            },
+            {
+                "szoveg": "a mai napon. Az Úr pedig a kezembe fog adni téged, megöllek, leveszem rólad a fejedet, és még ma az ég madarainak és a mező vadjainak adom a filiszteusok táborának hulláit, hadd tudja meg az egész föld, hogy van Izraelnek Istene!",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704600,
+                    "szep": "1Sám 17,46"
+                }
+            },
+            {
+                "szoveg": "Tudja meg ez az egész gyülekezet, hogy nem kell kard és dárda az Úrnak a győzelemhez, mert ő a harc ura, s ő a kezünkbe is fog adni titeket!«<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704700,
+                    "szep": "1Sám 17,47"
+                }
+            },
+            {
+                "szoveg": "Amikor aztán a filiszteus nekikészült, s elindult, s Dávid felé közelített, Dávid sietve a filiszteus elé futott, hogy megküzdjön vele,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704800,
+                    "szep": "1Sám 17,48"
+                }
+            },
+            {
+                "szoveg": "és benyújtotta kezét táskájába, kivett belőle egy követ, azt parittyájával megforgatta, s elhajította, s homlokon sújtotta vele a filiszteust, úgyhogy a kő belefúródott homlokába, s az arcával a földre bukott.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901704900,
+                    "szep": "1Sám 17,49"
+                }
+            },
+            {
+                "szoveg": "Így győzte le Dávid a filiszteust parittyával és kővel, s miután leverte, meg is ölte a filiszteust. Mivel ugyanis kard nem volt Dávid kezében,",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705000,
+                    "szep": "1Sám 17,50"
+                }
+            },
+            {
+                "szoveg": "odaszaladt, megállt a filiszteus felett, megfogta kardját, kirántotta hüvelyéből, s megölte őt és levágta fejét.<br>Amikor a filiszteusok látták, hogy hősük meghalt, megfutamodtak.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705100,
+                    "szep": "1Sám 17,51"
+                }
+            },
+            {
+                "szoveg": "Erre Izrael és Júda emberei felkeltek és felkiáltottak és addig űzték a filiszteusokat, amíg a völgybe és Akkaron kapujához nem jutottak. Hullottak is a sebesültek a filiszteusok közül a Sáráim felé vivő úttól kezdve egészen Gátig és Akkaronig.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705200,
+                    "szep": "1Sám 17,52"
+                }
+            },
+            {
+                "szoveg": "Amikor aztán megkergették a filiszteusokat, Izrael fiai visszatértek, s elfoglalták táborukat.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705300,
+                    "szep": "1Sám 17,53"
+                }
+            },
+            {
+                "szoveg": "Dávid pedig fogta a filiszteus fejét, s elvitte Jeruzsálembe, fegyvereit pedig elhelyezte sátrában.<br>",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "Anakronizmus (Jeruzsálem akkor még a jebuziták kezén volt)."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901705400,
+                    "szep": "1Sám 17,54"
+                }
+            },
+            {
+                "szoveg": "Amikor Saul látta, hogy Dávid kimegy a filiszteus elé, azt mondta Ábnernek, a sereg fővezérének: »Melyik nemzetségből származik ez az ifjú, Ábner?« Ábner azt felelte: »Életedre mondom, ó király, hogy nem tudom!«",
+                "jegyzetek": [
+                    {
+                        "position": null,
+                        "text": "E szerint a hagyomány szerint Saul először a párviadal után találkozott Dáviddal."
+                    }
+                ],
+                "hely": {
+                    "gepi": 10901705500,
+                    "szep": "1Sám 17,55"
+                }
+            },
+            {
+                "szoveg": "Azt mondta erre a király: »Kérdezd meg, kinek a fia ez az ifjú!«",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705600,
+                    "szep": "1Sám 17,56"
+                }
+            },
+            {
+                "szoveg": "Ezért, amikor Dávid a filiszteus megölése után visszatért, kezében a filiszteus fejével, Ábner megfogta, s bevitte Saul elé.",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705700,
+                    "szep": "1Sám 17,57"
+                }
+            },
+            {
+                "szoveg": "Saul így szólt hozzá: »Melyik nemzetségből való vagy, ó ifjú?« Dávid azt mondta rá: »Szolgádnak, a betlehemi Izájnak vagyok a fia.«<br>",
+                "jegyzetek": [],
+                "hely": {
+                    "gepi": 10901705800,
+                    "szep": "1Sám 17,58"
+                }
+            }
+        ],
+        "forditas": {
+            "nev": "Káldi-Neovulgáta",
+            "rov": "KNB"
+        }
+    }
+}
