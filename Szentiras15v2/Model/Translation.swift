@@ -51,3 +51,9 @@ extension Translation {
         return translations.first { $0.id == translationID }
     }
 }
+
+extension Translation {
+    static var `default`: Translation {
+        Translation.get(by: 6)!
+    }
+}

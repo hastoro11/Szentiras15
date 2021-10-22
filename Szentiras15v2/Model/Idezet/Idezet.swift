@@ -20,6 +20,15 @@ extension Idezet {
     }
 }
 
+extension Idezet {
+    static var `default`: Idezet {
+        Idezet(
+            keres: Keres(feladat: "", hivatkozas: "", forma: ""),
+            valasz: Valasz.default
+        )
+    }
+}
+
 // MARK: - Keres
 struct Keres: Codable {
     var feladat, hivatkozas, forma: String
@@ -27,7 +36,7 @@ struct Keres: Codable {
 
 // MARK: - Valasz
 struct Valasz: Codable {
-    var apiVersek: [Vers]?
+    private var apiVersek: [Vers]?
     var forditas: Forditas
     
     enum CodingKeys: String, CodingKey {
@@ -37,6 +46,15 @@ struct Valasz: Codable {
     
     var versek: [Vers] {
         apiVersek ?? []
+    }
+}
+
+extension Valasz {
+    static var `default`: Valasz {
+        Valasz(
+            apiVersek: [],
+            forditas: Forditas(nev: "", rov: "")
+        )
     }
 }
 

@@ -32,6 +32,13 @@ extension Book {
         let booksInTranslation: [BooksInTranslation] = Util.getItemFromBundle(filename: "books")
         return booksInTranslation.first { $0.translation.id == translationID }?.books ?? []
     }
+    
+}
+
+extension Book {
+    static var `default`: Book {
+        Book.all(by: 6)[0]
+    }
 }
 
 struct BooksInTranslation: Codable {

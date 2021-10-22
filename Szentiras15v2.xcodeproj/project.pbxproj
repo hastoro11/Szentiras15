@@ -24,6 +24,10 @@
 		21AC168A27219FB400D2DA84 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC168927219FB400D2DA84 /* Font+Extension.swift */; };
 		21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC168C2721A09300D2DA84 /* ReaderView.swift */; };
 		21AC168F2721B18000D2DA84 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC168E2721B18000D2DA84 /* Color+Extension.swift */; };
+		21AC16912721B5A700D2DA84 /* SzentirasTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16902721B5A700D2DA84 /* SzentirasTabView.swift */; };
+		21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169227220A5800D2DA84 /* ReaderViewModel.swift */; };
+		21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */; };
+		21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16972722919F00D2DA84 /* SzentirasError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +49,10 @@
 		21AC168927219FB400D2DA84 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		21AC168C2721A09300D2DA84 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
 		21AC168E2721B18000D2DA84 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		21AC16902721B5A700D2DA84 /* SzentirasTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SzentirasTabView.swift; sourceTree = "<group>"; };
+		21AC169227220A5800D2DA84 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
+		21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SzentirasAPI.swift; sourceTree = "<group>"; };
+		21AC16972722919F00D2DA84 /* SzentirasError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SzentirasError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,10 +85,12 @@
 		21AC166127218FF800D2DA84 /* Szentiras15v2 */ = {
 			isa = PBXGroup;
 			children = (
+				21AC169427220D2200D2DA84 /* Services */,
 				21AC168527219BFA00D2DA84 /* Utilities */,
 				21AC1670272191B300D2DA84 /* Model */,
 				21AC168B2721A07500D2DA84 /* Screens */,
 				21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */,
+				21AC16902721B5A700D2DA84 /* SzentirasTabView.swift */,
 				21AC166427218FF800D2DA84 /* ContentView.swift */,
 				21AC166627218FF900D2DA84 /* Assets.xcassets */,
 				21AC166827218FF900D2DA84 /* Preview Content */,
@@ -99,6 +109,7 @@
 		21AC1670272191B300D2DA84 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				21AC16972722919F00D2DA84 /* SzentirasError.swift */,
 				21AC1676272192DA00D2DA84 /* Idezet */,
 				21AC1671272191BC00D2DA84 /* JSON */,
 				21AC1681272196F400D2DA84 /* Book.swift */,
@@ -142,8 +153,17 @@
 			isa = PBXGroup;
 			children = (
 				21AC168C2721A09300D2DA84 /* ReaderView.swift */,
+				21AC169227220A5800D2DA84 /* ReaderViewModel.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		21AC169427220D2200D2DA84 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,12 +245,16 @@
 				21AC168F2721B18000D2DA84 /* Color+Extension.swift in Sources */,
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
 				21AC168727219C1E00D2DA84 /* Util.swift in Sources */,
+				21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */,
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
+				21AC16912721B5A700D2DA84 /* SzentirasTabView.swift in Sources */,
 				21AC166527218FF800D2DA84 /* ContentView.swift in Sources */,
 				21AC1682272196F400D2DA84 /* Book.swift in Sources */,
+				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,
 				21AC168A27219FB400D2DA84 /* Font+Extension.swift in Sources */,
 				21AC16842721977F00D2DA84 /* Translation.swift in Sources */,
+				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

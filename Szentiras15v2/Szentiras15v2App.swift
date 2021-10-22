@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct Szentiras15v2App: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SzentirasTabView(idezet: Idezet.example(filename: "Rom16"))
         }
+    }
+    
+    init() {
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+        UINavigationBar.appearance().titleTextAttributes = [
+            .font: UIFont(name: "Avenir Next Bold", size: 17)!
+        ]
     }
 }

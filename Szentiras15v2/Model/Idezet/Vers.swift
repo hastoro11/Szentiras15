@@ -33,6 +33,11 @@ struct Vers: Codable, Identifiable {
     var hely: Hely {
         apiHely ?? Hely(apiGepi: 0, apiSzep: "")
     }
+    
+    var versSzam: String {
+        let hivatkozas = hely.szep
+        return hivatkozas.split(separator: ",")[1].trimmingCharacters(in: .whitespaces) 
+    }
 }
 
 // MARK: - Hely
