@@ -29,54 +29,20 @@ struct BooksListView: View {
                 Divider()
             }
             .padding([.horizontal, .top])
-            ScrollView {
-                ForEach(books.indices, id:\.self) { index in
-                    bookRow(book: books[index])
-                    
-                }
-            }
-            .listStyle(.plain)
-        }
-    }
-    
-    @ViewBuilder
-    func bookRow(book: Book) -> some View {
-        DisclosureGroup {
-            ScrollView {
-                LazyVGrid(columns: [GridItem(.adaptive(minimum: 50, maximum: 60))], spacing: 15) {
-                    ForEach(1...(book.chapters), id:\.self) { ch in
-                        Button(action: {
-                            showBookslist.toggle()
-                            fetch(book: book, chapter: ch)
-                        }) {
-                            Text("\(ch)")
-                                .foregroundColor(.white)
-                                .font(.Theme.heavy(size: 17))
-                                .frame(width: 44, height: 44)
-                                .background(Rectangle().fill (
-                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color.Theme.background
-                                ))
-                        }
+            ScrollViewReader { proxy in
+                ScrollView {
+                    ForEach(books.indices, id:\.self) { index in
+                        BookRow(showBookslist: $showBookslist, fetch: fetch, current: current, book: books[index])
+                            .id(books[index].number)
                     }
                 }
+                .onAppear {
+                    proxy.scrollTo(current.book.number)
+                }
             }
-            .padding(.vertical)
-        } label: {
-            HStack {
-                Text(book.name)
-                    .font(.Theme.book(size: 17))
-                    .lineLimit(1)
-                Spacer()
-                Text(book.abbrev)
-                    .font(.Theme.medium(size: 17))
-            }
-            .foregroundColor(.Theme.title)
         }
-        .padding(.horizontal)
-        Divider()
-            .padding(.horizontal)
     }
-    
+
     func fetch(book: Book, chapter: Int) {
         let current = Current(
             translation: current.translation,

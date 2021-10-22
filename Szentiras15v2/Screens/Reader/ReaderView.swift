@@ -44,7 +44,7 @@ struct ReaderView: View {
     }
     
     var versList: some View {
-        return List {
+        List {
             ForEach(versek.indices, id:\.self) { index in
                 Text(attributedText(index:index))
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -86,7 +86,10 @@ struct ReaderView: View {
     var overlay: some View {
         switch vm.phase {
         case .isFetching:
-             ProgressView("Keresés...")
+            VStack {
+                ProgressView("Keresés...\n\(vm.current.book.name) \(vm.current.chapter). fejezet")
+                    .multilineTextAlignment(.center)
+            }
         case .empty:
             VStack(alignment: .leading) {
                 Text(attributedEmptyMessage(name:vm.current.book.name))
