@@ -24,6 +24,9 @@ struct ReaderView: View {
             versList
                 .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
+                .refreshable {
+                    vm.load(current: vm.current)
+                }
                 .toolbar {
                     booksToolbar
                     translationsToolbar
