@@ -14,14 +14,15 @@ struct ReaderView: View {
     
     var versek: [Vers] {
         if case .success(let idezet) = vm.phase {
-            return idezet.valasz?.versek ?? []
+            return idezet.valasz.versek
         }
         return []
     }
-    
+  
     var body: some View {
         NavigationView {
             versList
+                .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     booksToolbar
@@ -50,7 +51,7 @@ struct ReaderView: View {
     
     var booksToolbar: some ToolbarContent {
         var title: String {
-            if case .success(let idezet) = vm.phase, let versek = idezet.valasz?.versek, !versek.isEmpty {
+            if case .success(let idezet) = vm.phase, !idezet.valasz.versek.isEmpty {
                 let szep = versek[0].hely.szep
                 return String(szep.split(separator: ",")[0])
             }
@@ -78,6 +79,49 @@ struct ReaderView: View {
         }
     }
     
+    @ViewBuilder
+    var overlay: some View {
+        switch vm.phase {
+        case .isFetching:
+             ProgressView("Keresés...")
+        case .empty:
+            VStack(alignment: .leading) {
+                Text(attributedEmptyMessage(name:vm.current.book.name))
+                    
+                Text("Bizonyos fordítások csak az Újszövetséget tartalmazzák")
+                    .font(.Theme.book(size: 19))
+                    .padding(.top)
+            }
+            .multilineTextAlignment(.center)
+        case .error(let error):
+            VStack(spacing: 10) {
+                Image(systemName: "exclamationmark.icloud")
+                    .font(.Theme.light(size: 48))
+                Text("\(error.description)")
+                Button(action: {}) {
+                    Text("Újra megpróbálom")
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.accentColor)
+                        .foregroundColor(.white)
+                        .padding(.horizontal)
+                        .font(.Theme.book(size: 19))
+                }
+            }
+            .font(.Theme.light(size: 19))
+        default: EmptyView()
+        }
+    }
+    
+    func attributedEmptyMessage(name: String) -> AttributedString {
+        var attributedString = AttributedString("\(name) nem található meg ebben a fordításban.")
+        attributedString.font = .Theme.book(size: 19)
+        if let range = attributedString.range(of: name) {
+            attributedString[range].font = .Theme.heavy(size: 19)
+        }
+        return attributedString
+    }
+    
     func attributedText(index: Int) -> AttributedString {
         let vers = versek[index]
         var attributedIndex = AttributedString("\(vers.versSzam) ")
@@ -93,8 +137,7 @@ struct ReaderView: View {
 
 
 struct ReaderView_Previews: PreviewProvider {
-    static var vm = ReaderViewModel.preview
     static var previews: some View {
-        ReaderView(vm: vm)
+        return ReaderView()
     }
 }

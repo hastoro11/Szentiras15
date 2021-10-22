@@ -19,7 +19,7 @@ enum SzentirasError: Error, CustomStringConvertible {
         case .badURL(let url):
             return "Bad URL: \(url)"
         case .serverError:
-            return "Internal server error"
+            return "Szerver hiba"
         case .decodingError:
             return "Decoding error"
         case .badInput:

@@ -31,7 +31,7 @@ struct Vers: Codable, Identifiable {
     }
     
     var hely: Hely {
-        apiHely ?? Hely(apiGepi: 0, apiSzep: "")
+        apiHely ?? Hely()
     }
     
     var versSzam: String {
@@ -42,8 +42,8 @@ struct Vers: Codable, Identifiable {
 
 // MARK: - Hely
 struct Hely: Codable {
-    var apiGepi: Int?
-    var apiSzep: String?
+    private var apiGepi: Int?
+    private var apiSzep: String?
     
     enum CodingKeys: String, CodingKey {
         case apiGepi = "gepi"
@@ -61,7 +61,7 @@ struct Hely: Codable {
 
 // MARK: - Jegyzetek
 struct Jegyzet: Codable {
-    var apiText: String?
+    private var apiText: String?
     
     enum CodingKeys: String, CodingKey {
         case apiText = "text"

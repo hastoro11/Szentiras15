@@ -15,7 +15,7 @@ struct SzentirasTabView: View {
     @State var selection: TabSelection = .read
     var idezet: Idezet
     var versek: [Vers] {
-        idezet.valasz?.versek ?? []
+        idezet.valasz.versek
     }
     var body: some View {
         TabView(selection: $selection) {

@@ -13,6 +13,7 @@ class SzentirasAPI {
     
     func fetch(_ current: Current) async throws -> Idezet {
         let url = buildURL(translation: current.translation, book: current.book, chapter: current.chapter)
+        
         let idezet: Idezet = try await fetch(from: url)
         return idezet
     }

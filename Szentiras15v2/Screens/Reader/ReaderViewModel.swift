@@ -46,13 +46,19 @@ class ReaderViewModel: ObservableObject {
     
     @MainActor
     func fetch() async {
+        phase = .isFetching
         do {
             let idezet = try await SzentirasAPI.instance.fetch(current)
             if Task.isCancelled { return }
-            self.phase = .success(idezet)
+            if idezet.valasz.versek.isEmpty {
+                self.phase = .empty
+            } else {
+                self.phase = .success(idezet)
+            }
         } catch {
             if Task.isCancelled { return }
             print("⛔️ Error in ReaderViewModel 'fetch' - ", error)
+            self.phase = .error(error as? SzentirasError ?? .unknown)
         }
     }
 }

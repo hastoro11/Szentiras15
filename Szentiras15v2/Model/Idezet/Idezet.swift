@@ -10,7 +10,7 @@ import Foundation
 // MARK: - Idezet
 struct Idezet: Codable {
     var keres: Keres
-    var valasz: Valasz?
+    var valasz: Valasz
 }
 
 extension Idezet {
