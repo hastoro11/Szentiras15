@@ -56,4 +56,8 @@ extension Translation {
     static var `default`: Translation {
         Translation.get(by: 6)!
     }
+    
+    func getBooks() -> [Book] {
+        Book.all(by: self.id)
+    }
 }

@@ -28,6 +28,7 @@
 		21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169227220A5800D2DA84 /* ReaderViewModel.swift */; };
 		21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */; };
 		21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16972722919F00D2DA84 /* SzentirasError.swift */; };
+		21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169A2722A03D00D2DA84 /* BooksListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		21AC169227220A5800D2DA84 /* ReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewModel.swift; sourceTree = "<group>"; };
 		21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SzentirasAPI.swift; sourceTree = "<group>"; };
 		21AC16972722919F00D2DA84 /* SzentirasError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SzentirasError.swift; sourceTree = "<group>"; };
+		21AC169A2722A03D00D2DA84 /* BooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +154,7 @@
 		21AC168B2721A07500D2DA84 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				21AC168C2721A09300D2DA84 /* ReaderView.swift */,
-				21AC169227220A5800D2DA84 /* ReaderViewModel.swift */,
+				21AC16992722A01400D2DA84 /* Reader */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -164,6 +165,16 @@
 				21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		21AC16992722A01400D2DA84 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				21AC168C2721A09300D2DA84 /* ReaderView.swift */,
+				21AC169227220A5800D2DA84 /* ReaderViewModel.swift */,
+				21AC169A2722A03D00D2DA84 /* BooksListView.swift */,
+			);
+			path = Reader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,6 +266,7 @@
 				21AC168A27219FB400D2DA84 /* Font+Extension.swift in Sources */,
 				21AC16842721977F00D2DA84 /* Translation.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
+				21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

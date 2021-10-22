@@ -24,7 +24,7 @@ enum FetchPhase {
     case empty
 }
 
-@MainActor
+
 class ReaderViewModel: ObservableObject {
     @Published var phase: FetchPhase = .isFetching
     var current: Current
@@ -36,6 +36,14 @@ class ReaderViewModel: ObservableObject {
             chapter: 1)
     }
     
+    func load(current: Current) {
+        self.current = current
+        Task {
+            await fetch()
+        }
+    }
+    
+    @MainActor
     func fetch() async {
         do {
             let idezet = try await SzentirasAPI.instance.fetch(current)

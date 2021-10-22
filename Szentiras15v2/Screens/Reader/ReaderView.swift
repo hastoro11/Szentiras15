@@ -10,6 +10,7 @@ import SwiftUI
 struct ReaderView: View {
     @StateObject var vm: ReaderViewModel = ReaderViewModel()
     @State var showBooklist: Bool = false
+    @State var showTranslationList: Bool = false
     
     var title: String {
         if case .success(let idezet) = vm.phase {
@@ -23,14 +24,23 @@ struct ReaderView: View {
         }
         return []
     }
+    var translation: Translation {
+        vm.current.translation
+    }
     var body: some View {
         NavigationView {
             versList
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle(title)
+                .toolbar {
+                    booksToolbar
+                    translationsToolbar
+                }
         }
         .task {
             await vm.fetch()
+        }
+        .sheet(isPresented: $showBooklist) {
+            BooksListView(showBookslist: $showBooklist, current: vm.current, load: vm.load)
         }
     }
     
@@ -43,13 +53,34 @@ struct ReaderView: View {
         }.listStyle(.plain)
     }
     
+    var booksToolbar: some ToolbarContent {
+        ToolbarItem(placement: .principal) {
+            Button(action: {
+                showBooklist.toggle()
+            }) {
+                Text(title)
+                    .font(.Theme.black(size: 17))
+                    .foregroundColor(.black)
+            }
+        }
+    }
+    
+    var translationsToolbar: some ToolbarContent {
+        ToolbarItem(placement: .primaryAction) {
+            Button(action: {}) {
+                Text(translation.abbrev)
+                    .font(.Theme.heavy(size: 17))
+            }
+        }
+    }
+    
     func attributedText(index: Int) -> AttributedString {
         let vers = versek[index]
         var attributedIndex = AttributedString("\(vers.versSzam) ")
         attributedIndex.foregroundColor = .accentColor
-        attributedIndex.font = .black(size: 17)
+        attributedIndex.font = .Theme.black(size: 17)
         var attributedString = AttributedString(vers.szoveg)
-        attributedString.font = .light(size: 17)
+        attributedString.font = .Theme.light(size: 17)
         attributedString.foregroundColor = .Theme.button
         let result = attributedIndex + attributedString
         return result
