@@ -37,6 +37,7 @@ class ReaderViewModel: ObservableObject {
     }
     
     func load(current: Current) {
+        if Task.isCancelled { return }
         self.current = current
         Task {
             await fetch()

@@ -30,10 +30,10 @@ class SzentirasAPI {
             return result
         } catch {
             if let _ = error as? SzentirasError {
-                print("Error in API fetch - ", error)
+                print("⛔️ Error in API fetch - ", error)
                 throw SzentirasError.unknown
             }
-            print("Error in API fetch - ", error)
+            print("⛔️ Error in API fetch - ", error)
             throw SzentirasError.decodingError
         }
     }
@@ -42,7 +42,7 @@ class SzentirasAPI {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
         urlComponents.host = "szentiras.hu"
-        urlComponents.path = "/api/idezet/\(book.abbrev)\(chapter)".removingPercentEncoding ?? "api/idezet/\(book.abbrev)\(chapter)"
+        urlComponents.path = "/api/idezet/\(book.abbrev)\(chapter)/\(translation.abbrev)".removingPercentEncoding ?? "api/idezet/\(book.abbrev)\(chapter)/\(translation.abbrev)"
         return urlComponents.url!
     }
 }

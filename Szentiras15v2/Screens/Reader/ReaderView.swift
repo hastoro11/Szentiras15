@@ -12,21 +12,13 @@ struct ReaderView: View {
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
     
-    var title: String {
-        if case .success(let idezet) = vm.phase {
-            return idezet.keres.hivatkozas
-        }
-        return ""
-    }
     var versek: [Vers] {
         if case .success(let idezet) = vm.phase {
             return idezet.valasz?.versek ?? []
         }
         return []
     }
-    var translation: Translation {
-        vm.current.translation
-    }
+    
     var body: some View {
         NavigationView {
             versList
@@ -42,10 +34,13 @@ struct ReaderView: View {
         .sheet(isPresented: $showBooklist) {
             BooksListView(showBookslist: $showBooklist, current: vm.current, load: vm.load)
         }
+        .sheet(isPresented: $showTranslationList) {
+            TranslationSelectView(current: vm.current, showTranslations: $showTranslationList, load: vm.load)
+        }
     }
     
     var versList: some View {
-        List {
+        return List {
             ForEach(versek.indices, id:\.self) { index in
                 Text(attributedText(index:index))
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -54,7 +49,14 @@ struct ReaderView: View {
     }
     
     var booksToolbar: some ToolbarContent {
-        ToolbarItem(placement: .principal) {
+        var title: String {
+            if case .success(let idezet) = vm.phase, let versek = idezet.valasz?.versek, !versek.isEmpty {
+                let szep = versek[0].hely.szep
+                return String(szep.split(separator: ",")[0])
+            }
+            return ""
+        }
+        return ToolbarItem(placement: .principal) {
             Button(action: {
                 showBooklist.toggle()
             }) {
@@ -67,8 +69,10 @@ struct ReaderView: View {
     
     var translationsToolbar: some ToolbarContent {
         ToolbarItem(placement: .primaryAction) {
-            Button(action: {}) {
-                Text(translation.abbrev)
+            Button(action: {
+                showTranslationList.toggle()
+            }) {
+                Text(vm.current.translation.abbrev)
                     .font(.Theme.heavy(size: 17))
             }
         }

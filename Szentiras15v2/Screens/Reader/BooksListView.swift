@@ -62,8 +62,15 @@ struct BooksListView: View {
             }
             .padding(.vertical)
         } label: {
-            Text(book.name)
-                .font(.Theme.book(size: 17))
+            HStack {
+                Text(book.name)
+                    .font(.Theme.book(size: 17))
+                    .lineLimit(1)
+                Spacer()
+                Text(book.abbrev)
+                    .font(.Theme.medium(size: 17))
+            }
+            .foregroundColor(.Theme.title)
         }
         .padding(.horizontal)
         Divider()
@@ -80,7 +87,7 @@ struct BooksListView: View {
 }
 
 struct BooksListView_Previews: PreviewProvider {
-    static var current: Current = Current(translation: Translation.default, book: Book.default, chapter: 1)
+    static var current: Current = Current(translation: Translation.get(by: 4)!, book: Book.default, chapter: 1)
     static var previews: some View {
         BooksListView(showBookslist: .constant(true), current: current, load: {_ in})
     }

@@ -22,7 +22,7 @@ extension Color {
             Color("Text")
         }
         static var title: Color {
-            Color("title")
+            Color("Title")
         }
     }
 }

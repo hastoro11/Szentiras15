@@ -29,6 +29,7 @@
 		21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */; };
 		21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16972722919F00D2DA84 /* SzentirasError.swift */; };
 		21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169A2722A03D00D2DA84 /* BooksListView.swift */; };
+		21AC169D2722C84D00D2DA84 /* TranslationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		21AC169527220D2E00D2DA84 /* SzentirasAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SzentirasAPI.swift; sourceTree = "<group>"; };
 		21AC16972722919F00D2DA84 /* SzentirasError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SzentirasError.swift; sourceTree = "<group>"; };
 		21AC169A2722A03D00D2DA84 /* BooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
+		21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationSelectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 		21AC16992722A01400D2DA84 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */,
 				21AC168C2721A09300D2DA84 /* ReaderView.swift */,
 				21AC169227220A5800D2DA84 /* ReaderViewModel.swift */,
 				21AC169A2722A03D00D2DA84 /* BooksListView.swift */,
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AC169D2722C84D00D2DA84 /* TranslationSelectView.swift in Sources */,
 				21AC1678272192ED00D2DA84 /* Idezet.swift in Sources */,
 				21AC168F2721B18000D2DA84 /* Color+Extension.swift in Sources */,
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
