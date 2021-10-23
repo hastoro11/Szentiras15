@@ -7,20 +7,21 @@
 
 import SwiftUI
 
-struct ReaderView: View {
+struct ReaderView: View {    
     @StateObject var vm: ReaderViewModel = ReaderViewModel()
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
-    
+    @State var showArrows: Bool = true
     var versek: [Vers] {
         if case .success(let idezet) = vm.phase {
             return idezet.valasz.versek
         }
         return []
     }
-  
+    
     var body: some View {
         NavigationView {
+            
             versList
                 .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
@@ -31,6 +32,11 @@ struct ReaderView: View {
                     booksToolbar
                     translationsToolbar
                     settingToolbar
+                }
+                .onTapGesture {
+                    withAnimation {
+                        showArrows.toggle()
+                    }
                 }
         }
         .task {
@@ -90,7 +96,7 @@ struct ReaderView: View {
         ToolbarItem(placement: .navigationBarTrailing, content: {
             Button(action: {}) {
                 Text("Aa")
-                .font(.Theme.heavy(size: 17))
+                    .font(.Theme.heavy(size: 17))
             }
             
         })
@@ -107,7 +113,7 @@ struct ReaderView: View {
         case .empty:
             VStack(alignment: .leading) {
                 Text(attributedEmptyMessage(name:vm.current.book.name))
-                    
+                
                 Text("Bizonyos fordítások csak az Újszövetséget tartalmazzák")
                     .font(.Theme.book(size: 19))
                     .padding(.top)
@@ -118,7 +124,9 @@ struct ReaderView: View {
                 Image(systemName: "exclamationmark.icloud.fill")
                     .font(.Theme.light(size: 48))
                 Text("\(error.description)")
-                Button(action: {}) {
+                Button(action: {
+                    vm.load(current: vm.current)
+                }) {
                     Text("Újra megpróbálom")
                         .frame(maxWidth: .infinity)
                         .padding()
@@ -129,7 +137,17 @@ struct ReaderView: View {
                 }
             }
             .font(.Theme.light(size: 19))
-        default: EmptyView()
+        case .success(_):
+            if showArrows {
+                HStack {
+                    arrowButton(direction: "left")
+                        .opacity(vm.current.chapter == 1 ? 0 : 1)
+                    Spacer()
+                    arrowButton(direction: "right")
+                        .opacity(vm.current.chapter == vm.current.book.chapters ? 0 : 1)
+                }
+                .padding(.horizontal)
+            }
         }
     }
     
@@ -152,6 +170,30 @@ struct ReaderView: View {
         attributedString.foregroundColor = .Theme.button
         let result = attributedIndex + attributedString
         return result
+    }
+    
+    func arrowButton(direction: String) -> some View {
+        Button(action: {
+            if direction == "left" {
+                vm.current.chapter = max(1, vm.current.chapter-1)
+                vm.load(current: vm.current)
+            }
+            if direction == "right" {
+                vm.current.chapter = min(vm.current.book.chapters, vm.current.chapter+1)
+                vm.load(current: vm.current)
+            }
+        }) {
+            Image(systemName: "arrow.\(direction)")
+                .font(.title)
+                .foregroundColor(.white)
+        }
+        .padding()
+        .background(
+            Circle().fill(
+                Color.Theme.background.opacity(0.4)
+            )
+                .shadow(color: .Theme.text, radius: 3, y: 3)
+        )
     }
 }
 
