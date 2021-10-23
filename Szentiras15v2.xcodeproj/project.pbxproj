@@ -31,6 +31,7 @@
 		21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169A2722A03D00D2DA84 /* BooksListView.swift */; };
 		21AC169D2722C84D00D2DA84 /* TranslationSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */; };
 		21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC169E2723269C00D2DA84 /* BookRow.swift */; };
+		21AC16A22723F6B600D2DA84 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16A12723F6B600D2DA84 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		21AC169A2722A03D00D2DA84 /* BooksListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksListView.swift; sourceTree = "<group>"; };
 		21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationSelectView.swift; sourceTree = "<group>"; };
 		21AC169E2723269C00D2DA84 /* BookRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRow.swift; sourceTree = "<group>"; };
+		21AC16A12723F6B600D2DA84 /* Cache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 		21AC166127218FF800D2DA84 /* Szentiras15v2 */ = {
 			isa = PBXGroup;
 			children = (
+				21AC16A02723F68D00D2DA84 /* Cache */,
 				21AC169427220D2200D2DA84 /* Services */,
 				21AC168527219BFA00D2DA84 /* Utilities */,
 				21AC1670272191B300D2DA84 /* Model */,
@@ -183,6 +186,14 @@
 			path = Reader;
 			sourceTree = "<group>";
 		};
+		21AC16A02723F68D00D2DA84 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				21AC16A12723F6B600D2DA84 /* Cache.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -268,6 +279,7 @@
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
 				21AC16912721B5A700D2DA84 /* SzentirasTabView.swift in Sources */,
 				21AC166527218FF800D2DA84 /* ContentView.swift in Sources */,
+				21AC16A22723F6B600D2DA84 /* Cache.swift in Sources */,
 				21AC1682272196F400D2DA84 /* Book.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,

@@ -15,6 +15,10 @@ struct Current {
     var chapters: Int {
         book.chapters
     }
+    
+    var key: String {
+        "\(book.abbrev)\(chapter)/\(translation.abbrev.uppercased())"
+    }
 }
 
 enum FetchPhase {
@@ -29,6 +33,8 @@ class ReaderViewModel: ObservableObject {
     @Published var phase: FetchPhase = .isFetching
     var current: Current
     
+    var cache = Cache<Idezet>()
+    
     init() {
         current = Current(
             translation: Translation.default,
@@ -37,8 +43,13 @@ class ReaderViewModel: ObservableObject {
     }
     
     func load(current: Current) {
-        if Task.isCancelled { return }
+        
         self.current = current
+        if let saved = cache[current.key] {
+            self.phase = .success(saved)
+            return
+        }
+        if Task.isCancelled { return }
         Task {
             await fetch()
         }
@@ -54,6 +65,7 @@ class ReaderViewModel: ObservableObject {
                 self.phase = .empty
             } else {
                 self.phase = .success(idezet)
+                cache[current.key] = idezet
             }
         } catch {
             if Task.isCancelled { return }
