@@ -42,8 +42,7 @@ class ReaderViewModel: ObservableObject {
             chapter: 1)
     }
     
-    func load(current: Current) {
-        
+    func load(current: Current) {        
         self.current = current
         if let saved = cache[current.key] {
             self.phase = .success(saved)

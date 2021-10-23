@@ -190,9 +190,9 @@ struct ReaderView: View {
         .padding()
         .background(
             Circle().fill(
-                Color.Theme.background.opacity(0.4)
+                Color.Theme.text.opacity(0.3)
             )
-                .shadow(color: .Theme.text, radius: 3, y: 3)
+                .shadow(color: .Theme.text, radius: 5, y: 5)
         )
     }
 }

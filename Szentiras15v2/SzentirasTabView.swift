@@ -9,10 +9,11 @@ import SwiftUI
 
 enum TabSelection {
     case read
+    case search
 }
 
 struct SzentirasTabView: View {
-    @State var selection: TabSelection = .read
+    @State var selection: TabSelection = .search
     var idezet: Idezet
     var versek: [Vers] {
         idezet.valasz.versek
@@ -24,6 +25,11 @@ struct SzentirasTabView: View {
                     Label("Biblia", systemImage: "book.fill")
                 }
                 .tag(TabSelection.read)
+            SearchView()
+                .tabItem {
+                    Label("Keresés", systemImage: "magnifyingglass")
+                }
+                .tag(TabSelection.search)
         }
     }
 }

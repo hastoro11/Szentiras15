@@ -18,8 +18,5 @@ struct Szentiras15v2App: App {
     
     init() {
         UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
-        UINavigationBar.appearance().titleTextAttributes = [
-            .font: UIFont(name: "Avenir Next Bold", size: 17)!
-        ]
     }
 }
