@@ -30,6 +30,7 @@ struct ReaderView: View {
                 .toolbar {
                     booksToolbar
                     translationsToolbar
+                    settingToolbar
                 }
         }
         .task {
@@ -48,8 +49,11 @@ struct ReaderView: View {
             ForEach(versek.indices, id:\.self) { index in
                 Text(attributedText(index:index))
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .lineSpacing(3)
             }
-        }.listStyle(.plain)
+            .listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
     }
     
     var booksToolbar: some ToolbarContent {
@@ -82,6 +86,16 @@ struct ReaderView: View {
         }
     }
     
+    var settingToolbar: some ToolbarContent {
+        ToolbarItem(placement: .navigationBarTrailing, content: {
+            Button(action: {}) {
+                Text("Aa")
+                .font(.Theme.heavy(size: 17))
+            }
+            
+        })
+    }
+    
     @ViewBuilder
     var overlay: some View {
         switch vm.phase {
@@ -101,7 +115,7 @@ struct ReaderView: View {
             .multilineTextAlignment(.center)
         case .error(let error):
             VStack(spacing: 10) {
-                Image(systemName: "exclamationmark.icloud")
+                Image(systemName: "exclamationmark.icloud.fill")
                     .font(.Theme.light(size: 48))
                 Text("\(error.description)")
                 Button(action: {}) {

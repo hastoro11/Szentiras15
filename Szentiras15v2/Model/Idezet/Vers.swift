@@ -13,21 +13,15 @@ struct Vers: Codable, Identifiable {
         hely.gepi
     }
     private var apiSzoveg: String?
-    private var apiJegyzetek: [Jegyzet]?
     private var apiHely: Hely?
     
     enum CodingKeys: String, CodingKey {
         case apiHely = "hely"
-        case apiJegyzetek = "jegyzetek"
         case apiSzoveg = "szoveg"
     }
     
     var szoveg: String {
         apiSzoveg ?? ""
-    }
-    
-    var jegyzetek: [Jegyzet] {
-        apiJegyzetek ?? []
     }
     
     var hely: Hely {
