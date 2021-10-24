@@ -25,7 +25,7 @@ struct BooksListView: View {
                     Spacer()
                 }
                 .foregroundColor(.accentColor)
-                .font(.Theme.heavy(size: 17))
+                .font(.Theme.heavy(size: 19))
                 Divider()
             }
             .padding([.horizontal, .top])

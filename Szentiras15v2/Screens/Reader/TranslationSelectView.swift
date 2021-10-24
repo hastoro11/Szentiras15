@@ -21,7 +21,7 @@ struct TranslationSelectView: View {
                 Spacer()
             }
             .foregroundColor(.accentColor)
-            .font(.Theme.heavy(size: 17))
+            .font(.Theme.heavy(size: 19))
             
             Divider()
             ForEach(Translation.all()) { tr in

@@ -1,0 +1,3851 @@
+{
+    "refResult": [],
+    "fullTextResult": {
+        "results": [
+            {
+                "book": {
+                    "number": 101,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Teremtés könyve",
+                    "abbrev": "Ter",
+                    "link": "Ter",
+                    "old_testament": 1,
+                    "id": 3
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "21",
+                            "text": "Megteremtette tehát Isten a nagy tengeri szörnyetegeket, és mindazt az élő és nyüzsgő lényt, amelyet a vizek előhoztak, faja szerint, és minden szárnyast, faja szerint. És látta Isten, hogy jó."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "21",
+                        "text": "Megteremtette tehát Isten a nagy tengeri szörnyetegeket, és mindazt az élő és nyüzsgő lényt, amelyet a vizek előhoztak, faja szerint, és minden szárnyast, faja szerint. És látta Isten, hogy jó."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 103,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Leviták könyve",
+                    "abbrev": "Lev",
+                    "link": "Lev",
+                    "old_testament": 1,
+                    "id": 11
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "5",
+                            "text": "A tengeri nyúl, amely kérődzik ugyan, de körme nem hasadt, tisztátalan;"
+                        },
+                        {
+                            "chapter": 11,
+                            "numv": "13",
+                            "text": "Ezeket nem szabad ennetek, s kell utálnotok a madarak közül: a sast, a saskeselyűt, a tengeri sast,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "5",
+                        "text": "A tengeri nyúl, amely kérődzik ugyan, de körme nem hasadt, tisztátalan;"
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "13",
+                        "text": "Ezeket nem szabad ennetek, s kell utálnotok a madarak közül: a sast, a saskeselyűt, a tengeri sast,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 105,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Második Törvénykönyv",
+                    "abbrev": "MTörv",
+                    "link": "MTorv",
+                    "old_testament": 1,
+                    "id": 19
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "7",
+                            "text": "azok közül azonban, amelyek bár kérődznek, de körmük nem hasadt, ne egyetek; ilyenek: a teve, a nyúl, a tengeri nyúl; ezek, mivel bár kérődznek, de körmük nem hasadt, tisztátalanok legyenek nektek;"
+                        },
+                        {
+                            "chapter": 14,
+                            "numv": "12",
+                            "text": "a tisztátalanokat, tudniillik a következőket ne egyétek: a sast, a saskeselyűt, a tengeri sast,"
+                        }
+                    ],
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "17",
+                            "text": "meg a pusztai síkságot meg a Jordánt és keleti határterületét Kinnerettől a puszta tengeréig, azaz a Sós-tengerig, a Piszga hegy tövéig. "
+                        }
+                    ],
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "24",
+                            "text": "Minden hely, amelyre lábatok lép, a tiétek lesz: a pusztától a Libanonig, a nagy folyótól, az Eufrátesztől a nyugati tengerig terjed majd határotok."
+                        }
+                    ],
+                    "34": [
+                        {
+                            "chapter": 34,
+                            "numv": "2",
+                            "text": "az egész Naftalit, Efraim és Manassze földjét, Júda földjét a mögötte levő tengerig,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "7",
+                        "text": "azok közül azonban, amelyek bár kérődznek, de körmük nem hasadt, ne egyetek; ilyenek: a teve, a nyúl, a tengeri nyúl; ezek, mivel bár kérődznek, de körmük nem hasadt, tisztátalanok legyenek nektek;"
+                    },
+                    {
+                        "chapter": 14,
+                        "numv": "12",
+                        "text": "a tisztátalanokat, tudniillik a következőket ne egyétek: a sast, a saskeselyűt, a tengeri sast,"
+                    },
+                    {
+                        "chapter": 3,
+                        "numv": "17",
+                        "text": "meg a pusztai síkságot meg a Jordánt és keleti határterületét Kinnerettől a puszta tengeréig, azaz a Sós-tengerig, a Piszga hegy tövéig. "
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "24",
+                        "text": "Minden hely, amelyre lábatok lép, a tiétek lesz: a pusztától a Libanonig, a nagy folyótól, az Eufrátesztől a nyugati tengerig terjed majd határotok."
+                    },
+                    {
+                        "chapter": 34,
+                        "numv": "2",
+                        "text": "az egész Naftalit, Efraim és Manassze földjét, Júda földjét a mögötte levő tengerig,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 111,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Királyok első könyve",
+                    "abbrev": "1Kir",
+                    "link": "1Kir",
+                    "old_testament": 1,
+                    "id": 43
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "22": [
+                        {
+                            "chapter": 22,
+                            "numv": "49",
+                            "text": "Így Jozafát király tengeri hajókat készíttetett, hogy Ofírba hajózzanak aranyért, de nem mehettek el, mert összetörtek Ecjon-Géberben."
+                        }
+                    ],
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "27",
+                            "text": "Ekkor Hírám elküldte hajós és tengerismerő szolgáit e hajóhadon Salamon szolgáival"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 22,
+                        "numv": "49",
+                        "text": "Így Jozafát király tengeri hajókat készíttetett, hogy Ofírba hajózzanak aranyért, de nem mehettek el, mert összetörtek Ecjon-Géberben."
+                    },
+                    {
+                        "chapter": 9,
+                        "numv": "27",
+                        "text": "Ekkor Hírám elküldte hajós és tengerismerő szolgáit e hajóhadon Salamon szolgáival"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 145,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "A Makkabeusok első könyve",
+                    "abbrev": "1Makk",
+                    "link": "1Makk",
+                    "old_testament": 1,
+                    "id": 168
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "4": [
+                        {
+                            "chapter": 4,
+                            "numv": "23",
+                            "text": "Júdás pedig visszatért a táborba zsákmányolni, és sok aranyat, ezüstöt, kék és tengeri bíbor szövetet és nagy vagyont vittek magukkal."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 4,
+                        "numv": "23",
+                        "text": "Júdás pedig visszatért a táborba zsákmányolni, és sok aranyat, ezüstöt, kék és tengeri bíbor szövetet és nagy vagyont vittek magukkal."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 205,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Az apostolok cselekedetei",
+                    "abbrev": "Csel",
+                    "link": "Csel",
+                    "old_testament": 0,
+                    "id": 189
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "14",
+                            "text": ""
+                        }
+                    ],
+                    "17": [
+                        {
+                            "chapter": 17,
+                            "numv": "14",
+                            "text": "Erre a testvérek azonnal útra bocsátották Pált, hogy eljusson a tengerig: Szilás és Timóteus azonban ott maradtak."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 27,
+                        "numv": "14",
+                        "text": ""
+                    },
+                    {
+                        "chapter": 17,
+                        "numv": "14",
+                        "text": "Erre a testvérek azonnal útra bocsátották Pált, hogy eljusson a tengerig: Szilás és Timóteus azonban ott maradtak."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 391
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "7",
+                            "text": "Mindenféle vadállat és madár, csúszómászó és tengeri lény megszelídíthető, és meg is szelídítette az ember."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "7",
+                        "text": "Mindenféle vadállat és madár, csúszómászó és tengeri lény megszelídíthető, és meg is szelídítette az ember."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 226,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Júdás levele",
+                    "abbrev": "Júd",
+                    "link": "Jud",
+                    "old_testament": 0,
+                    "id": 273
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "13",
+                            "text": "vad tengeri hullámok, amelyek saját gyalázatukat tajtékozzák, bolygó csillagok, amelyekre a sötétség vihara vár örökké."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "13",
+                        "text": "vad tengeri hullámok, amelyek saját gyalázatukat tajtékozzák, bolygó csillagok, amelyekre a sötétség vihara vár örökké."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 227,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "Jelenések könyve",
+                    "abbrev": "Jel",
+                    "link": "Jel",
+                    "old_testament": 0,
+                    "id": 398
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "3",
+                            "text": "A második a tengerbe öntötte csészéjét. Erre az a halottak véréhez vált hasonlóvá, és minden tengeri élőlény elpusztult. "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 16,
+                        "numv": "3",
+                        "text": "A második a tengerbe öntötte csészéjét. Erre az a halottak véréhez vált hasonlóvá, és minden tengeri élőlény elpusztult. "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 323
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "12",
+                            "text": "Tenger vagyok-e vagy tengeri szörny, hogy őrséget állítasz ellenem?"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 7,
+                        "numv": "12",
+                        "text": "Tenger vagyok-e vagy tengeri szörny, hogy őrséget állítasz ellenem?"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "A zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 324
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "74": [
+                        {
+                            "chapter": 74,
+                            "numv": "13",
+                            "text": "Te szorítottad vissza erőddel a tengert, te törted össze a tengeri szörnyek fejét."
+                        }
+                    ],
+                    "91": [
+                        {
+                            "chapter": 91,
+                            "numv": "13",
+                            "text": "Eltaposod az oroszlánt és a viperát, eltiprod a fiatal oroszlánt és a tengeri szörnyet."
+                        }
+                    ],
+                    "148": [
+                        {
+                            "chapter": 148,
+                            "numv": "7",
+                            "text": "Dicsérjétek az URat, ti, földiek, ti, tengeri szörnyek, az egész óceán!"
+                        }
+                    ],
+                    "72": [
+                        {
+                            "chapter": 72,
+                            "numv": "8",
+                            "text": "Uralkodjék tengertől tengerig, és a Folyamtól a föld széléig."
+                        }
+                    ],
+                    "80": [
+                        {
+                            "chapter": 80,
+                            "numv": "12",
+                            "text": "Indáit a tengerig növesztette, hajtásait a Folyamig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 74,
+                        "numv": "13",
+                        "text": "Te szorítottad vissza erőddel a tengert, te törted össze a tengeri szörnyek fejét."
+                    },
+                    {
+                        "chapter": 91,
+                        "numv": "13",
+                        "text": "Eltaposod az oroszlánt és a viperát, eltiprod a fiatal oroszlánt és a tengeri szörnyet."
+                    },
+                    {
+                        "chapter": 148,
+                        "numv": "7",
+                        "text": "Dicsérjétek az URat, ti, földiek, ti, tengeri szörnyek, az egész óceán!"
+                    },
+                    {
+                        "chapter": 72,
+                        "numv": "8",
+                        "text": "Uralkodjék tengertől tengerig, és a Folyamtól a föld széléig."
+                    },
+                    {
+                        "chapter": 80,
+                        "numv": "12",
+                        "text": "Indáit a tengerig növesztette, hajtásait a Folyamig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ézsaiás próféta könyve",
+                    "abbrev": "Ézs",
+                    "link": "Ezs",
+                    "old_testament": 1,
+                    "id": 328
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Szégyenkezz, Szidón, mert így szól a tenger, a tengeri erődítmény: Olyan lettem, mint aki nem vajúdott, nem szült, nem nevelt ifjakat, nem dédelgetett leányokat!"
+                        }
+                    ],
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "9",
+                            "text": "Ébredj, ébredj, szedd össze erődet, ó, ÚRnak karja! Ébredj, mint hajdanában, az ősrégi nemzedékek idején! Hiszen te vágtad ketté Rahabot, te döfted le a tengeri szörnyet!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Szégyenkezz, Szidón, mert így szól a tenger, a tengeri erődítmény: Olyan lettem, mint aki nem vajúdott, nem szült, nem nevelt ifjakat, nem dédelgetett leányokat!"
+                    },
+                    {
+                        "chapter": 51,
+                        "numv": "9",
+                        "text": "Ébredj, ébredj, szedd össze erődet, ó, ÚRnak karja! Ébredj, mint hajdanában, az ősrégi nemzedékek idején! Hiszen te vágtad ketté Rahabot, te döfted le a tengeri szörnyet!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 329
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "25": [
+                        {
+                            "chapter": 25,
+                            "numv": "22",
+                            "text": "Tírusz minden királyának, Szidón minden királyának és a tengeri szigetek királyainak:"
+                        }
+                    ],
+                    "49": [
+                        {
+                            "chapter": 49,
+                            "numv": "21",
+                            "text": "Bukásuk hangjától megrendül a föld, hangos jajgatásuk elhallatszik a Vörös-tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 25,
+                        "numv": "22",
+                        "text": "Tírusz minden királyának, Szidón minden királyának és a tengeri szigetek királyainak:"
+                    },
+                    {
+                        "chapter": 49,
+                        "numv": "21",
+                        "text": "Bukásuk hangjától megrendül a föld, hangos jajgatásuk elhallatszik a Vörös-tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ezékiel próféta könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 331
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "26": [
+                        {
+                            "chapter": 26,
+                            "numv": "16",
+                            "text": "Leszáll majd trónjáról a tengeri országok összes fejedelme, leteszik palástjukat, és levetik tarka ruháikat. Rémületbe öltöznek, a földre ülnek, nem múlik remegésük, úgy szörnyülködnek rajtad."
+                        }
+                    ],
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "29",
+                            "text": "Kiszáll a hajókból minden evezős, a tengeri hajósok és a matrózok mind a szárazföldre lépnek."
+                        }
+                    ],
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "2",
+                            "text": "Emberfia! Kezdj siratóénekbe a fáraóról, Egyiptom királyáról! Ezt mondd róla: Olyan voltál a népek között, akár egy oroszlán! Mint egy tengeri szörnyeteg, hullámokat vertél folyóidban, fölzavartad lábaiddal a vizet, fölkavartad folyamait."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 26,
+                        "numv": "16",
+                        "text": "Leszáll majd trónjáról a tengeri országok összes fejedelme, leteszik palástjukat, és levetik tarka ruháikat. Rémületbe öltöznek, a földre ülnek, nem múlik remegésük, úgy szörnyülködnek rajtad."
+                    },
+                    {
+                        "chapter": 27,
+                        "numv": "29",
+                        "text": "Kiszáll a hajókból minden evezős, a tengeri hajósok és a matrózok mind a szárazföldre lépnek."
+                    },
+                    {
+                        "chapter": 32,
+                        "numv": "2",
+                        "text": "Emberfia! Kezdj siratóénekbe a fáraóról, Egyiptom királyáról! Ezt mondd róla: Olyan voltál a népek között, akár egy oroszlán! Mint egy tengeri szörnyeteg, hullámokat vertél folyóidban, fölzavartad lábaiddal a vizet, fölkavartad folyamait."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 364
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "7",
+                            "text": "Mindenfajta vadállat és madár, csúszómászó és tengeri állat megszelídíthető: meg is szelídíti az ember;"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "7",
+                        "text": "Mindenfajta vadállat és madár, csúszómászó és tengeri állat megszelídíthető: meg is szelídíti az ember;"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 101,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Teremtés könyve",
+                    "abbrev": "Ter",
+                    "link": "Ter",
+                    "old_testament": 1,
+                    "id": 1
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "21",
+                            "text": "Isten megteremtette fajtájuk szerint a nagy tengeri állatokat és mind az élőlényeket, amelyek mozognak vagy a vízben úszkálnak. És a röpködő madarakat is, ugyancsak fajtájuk szerint. Isten látta, hogy ez jó."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "21",
+                        "text": "Isten megteremtette fajtájuk szerint a nagy tengeri állatokat és mind az élőlényeket, amelyek mozognak vagy a vízben úszkálnak. És a röpködő madarakat is, ugyancsak fajtájuk szerint. Isten látta, hogy ez jó."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 74
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "12",
+                            "text": "Tenger vagyok-e vagy tengeri szörny, hogy őrséget állítasz ellenem?"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 7,
+                        "numv": "12",
+                        "text": "Tenger vagyok-e vagy tengeri szörny, hogy őrséget állítasz ellenem?"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 73
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "12",
+                            "text": "Tenger vagyok tán? Avagy tengeri szörny? Merthogy őrzésemre őrszemeket rendelsz."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 7,
+                        "numv": "12",
+                        "text": "Tenger vagyok tán? Avagy tengeri szörny? Merthogy őrzésemre őrszemeket rendelsz."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "A zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 78
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "74": [
+                        {
+                            "chapter": 74,
+                            "numv": "13",
+                            "text": "Te szorítottad vissza erőddel a tengert, te törted össze a tengeri szörnyek fejét."
+                        }
+                    ],
+                    "91": [
+                        {
+                            "chapter": 91,
+                            "numv": "13",
+                            "text": "Eltaposod az oroszlánt és a viperát, eltiprod az oroszlánkölyköt és a tengeri szörnyet."
+                        }
+                    ],
+                    "148": [
+                        {
+                            "chapter": 148,
+                            "numv": "7",
+                            "text": "Dicsérjétek az URat, ti földiek, ti tengeri szörnyek, az egész óceán!"
+                        }
+                    ],
+                    "72": [
+                        {
+                            "chapter": 72,
+                            "numv": "8",
+                            "text": "Uralkodjék tengertől tengerig, és a folyamtól a föld széléig."
+                        }
+                    ],
+                    "80": [
+                        {
+                            "chapter": 80,
+                            "numv": "12",
+                            "text": "Indáit a tengerig növesztette, hajtásait a Folyamig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 74,
+                        "numv": "13",
+                        "text": "Te szorítottad vissza erőddel a tengert, te törted össze a tengeri szörnyek fejét."
+                    },
+                    {
+                        "chapter": 91,
+                        "numv": "13",
+                        "text": "Eltaposod az oroszlánt és a viperát, eltiprod az oroszlánkölyköt és a tengeri szörnyet."
+                    },
+                    {
+                        "chapter": 148,
+                        "numv": "7",
+                        "text": "Dicsérjétek az URat, ti földiek, ti tengeri szörnyek, az egész óceán!"
+                    },
+                    {
+                        "chapter": 72,
+                        "numv": "8",
+                        "text": "Uralkodjék tengertől tengerig, és a folyamtól a föld széléig."
+                    },
+                    {
+                        "chapter": 80,
+                        "numv": "12",
+                        "text": "Indáit a tengerig növesztette, hajtásait a Folyamig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 77
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "148": [
+                        {
+                            "chapter": 148,
+                            "numv": "7",
+                            "text": "Dicsérjétek az Urat a földről, tengeri szörnyek és tenger mélységei!"
+                        }
+                    ],
+                    "72": [
+                        {
+                            "chapter": 72,
+                            "numv": "8",
+                            "text": "Uralkodni fog tengertől tengerig, a nagy folyótól a föld határáig."
+                        }
+                    ],
+                    "80": [
+                        {
+                            "chapter": 80,
+                            "numv": "12",
+                            "text": "Vesszőit a tengerig növelte, hajtásait a nagy folyamig."
+                        }
+                    ],
+                    "89": [
+                        {
+                            "chapter": 89,
+                            "numv": "26",
+                            "text": "Kezét kinyújtom a tengerig, jobbját kiterjesztem a folyamokig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 148,
+                        "numv": "7",
+                        "text": "Dicsérjétek az Urat a földről, tengeri szörnyek és tenger mélységei!"
+                    },
+                    {
+                        "chapter": 72,
+                        "numv": "8",
+                        "text": "Uralkodni fog tengertől tengerig, a nagy folyótól a föld határáig."
+                    },
+                    {
+                        "chapter": 80,
+                        "numv": "12",
+                        "text": "Vesszőit a tengerig növelte, hajtásait a nagy folyamig."
+                    },
+                    {
+                        "chapter": 89,
+                        "numv": "26",
+                        "text": "Kezét kinyújtom a tengerig, jobbját kiterjesztem a folyamokig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 125,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Bölcsesség könyve",
+                    "abbrev": "Bölcs",
+                    "link": "Bolcs",
+                    "old_testament": 1,
+                    "id": 93
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "1",
+                            "text": "Egy másik meg, aki tengeri útra indul és szilaj hullámokat készül átszelni, fadarabhoz esedezik, amely törékenyebb, mint a hajó, amely viszi."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "1",
+                        "text": "Egy másik meg, aki tengeri útra indul és szilaj hullámokat készül átszelni, fadarabhoz esedezik, amely törékenyebb, mint a hajó, amely viszi."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Izajás könyve",
+                    "abbrev": "Iz",
+                    "link": "Iz",
+                    "old_testament": 1,
+                    "id": 97
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "21": [
+                        {
+                            "chapter": 21,
+                            "numv": "1",
+                            "text": "Fenyegető jövendölés a „tengeri pusztaság” ellen: Mint a Negeben végigsöprő forgószél jön a sivatag felől, a félelmetes föld felől;"
+                        }
+                    ],
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "1",
+                            "text": "Azon a napon az Úr meglátogatja kemény, nagy és erős kardjával a leviatánt, a gyors kígyót, a leviatánt, a tekergő kígyót, és megöli a tengeri sárkányt."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 21,
+                        "numv": "1",
+                        "text": "Fenyegető jövendölés a „tengeri pusztaság” ellen: Mint a Negeben végigsöprő forgószél jön a sivatag felől, a félelmetes föld felől;"
+                    },
+                    {
+                        "chapter": 27,
+                        "numv": "1",
+                        "text": "Azon a napon az Úr meglátogatja kemény, nagy és erős kardjával a leviatánt, a gyors kígyót, a leviatánt, a tekergő kígyót, és megöli a tengeri sárkányt."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ézsaiás próféta könyve",
+                    "abbrev": "Ézs",
+                    "link": "Ezs",
+                    "old_testament": 1,
+                    "id": 98
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Szégyenkezz, Szidón, mert így szól a tenger, a tengeri erődítmény: Olyan lettem, mint aki nem vajúdott, nem szült, nem nevelt ifjakat, nem dédelgetett leányokat!"
+                        }
+                    ],
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "9",
+                            "text": "Ébredj, ébredj, szedd össze erődet, ó, ÚRnak karja! Ébredj, mint hajdanában, az ősrégi nemzedékek idején! Hiszen te vágtad ketté Rahabot, te döfted le a tengeri szörnyet!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Szégyenkezz, Szidón, mert így szól a tenger, a tengeri erődítmény: Olyan lettem, mint aki nem vajúdott, nem szült, nem nevelt ifjakat, nem dédelgetett leányokat!"
+                    },
+                    {
+                        "chapter": 51,
+                        "numv": "9",
+                        "text": "Ébredj, ébredj, szedd össze erődet, ó, ÚRnak karja! Ébredj, mint hajdanában, az ősrégi nemzedékek idején! Hiszen te vágtad ketté Rahabot, te döfted le a tengeri szörnyet!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 104
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "6",
+                            "text": "A vadszamarak pedig a sziklához állanak, levegő után kapkodnak, mint a tengeri szörnyek, szemeik eltikkadnak, mert nincs fű."
+                        }
+                    ],
+                    "49": [
+                        {
+                            "chapter": 49,
+                            "numv": "21",
+                            "text": "Az ő romlásuk zajától megrendült a föld, az ő kiáltásuk szava elhallatszik a veres tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "6",
+                        "text": "A vadszamarak pedig a sziklához állanak, levegő után kapkodnak, mint a tengeri szörnyek, szemeik eltikkadnak, mert nincs fű."
+                    },
+                    {
+                        "chapter": 49,
+                        "numv": "21",
+                        "text": "Az ő romlásuk zajától megrendült a föld, az ő kiáltásuk szava elhallatszik a veres tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 102
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "25": [
+                        {
+                            "chapter": 25,
+                            "numv": "22",
+                            "text": "Tírusz minden királyának, Szidón minden királyának és a tengeri szigetek királyainak:"
+                        }
+                    ],
+                    "49": [
+                        {
+                            "chapter": 49,
+                            "numv": "21",
+                            "text": "Bukásuk hangjától megrendül a föld, hangos jajkiáltásuk elhallatszik a Vörös-tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 25,
+                        "numv": "22",
+                        "text": "Tírusz minden királyának, Szidón minden királyának és a tengeri szigetek királyainak:"
+                    },
+                    {
+                        "chapter": 49,
+                        "numv": "21",
+                        "text": "Bukásuk hangjától megrendül a föld, hangos jajkiáltásuk elhallatszik a Vörös-tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ezékiel próféta könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 112
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "26": [
+                        {
+                            "chapter": 26,
+                            "numv": "16",
+                            "text": "Leszállnak majd trónjukról a tengeri országok fejedelmei mind, leteszik palástjukat, és levetik tarka ruháikat. Rémületbe öltöznek, a földre ülnek, szakadatlanul rémüldöznek és szörnyülködnek rajtad."
+                        }
+                    ],
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "29",
+                            "text": "A hajókból kiszáll minden evezős, a tengeri hajósok és matrózok mind a szárazföldre lépnek."
+                        }
+                    ],
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "2",
+                            "text": "Emberfia! Kezdj siratóéneket a fáraóról, Egyiptom királyáról! Ezt mondd róla: Oroszlán voltál a népek közt, de véged lett! Mint egy tengeri szörnyeteg, hullámokat vertél folyóidban, fölzavartad lábaiddal a vizet, és fölkavartad a folyókat."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 26,
+                        "numv": "16",
+                        "text": "Leszállnak majd trónjukról a tengeri országok fejedelmei mind, leteszik palástjukat, és levetik tarka ruháikat. Rémületbe öltöznek, a földre ülnek, szakadatlanul rémüldöznek és szörnyülködnek rajtad."
+                    },
+                    {
+                        "chapter": 27,
+                        "numv": "29",
+                        "text": "A hajókból kiszáll minden evezős, a tengeri hajósok és matrózok mind a szárazföldre lépnek."
+                    },
+                    {
+                        "chapter": 32,
+                        "numv": "2",
+                        "text": "Emberfia! Kezdj siratóéneket a fáraóról, Egyiptom királyáról! Ezt mondd róla: Oroszlán voltál a népek közt, de véged lett! Mint egy tengeri szörnyeteg, hullámokat vertél folyóidban, fölzavartad lábaiddal a vizet, és fölkavartad a folyókat."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 140,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Habakuk könyve",
+                    "abbrev": "Hab",
+                    "link": "Hab",
+                    "old_testament": 1,
+                    "id": 147
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "14",
+                            "text": "Úgy bánsz az emberrel, mint a tengeri halakkal, mint a gazdátlan csúszómászókkal."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "14",
+                        "text": "Úgy bánsz az emberrel, mint a tengeri halakkal, mint a gazdátlan csúszómászókkal."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 205,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "Az Apostolok Cselekedetei",
+                    "abbrev": "ApCsel",
+                    "link": "ApCsel",
+                    "old_testament": 0,
+                    "id": 283
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "13",
+                            "text": "<small>Tengeri vihar.</small> "
+                        }
+                    ],
+                    "17": [
+                        {
+                            "chapter": 17,
+                            "numv": "14",
+                            "text": "A testvérek azonban Pált azonnal útra bocsátották és egészen a tengerig kísérték, Szilás és Timóteus viszont ottmaradt."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 27,
+                        "numv": "13",
+                        "text": "<small>Tengeri vihar.</small> "
+                    },
+                    {
+                        "chapter": 17,
+                        "numv": "14",
+                        "text": "A testvérek azonban Pált azonnal útra bocsátották és egészen a tengerig kísérték, Szilás és Timóteus viszont ottmaradt."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "Jakab apostol levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 298
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "7",
+                            "text": "Valamennyi vadállat, madár, csúszómászó és tengeri állat természete megszelídíthető, s az ember meg is szelídíti őket,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "7",
+                        "text": "Valamennyi vadállat, madár, csúszómászó és tengeri állat természete megszelídíthető, s az ember meg is szelídíti őket,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 248
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "7",
+                            "text": "Mindenfajta vadállat és madár, csúszómászó és tengeri állat megszelídíthető: meg is szelídíti az ember;"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "7",
+                        "text": "Mindenfajta vadállat és madár, csúszómászó és tengeri állat megszelídíthető: meg is szelídíti az ember;"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 247
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "7",
+                            "text": "Mert az összes vadak, madarak, csúszómászók és tengeri állatok természetét meg lehet szelídíteni, s meg is szelídíti az emberi természet,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "7",
+                        "text": "Mert az összes vadak, madarak, csúszómászók és tengeri állatok természetét meg lehet szelídíteni, s meg is szelídíti az emberi természet,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 226,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Júdás levele",
+                    "abbrev": "Júd",
+                    "link": "Judas",
+                    "old_testament": 0,
+                    "id": 271
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "13",
+                            "text": "saját gyalázatukat tajtékzó, vad tengeri hullámok; bolygó csillagok, amelyekre az örök sötétség homálya vár."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "13",
+                        "text": "saját gyalázatukat tajtékzó, vad tengeri hullámok; bolygó csillagok, amelyekre az örök sötétség homálya vár."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 226,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "Júdás apostol levele",
+                    "abbrev": "Júd",
+                    "link": "Jud",
+                    "old_testament": 0,
+                    "id": 304
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "13",
+                            "text": "saját gyalázatukat tajtékzó, vad tengeri hullámok; bolygó csillagok, akikre a sötét alvilág vár mindörökre."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "13",
+                        "text": "saját gyalázatukat tajtékzó, vad tengeri hullámok; bolygó csillagok, akikre a sötét alvilág vár mindörökre."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 227,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "János apostol Jelenéseinek Könyve",
+                    "abbrev": "Jel",
+                    "link": "Jel",
+                    "old_testament": 0,
+                    "id": 305
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "13": [
+                        {
+                            "chapter": 13,
+                            "numv": "1",
+                            "text": "<small>A tengeri vadállat.</small> "
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "3",
+                            "text": "A második (angyal) csészéjét a tengerbe öntötte. Az olyan lett, mint a holtnak vére, és minden tengeri élőlény elpusztult."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 13,
+                        "numv": "1",
+                        "text": "<small>A tengeri vadállat.</small> "
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "3",
+                        "text": "A második (angyal) csészéjét a tengerbe öntötte. Az olyan lett, mint a holtnak vére, és minden tengeri élőlény elpusztult."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 227,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jelenések könyve",
+                    "abbrev": "Jel",
+                    "link": "Jel",
+                    "old_testament": 0,
+                    "id": 275
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "13": [
+                        {
+                            "chapter": 13,
+                            "numv": "1",
+                            "text": "<small>A tengeri vadállat.</small> "
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "3",
+                            "text": "A második a tengerbe öntötte csészéjét. Erre az a halottak véréhez vált hasonlóvá, és minden tengeri élőlény elpusztult."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 13,
+                        "numv": "1",
+                        "text": "<small>A tengeri vadállat.</small> "
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "3",
+                        "text": "A második a tengerbe öntötte csészéjét. Erre az a halottak véréhez vált hasonlóvá, és minden tengeri élőlény elpusztult."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 105,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Mózes ötödik könyve",
+                    "abbrev": "5Móz",
+                    "link": "5Moz",
+                    "old_testament": 1,
+                    "id": 310
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "17",
+                            "text": "meg az Arábá-völgyet a Jordánig, ami a határ, és a Kinneret-tótól az Arábá-tengerig, azaz a Sós-tengerig, a Piszgá lejtőinek tövében, ezektől kelet felé. "
+                        }
+                    ],
+                    "4": [
+                        {
+                            "chapter": 4,
+                            "numv": "49",
+                            "text": "meg az egész Arábá-völgyet a Jordánon túl, annak a keleti oldalán az Arábá-tengerig, a Piszgá lejtőinek tövében."
+                        }
+                    ],
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "24",
+                            "text": "Tietek lesz minden hely, amelyre lábatokkal léptek. A pusztától a Libánonig, és a folyamtól, az Eufrátesz folyamtól a nyugati tengerig terjed határotok."
+                        }
+                    ],
+                    "34": [
+                        {
+                            "chapter": 34,
+                            "numv": "2",
+                            "text": "egész Naftálit, Efraim és Manassé földjét, meg Júda egész földjét a nyugati tengerig,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "17",
+                        "text": "meg az Arábá-völgyet a Jordánig, ami a határ, és a Kinneret-tótól az Arábá-tengerig, azaz a Sós-tengerig, a Piszgá lejtőinek tövében, ezektől kelet felé. "
+                    },
+                    {
+                        "chapter": 4,
+                        "numv": "49",
+                        "text": "meg az egész Arábá-völgyet a Jordánon túl, annak a keleti oldalán az Arábá-tengerig, a Piszgá lejtőinek tövében."
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "24",
+                        "text": "Tietek lesz minden hely, amelyre lábatokkal léptek. A pusztától a Libánonig, és a folyamtól, az Eufrátesz folyamtól a nyugati tengerig terjed határotok."
+                    },
+                    {
+                        "chapter": 34,
+                        "numv": "2",
+                        "text": "egész Naftálit, Efraim és Manassé földjét, meg Júda egész földjét a nyugati tengerig,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 106,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Józsué könyve",
+                    "abbrev": "Józs",
+                    "link": "Jozs",
+                    "old_testament": 1,
+                    "id": 311
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "6",
+                            "text": "Kihoztam atyáitokat Egyiptomból, és eljutottatok a tengerig. Az egyiptomiak azonban harci kocsikkal és lovasokkal üldözték atyáitokat a Vörös-tengerig."
+                        }
+                    ],
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "4",
+                            "text": "A pusztától és a Libánontól a nagy folyamig, az Eufrátesz folyamig, nyugat felé pedig a Nagy-tengerig a ti területetek lesz a hettiták egész országa."
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "46",
+                            "text": "Ekróntól a tengerig az egész terület Asdód mellett, az ott levő falvakkal együtt. "
+                        }
+                    ],
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Látjátok, kisorsoltam törzseitek között az itt maradt népek birtokát meg azokét a népekét is, amelyeket kiirtottam a Jordántól a Nagy-tengerig napnyugaton."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 24,
+                        "numv": "6",
+                        "text": "Kihoztam atyáitokat Egyiptomból, és eljutottatok a tengerig. Az egyiptomiak azonban harci kocsikkal és lovasokkal üldözték atyáitokat a Vörös-tengerig."
+                    },
+                    {
+                        "chapter": 1,
+                        "numv": "4",
+                        "text": "A pusztától és a Libánontól a nagy folyamig, az Eufrátesz folyamig, nyugat felé pedig a Nagy-tengerig a ti területetek lesz a hettiták egész országa."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "46",
+                        "text": "Ekróntól a tengerig az egész terület Asdód mellett, az ott levő falvakkal együtt. "
+                    },
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Látjátok, kisorsoltam törzseitek között az itt maradt népek birtokát meg azokét a népekét is, amelyeket kiirtottam a Jordántól a Nagy-tengerig napnyugaton."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 107,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "A bírák könyve",
+                    "abbrev": "Bír",
+                    "link": "Bir",
+                    "old_testament": 1,
+                    "id": 312
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "16",
+                            "text": "Hiszen amikor Izráel kijött Egyiptomból, a pusztában vándorolt a Vörös-tengerig, és elérkezett Kádésba."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "16",
+                        "text": "Hiszen amikor Izráel kijött Egyiptomból, a pusztában vándorolt a Vörös-tengerig, és elérkezett Kádésba."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 112,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "A királyok második könyve",
+                    "abbrev": "2Kir",
+                    "link": "2Kir",
+                    "old_testament": 1,
+                    "id": 317
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "25",
+                            "text": "Ő állította vissza Izráel határát a Hamátba vezető úttól az Arábá-tengerig, az ÚRnak, Izráel Istenének igéje szerint, amelyet kijelentett szolgája, a Gat-Héferből való Jónás próféta, Amittaj fia által."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "25",
+                        "text": "Ő állította vissza Izráel határát a Hamátba vezető úttól az Arábá-tengerig, az ÚRnak, Izráel Istenének igéje szerint, amelyet kijelentett szolgája, a Gat-Héferből való Jónás próféta, Amittaj fia által."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 114,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Krónikák második könyve",
+                    "abbrev": "2Krón",
+                    "link": "2Kron",
+                    "old_testament": 1,
+                    "id": 55
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "18",
+                            "text": "Hírám ekkor szolgái által hajókat s tengerismerő hajósokat küldött neki és azok elmentek Salamon szolgáival Ofírba s onnan négyszázötven talentum aranyat hoztak és azt elvitték Salamon királynak. "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "18",
+                        "text": "Hírám ekkor szolgái által hajókat s tengerismerő hajósokat küldött neki és azok elmentek Salamon szolgáival Ofírba s onnan négyszázötven talentum aranyat hoztak és azt elvitték Salamon királynak. "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ámósz próféta könyve",
+                    "abbrev": "Ám",
+                    "link": "Am",
+                    "old_testament": 1,
+                    "id": 335
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "12",
+                            "text": "Támolyognak majd tengertől tengerig és északtól keletig. Bolyonganak, és keresik az ÚR igéjét, de nem találják."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "12",
+                        "text": "Támolyognak majd tengertől tengerig és északtól keletig. Bolyonganak, és keresik az ÚR igéjét, de nem találják."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 143,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Zakariás próféta könyve",
+                    "abbrev": "Zak",
+                    "link": "Zak",
+                    "old_testament": 1,
+                    "id": 343
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "10",
+                            "text": "Mert kiirtom a harci kocsit Efraimból és a lovat Jeruzsálemből – mondja az Úr. Kivész majd a harci íj, mert békét hirdet a népeknek; uralma tengertől tengerig ér, az Eufrátesztől a föld határáig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 9,
+                        "numv": "10",
+                        "text": "Mert kiirtom a harci kocsit Efraimból és a lovat Jeruzsálemből – mondja az Úr. Kivész majd a harci íj, mert békét hirdet a népeknek; uralma tengertől tengerig ér, az Eufrátesztől a föld határáig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 106,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Józsue könyve",
+                    "abbrev": "Józs",
+                    "link": "Jozs",
+                    "old_testament": 1,
+                    "id": 23
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "12": [
+                        {
+                            "chapter": 12,
+                            "numv": "3",
+                            "text": "és a pusztaságon, a Kinneret tengerig, kelet felé és a pusztaság tengeréig, azaz a Sós-tengerig, kelet felé, a Bét-Jesimótba vivő út irányában, és azon a déli részen, amely Piszga lejtői alatt fekszik. "
+                        }
+                    ],
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "4",
+                            "text": "A pusztától és a Libanontól egészen a nagy folyóig, az Eufráteszig – a hetiták egész földjéig –, és a napnyugati Nagy tengerig fog terjedni határotok."
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "46",
+                            "text": "Akkarontól a tengerig mindazok a városkák, amelyek Asdód és falvai felé húzódnak."
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "6",
+                            "text": "aztán kimegy a határ a tengerig. Makmetát fekszik északon, aztán a határ kelet felé fordul Taanat-Silóig, majd kelet felől átmegy Jánoéba,"
+                        }
+                    ],
+                    "17": [
+                        {
+                            "chapter": 17,
+                            "numv": "9",
+                            "text": "Aztán lemegy a határ a Nád-völgyre, a patakvölgy déli oldalára – itt vannak Efraimnak azok a városai, amelyek Manassze városai között vannak, míg Manassze területe a patakvölgy északi oldalán van –, és vége a tengerig megy,"
+                        }
+                    ],
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Nos, mivel kisorsoltatta közöttetek ezt az egész földet, a Jordán keleti részétől kezdve egészen a Nagy-tengerig, de még sok nemzet fennmaradt,"
+                        }
+                    ],
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "6",
+                            "text": "Majd kihoztalak titeket s atyáitokat Egyiptomból és eljutottatok a tengerhez, s az egyiptomiak harciszekerekkel és lovassággal egészen a Vörös-tengerig űzték atyáitokat."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 12,
+                        "numv": "3",
+                        "text": "és a pusztaságon, a Kinneret tengerig, kelet felé és a pusztaság tengeréig, azaz a Sós-tengerig, kelet felé, a Bét-Jesimótba vivő út irányában, és azon a déli részen, amely Piszga lejtői alatt fekszik. "
+                    },
+                    {
+                        "chapter": 1,
+                        "numv": "4",
+                        "text": "A pusztától és a Libanontól egészen a nagy folyóig, az Eufráteszig – a hetiták egész földjéig –, és a napnyugati Nagy tengerig fog terjedni határotok."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "46",
+                        "text": "Akkarontól a tengerig mindazok a városkák, amelyek Asdód és falvai felé húzódnak."
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "6",
+                        "text": "aztán kimegy a határ a tengerig. Makmetát fekszik északon, aztán a határ kelet felé fordul Taanat-Silóig, majd kelet felől átmegy Jánoéba,"
+                    },
+                    {
+                        "chapter": 17,
+                        "numv": "9",
+                        "text": "Aztán lemegy a határ a Nád-völgyre, a patakvölgy déli oldalára – itt vannak Efraimnak azok a városai, amelyek Manassze városai között vannak, míg Manassze területe a patakvölgy északi oldalán van –, és vége a tengerig megy,"
+                    },
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Nos, mivel kisorsoltatta közöttetek ezt az egész földet, a Jordán keleti részétől kezdve egészen a Nagy-tengerig, de még sok nemzet fennmaradt,"
+                    },
+                    {
+                        "chapter": 24,
+                        "numv": "6",
+                        "text": "Majd kihoztalak titeket s atyáitokat Egyiptomból és eljutottatok a tengerhez, s az egyiptomiak harciszekerekkel és lovassággal egészen a Vörös-tengerig űzték atyáitokat."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 106,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Józsué könyve",
+                    "abbrev": "Józs",
+                    "link": "Jozs",
+                    "old_testament": 1,
+                    "id": 24
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "12": [
+                        {
+                            "chapter": 12,
+                            "numv": "3",
+                            "text": "És a mezőségtől a Kinneróth tengerig napkelet felé, és a puszta tengeréig, a Sóstengerig napkelet felé, a Béth-Jesimothi útig, és délfelé a Piszga hegyoldalainak aljáig."
+                        }
+                    ],
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "4",
+                            "text": "A pusztától és a Libánontól fogva a nagy folyóvízig, az Eufrates folyóvízig, a Khitteusoknak egész földe és a nagy tengerig napnyugat felé lesz a ti határotok."
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "46",
+                            "text": "Ekrontól fogva egész a tengerig mind azok, a melyek Asdód mellett vannak, és azoknak falui."
+                        }
+                    ],
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "6",
+                            "text": "És kihoztam a ti atyáitokat Égyiptomból, és jutátok a tengerhez, és űzék az égyiptomiak a ti atyáitokat szekerekkel és lovasokkal a Veres tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 12,
+                        "numv": "3",
+                        "text": "És a mezőségtől a Kinneróth tengerig napkelet felé, és a puszta tengeréig, a Sóstengerig napkelet felé, a Béth-Jesimothi útig, és délfelé a Piszga hegyoldalainak aljáig."
+                    },
+                    {
+                        "chapter": 1,
+                        "numv": "4",
+                        "text": "A pusztától és a Libánontól fogva a nagy folyóvízig, az Eufrates folyóvízig, a Khitteusoknak egész földe és a nagy tengerig napnyugat felé lesz a ti határotok."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "46",
+                        "text": "Ekrontól fogva egész a tengerig mind azok, a melyek Asdód mellett vannak, és azoknak falui."
+                    },
+                    {
+                        "chapter": 24,
+                        "numv": "6",
+                        "text": "És kihoztam a ti atyáitokat Égyiptomból, és jutátok a tengerhez, és űzék az égyiptomiak a ti atyáitokat szekerekkel és lovasokkal a Veres tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 106,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Józsué könyve",
+                    "abbrev": "Józs",
+                    "link": "Jozs",
+                    "old_testament": 1,
+                    "id": 22
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "6",
+                            "text": "Kihoztam atyáitokat Egyiptomból, és eljutottatok a tengerig. De üldözték atyáitokat az egyiptomiak harci kocsikkal és lovasokkal a Vörös-tengerig."
+                        }
+                    ],
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "4",
+                            "text": "A pusztától és a Libánontól a nagy folyamig, az Eufrátesz folyamig, nyugat felé pedig a nagy tengerig a ti területetek lesz a hettiták egész országa."
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "46",
+                            "text": "Ekróntól a tengerig az egész terület Asdód mellett, az ott levő falvakkal együtt."
+                        }
+                    ],
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Látjátok, kisorsoltam törzseitek között az itt maradt népek birtokát, meg azokét a népekét is, amelyeket kiirtottam a Jordántól a nagy tengerig napnyugaton."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 24,
+                        "numv": "6",
+                        "text": "Kihoztam atyáitokat Egyiptomból, és eljutottatok a tengerig. De üldözték atyáitokat az egyiptomiak harci kocsikkal és lovasokkal a Vörös-tengerig."
+                    },
+                    {
+                        "chapter": 1,
+                        "numv": "4",
+                        "text": "A pusztától és a Libánontól a nagy folyamig, az Eufrátesz folyamig, nyugat felé pedig a nagy tengerig a ti területetek lesz a hettiták egész országa."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "46",
+                        "text": "Ekróntól a tengerig az egész terület Asdód mellett, az ott levő falvakkal együtt."
+                    },
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Látjátok, kisorsoltam törzseitek között az itt maradt népek birtokát, meg azokét a népekét is, amelyeket kiirtottam a Jordántól a nagy tengerig napnyugaton."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 102,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Kivonulás könyve",
+                    "abbrev": "Kiv",
+                    "link": "Kiv",
+                    "old_testament": 1,
+                    "id": 5
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "1",
+                            "text": "<small>Etamtól a Sás-tengerig.</small> "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "1",
+                        "text": "<small>Etamtól a Sás-tengerig.</small> "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 105,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Második Törvénykönyv",
+                    "abbrev": "MTörv",
+                    "link": "MTorv",
+                    "old_testament": 1,
+                    "id": 17
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "17",
+                            "text": "továbbá Arabát adom, a határ a Jordán folyó lesz Kinnerettől az Araba tengeréig (a Sós-tengerig) a Piszga-hegység lábánál, keleten."
+                        }
+                    ],
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "24",
+                            "text": "Minden talpalatnyi föld, amelyre lábatok lép, a tiétek lesz: a pusztától Libanonig; a folyótól, az Eufrátesz folyótól a nyugati tengerig terjed majd országotok."
+                        }
+                    ],
+                    "34": [
+                        {
+                            "chapter": 34,
+                            "numv": "2",
+                            "text": "egész Naftalit, Efraim és Manassze földjét, Júda egész területét a nyugati tengerig,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "17",
+                        "text": "továbbá Arabát adom, a határ a Jordán folyó lesz Kinnerettől az Araba tengeréig (a Sós-tengerig) a Piszga-hegység lábánál, keleten."
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "24",
+                        "text": "Minden talpalatnyi föld, amelyre lábatok lép, a tiétek lesz: a pusztától Libanonig; a folyótól, az Eufrátesz folyótól a nyugati tengerig terjed majd országotok."
+                    },
+                    {
+                        "chapter": 34,
+                        "numv": "2",
+                        "text": "egész Naftalit, Efraim és Manassze földjét, Júda egész területét a nyugati tengerig,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 105,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Mózes ötödik könyve a törvény summája",
+                    "abbrev": "5Móz",
+                    "link": "5Moz",
+                    "old_testament": 1,
+                    "id": 20
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "17",
+                            "text": "És a síkságot és határul a Jordánt, a Kinnerettől a Síkság tengeréig, a Sóstengerig, a mely a Piszga-hegy lába alatt van napkelet felől."
+                        }
+                    ],
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "24",
+                            "text": "Minden hely, a melyet lábatok talpa megnyom, tiétek lesz, a pusztától a Libanonig, és a folyóvíztől, az Eufrátes folyóvizétől a nyugoti tengerig lesz a ti határotok."
+                        }
+                    ],
+                    "34": [
+                        {
+                            "chapter": 34,
+                            "numv": "2",
+                            "text": "És az egész Nafthalit, Efraim és Manassé földét, az egész Júda földét a túlsó tengerig;"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "17",
+                        "text": "És a síkságot és határul a Jordánt, a Kinnerettől a Síkság tengeréig, a Sóstengerig, a mely a Piszga-hegy lába alatt van napkelet felől."
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "24",
+                        "text": "Minden hely, a melyet lábatok talpa megnyom, tiétek lesz, a pusztától a Libanonig, és a folyóvíztől, az Eufrátes folyóvizétől a nyugoti tengerig lesz a ti határotok."
+                    },
+                    {
+                        "chapter": 34,
+                        "numv": "2",
+                        "text": "És az egész Nafthalit, Efraim és Manassé földét, az egész Júda földét a túlsó tengerig;"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 105,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Mózes ötödik könyve",
+                    "abbrev": "5Móz",
+                    "link": "5Moz",
+                    "old_testament": 1,
+                    "id": 18
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "17",
+                            "text": "meg a Jordánnal határos síkságot a Kinneret-tótól a síkság tengeréig, azaz a Sós-tengerig, a Piszgá-hegy lábánál keleten."
+                        }
+                    ],
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "24",
+                            "text": "Tietek lesz minden hely, amelyre lábatokkal léptek. A pusztától a Libánonig, és a folyamtól, az Eufrátesz folyamtól a nyugati tengerig terjed határotok."
+                        }
+                    ],
+                    "34": [
+                        {
+                            "chapter": 34,
+                            "numv": "2",
+                            "text": "az egész Naftálit, Efraim és Manassé földjét, meg Júda egész földjét a nyugati tengerig,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "17",
+                        "text": "meg a Jordánnal határos síkságot a Kinneret-tótól a síkság tengeréig, azaz a Sós-tengerig, a Piszgá-hegy lábánál keleten."
+                    },
+                    {
+                        "chapter": 11,
+                        "numv": "24",
+                        "text": "Tietek lesz minden hely, amelyre lábatokkal léptek. A pusztától a Libánonig, és a folyamtól, az Eufrátesz folyamtól a nyugati tengerig terjed határotok."
+                    },
+                    {
+                        "chapter": 34,
+                        "numv": "2",
+                        "text": "az egész Naftálit, Efraim és Manassé földjét, meg Júda egész földjét a nyugati tengerig,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 106,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Józsue könyve",
+                    "abbrev": "Józs",
+                    "link": "Jozs",
+                    "old_testament": 1,
+                    "id": 21
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "4",
+                            "text": "A pusztától és Libanontól a nagy folyóig, az Eufráteszig, s napnyugat felé a Nagy-tengerig terjed határotok."
+                        }
+                    ],
+                    "12": [
+                        {
+                            "chapter": 12,
+                            "numv": "3",
+                            "text": "keleten pedig az Arabán át egyfelelől Kinnerot tengeréig és Araba tengeréig vagy a Sós-tengerig, Bet-ha-Jesimot irányában, ahonnan az ember délen eléri a Piszga lejtőinek a lábát."
+                        }
+                    ],
+                    "13": [
+                        {
+                            "chapter": 13,
+                            "numv": "7",
+                            "text": "Itt az ideje, hogy ezt a földet feloszd a kilenc törzs, valamint Manassze fél törzse között: a Jordántól a Nagy-tengerig add nekik, nyugaton a Nagy-tenger legyen a határuk.”"
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "46",
+                            "text": "Ekrontól a tengerig minden, ami Asdod mellett található, a helységeivel együtt."
+                        },
+                        {
+                            "chapter": 15,
+                            "numv": "47",
+                            "text": "Asdod a városokkal és a hozzájuk tartozó helységekkel, Gáza a városokkal és a hozzájuk tartozó helységekkel egészen Egyiptom patakjáig és a határig, a Nagy-tengerig."
+                        }
+                    ],
+                    "23": [
+                        {
+                            "chapter": 23,
+                            "numv": "4",
+                            "text": "Nézzétek, törzseiteknek örökségül kisorsoltam azokat a népeket, amelyeknek a meghódítása még hátra van, s azokat is, amelyeket kiirtottam a Jordántól egészen a Nagy-tengerig, nyugaton."
+                        }
+                    ],
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "6",
+                            "text": "Kivezettem atyáitokat Egyiptomból, és a tengerhez értetek. Az egyiptomiak üldözték atyáitokat, szekerekkel és lovasokkal, egészen a Sás-tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "4",
+                        "text": "A pusztától és Libanontól a nagy folyóig, az Eufráteszig, s napnyugat felé a Nagy-tengerig terjed határotok."
+                    },
+                    {
+                        "chapter": 12,
+                        "numv": "3",
+                        "text": "keleten pedig az Arabán át egyfelelől Kinnerot tengeréig és Araba tengeréig vagy a Sós-tengerig, Bet-ha-Jesimot irányában, ahonnan az ember délen eléri a Piszga lejtőinek a lábát."
+                    },
+                    {
+                        "chapter": 13,
+                        "numv": "7",
+                        "text": "Itt az ideje, hogy ezt a földet feloszd a kilenc törzs, valamint Manassze fél törzse között: a Jordántól a Nagy-tengerig add nekik, nyugaton a Nagy-tenger legyen a határuk.”"
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "46",
+                        "text": "Ekrontól a tengerig minden, ami Asdod mellett található, a helységeivel együtt."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "47",
+                        "text": "Asdod a városokkal és a hozzájuk tartozó helységekkel, Gáza a városokkal és a hozzájuk tartozó helységekkel egészen Egyiptom patakjáig és a határig, a Nagy-tengerig."
+                    },
+                    {
+                        "chapter": 23,
+                        "numv": "4",
+                        "text": "Nézzétek, törzseiteknek örökségül kisorsoltam azokat a népeket, amelyeknek a meghódítása még hátra van, s azokat is, amelyeket kiirtottam a Jordántól egészen a Nagy-tengerig, nyugaton."
+                    },
+                    {
+                        "chapter": 24,
+                        "numv": "6",
+                        "text": "Kivezettem atyáitokat Egyiptomból, és a tengerhez értetek. Az egyiptomiak üldözték atyáitokat, szekerekkel és lovasokkal, egészen a Sás-tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 107,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Birák könyve",
+                    "abbrev": "Bir",
+                    "link": "Bir",
+                    "old_testament": 1,
+                    "id": 28
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "16",
+                            "text": "Mert mikor kijött Égyiptomból, a pusztában bolyongott Izráel egész a Veres tengerig, és mikor Kádesbe ért,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "16",
+                        "text": "Mert mikor kijött Égyiptomból, a pusztában bolyongott Izráel egész a Veres tengerig, és mikor Kádesbe ért,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 107,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Bírák könyve",
+                    "abbrev": "Bír",
+                    "link": "Bir",
+                    "old_testament": 1,
+                    "id": 25
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "16",
+                            "text": "Amikor ugyanis Izrael kivonult Egyiptomból, a pusztában vándorolt egészen a Sás-tengerig, majd Kádesbe ért."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "16",
+                        "text": "Amikor ugyanis Izrael kivonult Egyiptomból, a pusztában vándorolt egészen a Sás-tengerig, majd Kádesbe ért."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 107,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "A bírák könyve",
+                    "abbrev": "Bír",
+                    "link": "Bir",
+                    "old_testament": 1,
+                    "id": 26
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "16",
+                            "text": "Hiszen amikor Izráel kijött Egyiptomból, a pusztában vándorolt a Vörös-tengerig, és elérkezett Kádésba."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "16",
+                        "text": "Hiszen amikor Izráel kijött Egyiptomból, a pusztában vándorolt a Vörös-tengerig, és elérkezett Kádésba."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 107,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Bírák könyve",
+                    "abbrev": "Bír",
+                    "link": "Bir",
+                    "old_testament": 1,
+                    "id": 27
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "16",
+                            "text": "Amikor ugyanis feljött Egyiptomból, s átvonult a pusztán a Vörös-tengerig és Kádesbe jutott,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "16",
+                        "text": "Amikor ugyanis feljött Egyiptomból, s átvonult a pusztán a Vörös-tengerig és Kádesbe jutott,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 112,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "A királyokról írt II. könyv",
+                    "abbrev": "2Kir",
+                    "link": "2Kir",
+                    "old_testament": 1,
+                    "id": 48
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "14": [
+                        {
+                            "chapter": 14,
+                            "numv": "25",
+                            "text": "Ő szerezte vissza az Izráel határát Emáthtól fogva a pusztasági tengerig, az Úrnak, Izráel Istenének beszéde szerint, a melyet szólott volt az ő szolgája, Jónás próféta, az Amittai fia által, a ki Gáth-Kéferből való volt."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 14,
+                        "numv": "25",
+                        "text": "Ő szerezte vissza az Izráel határát Emáthtól fogva a pusztasági tengerig, az Úrnak, Izráel Istenének beszéde szerint, a melyet szólott volt az ő szolgája, Jónás próféta, az Amittai fia által, a ki Gáth-Kéferből való volt."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 118,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Judit könyve",
+                    "abbrev": "Jud",
+                    "link": "Jud",
+                    "old_testament": 1,
+                    "id": 67
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "24",
+                            "text": "Átkelt az Eufráteszen, bejárta Mezopotámiát, s az Abrona folyó mentén fenekestül felforgatott minden megerősített várost egészen a tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "24",
+                        "text": "Átkelt az Eufráteszen, bejárta Mezopotámiát, s az Abrona folyó mentén fenekestül felforgatott minden megerősített várost egészen a tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 118,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Judit könyve",
+                    "abbrev": "Judit",
+                    "link": "Judit",
+                    "old_testament": 1,
+                    "id": 68
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "24",
+                            "text": "Átkelt az Eufráteszen, áthaladt Mezopotámián, felforgatott minden megerősített várost az Abróna folyó mentén egészen a tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "24",
+                        "text": "Átkelt az Eufráteszen, áthaladt Mezopotámián, felforgatott minden megerősített várost az Abróna folyó mentén egészen a tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 80
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "72": [
+                        {
+                            "chapter": 72,
+                            "numv": "8",
+                            "text": "És uralkodjék egyik tengertől a másik tengerig, és a nagy folyamtól a föld határáig."
+                        }
+                    ],
+                    "80": [
+                        {
+                            "chapter": 80,
+                            "numv": "12",
+                            "text": "Sarjait a tengerig ereszté, és hajtásait a folyamig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 72,
+                        "numv": "8",
+                        "text": "És uralkodjék egyik tengertől a másik tengerig, és a nagy folyamtól a föld határáig."
+                    },
+                    {
+                        "chapter": 80,
+                        "numv": "12",
+                        "text": "Sarjait a tengerig ereszté, és hajtásait a folyamig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 126,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Sirák fia könyve",
+                    "abbrev": "Sir",
+                    "link": "Sir",
+                    "old_testament": 1,
+                    "id": 95
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "44": [
+                        {
+                            "chapter": 44,
+                            "numv": "21",
+                            "text": "Ezért esküvel ígérte meg neki, hogy utódaiban megáldja a népeket, s megsokasítja törzsét, mint a föld porát, és felmagasztalja, mint a csillagokat, örökrészt ad neki tengertől tengerig, és a folyamtól a földnek határáig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 44,
+                        "numv": "21",
+                        "text": "Ezért esküvel ígérte meg neki, hogy utódaiban megáldja a népeket, s megsokasítja törzsét, mint a föld porát, és felmagasztalja, mint a csillagokat, örökrészt ad neki tengertől tengerig, és a folyamtól a földnek határáig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jeremiás könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 101
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "49": [
+                        {
+                            "chapter": 49,
+                            "numv": "21",
+                            "text": "Romlásuk zajára megrendül a föld; a Vörös-tengerig hallatszik kiáltásuk hangja."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 49,
+                        "numv": "21",
+                        "text": "Romlásuk zajára megrendül a föld; a Vörös-tengerig hallatszik kiáltásuk hangja."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Ezekiel könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 111
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "47": [
+                        {
+                            "chapter": 47,
+                            "numv": "8",
+                            "text": "Így szólt hozzám: „Ez a víz a keleti vidék felé indul és lefolyik Arabáig, s eljut a tengerig; amikor beleömlik, annak vize egészséges lesz."
+                        },
+                        {
+                            "chapter": 47,
+                            "numv": "18",
+                            "text": "A keleti oldalon Hauran és Damaszkusz között, Gileád és Izrael földje között a Jordán lesz a határ a keleti tengerig, Tamárig. Ez a keleti oldal."
+                        },
+                        {
+                            "chapter": 47,
+                            "numv": "19",
+                            "text": "És a déli oldalon déli irányban Tamártól Meriba vizéig, Kádestől a folyó irányában a Nagy Tengerig. Ez a déli oldal."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 47,
+                        "numv": "8",
+                        "text": "Így szólt hozzám: „Ez a víz a keleti vidék felé indul és lefolyik Arabáig, s eljut a tengerig; amikor beleömlik, annak vize egészséges lesz."
+                    },
+                    {
+                        "chapter": 47,
+                        "numv": "18",
+                        "text": "A keleti oldalon Hauran és Damaszkusz között, Gileád és Izrael földje között a Jordán lesz a határ a keleti tengerig, Tamárig. Ez a keleti oldal."
+                    },
+                    {
+                        "chapter": 47,
+                        "numv": "19",
+                        "text": "És a déli oldalon déli irányban Tamártól Meriba vizéig, Kádestől a folyó irányában a Nagy Tengerig. Ez a déli oldal."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Ezékiel próféta könyve",
+                    "abbrev": "Ezék",
+                    "link": "Ezek",
+                    "old_testament": 1,
+                    "id": 114
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "47": [
+                        {
+                            "chapter": 47,
+                            "numv": "18",
+                            "text": "És a keleti oldalon: Havrán és Damaskus és Gileád között és Izráel földje között a Jordán legyen; ama határtól a keleti tengerig mérjétek: ez a keleti oldal."
+                        },
+                        {
+                            "chapter": 47,
+                            "numv": "19",
+                            "text": "És a déli oldalon dél felé: Támártól a versengések vizéig Kádesben, azután a folyó felé a nagy-tengerig: ez a déli oldal dél felé."
+                        }
+                    ],
+                    "48": [
+                        {
+                            "chapter": 48,
+                            "numv": "28",
+                            "text": "És Gád határán a déli oldalon dél felé, legyen a határ Támártól a versengések vizéig Kádesben, a patak felé a nagy-tengerig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 47,
+                        "numv": "18",
+                        "text": "És a keleti oldalon: Havrán és Damaskus és Gileád között és Izráel földje között a Jordán legyen; ama határtól a keleti tengerig mérjétek: ez a keleti oldal."
+                    },
+                    {
+                        "chapter": 47,
+                        "numv": "19",
+                        "text": "És a déli oldalon dél felé: Támártól a versengések vizéig Kádesben, azután a folyó felé a nagy-tengerig: ez a déli oldal dél felé."
+                    },
+                    {
+                        "chapter": 48,
+                        "numv": "28",
+                        "text": "És Gád határán a déli oldalon dél felé, legyen a határ Támártól a versengések vizéig Kádesben, a patak felé a nagy-tengerig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Ezekiel jövendölése",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 113
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "47": [
+                        {
+                            "chapter": 47,
+                            "numv": "18",
+                            "text": "A keleti oldal ez: Hárán, Damaszkusz és Gileád között, valamint Izrael országa között a Jordán a határvonal a keleti tengerig. Így mérjétek ki a keleti oldalt."
+                        },
+                        {
+                            "chapter": 47,
+                            "numv": "19",
+                            "text": "A déli oldal déli irányban ez legyen: Támártól a kádesi Perelés vizéig és a Folyó a nagy tengerig; ez a déli oldal, a Délvidék irányában."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 47,
+                        "numv": "18",
+                        "text": "A keleti oldal ez: Hárán, Damaszkusz és Gileád között, valamint Izrael országa között a Jordán a határvonal a keleti tengerig. Így mérjétek ki a keleti oldalt."
+                    },
+                    {
+                        "chapter": 47,
+                        "numv": "19",
+                        "text": "A déli oldal déli irányban ez legyen: Támártól a kádesi Perelés vizéig és a Folyó a nagy tengerig; ez a déli oldal, a Délvidék irányában."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Ámos próféta könyve",
+                    "abbrev": "Ámós",
+                    "link": "Amos",
+                    "old_testament": 1,
+                    "id": 130
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "12",
+                            "text": "És vándorolni fognak tengertől tengerig és északtól fogva napkeletig. Futkosnak, hogy keressék az Úrnak beszédét, de nem találják meg."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "12",
+                        "text": "És vándorolni fognak tengertől tengerig és északtól fogva napkeletig. Futkosnak, hogy keressék az Úrnak beszédét, de nem találják meg."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ámósz próféta könyve",
+                    "abbrev": "Ám",
+                    "link": "Am",
+                    "old_testament": 1,
+                    "id": 128
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "12",
+                            "text": "Támolyognak majd tengertől tengerig és északtól keletig. Bolyonganak, és keresik az ÚR igéjét, de nem találják."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "12",
+                        "text": "Támolyognak majd tengertől tengerig és északtól keletig. Bolyonganak, és keresik az ÚR igéjét, de nem találják."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 138,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Mikeás próféta könyve",
+                    "abbrev": "Mik",
+                    "link": "Mik",
+                    "old_testament": 1,
+                    "id": 142
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "12",
+                            "text": "Azon a napon eljőnek hozzád Assiriából és Égyiptom városaiból; Égyiptomtól a folyamig, tengertől tengerig és hegytől hegyig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 7,
+                        "numv": "12",
+                        "text": "Azon a napon eljőnek hozzád Assiriából és Égyiptom városaiból; Égyiptomtól a folyamig, tengertől tengerig és hegytől hegyig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 143,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Zakariás könyve",
+                    "abbrev": "Zak",
+                    "link": "Zak",
+                    "old_testament": 1,
+                    "id": 159
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "10",
+                            "text": "Szétzúzza Efraimban a harci szekereket, Jeruzsálemben a méneket. Széttöri a harci íjakat, és békét hirdet a népeknek, uralkodik tengertől tengerig, a Folyótól egészen a föld határáig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 9,
+                        "numv": "10",
+                        "text": "Szétzúzza Efraimban a harci szekereket, Jeruzsálemben a méneket. Széttöri a harci íjakat, és békét hirdet a népeknek, uralkodik tengertől tengerig, a Folyótól egészen a föld határáig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 143,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Zakariás próféta könyve",
+                    "abbrev": "Zak",
+                    "link": "Zak",
+                    "old_testament": 1,
+                    "id": 162
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "10",
+                            "text": "És kivesztem a szekeret Efraimból és a lovat Jeruzsálemből, kivesztem a harczi kézívet is, és békességet hirdet a pogányoknak; és uralkodik tengertől tengerig, és a folyamtól a föld határáig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 9,
+                        "numv": "10",
+                        "text": "És kivesztem a szekeret Efraimból és a lovat Jeruzsálemből, kivesztem a harczi kézívet is, és békességet hirdet a pogányoknak; és uralkodik tengertől tengerig, és a folyamtól a föld határáig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 143,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Zakariás próféta könyve",
+                    "abbrev": "Zak",
+                    "link": "Zak",
+                    "old_testament": 1,
+                    "id": 160
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "10",
+                            "text": "Kiirtja a harci kocsit Efraimból és a lovat Jeruzsálemből. Kivész a harci íj is, mert békét hirdet a népeknek. Uralma tengertől tengerig ér, és a folyamtól a föld végéig."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 9,
+                        "numv": "10",
+                        "text": "Kiirtja a harci kocsit Efraimból és a lovat Jeruzsálemből. Kivész a harci íj is, mert békét hirdet a népeknek. Uralma tengertől tengerig ér, és a folyamtól a föld végéig."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 205,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Apostolok Cselekedetei",
+                    "abbrev": "ApCsel",
+                    "link": "ApCsel",
+                    "old_testament": 0,
+                    "id": 187
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "17": [
+                        {
+                            "chapter": 17,
+                            "numv": "14",
+                            "text": "A testvérek Pált nyomban elkísérték egészen a tengerig, de Szilás és Timóteus ott maradtak."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 17,
+                        "numv": "14",
+                        "text": "A testvérek Pált nyomban elkísérték egészen a tengerig, de Szilás és Timóteus ott maradtak."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 205,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Az apostolok cselekedetei",
+                    "abbrev": "ApCsel",
+                    "link": "ApCsel",
+                    "old_testament": 0,
+                    "id": 188
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "17": [
+                        {
+                            "chapter": 17,
+                            "numv": "14",
+                            "text": "Ám akkor a testvérek azonnal továbbküldték Pált, hogy menjen a tengerig. Szilász és Timóteus azonban ott maradt."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 17,
+                        "numv": "14",
+                        "text": "Ám akkor a testvérek azonnal továbbküldték Pált, hogy menjen a tengerig. Szilász és Timóteus azonban ott maradt."
+                    }
+                ]
+            }
+        ],
+        "hitCount": 131
+    }
+}

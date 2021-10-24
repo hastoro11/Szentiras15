@@ -13,6 +13,10 @@ extension Font {
             .custom("Avenir Book", size: size)
         }
         
+        static func oblique(size: CGFloat) -> Font {
+            .custom("Avenir Book Oblique", size: size)
+        }
+        
         static func light(size: CGFloat) -> Font {
             .custom("Avenir Light", size: size)
         }

@@ -13,7 +13,7 @@ struct ReaderView: View {
     @State var showTranslationList: Bool = false
     @State var showArrows: Bool = true
     var versek: [Vers] {
-        if case .success(let idezet) = vm.phase {
+        if case .success(let res) = vm.phase, let idezet = res as? Idezet {
             return idezet.valasz.versek
         }
         return []
@@ -64,7 +64,7 @@ struct ReaderView: View {
     
     var booksToolbar: some ToolbarContent {
         var title: String {
-            if case .success(let idezet) = vm.phase, !idezet.valasz.versek.isEmpty {
+            if case .success(let res) = vm.phase, let idezet = res as? Idezet, !idezet.valasz.versek.isEmpty {
                 let szep = versek[0].hely.szep
                 return String(szep.split(separator: ",")[0])
             }
@@ -75,7 +75,7 @@ struct ReaderView: View {
                 showBooklist.toggle()
             }) {
                 Text(title)
-                    .font(.Theme.black(size: 17))
+                    .font(.Theme.black(size: 19))
                     .foregroundColor(.black)
             }
         }
@@ -87,7 +87,7 @@ struct ReaderView: View {
                 showTranslationList.toggle()
             }) {
                 Text(vm.current.translation.abbrev)
-                    .font(.Theme.heavy(size: 17))
+                    .font(.Theme.heavy(size: 19))
             }
         }
     }
@@ -96,7 +96,7 @@ struct ReaderView: View {
         ToolbarItem(placement: .navigationBarTrailing, content: {
             Button(action: {}) {
                 Text("Aa")
-                    .font(.Theme.heavy(size: 17))
+                    .font(.Theme.heavy(size: 19))
             }
             
         })

@@ -18,6 +18,13 @@ class SzentirasAPI {
         return idezet
     }
     
+    func search(_ searchTerm: String) async throws -> SearchResult {
+        let url = buildURL(searchTerm: searchTerm)
+//        let url = URL(string: "https://szentiras.hu/api/search/23232/sdfsdfsdf")!
+        let searchResult: SearchResult = try await fetch(from: url)
+        return searchResult
+    }
+    
     private func fetch<T: Codable>(from url: URL) async throws -> T {
         let (data, response) = try await URLSession.shared.data(from: url)
         if let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode) {
@@ -39,6 +46,14 @@ class SzentirasAPI {
         }
     }
     
+    private func buildURL(searchTerm: String) -> URL {
+        var urlComponents = URLComponents()
+        urlComponents.scheme = "https"
+        urlComponents.host = "szentiras.hu"
+        urlComponents.path = "/api/search/\(searchTerm)".removingPercentEncoding ?? "api/search/\(searchTerm)"
+        return urlComponents.url!
+    }
+    
     private func buildURL(translation: Translation, book: Book, chapter: Int) -> URL {
         var urlComponents = URLComponents()
         urlComponents.scheme = "https"
@@ -46,4 +61,6 @@ class SzentirasAPI {
         urlComponents.path = "/api/idezet/\(book.abbrev)\(chapter)/\(translation.abbrev)".removingPercentEncoding ?? "api/idezet/\(book.abbrev)\(chapter)/\(translation.abbrev)"
         return urlComponents.url!
     }
+    
+    
 }

@@ -22,7 +22,7 @@ struct Current {
 }
 
 enum FetchPhase {
-    case success(Idezet)
+    case success(Codable)
     case error(SzentirasError)
     case isFetching
     case empty

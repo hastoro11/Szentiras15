@@ -1,0 +1,2636 @@
+{
+    "refResult": [],
+    "fullTextResult": {
+        "results": [
+            {
+                "book": {
+                    "number": 116,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Nehemiás könyve",
+                    "abbrev": "Neh",
+                    "link": "Neh",
+                    "old_testament": 1,
+                    "id": 63
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "6": [
+                        {
+                            "chapter": 6,
+                            "numv": "16",
+                            "text": "Amikor ellenségeink mindannyian meghallották, hogy félelem fogott el minden népet, amely körülöttünk volt, az ő büszkeségük is összeomlott, és megtudták, hogy Isten vitte véghez ezt a művet. "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 6,
+                        "numv": "16",
+                        "text": "Amikor ellenségeink mindannyian meghallották, hogy félelem fogott el minden népet, amely körülöttünk volt, az ő büszkeségük is összeomlott, és megtudták, hogy Isten vitte véghez ezt a művet. "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 118,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Judit könyve",
+                    "abbrev": "Judit",
+                    "link": "Judit",
+                    "old_testament": 1,
+                    "id": 68
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "9": [
+                        {
+                            "chapter": 9,
+                            "numv": "7",
+                            "text": "Nézd, az asszírok magabiztosak erejükben, dicsekszenek lovaikkal és lovasaikkal, büszkék gyalogságuk karjára, remélnek lándzsáikban, pajzsaikban, íjukban és parittyáikban, és nem tudják, hogy te, az Úr döntöd el a háború sorsát,"
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "9",
+                            "text": "Amikor kijött hozzájuk Judit, mindnyájan áldották Istent, neki pedig azt mondták: »Te vagy Jeruzsálem büszkesége, Izrael nagy dicsősége és a mi népünk nagy öröme."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 9,
+                        "numv": "7",
+                        "text": "Nézd, az asszírok magabiztosak erejükben, dicsekszenek lovaikkal és lovasaikkal, büszkék gyalogságuk karjára, remélnek lándzsáikban, pajzsaikban, íjukban és parittyáikban, és nem tudják, hogy te, az Úr döntöd el a háború sorsát,"
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "9",
+                        "text": "Amikor kijött hozzájuk Judit, mindnyájan áldották Istent, neki pedig azt mondták: »Te vagy Jeruzsálem büszkesége, Izrael nagy dicsősége és a mi népünk nagy öröme."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 323
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "38": [
+                        {
+                            "chapter": 38,
+                            "numv": "11",
+                            "text": "és ezt mondtam: Eddig jöhetsz, tovább nem, itt majd megtörnek büszke hullámaid!"
+                        }
+                    ],
+                    "39": [
+                        {
+                            "chapter": 39,
+                            "numv": "20",
+                            "text": "Te ugráltatod-e, mint egy szöcskét? Büszke horkantása félelmetes."
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "15",
+                            "text": "Varrott zsákruhát húztam a bőrömre, porba hajtottam büszkeségemet."
+                        }
+                    ],
+                    "20": [
+                        {
+                            "chapter": 20,
+                            "numv": "6",
+                            "text": "Ha az égig nőne is büszkesége, és a felleget érné is feje,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 38,
+                        "numv": "11",
+                        "text": "és ezt mondtam: Eddig jöhetsz, tovább nem, itt majd megtörnek büszke hullámaid!"
+                    },
+                    {
+                        "chapter": 39,
+                        "numv": "20",
+                        "text": "Te ugráltatod-e, mint egy szöcskét? Büszke horkantása félelmetes."
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "15",
+                        "text": "Varrott zsákruhát húztam a bőrömre, porba hajtottam büszkeségemet."
+                    },
+                    {
+                        "chapter": 20,
+                        "numv": "6",
+                        "text": "Ha az égig nőne is büszkesége, és a felleget érné is feje,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ézsaiás próféta könyve",
+                    "abbrev": "Ézs",
+                    "link": "Ezs",
+                    "old_testament": 1,
+                    "id": 328
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "15",
+                            "text": "minden büszke torony ellen és minden erős vár ellen,"
+                        },
+                        {
+                            "chapter": 2,
+                            "numv": "17",
+                            "text": "Porba hajtja az ember büszkeségét, és megalázza a halandók nagyságát. Csak az ÚR magasztaltatik föl azon a napon."
+                        }
+                    ],
+                    "10": [
+                        {
+                            "chapter": 10,
+                            "numv": "34",
+                            "text": "Kivágja fejszével az erdő bozótját, ledőlnek Libánon büszke cédrusai!"
+                        }
+                    ],
+                    "28": [
+                        {
+                            "chapter": 28,
+                            "numv": "1",
+                            "text": "Jaj a büszke koszorúnak, melyet Efraim részegei viselnek, és a hervadó virágnak, amely ékesen díszíti őket, akik bortól mámorosak a termékeny völgyre néző hegycsúcson!"
+                        },
+                        {
+                            "chapter": 28,
+                            "numv": "3",
+                            "text": "Lábbal tiporják majd Efraim részegeinek büszke koszorúját,"
+                        }
+                    ],
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "9",
+                            "text": "<small>Jövendölés Júda büszke asszonyai ellen</small> "
+                        }
+                    ],
+                    "33": [
+                        {
+                            "chapter": 33,
+                            "numv": "21",
+                            "text": "mert dicsőséges lesz ott az ÚR! Folyók lesznek azon a helyen, messze elágazó folyamok, amelyeken nem járnak gályák, és nem kelnek át büszke hajók."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "15",
+                        "text": "minden büszke torony ellen és minden erős vár ellen,"
+                    },
+                    {
+                        "chapter": 10,
+                        "numv": "34",
+                        "text": "Kivágja fejszével az erdő bozótját, ledőlnek Libánon büszke cédrusai!"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "1",
+                        "text": "Jaj a büszke koszorúnak, melyet Efraim részegei viselnek, és a hervadó virágnak, amely ékesen díszíti őket, akik bortól mámorosak a termékeny völgyre néző hegycsúcson!"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "3",
+                        "text": "Lábbal tiporják majd Efraim részegeinek büszke koszorúját,"
+                    },
+                    {
+                        "chapter": 32,
+                        "numv": "9",
+                        "text": "<small>Jövendölés Júda büszke asszonyai ellen</small> "
+                    },
+                    {
+                        "chapter": 33,
+                        "numv": "21",
+                        "text": "mert dicsőséges lesz ott az ÚR! Folyók lesznek azon a helyen, messze elágazó folyamok, amelyeken nem járnak gályák, és nem kelnek át büszke hajók."
+                    },
+                    {
+                        "chapter": 2,
+                        "numv": "17",
+                        "text": "Porba hajtja az ember büszkeségét, és megalázza a halandók nagyságát. Csak az ÚR magasztaltatik föl azon a napon."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Izajás könyve",
+                    "abbrev": "Iz",
+                    "link": "Iz",
+                    "old_testament": 1,
+                    "id": 99
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "10": [
+                        {
+                            "chapter": 10,
+                            "numv": "12",
+                            "text": "Ez történik majd, amikor az Úr beteljesíti minden művét Sion hegyén és Jeruzsálemben: Megfenyítem az asszír király öntelt szívének gyümölcsét és kevély szemének büszkeségét."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 10,
+                        "numv": "12",
+                        "text": "Ez történik majd, amikor az Úr beteljesíti minden művét Sion hegyén és Jeruzsálemben: Megfenyítem az asszír király öntelt szívének gyümölcsét és kevély szemének büszkeségét."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Jeremiás könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 103
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "13": [
+                        {
+                            "chapter": 13,
+                            "numv": "9",
+                            "text": "»Így szól az Úr: Így fogom tönkretenni Júda büszkeségét és Jeruzsálem nagy büszkeségét."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 13,
+                        "numv": "9",
+                        "text": "»Így szól az Úr: Így fogom tönkretenni Júda büszkeségét és Jeruzsálem nagy büszkeségét."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 329
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "48": [
+                        {
+                            "chapter": 48,
+                            "numv": "29",
+                            "text": "Hallottunk Móáb gőgjéről, hogy milyen gőgös, büszke és dölyfös, fennhéjázó és kevély szívű."
+                        }
+                    ],
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "41",
+                            "text": "Jaj, hogy elfoglalták Sésakot, leigázták az egész föld büszkeségét! Jaj, milyen pusztaság lett Babilon a népek között!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 48,
+                        "numv": "29",
+                        "text": "Hallottunk Móáb gőgjéről, hogy milyen gőgös, büszke és dölyfös, fennhéjázó és kevély szívű."
+                    },
+                    {
+                        "chapter": 51,
+                        "numv": "41",
+                        "text": "Jaj, hogy elfoglalták Sésakot, leigázták az egész föld büszkeségét! Jaj, milyen pusztaság lett Babilon a népek között!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Ezekiel jövendölése",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 113
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "21",
+                            "text": "Beszélj Izrael házához: Így szól az Úr Isten: Íme, én megfertőzöm szentélyemet, országotok büszkeségét és szemetek gyönyörűségét, amely miatt aggódik a lelketek; fiaitok és leányaitok, akiket hátrahagytatok, kard által esnek el."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 24,
+                        "numv": "21",
+                        "text": "Beszélj Izrael házához: Így szól az Úr Isten: Íme, én megfertőzöm szentélyemet, országotok büszkeségét és szemetek gyönyörűségét, amely miatt aggódik a lelketek; fiaitok és leányaitok, akiket hátrahagytatok, kard által esnek el."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 141,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Zofóniás próféta könyve",
+                    "abbrev": "Zof",
+                    "link": "Zof",
+                    "old_testament": 1,
+                    "id": 341
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "16",
+                            "text": "kürtszó és riadó napja a megerősített városok és a büszke bástyák ellen!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "16",
+                        "text": "kürtszó és riadó napja a megerősített városok és a büszke bástyák ellen!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 206,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "A rómaiaknak írt levél",
+                    "abbrev": "Róm",
+                    "link": "Rom",
+                    "old_testament": 0,
+                    "id": 377
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "13",
+                            "text": "De nektek, pogányoknak ezt mondom: ameddig én a pogányok apostola vagyok, büszkén teljesítem szolgálatomat,"
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "17",
+                            "text": "Erre büszke vagyok Krisztus Jézusban Isten előtt."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "13",
+                        "text": "De nektek, pogányoknak ezt mondom: ameddig én a pogányok apostola vagyok, büszkén teljesítem szolgálatomat,"
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "17",
+                        "text": "Erre büszke vagyok Krisztus Jézusban Isten előtt."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 207,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "A korintusiaknak írt első levél",
+                    "abbrev": "1Kor",
+                    "link": "1Kor",
+                    "old_testament": 0,
+                    "id": 378
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "31",
+                            "text": "Nap mint nap a halállal nézek szembe. Ez úgy igaz, testvérek, mint az, hogy ti vagytok büszkeségem Krisztus Jézusban, a mi Urunkban."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 15,
+                        "numv": "31",
+                        "text": "Nap mint nap a halállal nézek szembe. Ez úgy igaz, testvérek, mint az, hogy ti vagytok büszkeségem Krisztus Jézusban, a mi Urunkban."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 208,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "A korintusiaknak írt második levél",
+                    "abbrev": "2Kor",
+                    "link": "2Kor",
+                    "old_testament": 0,
+                    "id": 379
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "12",
+                            "text": "Büszkeségünk lelkiismeretünk tanúsága: Istentől való őszinteséggel és tiszta szándékkal, nem emberi bölcsességgel, hanem Isten kegyelmével jártunk a világban, főként közöttetek."
+                        },
+                        {
+                            "chapter": 1,
+                            "numv": "14",
+                            "text": "ahogyan részben már meg is értettetek minket, hogy mi vagyunk a ti büszkeségetek, éppúgy, amint ti a miénk a mi Urunk, Jézus napján. "
+                        }
+                    ],
+                    "5": [
+                        {
+                            "chapter": 5,
+                            "numv": "12",
+                            "text": "Nem arról van szó, hogy ismét önmagunkat ajánlgatjuk nektek, hanem arról, hogy alkalmat adunk nektek arra, hogy büszkék legyetek ránk, s hogy felelni tudjatok azoknak, akik azzal dicsekednek, ami csak látszat, és nem azzal, ami a szívben van."
+                        }
+                    ],
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "4",
+                            "text": "Teljes nyíltsággal vagyok irántatok. Nagyon büszke vagyok rátok. Vigasztalódás tölt el, és minden gyötrelem ellenére túlárad bennem az öröm. "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "12",
+                        "text": "Büszkeségünk lelkiismeretünk tanúsága: Istentől való őszinteséggel és tiszta szándékkal, nem emberi bölcsességgel, hanem Isten kegyelmével jártunk a világban, főként közöttetek."
+                    },
+                    {
+                        "chapter": 1,
+                        "numv": "14",
+                        "text": "ahogyan részben már meg is értettetek minket, hogy mi vagyunk a ti büszkeségetek, éppúgy, amint ti a miénk a mi Urunk, Jézus napján. "
+                    },
+                    {
+                        "chapter": 5,
+                        "numv": "12",
+                        "text": "Nem arról van szó, hogy ismét önmagunkat ajánlgatjuk nektek, hanem arról, hogy alkalmat adunk nektek arra, hogy büszkék legyetek ránk, s hogy felelni tudjatok azoknak, akik azzal dicsekednek, ami csak látszat, és nem azzal, ami a szívben van."
+                    },
+                    {
+                        "chapter": 7,
+                        "numv": "4",
+                        "text": "Teljes nyíltsággal vagyok irántatok. Nagyon büszke vagyok rátok. Vigasztalódás tölt el, és minden gyötrelem ellenére túlárad bennem az öröm. "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 211,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "A filippieknek írt levél",
+                    "abbrev": "Fil",
+                    "link": "Fil",
+                    "old_testament": 0,
+                    "id": 382
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "26",
+                            "text": "hogy amikor ismét eljövök hozzátok, még inkább eltöltsön benneteket a Krisztus Jézusban való büszkeség miattam. "
+                        }
+                    ],
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "16",
+                            "text": "az élet igéjét kínálva nekik. Büszkeség lesz ez számomra Krisztus napján, hogy nem hiába futottam, és nem fáradtam hiába."
+                        }
+                    ],
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "3",
+                            "text": "Mi vagyunk ugyanis az igazán körülmetéltek, akik Isten Lelke által végezzük istentiszteletünket, büszkeségünk Krisztus Jézus, és Istenbe vetett bizalmunk alapja nem a testünk."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "26",
+                        "text": "hogy amikor ismét eljövök hozzátok, még inkább eltöltsön benneteket a Krisztus Jézusban való büszkeség miattam. "
+                    },
+                    {
+                        "chapter": 2,
+                        "numv": "16",
+                        "text": "az élet igéjét kínálva nekik. Büszkeség lesz ez számomra Krisztus napján, hogy nem hiába futottam, és nem fáradtam hiába."
+                    },
+                    {
+                        "chapter": 3,
+                        "numv": "3",
+                        "text": "Mi vagyunk ugyanis az igazán körülmetéltek, akik Isten Lelke által végezzük istentiszteletünket, büszkeségünk Krisztus Jézus, és Istenbe vetett bizalmunk alapja nem a testünk."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 219,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "A zsidóknak írt levél",
+                    "abbrev": "Zsid",
+                    "link": "Zsid",
+                    "old_testament": 0,
+                    "id": 390
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "3": [
+                        {
+                            "chapter": 3,
+                            "numv": "6",
+                            "text": "Krisztus viszont mint Fiú hitelt érdemel a saját háza fölött. Mi vagyunk az ő háza, ha szilárdan megtartjuk a bátor bizalmat és a reménységből fakadó büszkeséget. "
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 3,
+                        "numv": "6",
+                        "text": "Krisztus viszont mint Fiú hitelt érdemel a saját háza fölött. Mi vagyunk az ő háza, ha szilárdan megtartjuk a bátor bizalmat és a reménységből fakadó büszkeséget. "
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "translation_id": 7,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 391
+                },
+                "translation": {
+                    "id": 7,
+                    "created_at": "2017-10-16 14:28:42",
+                    "updated_at": "2017-10-16 14:28:42",
+                    "name": "Simon Tamás László Újszövetség-fordítása",
+                    "abbrev": "STL",
+                    "order": 4,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A Bencés Kiadó engedélyével (2017)",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://benceskiado.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "9",
+                            "text": "A szegény sorsú testvér legyen büszke méltóságára;"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "9",
+                        "text": "A szegény sorsú testvér legyen büszke méltóságára;"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 220,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 3,
+                    "name": "Jakab levele",
+                    "abbrev": "Jak",
+                    "link": "Jak",
+                    "old_testament": 0,
+                    "id": 249
+                },
+                "translation": {
+                    "id": 3,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Káldi-Neovulgáta",
+                    "abbrev": "KNB",
+                    "order": 1,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.biblia-tarsulat.hu/\">Katolikus Bibliatársulat</a> engedélyével. Megújítva 2013. február.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://www.biblia-tarsulat.hu",
+                    "reference": "<i>Ó- és Újszövetségi Szentírás a Neovulgáta alapján.</i> A Káldi-féle szentírásfordítás felhasználásával készítette a Szent Jeromos Bibliatársulat Bibliafordító Munkaközössége: Fodor György, Gyürki László, Kocsis Imre, Kránitz Mihály, Mátéffy Balázs, Sza"
+                },
+                "chapters": {
+                    "4": [
+                        {
+                            "chapter": 4,
+                            "numv": "16",
+                            "text": "Ti azonban most dicsekedtek büszkeségetekben – pedig minden ilyen dicsekvés rossz."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 4,
+                        "numv": "16",
+                        "text": "Ti azonban most dicsekedtek büszkeségetekben – pedig minden ilyen dicsekvés rossz."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 118,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Judit könyve",
+                    "abbrev": "Jud",
+                    "link": "Jud",
+                    "old_testament": 1,
+                    "id": 67
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "6",
+                            "text": "Hősük nem fiatalok kezétől esett el, nem titánok fiai verték meg, nem büszke hősök terítették le. Merári leánya, Judit fegyverezte le, arcának szépségével."
+                        }
+                    ],
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "9",
+                            "text": "Amikor beléptek hozzá, mindnyájan áldották, ezekkel a szavakkal: „Te vagy Jeruzsálem büszkesége, te vagy Izrael nagy öröme, te vagy népünk nagy dicsősége!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 16,
+                        "numv": "6",
+                        "text": "Hősük nem fiatalok kezétől esett el, nem titánok fiai verték meg, nem büszke hősök terítették le. Merári leánya, Judit fegyverezte le, arcának szépségével."
+                    },
+                    {
+                        "chapter": 15,
+                        "numv": "9",
+                        "text": "Amikor beléptek hozzá, mindnyájan áldották, ezekkel a szavakkal: „Te vagy Jeruzsálem büszkesége, te vagy Izrael nagy öröme, te vagy népünk nagy dicsősége!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 76
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "28": [
+                        {
+                            "chapter": 28,
+                            "numv": "8",
+                            "text": "Nem tudják azt büszke vadak, az oroszlán sem lépked azon."
+                        }
+                    ],
+                    "41": [
+                        {
+                            "chapter": 41,
+                            "numv": "15",
+                            "text": "Büszkesége a csatornás pajzsok, összetartva mintegy szorító pecséttel."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 28,
+                        "numv": "8",
+                        "text": "Nem tudják azt büszke vadak, az oroszlán sem lépked azon."
+                    },
+                    {
+                        "chapter": 41,
+                        "numv": "15",
+                        "text": "Büszkesége a csatornás pajzsok, összetartva mintegy szorító pecséttel."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 73
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "28": [
+                        {
+                            "chapter": 28,
+                            "numv": "8",
+                            "text": "A büszke vad sem veszi arrafelé útját, nem járt arra még soha oroszlán."
+                        }
+                    ],
+                    "37": [
+                        {
+                            "chapter": 37,
+                            "numv": "4",
+                            "text": "Amerre csak elhalad, hangosan zeng az ég, ő az, aki büszke hangjával mennydörög, s a villámait nem fogja vissza, amikor meghalljuk a hangját."
+                        }
+                    ],
+                    "40": [
+                        {
+                            "chapter": 40,
+                            "numv": "11",
+                            "text": "Engedd szabadjára haragod árját, nézd meg, ami csak büszke és hajlítsd meg!"
+                        }
+                    ],
+                    "41": [
+                        {
+                            "chapter": 41,
+                            "numv": "26",
+                            "text": "Mindent, ami magas, megvetéssel néz le, mert a büszke állatoknak ő a királyuk."
+                        }
+                    ],
+                    "20": [
+                        {
+                            "chapter": 20,
+                            "numv": "6",
+                            "text": "Még ha büszkesége az égig érne is, és ha a felhőket verné is a feje,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 28,
+                        "numv": "8",
+                        "text": "A büszke vad sem veszi arrafelé útját, nem járt arra még soha oroszlán."
+                    },
+                    {
+                        "chapter": 37,
+                        "numv": "4",
+                        "text": "Amerre csak elhalad, hangosan zeng az ég, ő az, aki büszke hangjával mennydörög, s a villámait nem fogja vissza, amikor meghalljuk a hangját."
+                    },
+                    {
+                        "chapter": 40,
+                        "numv": "11",
+                        "text": "Engedd szabadjára haragod árját, nézd meg, ami csak büszke és hajlítsd meg!"
+                    },
+                    {
+                        "chapter": 41,
+                        "numv": "26",
+                        "text": "Mindent, ami magas, megvetéssel néz le, mert a büszke állatoknak ő a királyuk."
+                    },
+                    {
+                        "chapter": 20,
+                        "numv": "6",
+                        "text": "Még ha büszkesége az égig érne is, és ha a felhőket verné is a feje,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 120,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Jób könyve",
+                    "abbrev": "Jób",
+                    "link": "Job",
+                    "old_testament": 1,
+                    "id": 74
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "38": [
+                        {
+                            "chapter": 38,
+                            "numv": "11",
+                            "text": "és ezt mondtam: Eddig jöhetsz, tovább nem! Ez ellene áll büszke hullámaidnak!"
+                        }
+                    ],
+                    "39": [
+                        {
+                            "chapter": 39,
+                            "numv": "20",
+                            "text": "Te ugráltatod-e, mint egy szöcskét? Büszke horkantása félelmetes."
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "15",
+                            "text": "Zsákruhát varrtam bőrömre, és porba hajtottam büszkeségemet."
+                        }
+                    ],
+                    "20": [
+                        {
+                            "chapter": 20,
+                            "numv": "6",
+                            "text": "Ha az égig nőne is büszkesége, és a felleget érné is feje,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 38,
+                        "numv": "11",
+                        "text": "és ezt mondtam: Eddig jöhetsz, tovább nem! Ez ellene áll büszke hullámaidnak!"
+                    },
+                    {
+                        "chapter": 39,
+                        "numv": "20",
+                        "text": "Te ugráltatod-e, mint egy szöcskét? Büszke horkantása félelmetes."
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "15",
+                        "text": "Zsákruhát varrtam bőrömre, és porba hajtottam büszkeségemet."
+                    },
+                    {
+                        "chapter": 20,
+                        "numv": "6",
+                        "text": "Ha az égig nőne is büszkesége, és a felleget érné is feje,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 77
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "76": [
+                        {
+                            "chapter": 76,
+                            "numv": "6",
+                            "text": "A büszke szívek is zsákmányul estek, most már álmukat alusszák, a harcosok karja lehanyatlott."
+                        }
+                    ],
+                    "123": [
+                        {
+                            "chapter": 123,
+                            "numv": "4",
+                            "text": "Túlságosan megízlelte lelkünk a dúslakodók gúnyolódását s a fennhéjázók büszkeségét."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 76,
+                        "numv": "6",
+                        "text": "A büszke szívek is zsákmányul estek, most már álmukat alusszák, a harcosok karja lehanyatlott."
+                    },
+                    {
+                        "chapter": 123,
+                        "numv": "4",
+                        "text": "Túlságosan megízlelte lelkünk a dúslakodók gúnyolódását s a fennhéjázók büszkeségét."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 126,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Sirák fia könyve",
+                    "abbrev": "Sir",
+                    "link": "Sir",
+                    "old_testament": 1,
+                    "id": 95
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "4",
+                            "text": "A ruhádra, amit hordasz, ne légy soha büszke, és ne tetszelegj, hogyha más magasztal. Mert a Fölségesnek művei csodásak, de a ténykedését senki sem láthatja."
+                        }
+                    ],
+                    "16": [
+                        {
+                            "chapter": 16,
+                            "numv": "2",
+                            "text": "Bármily nagy a számuk, ne légy büszke rájuk, ha az Úr félelme nem lakozik bennük."
+                        }
+                    ],
+                    "43": [
+                        {
+                            "chapter": 43,
+                            "numv": "1",
+                            "text": "Az ég büszkesége a fényes boltozat, az Úr dicsősége ragyog fenn az égen."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "4",
+                        "text": "A ruhádra, amit hordasz, ne légy soha büszke, és ne tetszelegj, hogyha más magasztal. Mert a Fölségesnek művei csodásak, de a ténykedését senki sem láthatja."
+                    },
+                    {
+                        "chapter": 16,
+                        "numv": "2",
+                        "text": "Bármily nagy a számuk, ne légy büszke rájuk, ha az Úr félelme nem lakozik bennük."
+                    },
+                    {
+                        "chapter": 43,
+                        "numv": "1",
+                        "text": "Az ég büszkesége a fényes boltozat, az Úr dicsősége ragyog fenn az égen."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ézsaiás próféta könyve",
+                    "abbrev": "Ézs",
+                    "link": "Ezs",
+                    "old_testament": 1,
+                    "id": 98
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "15",
+                            "text": "minden büszke torony ellen és minden erős vár ellen,"
+                        },
+                        {
+                            "chapter": 2,
+                            "numv": "17",
+                            "text": "Porba hajtja az ember büszkeségét, és megalázza a halandók nagyságát. Csak az ÚR magasztaltatik föl azon a napon."
+                        }
+                    ],
+                    "10": [
+                        {
+                            "chapter": 10,
+                            "numv": "34",
+                            "text": "Kivágja fejszével az erdő bozótját, ledőlnek Libánon büszke cédrusai!"
+                        }
+                    ],
+                    "28": [
+                        {
+                            "chapter": 28,
+                            "numv": "1",
+                            "text": "Jaj a büszke koszorúnak, melyet Efraim részegei viselnek, és a hervadó virágnak, amely ékesen díszíti őket, akik bortól mámorosak a termékeny völgyre néző hegycsúcson!"
+                        },
+                        {
+                            "chapter": 28,
+                            "numv": "3",
+                            "text": "Lábbal tiporják majd Efraim részegeinek büszke koszorúját,"
+                        }
+                    ],
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "9",
+                            "text": ""
+                        }
+                    ],
+                    "33": [
+                        {
+                            "chapter": 33,
+                            "numv": "21",
+                            "text": "Mert dicsőséges lesz ott az ÚR, folyók lesznek azon a helyen, messze elágazó folyamok, amelyeken nem járnak gályák, és nem kelnek át büszke hajók."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "15",
+                        "text": "minden büszke torony ellen és minden erős vár ellen,"
+                    },
+                    {
+                        "chapter": 10,
+                        "numv": "34",
+                        "text": "Kivágja fejszével az erdő bozótját, ledőlnek Libánon büszke cédrusai!"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "1",
+                        "text": "Jaj a büszke koszorúnak, melyet Efraim részegei viselnek, és a hervadó virágnak, amely ékesen díszíti őket, akik bortól mámorosak a termékeny völgyre néző hegycsúcson!"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "3",
+                        "text": "Lábbal tiporják majd Efraim részegeinek büszke koszorúját,"
+                    },
+                    {
+                        "chapter": 32,
+                        "numv": "9",
+                        "text": ""
+                    },
+                    {
+                        "chapter": 33,
+                        "numv": "21",
+                        "text": "Mert dicsőséges lesz ott az ÚR, folyók lesznek azon a helyen, messze elágazó folyamok, amelyeken nem járnak gályák, és nem kelnek át büszke hajók."
+                    },
+                    {
+                        "chapter": 2,
+                        "numv": "17",
+                        "text": "Porba hajtja az ember büszkeségét, és megalázza a halandók nagyságát. Csak az ÚR magasztaltatik föl azon a napon."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Izajás könyve",
+                    "abbrev": "Iz",
+                    "link": "Iz",
+                    "old_testament": 1,
+                    "id": 97
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "15",
+                            "text": "mind a büszke tornyokat és mind az erős várfalat,"
+                        }
+                    ],
+                    "5": [
+                        {
+                            "chapter": 5,
+                            "numv": "15",
+                            "text": "Akkor majd meggörnyed az ember, megalázzák a büszke férfit, és a kevélyek lesütik szemüket."
+                        }
+                    ],
+                    "13": [
+                        {
+                            "chapter": 13,
+                            "numv": "3",
+                            "text": "Magam adtam parancsot megszentelt harcosaimnak. Én hívtam bősz haragomban bajnokaimat, s büszke csapataikat."
+                        },
+                        {
+                            "chapter": 13,
+                            "numv": "11",
+                            "text": "Meglátogatom a földet vétkeiért, és gonoszságaik miatt a bűnösöket. Véget vetek a kevélyek gőgjének, és a zsarnokok büszkeségét megalázom."
+                        },
+                        {
+                            "chapter": 13,
+                            "numv": "19",
+                            "text": "És Babilont, a birodalmak gyöngyét, a káldeusok ékszerét és büszkeségét, úgy felforgatja majd az Isten, mint ahogy Szodomával és Gomorrával tette."
+                        }
+                    ],
+                    "22": [
+                        {
+                            "chapter": 22,
+                            "numv": "18",
+                            "text": "Mint egy gombolyagot, összegöngyöl, s mint egy labdát, egy távoli földre dob. Ott halsz meg, s odamennek kocsijaid is, amelyekre oly büszke voltál, te, gyalázata urad házának!”"
+                        }
+                    ],
+                    "26": [
+                        {
+                            "chapter": 26,
+                            "numv": "5",
+                            "text": "Letaszította a magasban lakókat, és a büszke várost megalázta, és földig alázta, a porba sújtotta,"
+                        }
+                    ],
+                    "28": [
+                        {
+                            "chapter": 28,
+                            "numv": "1",
+                            "text": "Jaj az efraimi részegek büszke koronájának, ragyogó ékessége hervadó virágának, amely a bortól tántorgók termékeny völgye felett van."
+                        },
+                        {
+                            "chapter": 28,
+                            "numv": "3",
+                            "text": "Akkor lábbal tiporják majd az efraimi részegek büszke koronáját,"
+                        },
+                        {
+                            "chapter": 28,
+                            "numv": "4",
+                            "text": "és ragyogó ékességének büszke koronája, amely a termékeny völgy felett van, úgy jár majd, mint a korán érő füge: ha valaki meglátja, nyomban kezébe veszi és megeszi."
+                        }
+                    ],
+                    "33": [
+                        {
+                            "chapter": 33,
+                            "numv": "21",
+                            "text": "Mert ott mutatja meg nekünk fölségét az Úr! Széles folyóvizek veszik körül ezt a helyet, de evezős hajó nem jár rajtuk, sem büszke gálya nem szeli őket."
+                        }
+                    ],
+                    "60": [
+                        {
+                            "chapter": 60,
+                            "numv": "15",
+                            "text": "Bár elhagyatott voltál, mindenki csak gyűlölt és cserbenhagyott: mégis büszkeség tárgyává teszlek, örökre, öröm forrásává, nemzedékről nemzedékre."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "15",
+                        "text": "mind a büszke tornyokat és mind az erős várfalat,"
+                    },
+                    {
+                        "chapter": 5,
+                        "numv": "15",
+                        "text": "Akkor majd meggörnyed az ember, megalázzák a büszke férfit, és a kevélyek lesütik szemüket."
+                    },
+                    {
+                        "chapter": 13,
+                        "numv": "3",
+                        "text": "Magam adtam parancsot megszentelt harcosaimnak. Én hívtam bősz haragomban bajnokaimat, s büszke csapataikat."
+                    },
+                    {
+                        "chapter": 22,
+                        "numv": "18",
+                        "text": "Mint egy gombolyagot, összegöngyöl, s mint egy labdát, egy távoli földre dob. Ott halsz meg, s odamennek kocsijaid is, amelyekre oly büszke voltál, te, gyalázata urad házának!”"
+                    },
+                    {
+                        "chapter": 26,
+                        "numv": "5",
+                        "text": "Letaszította a magasban lakókat, és a büszke várost megalázta, és földig alázta, a porba sújtotta,"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "1",
+                        "text": "Jaj az efraimi részegek büszke koronájának, ragyogó ékessége hervadó virágának, amely a bortól tántorgók termékeny völgye felett van."
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "3",
+                        "text": "Akkor lábbal tiporják majd az efraimi részegek büszke koronáját,"
+                    },
+                    {
+                        "chapter": 28,
+                        "numv": "4",
+                        "text": "és ragyogó ékességének büszke koronája, amely a termékeny völgy felett van, úgy jár majd, mint a korán érő füge: ha valaki meglátja, nyomban kezébe veszi és megeszi."
+                    },
+                    {
+                        "chapter": 33,
+                        "numv": "21",
+                        "text": "Mert ott mutatja meg nekünk fölségét az Úr! Széles folyóvizek veszik körül ezt a helyet, de evezős hajó nem jár rajtuk, sem büszke gálya nem szeli őket."
+                    },
+                    {
+                        "chapter": 13,
+                        "numv": "11",
+                        "text": "Meglátogatom a földet vétkeiért, és gonoszságaik miatt a bűnösöket. Véget vetek a kevélyek gőgjének, és a zsarnokok büszkeségét megalázom."
+                    },
+                    {
+                        "chapter": 13,
+                        "numv": "19",
+                        "text": "És Babilont, a birodalmak gyöngyét, a káldeusok ékszerét és büszkeségét, úgy felforgatja majd az Isten, mint ahogy Szodomával és Gomorrával tette."
+                    },
+                    {
+                        "chapter": 60,
+                        "numv": "15",
+                        "text": "Bár elhagyatott voltál, mindenki csak gyűlölt és cserbenhagyott: mégis büszkeség tárgyává teszlek, örökre, öröm forrásává, nemzedékről nemzedékre."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 127,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Ésaiás próféta könyve",
+                    "abbrev": "Ésa",
+                    "link": "Esa",
+                    "old_testament": 1,
+                    "id": 100
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "63": [
+                        {
+                            "chapter": 63,
+                            "numv": "1",
+                            "text": "Ki ez, ki jő Edomból, veres ruhákban Boczrából, a ki ékes öltözetében, ereje sokaságában büszke? Én, a ki igazságban szólok, elégséges vagyok a megtartásra."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 63,
+                        "numv": "1",
+                        "text": "Ki ez, ki jő Edomból, veres ruhákban Boczrából, a ki ékes öltözetében, ereje sokaságában büszke? Én, a ki igazságban szólok, elégséges vagyok a megtartásra."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 102
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "48": [
+                        {
+                            "chapter": 48,
+                            "numv": "29",
+                            "text": "Hallottunk Móáb gőgjéről, hogy milyen gőgös, büszke és dölyfös, fennhéjázó és kevély szívű."
+                        }
+                    ],
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "41",
+                            "text": "Hogy elfoglalták Sésakot! Meghódították az egész föld büszkeségét! Milyen pusztává lett Babilon a népek között!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 48,
+                        "numv": "29",
+                        "text": "Hallottunk Móáb gőgjéről, hogy milyen gőgös, büszke és dölyfös, fennhéjázó és kevély szívű."
+                    },
+                    {
+                        "chapter": 51,
+                        "numv": "41",
+                        "text": "Hogy elfoglalták Sésakot! Meghódították az egész föld büszkeségét! Milyen pusztává lett Babilon a népek között!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Jeremiás próféta könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 104
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "58",
+                            "text": "Ezt mondja a Seregek Ura: Babilon széles kőfala földig lerontatik, és az ő büszke kapuit tűz égeti meg, és a népek hiába munkálkodnak, és a nemzetek a tűznek, és kifáradnak."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 51,
+                        "numv": "58",
+                        "text": "Ezt mondja a Seregek Ura: Babilon széles kőfala földig lerontatik, és az ő büszke kapuit tűz égeti meg, és a népek hiába munkálkodnak, és a nemzetek a tűznek, és kifáradnak."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 128,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Jeremiás könyve",
+                    "abbrev": "Jer",
+                    "link": "Jer",
+                    "old_testament": 1,
+                    "id": 101
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "51": [
+                        {
+                            "chapter": 51,
+                            "numv": "58",
+                            "text": "Ezt mondja a Seregek Ura: Babilon széles falait földig lerombolják; büszke kapui meg tűz martalékává lesznek. Így lesz semmivé mind, amiért a népek fáradoztak; és tűzben enyészik el a népek műve."
+                        },
+                        {
+                            "chapter": 51,
+                            "numv": "41",
+                            "text": "Hogyan? Hát elfoglalták s meghódították az egész világ büszkeségét? Mi az? Hát Babilon borzalommá lett az összes nép előtt?"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 51,
+                        "numv": "58",
+                        "text": "Ezt mondja a Seregek Ura: Babilon széles falait földig lerombolják; büszke kapui meg tűz martalékává lesznek. Így lesz semmivé mind, amiért a népek fáradoztak; és tűzben enyészik el a népek műve."
+                    },
+                    {
+                        "chapter": 51,
+                        "numv": "41",
+                        "text": "Hogyan? Hát elfoglalták s meghódították az egész világ büszkeségét? Mi az? Hát Babilon borzalommá lett az összes nép előtt?"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Ezekiel könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 111
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "27": [
+                        {
+                            "chapter": 27,
+                            "numv": "32",
+                            "text": "Bánatukban gyászdalt énekelnek fölötted, és így jajveszékelnek: „Ki volt olyan, mint a büszke Tírusz, a tenger közepén?"
+                        }
+                    ],
+                    "30": [
+                        {
+                            "chapter": 30,
+                            "numv": "6",
+                            "text": "Ezt mondja az Úr: Egyiptom támaszai összeomlanak, oda lesz büszke gazdagsága. Migdoltól Sziénéig kard élén hullnak el – mondja az Úr, az Isten."
+                        }
+                    ],
+                    "31": [
+                        {
+                            "chapter": 31,
+                            "numv": "10",
+                            "text": "Azért ezt mondja az Úr, az Isten: Mivel igen magasra nőtt, koronája a felhőkig nyúlt, és nagyságában büszke lett,"
+                        }
+                    ],
+                    "33": [
+                        {
+                            "chapter": 33,
+                            "numv": "28",
+                            "text": "Az országot sivataggá és pusztasággá teszem, véget vetek büszke pompájának, csupaszon meredeznek Izrael hegyei, senki sem megy fel rájuk."
+                        }
+                    ],
+                    "24": [
+                        {
+                            "chapter": 24,
+                            "numv": "21",
+                            "text": "Szólj Izrael házához: Ezt mondja az Úr, az Isten: Nézzétek, megszentségtelenítem szentélyemet, erőtök forrását, büszkeségetek tárgyát, szemetek fényét, lelketek gyönyörűségét. Fiaitok és lányaitok, akiket hátrahagytatok, kard élén vesznek el."
+                        },
+                        {
+                            "chapter": 24,
+                            "numv": "25",
+                            "text": "Emberfia, azon a napon, amikor majd megfosztom őket erejük forrásától, büszkeségük tárgyától, szemük fényétől, lelkük gyönyörűségétől, fiaiktól és lányaiktól,"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 27,
+                        "numv": "32",
+                        "text": "Bánatukban gyászdalt énekelnek fölötted, és így jajveszékelnek: „Ki volt olyan, mint a büszke Tírusz, a tenger közepén?"
+                    },
+                    {
+                        "chapter": 30,
+                        "numv": "6",
+                        "text": "Ezt mondja az Úr: Egyiptom támaszai összeomlanak, oda lesz büszke gazdagsága. Migdoltól Sziénéig kard élén hullnak el – mondja az Úr, az Isten."
+                    },
+                    {
+                        "chapter": 31,
+                        "numv": "10",
+                        "text": "Azért ezt mondja az Úr, az Isten: Mivel igen magasra nőtt, koronája a felhőkig nyúlt, és nagyságában büszke lett,"
+                    },
+                    {
+                        "chapter": 33,
+                        "numv": "28",
+                        "text": "Az országot sivataggá és pusztasággá teszem, véget vetek büszke pompájának, csupaszon meredeznek Izrael hegyei, senki sem megy fel rájuk."
+                    },
+                    {
+                        "chapter": 24,
+                        "numv": "21",
+                        "text": "Szólj Izrael házához: Ezt mondja az Úr, az Isten: Nézzétek, megszentségtelenítem szentélyemet, erőtök forrását, büszkeségetek tárgyát, szemetek fényét, lelketek gyönyörűségét. Fiaitok és lányaitok, akiket hátrahagytatok, kard élén vesznek el."
+                    },
+                    {
+                        "chapter": 24,
+                        "numv": "25",
+                        "text": "Emberfia, azon a napon, amikor majd megfosztom őket erejük forrásától, büszkeségük tárgyától, szemük fényétől, lelkük gyönyörűségétől, fiaiktól és lányaiktól,"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 141,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Sofóniás próféta könyve",
+                    "abbrev": "Sof",
+                    "link": "Sof",
+                    "old_testament": 1,
+                    "id": 154
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "16",
+                            "text": "Kürtnek és tárogatónak napja a megerősített városok ellen és a büszke tornyok ellen!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "16",
+                        "text": "Kürtnek és tárogatónak napja a megerősített városok ellen és a büszke tornyok ellen!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 141,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Zofóniás próféta könyve",
+                    "abbrev": "Zof",
+                    "link": "Zof",
+                    "old_testament": 1,
+                    "id": 152
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "16",
+                            "text": "kürtszó és riadó napja az erős városok ellen és a büszke bástyák ellen!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "16",
+                        "text": "kürtszó és riadó napja az erős városok ellen és a büszke bástyák ellen!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 145,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Makkabeusok I. könyve",
+                    "abbrev": "1Mak",
+                    "link": "1Mak",
+                    "old_testament": 1,
+                    "id": 167
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "4": [
+                        {
+                            "chapter": 4,
+                            "numv": "32",
+                            "text": "Töltsd el őket félelemmel! Vedd el büszke bátorságukat! Rettegjenek a vereségtől."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 4,
+                        "numv": "32",
+                        "text": "Töltsd el őket félelemmel! Vedd el büszke bátorságukat! Rettegjenek a vereségtől."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "A zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 324
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "47": [
+                        {
+                            "chapter": 47,
+                            "numv": "5",
+                            "text": "Kiválasztja a mi örökségünket, Jákób büszkeségét, akit szeret. (Szela.)"
+                        }
+                    ],
+                    "76": [
+                        {
+                            "chapter": 76,
+                            "numv": "13",
+                            "text": "aki megtöri a fejedelmek büszkeségét, és félelmet kelt a föld királyaiban!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 47,
+                        "numv": "5",
+                        "text": "Kiválasztja a mi örökségünket, Jákób büszkeségét, akit szeret. (Szela.)"
+                    },
+                    {
+                        "chapter": 76,
+                        "numv": "13",
+                        "text": "aki megtöri a fejedelmek büszkeségét, és félelmet kelt a föld királyaiban!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ezékiel próféta könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 331
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "12",
+                            "text": "Leterítem néped tömegét a hősök fegyverével, akik a népek közt a legkegyetlenebbek; elpusztítják Egyiptom büszkeségét, kipusztul népének egész tömege."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 32,
+                        "numv": "12",
+                        "text": "Leterítem néped tömegét a hősök fegyverével, akik a népek közt a legkegyetlenebbek; elpusztítják Egyiptom büszkeségét, kipusztul népének egész tömege."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "translation_id": 6,
+                    "name": "Ámósz próféta könyve",
+                    "abbrev": "Ám",
+                    "link": "Am",
+                    "old_testament": 1,
+                    "id": 335
+                },
+                "translation": {
+                    "id": 6,
+                    "created_at": "2016-07-29 23:58:37",
+                    "updated_at": "2016-07-29 23:58:37",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (2014)",
+                    "abbrev": "RUF",
+                    "order": 9,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A 2014-es revidált Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk. A hivatalos változat <a href=\"http://abibliamindenkie.hu/\">ott látható</a>.",
+                    "publisher": "Katolikus Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "7",
+                            "text": "Megesküdött az ÚR Jákób büszkeségére: Sosem felejtem el, hogy miket műveltek!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "7",
+                        "text": "Megesküdött az ÚR Jákób büszkeségére: Sosem felejtem el, hogy miket műveltek!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 139,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Náhum próféta könyve",
+                    "abbrev": "Náh",
+                    "link": "Nah",
+                    "old_testament": 1,
+                    "id": 146
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "2": [
+                        {
+                            "chapter": 2,
+                            "numv": "2",
+                            "text": "Mert helyreállítja az Úr Jákób büszkeségét, mint Izráel büszkeségét; mert rablók rabolták ki őket, csemetéiket pedig kivágták."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 2,
+                        "numv": "2",
+                        "text": "Mert helyreállítja az Úr Jákób büszkeségét, mint Izráel büszkeségét; mert rablók rabolták ki őket, csemetéiket pedig kivágták."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 121,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "A zsoltárok könyve",
+                    "abbrev": "Zsolt",
+                    "link": "Zsolt",
+                    "old_testament": 1,
+                    "id": 78
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "47": [
+                        {
+                            "chapter": 47,
+                            "numv": "5",
+                            "text": "Kiválasztja a mi örökségünket, Jákób büszkeségét, akit szeret. (Szela.)"
+                        }
+                    ],
+                    "76": [
+                        {
+                            "chapter": 76,
+                            "numv": "13",
+                            "text": "aki megtöri a fejedelmek büszkeségét, és félelmet kelt a föld királyaiban!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 47,
+                        "numv": "5",
+                        "text": "Kiválasztja a mi örökségünket, Jákób büszkeségét, akit szeret. (Szela.)"
+                    },
+                    {
+                        "chapter": 76,
+                        "numv": "13",
+                        "text": "aki megtöri a fejedelmek büszkeségét, és félelmet kelt a föld királyaiban!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 131,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ezékiel próféta könyve",
+                    "abbrev": "Ez",
+                    "link": "Ez",
+                    "old_testament": 1,
+                    "id": 112
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "32": [
+                        {
+                            "chapter": 32,
+                            "numv": "12",
+                            "text": "Leterítlek tömegestül a hősök fegyverével, akik a népek közt a legkegyetlenebbek; elpusztítják Egyiptom büszkeségét, kipusztul népének egész tömege."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 32,
+                        "numv": "12",
+                        "text": "Leterítlek tömegestül a hősök fegyverével, akik a népek közt a legkegyetlenebbek; elpusztítják Egyiptom büszkeségét, kipusztul népének egész tömege."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 133,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Hóseás próféta könyve",
+                    "abbrev": "Hós",
+                    "link": "Hos",
+                    "old_testament": 1,
+                    "id": 122
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "5": [
+                        {
+                            "chapter": 5,
+                            "numv": "5",
+                            "text": "Izráel ellen az ő büszkesége tesz tanúbizonyságot, Izráel és Efraim bűneik miatt vesznek el; velök együtt Júda is elvész."
+                        }
+                    ],
+                    "7": [
+                        {
+                            "chapter": 7,
+                            "numv": "10",
+                            "text": "Izráel ellen az ő büszkesége tesz tanúbizonyságot, és még sem térnek vissza az Úrhoz, az ő Istenökhöz, és nem keresik őt mindennek daczára sem."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 5,
+                        "numv": "5",
+                        "text": "Izráel ellen az ő büszkesége tesz tanúbizonyságot, Izráel és Efraim bűneik miatt vesznek el; velök együtt Júda is elvész."
+                    },
+                    {
+                        "chapter": 7,
+                        "numv": "10",
+                        "text": "Izráel ellen az ő büszkesége tesz tanúbizonyságot, és még sem térnek vissza az Úrhoz, az ő Istenökhöz, és nem keresik őt mindennek daczára sem."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Ámos próféta könyve",
+                    "abbrev": "Ámós",
+                    "link": "Amos",
+                    "old_testament": 1,
+                    "id": 130
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "7",
+                            "text": "Megesküdt az Úr a Jákób büszkeségére: Soha el nem felejtem semmi cselekedetöket!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "7",
+                        "text": "Megesküdt az Úr a Jákób büszkeségére: Soha el nem felejtem semmi cselekedetöket!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 135,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 2,
+                    "name": "Ámósz próféta könyve",
+                    "abbrev": "Ám",
+                    "link": "Am",
+                    "old_testament": 1,
+                    "id": 128
+                },
+                "translation": {
+                    "id": 2,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Magyar Bibliatársulat újfordítású Bibliája (1990)",
+                    "abbrev": "UF",
+                    "order": 10,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "Az 1990-es újfordítású Bibliát a <a href=\"http://bibliatarsulat.hu/\">Magyar Bibliatársulat</a> ideiglenes engedélyével publikáljuk.",
+                    "publisher": "Magyar Bibliatársulat",
+                    "publisher_url": "http://bibliatarsulat.hu",
+                    "reference": ""
+                },
+                "chapters": {
+                    "8": [
+                        {
+                            "chapter": 8,
+                            "numv": "7",
+                            "text": "Megesküdött az ÚR Jákób büszkeségére: Sohasem felejtem el tetteiket!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 8,
+                        "numv": "7",
+                        "text": "Megesküdött az ÚR Jákób büszkeségére: Sohasem felejtem el tetteiket!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 143,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 4,
+                    "name": "Zakariás próféta könyve",
+                    "abbrev": "Zak",
+                    "link": "Zak",
+                    "old_testament": 1,
+                    "id": 162
+                },
+                "translation": {
+                    "id": 4,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Károli Gáspár revideált fordítása",
+                    "abbrev": "KG",
+                    "order": 11,
+                    "denom": "protestáns",
+                    "lang": "magyar",
+                    "copyright": "A szöveg nem jogvédett, a digitalizációért a <a href=\"http://www.theword.net/\">The Word szoftver</a>  magyar moduljainak felelőse, <a href=\"http://baranyilaszlozsolt.blogspot.hu/\">Baranyi László Zsolt</a> vállalt szerkesztői felelősséget. Az esetleges digitalizációs hibákat kérjük jelezni!",
+                    "publisher": "The Word",
+                    "publisher_url": "http://theword.net",
+                    "reference": ""
+                },
+                "chapters": {
+                    "11": [
+                        {
+                            "chapter": 11,
+                            "numv": "3",
+                            "text": "Hangzik a pásztorok jajja, mert elpusztult az ő büszkeségök! Hangzik az oroszlán ordítása, mert elpusztult a Jordán kevélysége!"
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 11,
+                        "numv": "3",
+                        "text": "Hangzik a pásztorok jajja, mert elpusztult az ő büszkeségök! Hangzik az oroszlán ordítása, mert elpusztult a Jordán kevélysége!"
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 207,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Korintusiaknak írt I. levél",
+                    "abbrev": "1Kor",
+                    "link": "1Kor",
+                    "old_testament": 0,
+                    "id": 195
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "31",
+                            "text": "Mindennap készen vagyok meghalni, hiszen büszkeségem vagytok, testvérek, Urunkban, Jézus Krisztusban."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 15,
+                        "numv": "31",
+                        "text": "Mindennap készen vagyok meghalni, hiszen büszkeségem vagytok, testvérek, Urunkban, Jézus Krisztusban."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 207,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "Pál apostol első levele a korintusiakhoz",
+                    "abbrev": "1Kor",
+                    "link": "1Kor",
+                    "old_testament": 0,
+                    "id": 285
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "15": [
+                        {
+                            "chapter": 15,
+                            "numv": "31",
+                            "text": "Mindennap kész vagyok meghalni, hiszen büszkeségem vagytok, testvérek, Urunk Jézus Krisztusban."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 15,
+                        "numv": "31",
+                        "text": "Mindennap kész vagyok meghalni, hiszen büszkeségem vagytok, testvérek, Urunk Jézus Krisztusban."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 208,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "translation_id": 1,
+                    "name": "Korintusiaknak írt II. levél",
+                    "abbrev": "2Kor",
+                    "link": "2Kor",
+                    "old_testament": 0,
+                    "id": 199
+                },
+                "translation": {
+                    "id": 1,
+                    "created_at": "2014-08-01 13:19:30",
+                    "updated_at": "2014-08-01 13:19:30",
+                    "name": "Szent István Társulati Biblia",
+                    "abbrev": "SZIT",
+                    "order": 3,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://szit.katolikus.hu\">Szent István Társulat</a> Szentírás-Bizottságának fordítása, új bevezetőkkel és magyarázatokkal; sajtó alá rendezte Rózsa Huba. Használatának engedélye megújítva: 2013. április.",
+                    "publisher": "Szent István Társulat",
+                    "publisher_url": "http://szit.katolikus.hu",
+                    "reference": "<i>BIBLIA ószövetségi és újszövetségi Szentírás</i>; Ford. Gál Ferenc, Gál József, Gyürki László, Kosztolányi István, Rosta Ferenc, Szénási Sándor, Tarjányi Béla; Szent István Társulat; Budapest; 2009; 3. kiadás."
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "14",
+                            "text": "Remélem, hogy majd még egészen megértetek, amint részben már meg is értettetek minket, hogy Urunk Jézus napján mi vagyunk a ti büszkeségetek, s ti a mienk."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "14",
+                        "text": "Remélem, hogy majd még egészen megértetek, amint részben már meg is értettetek minket, hogy Urunk Jézus napján mi vagyunk a ti büszkeségetek, s ti a mienk."
+                    }
+                ]
+            },
+            {
+                "book": {
+                    "number": 208,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "translation_id": 5,
+                    "name": "Pál apostol második levele a korintusiakhoz",
+                    "abbrev": "2Kor",
+                    "link": "2Kor",
+                    "old_testament": 0,
+                    "id": 286
+                },
+                "translation": {
+                    "id": 5,
+                    "created_at": "2014-11-19 15:58:15",
+                    "updated_at": "2014-11-19 15:58:15",
+                    "name": "Békés-Dalos Újszövetségi Szentírás",
+                    "abbrev": "BD",
+                    "order": 5,
+                    "denom": "katolikus",
+                    "lang": "magyar",
+                    "copyright": "A <a href=\"http://www.benceskiado.hu/\">Bencés Kiadó</a> engedélyével. 2014. február.",
+                    "publisher": "Bencés Kiadó",
+                    "publisher_url": "http://www.benceskiado.hu/",
+                    "reference": ""
+                },
+                "chapters": {
+                    "1": [
+                        {
+                            "chapter": 1,
+                            "numv": "14",
+                            "text": "Remélem, hogy mindvégig meg is értitek, amint részben már meg is értettetek engem: Urunk Jézus (Krisztus) napján mi a ti büszkeségtek, s ti a miénk vagytok."
+                        }
+                    ]
+                },
+                "verses": [
+                    {
+                        "chapter": 1,
+                        "numv": "14",
+                        "text": "Remélem, hogy mindvégig meg is értitek, amint részben már meg is értettetek engem: Urunk Jézus (Krisztus) napján mi a ti büszkeségtek, s ti a miénk vagytok."
+                    }
+                ]
+            }
+        ],
+        "hitCount": 91
+    }
+}
