@@ -13,7 +13,12 @@ class SearchViewModel: ObservableObject {
         
     }
     
+    @MainActor
     func search(searchTerm: String) {
+        if searchTerm.isEmpty {
+            phase = .empty
+            return
+        }
         Task {
             await fetch(searchTerm: searchTerm)
         }

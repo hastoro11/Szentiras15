@@ -12,10 +12,11 @@ struct SearchBar: View {
     @State private var isEditing = false
     var onCommit: () -> Void
     var onClear: () -> Void
+    var onCancel: () -> Void
     var body: some View {
         HStack {
             TextField("Keresés ...", text: $text, onCommit: onCommit)
-                .padding(14)
+                .padding(12)
                 .padding(.horizontal, 25)
                 .background(Color.Theme.background)
                 .font(.Theme.book(size: 19))
@@ -49,7 +50,7 @@ struct SearchBar: View {
                         self.isEditing = false
                     }
                     self.text = ""
-                    onClear()
+                    onCancel()
                     // Dismiss the keyboard
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 }) {
@@ -65,7 +66,7 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(text: .constant(""), onCommit: {}, onClear: {})
+        SearchBar(text: .constant(""), onCommit: {}, onClear: {}, onCancel: {})
             .padding()
             .previewLayout(.sizeThatFits)
     }

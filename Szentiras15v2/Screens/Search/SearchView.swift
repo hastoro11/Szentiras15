@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct SearchView: View {
-    @StateObject var vm: SearchViewModel = SearchViewModel.preview
+    @StateObject var vm: SearchViewModel = SearchViewModel()
     @State var search: String = ""
+    @State var searched: String = ""
     var results: [TextResult.Result] {
+        if case .empty = vm.phase {
+            return []
+        }
         if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult{
             return fullTextResult.results.flatMap { $0.results}
         }
@@ -26,17 +30,19 @@ struct SearchView: View {
     }
     var body: some View {
         VStack {
-            SearchBar(text: $search, onCommit: onCommit, onClear: onClear)
+            SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
                 .padding()
-            Text("\(hitCount ?? "") találat")
-                .opacity(hitCount == nil ? 0 : 1)
-                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding(.horizontal)
+            HStack {
+                Text("\"\(searched)\"")
+                    .opacity(searched.isEmpty ? 0 : 1)
+                Spacer()
+                Text("\(results.count) találat")
+                    .opacity(searched.isEmpty ? 0 : 1)
+            }
+            .font(.Theme.book(size: 17))
+            .padding(.horizontal)
             resultList
             Spacer()
-        }
-        .onAppear {
-            vm.search(searchTerm: "szekér")
         }
     }
     
@@ -52,21 +58,30 @@ struct SearchView: View {
     func resultRow(result: TextResult.Result) -> some View {
         VStack(alignment: .leading) {
             Text("\(result.book.abbrev) \(result.chapter),\(result.numv)")
-                .font(.Theme.heavy(size: 19))
-            Text(result.translation.name)
-                .font(.Theme.heavy(size: 17))
+                .font(.Theme.heavy(size: 15))
+            Text(result.translation.abbrev.uppercased())
+                .font(.Theme.oblique(size: 15))
+                .foregroundColor(.Theme.text)
             Text(result.text)
-                .font(.Theme.book(size: 17))
-                .lineLimit(2)
+                .font(.Theme.book(size: 15))
+                .foregroundColor(Color.Theme.button)
+                .lineLimit(3)
         }
     }
     
     func onClear() {
-        print("onClear")
+        search = ""
     }
     
     func onCommit() {
-        print("Search:", search)
+        searched = search
+        vm.search(searchTerm: search)
+    }
+    
+    func onCancel() {
+        search = ""
+        searched = ""
+        vm.search(searchTerm: search)
     }
 }
 
