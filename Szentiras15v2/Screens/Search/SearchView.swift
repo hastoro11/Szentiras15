@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct SearchView: View {
-    @StateObject var vm: SearchViewModel = SearchViewModel()
+    @EnvironmentObject var vm: SearchViewModel
+    @EnvironmentObject var readerVM: ReaderViewModel
+    @Binding var tabSelection: TabSelection
     @State var search: String = ""
     @State var searched: String = ""
     var results: [TextResult.Result] {
@@ -42,17 +44,32 @@ struct SearchView: View {
             .font(.Theme.book(size: 17))
             .padding(.horizontal)
             resultList
+                .overlay(overlay)
             Spacer()
         }
     }
     
     var resultList: some View {
-        List { 
+        List {
             ForEach(results.indices, id:\.self) { index in
                 resultRow(result: results[index])
+                    .onTapGesture {
+                        jumpToVers(result: results[index])
+                    }
             }
         }
         .listStyle(.plain)
+    }
+    
+    func jumpToVers(result: TextResult.Result) {
+        guard let book = Book.get(by: result.translation.id, and: result.book.number), let translation = Translation.get(by: result.translation.id), let chapter = Int(result.chapter) else { return }
+        
+        readerVM.current = Current(
+            translation: translation,
+            book: book,
+            chapter: chapter)
+        tabSelection = .read
+        readerVM.load(current: readerVM.current)
     }
     
     func resultRow(result: TextResult.Result) -> some View {
@@ -66,6 +83,26 @@ struct SearchView: View {
                 .font(.Theme.book(size: 15))
                 .foregroundColor(Color.Theme.button)
                 .lineLimit(3)
+        }
+    }
+    
+    @ViewBuilder
+    var overlay: some View {
+        switch vm.phase {
+        case .isFetching:
+            ProgressView("Keresés...")
+        case .success(_):
+            EmptyView()
+        case .error(let error):
+            VStack(spacing: 10) {
+                Image(systemName: "exclamationmark.icloud.fill")
+                    .font(.Theme.light(size: 48))
+                Text("\(error.description)")
+                    .font(.Theme.light(size: 19))
+            }
+            
+        case .empty:
+            Text("Nincs találat a(z) '\(search)' kifejezésre")
         }
     }
     
@@ -87,6 +124,7 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(tabSelection: .constant(.search))
+            .environmentObject(SearchViewModel.preview)
     }
 }

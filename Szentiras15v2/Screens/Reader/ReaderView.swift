@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ReaderView: View {    
-    @StateObject var vm: ReaderViewModel = ReaderViewModel()
+    @EnvironmentObject var vm: ReaderViewModel
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
     @State var showArrows: Bool = true
@@ -23,6 +23,7 @@ struct ReaderView: View {
         NavigationView {
             
             versList
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
                 .refreshable {
@@ -51,15 +52,18 @@ struct ReaderView: View {
     }
     
     var versList: some View {
-        List {
-            ForEach(versek.indices, id:\.self) { index in
-                Text(attributedText(index:index))
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .lineSpacing(3)
+        ScrollViewReader { proxy in
+            ScrollView {
+                ForEach(versek.indices, id:\.self) { index in
+                    Text(attributedText(index:index))
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .lineSpacing(3)
+                        .padding(.horizontal)
+                }
+                .listRowSeparator(.hidden)
             }
-            .listRowSeparator(.hidden)
+            .listStyle(.plain)
         }
-        .listStyle(.plain)
     }
     
     var booksToolbar: some ToolbarContent {
@@ -201,5 +205,6 @@ struct ReaderView: View {
 struct ReaderView_Previews: PreviewProvider {
     static var previews: some View {
         return ReaderView()
+            .environmentObject(ReaderViewModel.preview)
     }
 }

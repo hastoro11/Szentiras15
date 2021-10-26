@@ -25,7 +25,7 @@ struct SzentirasTabView: View {
                     Label("Biblia", systemImage: "book.fill")
                 }
                 .tag(TabSelection.read)
-            SearchView()
+            SearchView(tabSelection: $selection)
                 .tabItem {
                     Label("Keresés", systemImage: "magnifyingglass")
                 }

@@ -33,6 +33,11 @@ extension Book {
         return booksInTranslation.first { $0.translation.id == translationID }?.books ?? []
     }
     
+    static func get(by translationID: Int, and bookNumber: Int) -> Book? {
+        let books = Self.all(by: translationID)
+        
+        return books.first { $0.number == bookNumber }
+    }
 }
 
 extension Book {

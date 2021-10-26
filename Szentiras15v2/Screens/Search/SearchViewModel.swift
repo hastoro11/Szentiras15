@@ -8,7 +8,7 @@
 import SwiftUI
 
 class SearchViewModel: ObservableObject {
-    @Published var phase: FetchPhase = .isFetching    
+    @Published var phase: FetchPhase = .empty
     init() {
         
     }

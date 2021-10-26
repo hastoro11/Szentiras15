@@ -31,6 +31,7 @@ enum FetchPhase {
 
 class ReaderViewModel: ObservableObject {
     @Published var phase: FetchPhase = .isFetching
+    
     var current: Current
     
     var cache = Cache<Idezet>()
