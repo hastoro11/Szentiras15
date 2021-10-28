@@ -73,7 +73,7 @@ extension Cache {
     
     private func value(key: String) -> Entry<Value>? {
         if let entry = wrapped.object(forKey: NSString(string: key)) {
-            if entry.expirationDate < .now {
+            if entry.expirationDate > .now {
                 wrapped.removeObject(forKey: NSString(string: key))
                 return entry
             }
