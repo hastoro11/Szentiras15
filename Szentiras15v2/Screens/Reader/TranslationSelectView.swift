@@ -25,16 +25,7 @@ struct TranslationSelectView: View {
             
             Divider()
             ForEach(Translation.all()) { tr in
-                HStack {
-                    Text(tr.abbrev.uppercased())
-                        .font(.Theme.heavy(size: 15))
-                        .foregroundColor(.white)
-                        .frame(width: 50, height: 44)
-                        .background(tr.id == current.translation.id ? Color.accentColor : Color.Theme.background)
-                    Text(tr.name)
-                        .font(.custom("Avenir Book", size: 17))
-                        .foregroundColor(tr.id == current.translation.id ? Color.Theme.dark : Color.Theme.text)
-                }
+                SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == current.translation.id)
                 .onTapGesture {
                     fetch(translation: tr)
                     showTranslations = false

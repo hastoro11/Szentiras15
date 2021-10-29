@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		210C1B3B272BD46A005CEAFF /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C1B3A272BD46A005CEAFF /* FilterView.swift */; };
+		210C1B3E272C398E005CEAFF /* SelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C1B3D272C398E005CEAFF /* SelectRow.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
 		21AC166527218FF800D2DA84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166427218FF800D2DA84 /* ContentView.swift */; };
 		21AC166727218FF900D2DA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AC166627218FF900D2DA84 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		210C1B3A272BD46A005CEAFF /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		210C1B3D272C398E005CEAFF /* SelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRow.swift; sourceTree = "<group>"; };
 		21AC165F27218FF800D2DA84 /* Szentiras15v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Szentiras15v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2App.swift; sourceTree = "<group>"; };
 		21AC166427218FF800D2DA84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,6 +90,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210C1B3C272C3980005CEAFF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				210C1B3D272C398E005CEAFF /* SelectRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		21AC165627218FF800D2DA84 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		21AC168B2721A07500D2DA84 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				210C1B3C272C3980005CEAFF /* Views */,
 				21AC16A327245BC500D2DA84 /* Search */,
 				21AC16992722A01400D2DA84 /* Reader */,
 			);
@@ -326,6 +337,7 @@
 				21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,
+				210C1B3E272C398E005CEAFF /* SelectRow.swift in Sources */,
 				21AC168A27219FB400D2DA84 /* Font+Extension.swift in Sources */,
 				21AC16842721977F00D2DA84 /* Translation.swift in Sources */,
 				21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */,

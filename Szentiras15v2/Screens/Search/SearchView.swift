@@ -71,9 +71,13 @@ struct SearchView: View {
                 Button {
                     showFilter.toggle()
                 } label: {
-                    Image(systemName: filterIsOn ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
-                        .font(.Theme.book(size: 19))
+                    Image(systemName: "line.3.horizontal.decrease.circle")
+                        .imageScale(.large)
+                        .frame(width: 50, height: 44)
+                        .foregroundColor(.white)
+                        .background(filterIsOn ? Color.accentColor : Color.Theme.background)
                 }
+                .opacity(returnSucces ? 1 : 0)
                 
                 Spacer()
                 Text("\(filteredResults.count) találat")

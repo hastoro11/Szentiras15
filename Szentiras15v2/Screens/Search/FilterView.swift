@@ -29,6 +29,11 @@ struct FilterView: View {
     
     @Binding var showFilter: Bool
     @Binding var filter: Filter
+    
+    var selectedBookName: String {
+        guard let book = Book.combined.first(where: {$0.number == filter.book }) else { return "" }
+        return book.abbrev.prefix(3).description
+    }
 
     var body: some View {
         NavigationView {
@@ -38,67 +43,47 @@ struct FilterView: View {
                         Text("Nincs szűrés").tag(0)
                         ForEach(books) { book in
                             Text(book.name)
+                                .font(.Theme.book(size: 17))
                                 .tag(book.number)
                         }
                     } label: {
-                        Text("Válassz")
-                            .fixedSize()
+                        Text(filter.book == 0 ? "" : selectedBookName)
+                            .font(.Theme.heavy(size: 15))
+                            .foregroundColor(.white)
+                            .frame(width: 50, height: 44)
+                            .background(filter.book == 0 ? Color.Theme.background : Color.accentColor)
                     }
-
+                    
                 } header: {
                     Text("Könyvek")
                 }
                 
                 Section {
-                    HStack {
-                        Text("Nincs szűrés")
-                        Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(filter.testament == .none ? 1 : 0)
-                    }
-                    .onTapGesture {
-                        filter.testament = .none
-                    }
-                    HStack {
-                        Text("Ószövetség")
-                        Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(filter.testament == .oldTestament ? 1 : 0)
-                    }
-                    .onTapGesture {
-                        filter.testament = .oldTestament
-                    }
-                    HStack {
-                        Text("Újszövetség")
-                        Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(filter.testament == .newTesmament ? 1 : 0)
-                    }
-                    .onTapGesture {
-                        filter.testament = .newTesmament
-                    }
+                    SelectRow(abbrev: "", name: "Nincs szűrés", selected: filter.testament == .none)
+                        .onTapGesture {
+                            filter.testament = .none
+                        }
+                    SelectRow(abbrev: "ÓSZ", name: "Ószövetség", selected: filter.testament == .oldTestament)
+                        .onTapGesture {
+                            filter.testament = .oldTestament
+                        }
+                    SelectRow(abbrev: "ÚSZ", name: "Újszövetség", selected: filter.testament == .newTesmament)
+                        .onTapGesture {
+                            filter.testament = .newTesmament
+                        }
                     
                 } header: {
                     Text("Ó- vagy Újszövetség")
                 }
                 
                 Section {
-                    HStack {
-                        Text("Nincs szűrés")
-                        Spacer()
-                        Image(systemName: "checkmark")
-                            .opacity(filter.translation == 0 ? 1 : 0)
-                    }
+                    SelectRow(abbrev: "", name: "Nincs szűrés", selected: filter.translation == 0)
                     .onTapGesture {
                         filter.translation = 0
                     }
+                    .foregroundColor(filter.translation != 0 ? Color.Theme.dark : Color.Theme.text)
                     ForEach(Translation.all()) { tr in
-                        HStack {
-                            Text(tr.name)
-                            Spacer()
-                            Image(systemName: "checkmark")
-                                .opacity(filter.translation == tr.id ? 1 : 0)
-                        }
+                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: filter.translation == tr.id)
                         .onTapGesture {
                             filter.translation = tr.id
                         }
@@ -107,13 +92,31 @@ struct FilterView: View {
                     Text("Fordítás")
                 }
             }
+            .listStyle(.grouped)
+            .font(.Theme.book(size: 17))
             .navigationBarTitleDisplayMode(.inline)
-            .navigationTitle("Találatok szűrése")
             .toolbar {
-                ToolbarItem(placement: ToolbarItemPlacement.confirmationAction) {
-                    Button("Kész") {
+                ToolbarItem(placement: ToolbarItemPlacement.cancellationAction) {
+                    Button {
+                        filter = Filter(book: 0, translation: 0, testament: .none)
                         showFilter.toggle()
+                    } label: {
+                        Image(systemName: "trash")
+                        .font(.Theme.heavy(size: 17))
                     }
+
+                }
+                ToolbarItem(placement: ToolbarItemPlacement.principal) {
+                    Text("Találatok szűrése").font(.Theme.black(size: 19))
+                }
+                ToolbarItem(placement: ToolbarItemPlacement.confirmationAction) {
+                    Button {
+                        showFilter.toggle()
+                    } label: {
+                        Text("Kész")
+                        .font(.Theme.heavy(size: 19))
+                    }
+
                 }
             }
         }
