@@ -9,9 +9,6 @@ import SwiftUI
 
 class SearchViewModel: ObservableObject {
     @Published var phase: FetchPhase = .empty
-    init() {
-        
-    }
     
     @MainActor
     func search(searchTerm: String) {
@@ -26,6 +23,7 @@ class SearchViewModel: ObservableObject {
     
     @MainActor
     private func fetch(searchTerm: String) async {
+        print("✏️")
         phase = .isFetching
         do {
             let searchResult = try await SzentirasAPI.instance.search(searchTerm)

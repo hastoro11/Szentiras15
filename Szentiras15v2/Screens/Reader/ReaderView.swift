@@ -21,27 +21,27 @@ struct ReaderView: View {
     
     var body: some View {
         NavigationView {
-            
             versList
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
-                .refreshable {
-                    vm.load(current: vm.current)
-                }
                 .toolbar {
                     booksToolbar
                     translationsToolbar
                     settingToolbar
+                }
+                .refreshable {
+                    vm.load()
                 }
                 .onTapGesture {
                     withAnimation {
                         showArrows.toggle()
                     }
                 }
+                
         }
         .task {
-            await vm.fetch()
+            vm.load()
         }
         .sheet(isPresented: $showBooklist) {
             BooksListView(showBookslist: $showBooklist, current: vm.current, load: vm.load)
@@ -51,19 +51,40 @@ struct ReaderView: View {
         }
     }
     
+
+}
+
+extension ReaderView {
     var versList: some View {
         ScrollViewReader { proxy in
-            ScrollView {
+            List{
                 ForEach(versek.indices, id:\.self) { index in
                     Text(attributedText(index:index))
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineSpacing(3)
-                        .padding(.horizontal)
+                        .id(tag(index: index))
+                        .listRowBackground(tag(index: index) == vm.searchTag ? Color.Theme.background : Color.clear)
                 }
                 .listRowSeparator(.hidden)
+                
             }
             .listStyle(.plain)
+            .task(id: vm.seekSearched) {
+                if vm.seekSearched {
+                    DispatchQueue.main.asyncAfter(deadline: .now()+0.5) {
+                        withAnimation {
+                            proxy.scrollTo(vm.searchTag, anchor: .top)
+                            vm.seekSearched = false
+                            vm.searchTag = ""
+                        }
+                    }
+                }
+            }
         }
+    }
+    
+    func tag(index: Int) -> String {
+        "\(vm.current.translation.id)/\(vm.current.book.number)/\(vm.current.chapter)/\(versek[index].versSzam)"
     }
     
     var booksToolbar: some ToolbarContent {
@@ -200,7 +221,6 @@ struct ReaderView: View {
         )
     }
 }
-
 
 struct ReaderView_Previews: PreviewProvider {
     static var previews: some View {

@@ -12,7 +12,8 @@ struct SearchView: View {
     @EnvironmentObject var readerVM: ReaderViewModel
     @Binding var tabSelection: TabSelection
     @State var search: String = ""
-    @State var searched: String = ""
+    @State var searched: Bool = false
+    
     var results: [TextResult.Result] {
         if case .empty = vm.phase {
             return []
@@ -23,23 +24,22 @@ struct SearchView: View {
         
         return []
     }
-    var hitCount: String? {
-        if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult {
-            return String(fullTextResult.hitCount)
+
+    var returnSucces: Bool {
+        if case .success(_) = vm.phase {
+            return true
         }
         
-        return nil
+        return false
     }
     var body: some View {
         VStack {
             SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
                 .padding()
             HStack {
-                Text("\"\(searched)\"")
-                    .opacity(searched.isEmpty ? 0 : 1)
                 Spacer()
                 Text("\(results.count) találat")
-                    .opacity(searched.isEmpty ? 0 : 1)
+                    .opacity(returnSucces ? 1 : 0)
             }
             .font(.Theme.book(size: 17))
             .padding(.horizontal)
@@ -62,6 +62,8 @@ struct SearchView: View {
     }
     
     func jumpToVers(result: TextResult.Result) {
+        readerVM.seekSearched = true
+        readerVM.searchTag = "\(result.translation.id)/\(result.book.number)/\(result.chapter)/\(result.numv)"
         guard let book = Book.get(by: result.translation.id, and: result.book.number), let translation = Translation.get(by: result.translation.id), let chapter = Int(result.chapter) else { return }
         
         readerVM.current = Current(
@@ -102,22 +104,28 @@ struct SearchView: View {
             }
             
         case .empty:
-            Text("Nincs találat a(z) '\(search)' kifejezésre")
+            if searched && results.isEmpty {
+                Text("Nincs találat a(z) '\(search)' kifejezésre")
+            } else {
+                Text("Kifejezés keresése a Bibliában...")
+            }
         }
     }
     
     func onClear() {
         search = ""
+        searched = false
+        vm.search(searchTerm: search)
     }
     
     func onCommit() {
-        searched = search
+        searched = true
         vm.search(searchTerm: search)
     }
     
     func onCancel() {
         search = ""
-        searched = ""
+        searched = false
         vm.search(searchTerm: search)
     }
 }

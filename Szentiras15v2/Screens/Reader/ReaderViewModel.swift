@@ -7,7 +7,11 @@
 
 import SwiftUI
 
-struct Current {
+struct Current: Equatable {
+    static func == (lhs: Current, rhs: Current) -> Bool {
+        lhs.key == rhs.key
+    }
+    
     var translation: Translation
     var book: Book
     var chapter: Int
@@ -17,7 +21,7 @@ struct Current {
     }
     
     var key: String {
-        "\(book.abbrev)\(chapter)/\(translation.abbrev.uppercased())"
+        "\(book.abbrev)/\(chapter)/\(translation.abbrev.uppercased())"
     }
 }
 
@@ -36,11 +40,18 @@ class ReaderViewModel: ObservableObject {
     
     var cache = Cache<Idezet>()
     
+    var seekSearched: Bool = false
+    var searchTag: String = ""
+    
     init() {
         current = Current(
             translation: Translation.default,
             book: Book.default,
             chapter: 1)
+    }
+    
+    func load() {
+            load(current: self.current)
     }
     
     func load(current: Current) {        
