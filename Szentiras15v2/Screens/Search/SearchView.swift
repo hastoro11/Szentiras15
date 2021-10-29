@@ -22,17 +22,6 @@ struct SearchView: View {
     }
     @State var filter: Filter = Filter(book: 0, translation: 0, testament: .none)
     
-    var results: [TextResult.Result] {
-        if case .empty = vm.phase {
-            return []
-        }
-        if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult{
-            return fullTextResult.results.flatMap { $0.results}
-        }
-        
-        return []
-    }
-    
     var filteredResults: [TextResult.Result] {
         if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult{
             
@@ -63,29 +52,15 @@ struct SearchView: View {
         
         return false
     }
+    
+    // MARK: - Body
     var body: some View {
         VStack {
             SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
                 .padding()
-            HStack {
-                Button {
-                    showFilter.toggle()
-                } label: {
-                    Image(systemName: "line.3.horizontal.decrease.circle")
-                        .imageScale(.large)
-                        .frame(width: 50, height: 44)
-                        .foregroundColor(.white)
-                        .background(filterIsOn ? Color.accentColor : Color.Theme.background)
-                }
-                .opacity(returnSucces ? 1 : 0)
-                
-                Spacer()
-                Text("\(filteredResults.count) találat")
-                    .opacity(returnSucces ? 1 : 0)
-            }
-            .font(.Theme.book(size: 17))
-            .padding(.horizontal)
-            resultList
+            searchHeader
+            
+            SearchResultList(results: filteredResults, onTap: jumpToVers(result:))
                 .overlay(overlay)
                 .sheet(isPresented: $showFilter) {
                     FilterView(showFilter: $showFilter, filter: $filter)
@@ -94,16 +69,25 @@ struct SearchView: View {
         }
     }
     
-    var resultList: some View {
-        List {
-            ForEach(filteredResults.indices, id:\.self) { index in
-                resultRow(result: filteredResults[index])
-                    .onTapGesture {
-                        jumpToVers(result: filteredResults[index])
-                    }
+    var searchHeader: some View {
+        HStack {
+            Button {
+                showFilter.toggle()
+            } label: {
+                Image(systemName: "line.3.horizontal.decrease.circle")
+                    .imageScale(.large)
+                    .frame(width: 50, height: 44)
+                    .foregroundColor(.white)
+                    .background(filterIsOn ? Color.accentColor : Color.Theme.background)
             }
+            .opacity(returnSucces ? 1 : 0)
+            
+            Spacer()
+            Text("\(filteredResults.count) találat")
+                .opacity(returnSucces ? 1 : 0)
         }
-        .listStyle(.plain)
+        .font(.Theme.book(size: 17))
+        .padding(.horizontal)
     }
     
     func jumpToVers(result: TextResult.Result) {
@@ -117,20 +101,6 @@ struct SearchView: View {
             chapter: chapter)
         tabSelection = .read
         readerVM.load(current: readerVM.current)
-    }
-    
-    func resultRow(result: TextResult.Result) -> some View {
-        VStack(alignment: .leading) {
-            Text("\(result.book.abbrev) \(result.chapter),\(result.numv)")
-                .font(.Theme.heavy(size: 15))
-            Text(result.translation.abbrev.uppercased())
-                .font(.Theme.oblique(size: 15))
-                .foregroundColor(.Theme.text)
-            Text(result.text)
-                .font(.Theme.book(size: 15))
-                .foregroundColor(Color.Theme.button)
-                .lineLimit(3)
-        }
     }
     
     @ViewBuilder
@@ -149,7 +119,7 @@ struct SearchView: View {
             }
             
         case .empty:
-            if searched && results.isEmpty {
+            if searched && filteredResults.isEmpty {
                 Text("Nincs találat a(z) '\(search)' kifejezésre")
             } else {
                 Text("Kifejezés keresése a Bibliában...")

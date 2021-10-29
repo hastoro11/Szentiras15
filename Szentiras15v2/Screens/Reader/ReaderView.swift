@@ -65,7 +65,7 @@ extension ReaderView {
                         .id(tag(index: index))
                         .listRowBackground(tag(index: index) == vm.searchTag ? Color.Theme.background : Color.clear)
                 }
-                .listRowSeparator(.hidden)
+//                .listRowSeparator(.hidden)
                 
             }
             .listStyle(.plain)

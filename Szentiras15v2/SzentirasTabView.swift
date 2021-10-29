@@ -13,7 +13,7 @@ enum TabSelection {
 }
 
 struct SzentirasTabView: View {
-    @State var selection: TabSelection = .search
+    @State var selection: TabSelection = .read
     var idezet: Idezet
     var versek: [Vers] {
         idezet.valasz.versek
