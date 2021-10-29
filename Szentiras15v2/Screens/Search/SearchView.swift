@@ -7,12 +7,20 @@
 
 import SwiftUI
 
+// TODO: filter search - translation, old/newtestament, book
+
 struct SearchView: View {
     @EnvironmentObject var vm: SearchViewModel
     @EnvironmentObject var readerVM: ReaderViewModel
     @Binding var tabSelection: TabSelection
     @State var search: String = ""
     @State var searched: Bool = false
+    
+    @State var showFilter: Bool = false
+    var filterIsOn: Bool {
+        filter != Filter(book: 0, translation: 0, testament: .none)
+    }
+    @State var filter: Filter = Filter(book: 0, translation: 0, testament: .none)
     
     var results: [TextResult.Result] {
         if case .empty = vm.phase {
@@ -22,6 +30,29 @@ struct SearchView: View {
             return fullTextResult.results.flatMap { $0.results}
         }
         
+        return []
+    }
+    
+    var filteredResults: [TextResult.Result] {
+        if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult{
+            
+            var filteredResults = fullTextResult.results.flatMap { $0.results}
+            
+            if filter.testament == .oldTestament {
+                filteredResults = filteredResults.filter { $0.book.oldTestament == 1}
+            }
+            if filter.testament == .newTesmament {
+                filteredResults = filteredResults.filter { $0.book.oldTestament == 0}
+            }
+            if filter.book != 0 {
+                filteredResults = filteredResults.filter { $0.book.number == filter.book }
+            }
+            if filter.translation != 0 {
+                filteredResults = filteredResults.filter { $0.translation.id == filter.translation }
+            }
+            return filteredResults
+            
+        }
         return []
     }
 
@@ -37,24 +68,34 @@ struct SearchView: View {
             SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
                 .padding()
             HStack {
+                Button {
+                    showFilter.toggle()
+                } label: {
+                    Image(systemName: filterIsOn ? "line.3.horizontal.decrease.circle.fill" : "line.3.horizontal.decrease.circle")
+                        .font(.Theme.book(size: 19))
+                }
+                
                 Spacer()
-                Text("\(results.count) találat")
+                Text("\(filteredResults.count) találat")
                     .opacity(returnSucces ? 1 : 0)
             }
             .font(.Theme.book(size: 17))
             .padding(.horizontal)
             resultList
                 .overlay(overlay)
+                .sheet(isPresented: $showFilter) {
+                    FilterView(showFilter: $showFilter, filter: $filter)
+                }
             Spacer()
         }
     }
     
     var resultList: some View {
         List {
-            ForEach(results.indices, id:\.self) { index in
-                resultRow(result: results[index])
+            ForEach(filteredResults.indices, id:\.self) { index in
+                resultRow(result: filteredResults[index])
                     .onTapGesture {
-                        jumpToVers(result: results[index])
+                        jumpToVers(result: filteredResults[index])
                     }
             }
         }
@@ -126,6 +167,7 @@ struct SearchView: View {
     func onCancel() {
         search = ""
         searched = false
+        filter = Filter(book: 0, translation: 0, testament: .none)
         vm.search(searchTerm: search)
     }
 }

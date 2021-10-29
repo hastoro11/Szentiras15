@@ -33,6 +33,14 @@ extension Book {
         return booksInTranslation.first { $0.translation.id == translationID }?.books ?? []
     }
     
+    static var combined: [Book] {
+        let basic = Self.all(by: 6)
+        let catholic = Self.all(by: 1).filter {
+            $0.number == 117 || $0.number == 118 || $0.number == 125 || $0.number == 126 || $0.number == 130 || $0.number == 145 || $0.number == 146
+        }
+        return (basic+catholic).sorted(by: {$0.number < $1.number})
+    }
+    
     static func get(by translationID: Int, and bookNumber: Int) -> Book? {
         let books = Self.all(by: translationID)
         

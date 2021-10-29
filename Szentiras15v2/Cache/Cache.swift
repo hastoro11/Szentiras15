@@ -26,7 +26,7 @@ class Cache<Value> where Value: Codable {
     private var maxEntryCount: Int
     
     init(expirationInterval: TimeInterval = 30 * 60, maxEntryCount: Int = 50) {
-//        print(FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0])
+        print(FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask)[0])
         self.expirationInterval = expirationInterval
         self.maxEntryCount = maxEntryCount
     }
