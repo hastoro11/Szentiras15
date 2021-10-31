@@ -11,7 +11,9 @@ struct ReaderView: View {
     @EnvironmentObject var vm: ReaderViewModel
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
+    @State var showHistory: Bool = false
     @State var showArrows: Bool = true
+    
     var versek: [Vers] {
         if case .success(let res) = vm.phase, let idezet = res as? Idezet {
             return idezet.valasz.versek
@@ -26,6 +28,7 @@ struct ReaderView: View {
                 .overlay(overlay.padding(.horizontal))
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
+                    historyToolbar
                     booksToolbar
                     translationsToolbar
                     settingToolbar
@@ -34,9 +37,10 @@ struct ReaderView: View {
                     vm.load()
                 }
                 .onTapGesture {
-                    withAnimation {
-                        showArrows.toggle()
-                    }
+                    handleArrows()
+                }
+                .onAppear {
+                    handleArrows()
                 }
                 
         }
@@ -49,9 +53,24 @@ struct ReaderView: View {
         .sheet(isPresented: $showTranslationList) {
             TranslationSelectView(current: vm.current, showTranslations: $showTranslationList, load: vm.load)
         }
+        .sheet(isPresented: $showHistory) {
+            vm.load()
+        } content: {
+            HistoryListView()
+        }
+
     }
     
-
+    func handleArrows() {
+        withAnimation {
+            showArrows = true
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now()+3) {
+            withAnimation {
+                showArrows = false
+            }
+        }
+    }
 }
 
 extension ReaderView {
@@ -85,6 +104,18 @@ extension ReaderView {
     
     func tag(index: Int) -> String {
         "\(vm.current.translation.id)/\(vm.current.book.number)/\(vm.current.chapter)/\(versek[index].versSzam)"
+    }
+    
+    var historyToolbar: some ToolbarContent {
+        ToolbarItem(placement: .cancellationAction) {
+            Button {
+                showHistory.toggle()
+            } label: {
+                Image(systemName: "list.bullet")
+                    .font(.Theme.heavy(size: 17))
+            }
+
+        }
     }
     
     var booksToolbar: some ToolbarContent {

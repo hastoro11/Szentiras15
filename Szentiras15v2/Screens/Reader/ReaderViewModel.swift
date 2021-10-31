@@ -32,7 +32,6 @@ enum FetchPhase {
     case empty
 }
 
-
 class ReaderViewModel: ObservableObject {
     @Published var phase: FetchPhase = .isFetching
     
@@ -43,18 +42,21 @@ class ReaderViewModel: ObservableObject {
     var seekSearched: Bool = false
     var searchTag: String = ""
     
+    var historyService: HistoryService
+    
     init() {
         current = Current(
             translation: Translation.default,
             book: Book.default,
             chapter: 1)
+        historyService = HistoryService.instance
     }
     
     func load() {
-            load(current: self.current)
+        load(current: self.current)
     }
     
-    func load(current: Current) {        
+    func load(current: Current) {
         self.current = current
         if let saved = cache[current.key] {
             self.phase = .success(saved)
@@ -91,6 +93,7 @@ extension ReaderViewModel {
         let vm = ReaderViewModel()
         let idezet = Idezet.example(filename: "Rom16")
         vm.phase = .success(idezet)
+        vm.historyService = HistoryService.preview
         return vm
     }
 }
