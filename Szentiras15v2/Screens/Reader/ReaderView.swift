@@ -57,6 +57,7 @@ struct ReaderView: View {
             vm.load()
         } content: {
             HistoryListView()
+                
         }
 
     }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Current: Equatable {
+struct Current: Codable, Equatable {
     static func == (lhs: Current, rhs: Current) -> Bool {
         lhs.key == rhs.key
     }
@@ -42,14 +42,11 @@ class ReaderViewModel: ObservableObject {
     var seekSearched: Bool = false
     var searchTag: String = ""
     
-    var historyService: HistoryService
-    
     init() {
         current = Current(
             translation: Translation.default,
             book: Book.default,
             chapter: 1)
-        historyService = HistoryService.instance
     }
     
     func load() {
@@ -58,6 +55,7 @@ class ReaderViewModel: ObservableObject {
     
     func load(current: Current) {
         self.current = current
+        HistoryService.instance.add(current: current)
         if let saved = cache[current.key] {
             self.phase = .success(saved)
             return
@@ -92,8 +90,7 @@ extension ReaderViewModel {
     static var preview: ReaderViewModel {
         let vm = ReaderViewModel()
         let idezet = Idezet.example(filename: "Rom16")
-        vm.phase = .success(idezet)
-        vm.historyService = HistoryService.preview
+        vm.phase = .success(idezet)        
         return vm
     }
 }
