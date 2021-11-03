@@ -32,6 +32,7 @@ struct HistoryListView: View {
                     
                 }
             }
+            .overlay(overlay)
             .listStyle(.plain)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
@@ -49,6 +50,15 @@ struct HistoryListView: View {
                         .font(.Theme.black(size: 19))
                         .foregroundColor(.black)
                         .padding()
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button {
+                        historyVM.removeAllHistory()
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .font(.Theme.medium(size: 17))
+                    
                 }
             }
             

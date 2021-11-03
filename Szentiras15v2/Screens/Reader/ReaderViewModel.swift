@@ -57,6 +57,9 @@ class ReaderViewModel: ObservableObject {
         self.current = current
         HistoryService.instance.add(current: current)
         if let saved = cache[current.key] {
+            if saved.valasz.versek.isEmpty {
+                HistoryService.instance.remove(current)
+            }
             self.phase = .success(saved)
             return
         }
@@ -74,12 +77,14 @@ class ReaderViewModel: ObservableObject {
             if Task.isCancelled { return }
             if idezet.valasz.versek.isEmpty {
                 self.phase = .empty
+                HistoryService.instance.remove(current)
             } else {
                 self.phase = .success(idezet)
                 cache[current.key] = idezet
             }
         } catch {
             if Task.isCancelled { return }
+            HistoryService.instance.remove(current)
             print("⛔️ Error in ReaderViewModel 'fetch' - ", error)
             self.phase = .error(error as? SzentirasError ?? .unknown)
         }

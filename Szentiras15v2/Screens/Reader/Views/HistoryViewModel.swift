@@ -28,6 +28,11 @@ class HistoryViewModel: ObservableObject {
         HistoryService.instance.persist(history: historyList)
     }
     
+    func removeAllHistory() {
+        historyList = []
+        HistoryService.instance.persist(history: historyList)
+    }
+    
     static var preview: HistoryViewModel {
         let service = HistoryViewModel.init()
         service.historyList = [

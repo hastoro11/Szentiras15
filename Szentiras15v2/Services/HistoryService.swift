@@ -34,6 +34,14 @@ struct HistoryService {
         
     }
     
+    func remove(_ current: Current) {
+        var historyList = fetch()
+        if let index = historyList.firstIndex(of: current) {
+            historyList.remove(at: index)
+        }
+        persist(history: historyList)
+    }
+    
     func persist(history: [Current]) {
         do {
             let data = try PropertyListEncoder().encode(history)
