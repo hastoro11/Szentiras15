@@ -7,12 +7,21 @@
 
 import SwiftUI
 
-struct ReaderView: View {    
+
+
+struct ReaderView: View {
+    @State var fontSize: Double
+    
     @EnvironmentObject var vm: ReaderViewModel
+    @EnvironmentObject var partialSheetManager: PartialSheetManager
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
     @State var showHistory: Bool = false
     @State var showArrows: Bool = true
+    
+    init() {
+        _fontSize = State(initialValue: UserDefaults.standard.getFontSize())
+    }
     
     var versek: [Vers] {
         if case .success(let res) = vm.phase, let idezet = res as? Idezet {
@@ -59,6 +68,7 @@ struct ReaderView: View {
             HistoryListView()
                 
         }
+        .addPartialSheet()
 
     }
     
@@ -85,8 +95,6 @@ extension ReaderView {
                         .id(tag(index: index))
                         .listRowBackground(tag(index: index) == vm.searchTag ? Color.Theme.background : Color.clear)
                 }
-//                .listRowSeparator(.hidden)
-                
             }
             .listStyle(.plain)
             .task(id: vm.seekSearched) {
@@ -151,7 +159,11 @@ extension ReaderView {
     
     var settingToolbar: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing, content: {
-            Button(action: {}) {
+            Button(action: {
+                partialSheetManager.showPartialSheet({}) {
+                    SettingView(fontSize: $fontSize)
+                }
+            }) {
                 Text("Aa")
                     .font(.Theme.heavy(size: 19))
             }
@@ -221,9 +233,9 @@ extension ReaderView {
         let vers = versek[index]
         var attributedIndex = AttributedString("\(vers.versSzam) ")
         attributedIndex.foregroundColor = .accentColor
-        attributedIndex.font = .Theme.black(size: 17)
+        attributedIndex.font = .Theme.black(size: fontSize)
         var attributedString = AttributedString(vers.szoveg)
-        attributedString.font = .Theme.light(size: 17)
+        attributedString.font = .Theme.light(size: fontSize)
         attributedString.foregroundColor = .Theme.button
         let result = attributedIndex + attributedString
         return result
@@ -254,9 +266,44 @@ extension ReaderView {
     }
 }
 
+struct SheetView: View {
+    @State private var longer: Bool = false
+    @State private var text: String = "some text"
+
+
+    var body: some View {
+        VStack {
+            Group {
+                Text("Settings Panel")
+                    .font(.headline)
+
+                TextField("TextField", text: self.$text)
+                    .padding(8)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 4)
+                            .stroke(Color(UIColor.systemGray2), lineWidth: 1)
+                )
+
+                Toggle(isOn: self.$longer) {
+                    Text("Advanced")
+                }
+            }
+            .padding()
+            .frame(height: 50)
+            if self.longer {
+                VStack {
+                    Text("More settings here...")
+                }
+                .frame(height: 200)
+            }
+        }
+    }
+}
+
 struct ReaderView_Previews: PreviewProvider {
     static var previews: some View {
         return ReaderView()
             .environmentObject(ReaderViewModel.preview)
+            .environmentObject(PartialSheetManager())
     }
 }

@@ -13,6 +13,14 @@
 		210CC474272EE3120009D17B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC473272EE3120009D17B /* HistoryViewModel.swift */; };
 		210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC475272EE6A60009D17B /* HistoryListView.swift */; };
 		210CC478272F0EB80009D17B /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC477272F0EB80009D17B /* HistoryService.swift */; };
+		210CC4802732E2DD0009D17B /* View+IfDeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47A2732E2DD0009D17B /* View+IfDeviceType.swift */; };
+		210CC4812732E2DD0009D17B /* PartialSheetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47B2732E2DD0009D17B /* PartialSheetManager.swift */; };
+		210CC4822732E2DD0009D17B /* View+PartialSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47C2732E2DD0009D17B /* View+PartialSheetModifier.swift */; };
+		210CC4832732E2DD0009D17B /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47D2732E2DD0009D17B /* BlurEffectView.swift */; };
+		210CC4842732E2DD0009D17B /* PartialSheetStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47E2732E2DD0009D17B /* PartialSheetStyle.swift */; };
+		210CC4852732E2DD0009D17B /* PartialSheetViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC47F2732E2DD0009D17B /* PartialSheetViewModifier.swift */; };
+		210CC4872732EA4B0009D17B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4862732EA4B0009D17B /* SettingView.swift */; };
+		210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
 		21AC166527218FF800D2DA84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166427218FF800D2DA84 /* ContentView.swift */; };
 		21AC166727218FF900D2DA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AC166627218FF900D2DA84 /* Assets.xcassets */; };
@@ -53,6 +61,14 @@
 		210CC473272EE3120009D17B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		210CC475272EE6A60009D17B /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		210CC477272F0EB80009D17B /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
+		210CC47A2732E2DD0009D17B /* View+IfDeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+IfDeviceType.swift"; sourceTree = "<group>"; };
+		210CC47B2732E2DD0009D17B /* PartialSheetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSheetManager.swift; sourceTree = "<group>"; };
+		210CC47C2732E2DD0009D17B /* View+PartialSheetModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+PartialSheetModifier.swift"; sourceTree = "<group>"; };
+		210CC47D2732E2DD0009D17B /* BlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
+		210CC47E2732E2DD0009D17B /* PartialSheetStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSheetStyle.swift; sourceTree = "<group>"; };
+		210CC47F2732E2DD0009D17B /* PartialSheetViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSheetViewModifier.swift; sourceTree = "<group>"; };
+		210CC4862732EA4B0009D17B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		21AC165F27218FF800D2DA84 /* Szentiras15v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Szentiras15v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2App.swift; sourceTree = "<group>"; };
 		21AC166427218FF800D2DA84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,8 +140,22 @@
 				21AC169E2723269C00D2DA84 /* BookRow.swift */,
 				210CC473272EE3120009D17B /* HistoryViewModel.swift */,
 				210CC475272EE6A60009D17B /* HistoryListView.swift */,
+				210CC4862732EA4B0009D17B /* SettingView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		210CC4792732E2BC0009D17B /* PartialSheet */ = {
+			isa = PBXGroup;
+			children = (
+				210CC47D2732E2DD0009D17B /* BlurEffectView.swift */,
+				210CC47B2732E2DD0009D17B /* PartialSheetManager.swift */,
+				210CC47E2732E2DD0009D17B /* PartialSheetStyle.swift */,
+				210CC47F2732E2DD0009D17B /* PartialSheetViewModifier.swift */,
+				210CC47A2732E2DD0009D17B /* View+IfDeviceType.swift */,
+				210CC47C2732E2DD0009D17B /* View+PartialSheetModifier.swift */,
+			);
+			path = PartialSheet;
 			sourceTree = "<group>";
 		};
 		21AC165627218FF800D2DA84 = {
@@ -208,9 +238,11 @@
 		21AC168527219BFA00D2DA84 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				210CC4792732E2BC0009D17B /* PartialSheet */,
 				21AC168627219C1E00D2DA84 /* Util.swift */,
 				21AC168927219FB400D2DA84 /* Font+Extension.swift */,
 				21AC168E2721B18000D2DA84 /* Color+Extension.swift */,
+				210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -358,6 +390,8 @@
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
 				21AC168727219C1E00D2DA84 /* Util.swift in Sources */,
 				21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */,
+				210CC4812732E2DD0009D17B /* PartialSheetManager.swift in Sources */,
+				210CC4832732E2DD0009D17B /* BlurEffectView.swift in Sources */,
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
 				21AC16912721B5A700D2DA84 /* SzentirasTabView.swift in Sources */,
 				21AC166527218FF800D2DA84 /* ContentView.swift in Sources */,
@@ -365,15 +399,21 @@
 				210CC474272EE3120009D17B /* HistoryViewModel.swift in Sources */,
 				21AC16A22723F6B600D2DA84 /* Cache.swift in Sources */,
 				21AC1682272196F400D2DA84 /* Book.swift in Sources */,
+				210CC4802732E2DD0009D17B /* View+IfDeviceType.swift in Sources */,
 				21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */,
 				210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
+				210CC4842732E2DD0009D17B /* PartialSheetStyle.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,
 				210C1B3E272C398E005CEAFF /* SelectRow.swift in Sources */,
 				21AC168A27219FB400D2DA84 /* Font+Extension.swift in Sources */,
 				21AC16842721977F00D2DA84 /* Translation.swift in Sources */,
 				21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
+				210CC4872732EA4B0009D17B /* SettingView.swift in Sources */,
+				210CC4852732E2DD0009D17B /* PartialSheetViewModifier.swift in Sources */,
+				210CC4822732E2DD0009D17B /* View+PartialSheetModifier.swift in Sources */,
+				210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */,
 				21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
