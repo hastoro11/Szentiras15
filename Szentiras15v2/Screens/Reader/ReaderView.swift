@@ -8,12 +8,12 @@
 import SwiftUI
 
 
-
 struct ReaderView: View {
     @State var fontSize: Double
     
     @EnvironmentObject var vm: ReaderViewModel
     @EnvironmentObject var partialSheetManager: PartialSheetManager
+    
     @State var showBooklist: Bool = false
     @State var showTranslationList: Bool = false
     @State var showHistory: Bool = false
@@ -85,6 +85,7 @@ struct ReaderView: View {
 }
 
 extension ReaderView {
+    // MARK: - VersList - List
     var versList: some View {
         ScrollViewReader { proxy in
             List{
@@ -115,6 +116,7 @@ extension ReaderView {
         "\(vm.current.translation.id)/\(vm.current.book.number)/\(vm.current.chapter)/\(versek[index].versSzam)"
     }
     
+    // MARK: - ToolbarItems - history
     var historyToolbar: some ToolbarContent {
         ToolbarItem(placement: .cancellationAction) {
             Button {
@@ -127,6 +129,7 @@ extension ReaderView {
         }
     }
     
+    // MARK: - ToolbarItems - books
     var booksToolbar: some ToolbarContent {
         var title: String {
             if case .success(let res) = vm.phase, let idezet = res as? Idezet, !idezet.valasz.versek.isEmpty {
@@ -146,6 +149,7 @@ extension ReaderView {
         }
     }
     
+    // MARK: - ToolbarItems - translations
     var translationsToolbar: some ToolbarContent {
         ToolbarItem(placement: .primaryAction) {
             Button(action: {
@@ -157,6 +161,7 @@ extension ReaderView {
         }
     }
     
+    // MARK: - ToolbarItems - settings
     var settingToolbar: some ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing, content: {
             Button(action: {
@@ -171,6 +176,7 @@ extension ReaderView {
         })
     }
     
+    // MARK: - Overlay
     @ViewBuilder
     var overlay: some View {
         switch vm.phase {
@@ -220,6 +226,7 @@ extension ReaderView {
         }
     }
     
+    // MARK: - AttributedText generators
     func attributedEmptyMessage(name: String) -> AttributedString {
         var attributedString = AttributedString("\(name) nem található meg ebben a fordításban.")
         attributedString.font = .Theme.book(size: 19)
@@ -241,6 +248,7 @@ extension ReaderView {
         return result
     }
     
+    // MARK: - Next/previous chapter arrows func
     func arrowButton(direction: String) -> some View {
         Button(action: {
             if direction == "left" {
@@ -266,40 +274,7 @@ extension ReaderView {
     }
 }
 
-struct SheetView: View {
-    @State private var longer: Bool = false
-    @State private var text: String = "some text"
-
-
-    var body: some View {
-        VStack {
-            Group {
-                Text("Settings Panel")
-                    .font(.headline)
-
-                TextField("TextField", text: self.$text)
-                    .padding(8)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 4)
-                            .stroke(Color(UIColor.systemGray2), lineWidth: 1)
-                )
-
-                Toggle(isOn: self.$longer) {
-                    Text("Advanced")
-                }
-            }
-            .padding()
-            .frame(height: 50)
-            if self.longer {
-                VStack {
-                    Text("More settings here...")
-                }
-                .frame(height: 200)
-            }
-        }
-    }
-}
-
+// MARK: - Preview
 struct ReaderView_Previews: PreviewProvider {
     static var previews: some View {
         return ReaderView()

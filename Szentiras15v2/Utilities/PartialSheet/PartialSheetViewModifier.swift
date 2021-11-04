@@ -332,9 +332,9 @@ extension PartialSheet {
     /// Add the keyboard offset
     private func keyboardShow(notification: Notification) {
         let endFrame = UIResponder.keyboardFrameEndUserInfoKey
-        let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first
         if let rect: CGRect = notification.userInfo![endFrame] as? CGRect {
             let height = rect.height
+            let window = (UIApplication.shared.connectedScenes.first as? UIWindowScene)?.windows.first
             let bottomInset = window?.safeAreaInsets.bottom
             withAnimation(manager.defaultAnimation) {
                 self.keyboardOffset = height - (bottomInset ?? 0)

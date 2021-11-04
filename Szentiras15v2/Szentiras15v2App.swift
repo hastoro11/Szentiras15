@@ -18,6 +18,7 @@ struct Szentiras15v2App: App {
                 .environmentObject(readerVM)
                 .environmentObject(searchVM)
                 .environmentObject(historyVM)
+                .environmentObject(PartialSheetManager())
         }
     }
     

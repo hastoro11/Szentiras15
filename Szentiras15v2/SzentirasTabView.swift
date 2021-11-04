@@ -10,6 +10,7 @@ import SwiftUI
 enum TabSelection {
     case read
     case search
+    case settings
 }
 
 struct SzentirasTabView: View {
@@ -30,6 +31,11 @@ struct SzentirasTabView: View {
                     Label("Keresés", systemImage: "magnifyingglass")
                 }
                 .tag(TabSelection.search)
+            SettingsView()
+                .tabItem {
+                    Label("Beállítások", systemImage: "gearshape")
+                }
+                .tag(TabSelection.settings)
         }
     }
 }
