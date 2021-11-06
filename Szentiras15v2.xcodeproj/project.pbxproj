@@ -13,7 +13,7 @@
 		210CC474272EE3120009D17B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC473272EE3120009D17B /* HistoryViewModel.swift */; };
 		210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC475272EE6A60009D17B /* HistoryListView.swift */; };
 		210CC478272F0EB80009D17B /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC477272F0EB80009D17B /* HistoryService.swift */; };
-		210CC4872732EA4B0009D17B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4862732EA4B0009D17B /* SettingView.swift */; };
+		210CC4872732EA4B0009D17B /* ReaderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4862732EA4B0009D17B /* ReaderSettingView.swift */; };
 		210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */; };
 		210CC4962733C1A20009D17B /* PartialSheetViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4902733C1A20009D17B /* PartialSheetViewModifier.swift */; };
 		210CC4972733C1A20009D17B /* BlurEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4912733C1A20009D17B /* BlurEffectView.swift */; };
@@ -63,7 +63,7 @@
 		210CC473272EE3120009D17B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
 		210CC475272EE6A60009D17B /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		210CC477272F0EB80009D17B /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
-		210CC4862732EA4B0009D17B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		210CC4862732EA4B0009D17B /* ReaderSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSettingView.swift; sourceTree = "<group>"; };
 		210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		210CC4902733C1A20009D17B /* PartialSheetViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartialSheetViewModifier.swift; sourceTree = "<group>"; };
 		210CC4912733C1A20009D17B /* BlurEffectView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffectView.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				21AC169E2723269C00D2DA84 /* BookRow.swift */,
 				210CC473272EE3120009D17B /* HistoryViewModel.swift */,
 				210CC475272EE6A60009D17B /* HistoryListView.swift */,
-				210CC4862732EA4B0009D17B /* SettingView.swift */,
+				210CC4862732EA4B0009D17B /* ReaderSettingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 				21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
 				210CC4A027344FF10009D17B /* CustomToggle.swift in Sources */,
-				210CC4872732EA4B0009D17B /* SettingView.swift in Sources */,
+				210CC4872732EA4B0009D17B /* ReaderSettingView.swift in Sources */,
 				210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */,
 				21AC169B2722A03D00D2DA84 /* BooksListView.swift in Sources */,
 			);

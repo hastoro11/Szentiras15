@@ -166,7 +166,7 @@ extension ReaderView {
         ToolbarItem(placement: .navigationBarTrailing, content: {
             Button(action: {
                 partialSheetManager.showPartialSheet({}) {
-                    SettingView(fontSize: $fontSize)
+                    ReaderSettingView(fontSize: $fontSize)
                 }
             }) {
                 Text("Aa")

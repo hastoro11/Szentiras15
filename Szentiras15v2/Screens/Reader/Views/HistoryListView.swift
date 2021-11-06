@@ -47,7 +47,7 @@ struct HistoryListView: View {
                 }
                 ToolbarItem(placement: .principal) {
                     Text("Előzmények")
-                        .font(.Theme.black(size: 19))
+                        .font(.Theme.heavy(size: 19))
                         .foregroundColor(.black)
                         .padding()
                 }

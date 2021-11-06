@@ -20,4 +20,12 @@ extension UserDefaults {
         
         return size
     }
+    
+    func setFontSizeSaved(value: Bool) {
+        self.set(value, forKey: "isFontSizeSaved")
+    }
+    
+    func isFontSizeSaved() -> Bool {
+        self.bool(forKey: "isFontSizeSaved")
+    }
 }

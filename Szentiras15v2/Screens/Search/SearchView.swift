@@ -55,17 +55,28 @@ struct SearchView: View {
     
     // MARK: - Body
     var body: some View {
-        VStack {
-            SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
-                .padding()
-            searchHeader
-            
-            SearchResultList(results: filteredResults, onTap: jumpToVers(result:))
-                .overlay(overlay)
-                .sheet(isPresented: $showFilter) {
-                    FilterView(showFilter: $showFilter, filter: $filter)
+        NavigationView {
+            VStack {
+                SearchBar(text: $search, onCommit: onCommit, onClear: onClear, onCancel: onCancel)
+                    .padding(.vertical, 4)
+                    .padding(.horizontal)
+                
+                searchHeader
+                
+                SearchResultList(results: filteredResults, onTap: jumpToVers(result:))
+                    .overlay(overlay)
+                    .sheet(isPresented: $showFilter) {
+                        FilterView(showFilter: $showFilter, filter: $filter)
+                    }
+                Spacer()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Keresés")
+                        .font(.Theme.heavy(size: 19))
                 }
-            Spacer()
+            }
         }
     }
     

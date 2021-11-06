@@ -8,25 +8,26 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var saveFontsize: Bool = true
+    @State var isFontSizeSaved: Bool = UserDefaults.standard.isFontSizeSaved()
     var body: some View {
         NavigationView {
-            VStack {
+            List {
                 HStack {
                     Text("Betűméret elmentése")
                         .font(.Theme.book(size: 17))
                     Spacer()
-//                    CheckmarkButton(state: $saveFontsize)
-                    CustomToggle(state: $saveFontsize)
+                    CustomToggle(state: $isFontSizeSaved) { value in
+                        UserDefaults.standard.setFontSizeSaved(value: value)
+                    }
                 }
                 .padding()
-                Spacer()
+//                Spacer()
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Beállítások")
-                        .font(.Theme.heavy(size: 17))
+                        .font(.Theme.heavy(size: 19))
                 }
             }
         }
