@@ -14,6 +14,7 @@ class HistoryViewModel: ObservableObject {
     init() {
         historyList = HistoryService.instance.fetch()
         capacity = UserDefaults.standard.historyCapacity
+        historyList = Array(historyList.prefix(capacity))
     }
     
     @MainActor

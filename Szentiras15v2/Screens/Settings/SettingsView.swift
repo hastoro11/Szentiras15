@@ -9,20 +9,38 @@ import SwiftUI
 
 struct SettingsView: View {
     @State var isFontSizeSaved: Bool = UserDefaults.standard.isFontSizeSaved
+    @State var historyCapacity: Int
+    init() {
+        var capacity = UserDefaults.standard.historyCapacity        
+        _historyCapacity = State(initialValue: capacity)
+    }
     var body: some View {
         NavigationView {
             List {
                 HStack {
                     Text("Betűméret elmentése")
-                        .font(.Theme.book(size: 17))
+                        
                     Spacer()
                     CustomToggle(state: $isFontSizeSaved) { value in
                         UserDefaults.standard.setFontSizeSaved(value: value)
                     }
                 }
                 .padding()
-//                Spacer()
+                HStack {
+                    Text("Előzmények száma")
+                    Picker("", selection: $historyCapacity) {
+                        Text("5").tag(5)
+                        Text("10").tag(10)
+                        Text("15").tag(15)
+                    }
+                    
+                }
+                .padding()
             }
+            .onChange(of: historyCapacity, perform: { newValue in
+                UserDefaults.standard.setHistoryCapacity(to: newValue)
+            })
+            .font(.Theme.book(size: 17))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -35,6 +53,7 @@ struct SettingsView: View {
 }
 
 struct SettingsView_Previews: PreviewProvider {
+    @State var histroyCapacity: Int = 5
     static var previews: some View {
         SettingsView()
 

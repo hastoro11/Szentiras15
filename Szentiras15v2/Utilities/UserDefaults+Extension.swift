@@ -30,11 +30,15 @@ extension UserDefaults {
     }
     
     var historyCapacity: Int {
-        let capacity = UserDefaults.standard.integer(forKey: "historyCapacity")
+        let capacity = self.integer(forKey: "historyCapacity")
         if capacity == 0 {
-            return 2
+            return 10
         }
         
         return capacity
+    }
+    
+    func setHistoryCapacity(to newCapacity: Int) {
+        self.set(newCapacity, forKey: "historyCapacity")
     }
 }

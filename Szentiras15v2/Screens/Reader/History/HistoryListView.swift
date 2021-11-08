@@ -92,10 +92,14 @@ struct HistoryListView: View {
                 .lineLimit(2)
                 .foregroundColor(.Theme.button)
                 .padding(.bottom,6)
-            Text(historyVM.historyList[index].translation.name)
-                .font(.Theme.oblique(size: 17))
-                .foregroundColor(.Theme.text)
-                .lineLimit(1)
+            HStack {
+                Text(historyVM.historyList[index].translation.name)
+                    .lineLimit(1)
+                Spacer()
+                Text(historyVM.historyList[index].translation.abbrev.uppercased())
+            }
+            .font(.Theme.oblique(size: 15))
+            .foregroundColor(.Theme.text)
         }
     }
 }
