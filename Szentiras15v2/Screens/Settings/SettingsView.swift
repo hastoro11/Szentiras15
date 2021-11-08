@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var isFontSizeSaved: Bool = UserDefaults.standard.isFontSizeSaved()
+    @State var isFontSizeSaved: Bool = UserDefaults.standard.isFontSizeSaved
     var body: some View {
         NavigationView {
             List {

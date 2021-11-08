@@ -142,8 +142,6 @@
 				21AC169C2722C84D00D2DA84 /* TranslationSelectView.swift */,
 				21AC169A2722A03D00D2DA84 /* BooksListView.swift */,
 				21AC169E2723269C00D2DA84 /* BookRow.swift */,
-				210CC473272EE3120009D17B /* HistoryViewModel.swift */,
-				210CC475272EE6A60009D17B /* HistoryListView.swift */,
 				210CC4862732EA4B0009D17B /* ReaderSettingView.swift */,
 			);
 			path = Views;
@@ -169,6 +167,15 @@
 				210CC49F27344FF10009D17B /* CustomToggle.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		210CC4A12736A1A10009D17B /* History */ = {
+			isa = PBXGroup;
+			children = (
+				210CC473272EE3120009D17B /* HistoryViewModel.swift */,
+				210CC475272EE6A60009D17B /* HistoryListView.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		21AC165627218FF800D2DA84 = {
@@ -283,6 +290,7 @@
 		21AC16992722A01400D2DA84 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				210CC4A12736A1A10009D17B /* History */,
 				210CC472272EE2A50009D17B /* Views */,
 				21AC168C2721A09300D2DA84 /* ReaderView.swift */,
 				21AC169227220A5800D2DA84 /* ReaderViewModel.swift */,

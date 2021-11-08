@@ -12,7 +12,11 @@ struct HistoryService {
     private init() {}
     
     func add(current: Current) {
+        let capacity = UserDefaults.standard.historyCapacity
         var historyList = fetch()
+        if historyList.count >= capacity {
+            historyList = Array(historyList.prefix(capacity-1))
+        }
         if let index = historyList.firstIndex(of: current) {
             historyList.remove(at: index)
         }

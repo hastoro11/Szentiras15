@@ -9,18 +9,16 @@ import Foundation
 
 class HistoryViewModel: ObservableObject {
     @Published var historyList: [Current]
+    var capacity: Int
     
     init() {
         historyList = HistoryService.instance.fetch()
+        capacity = UserDefaults.standard.historyCapacity
     }
     
     @MainActor
     func fetch() {
         historyList = HistoryService.instance.fetch()
-    }
-    
-    func addToHistory(_ current: Current) {
-        HistoryService.instance.add(current: current)
     }
     
     func removeFromHistory(_ index: Int) {

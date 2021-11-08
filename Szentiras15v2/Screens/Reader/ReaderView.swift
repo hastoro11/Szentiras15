@@ -20,7 +20,7 @@ struct ReaderView: View {
     @State var showArrows: Bool = true
     
     init() {
-        _fontSize = State(initialValue: UserDefaults.standard.getFontSize())
+        _fontSize = State(initialValue: UserDefaults.standard.getFontSize)
     }
     
     var versek: [Vers] {

@@ -12,7 +12,7 @@ extension UserDefaults {
         self.set(fontSize, forKey: "fontSize")
     }
     
-    func getFontSize() -> Double {
+    var getFontSize: Double {
         let size = self.double(forKey: "fontSize")
         if size == 0 {
             return 17
@@ -25,7 +25,16 @@ extension UserDefaults {
         self.set(value, forKey: "isFontSizeSaved")
     }
     
-    func isFontSizeSaved() -> Bool {
+    var isFontSizeSaved: Bool {
         self.bool(forKey: "isFontSizeSaved")
+    }
+    
+    var historyCapacity: Int {
+        let capacity = UserDefaults.standard.integer(forKey: "historyCapacity")
+        if capacity == 0 {
+            return 2
+        }
+        
+        return capacity
     }
 }
