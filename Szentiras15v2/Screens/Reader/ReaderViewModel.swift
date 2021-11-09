@@ -43,10 +43,14 @@ class ReaderViewModel: ObservableObject {
     var searchTag: String = ""
     
     init() {
-        current = Current(
-            translation: Translation.default,
-            book: Book.default,
-            chapter: 1)
+        if UserDefaults.standard.isCurrentSaved {
+            current = UserDefaults.standard.savedCurrent
+        } else {
+            current = Current(
+                translation: Translation.default,
+                book: Book.default,
+                chapter: 1)
+        }
     }
     
     func load() {
@@ -55,12 +59,15 @@ class ReaderViewModel: ObservableObject {
     
     func load(current: Current) {
         self.current = current
+        if UserDefaults.standard.isCurrentSaved {
+            UserDefaults.standard.saveCurrent(current: current)
+        }
         HistoryService.instance.add(current: current)
         if let saved = cache[current.key] {
             if saved.valasz.versek.isEmpty {
                 HistoryService.instance.remove(current)
             }
-            self.phase = .success(saved)
+            self.phase = .success(saved)            
             return
         }
         if Task.isCancelled { return }

@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var isFontSizeSaved: Bool = UserDefaults.standard.isFontSizeSaved
+    @State var isFontSizeSaved: Bool
     @State var historyCapacity: Int
+    @State var isCurrentSaved: Bool
+    
     init() {
-        var capacity = UserDefaults.standard.historyCapacity        
+        _isFontSizeSaved = State(initialValue: UserDefaults.standard.isFontSizeSaved)
+        let capacity = UserDefaults.standard.historyCapacity
         _historyCapacity = State(initialValue: capacity)
+        _isCurrentSaved = State(initialValue: UserDefaults.standard.isCurrentSaved)
     }
+    
     var body: some View {
         NavigationView {
             List {
@@ -25,7 +30,7 @@ struct SettingsView: View {
                         UserDefaults.standard.setFontSizeSaved(value: value)
                     }
                 }
-                .padding()
+
                 HStack {
                     Text("Előzmények száma")
                     Picker("", selection: $historyCapacity) {
@@ -35,7 +40,14 @@ struct SettingsView: View {
                     }
                     
                 }
-                .padding()
+                HStack {
+                    Text("Utolsó olvasott helytől folytat")
+                        
+                    Spacer()
+                    CustomToggle(state: $isCurrentSaved) { value in
+                        UserDefaults.standard.setCurrentSaved(value: value)
+                    }
+                }
             }
             .onChange(of: historyCapacity, perform: { newValue in
                 UserDefaults.standard.setHistoryCapacity(to: newValue)
