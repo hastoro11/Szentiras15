@@ -12,17 +12,26 @@ extension Color {
         static var background: Color {
             Color("Background")
         }
-        static var button: Color {
+        static var background2: Color {
+            Color("Background2")
+        }
+        static var grey2: Color {
             Color("Button")
         }
-        static var dark: Color {
+        static var grey4: Color {
             Color("Dark")
         }
-        static var text: Color {
+        static var grey1: Color {
             Color("Text")
         }
-        static var title: Color {
+        static var search: Color {
+            Color("Search")
+        }
+        static var grey3: Color {
             Color("Title")
+        }
+        static var grey5: Color {
+            Color("Grey5")
         }
     }
 }

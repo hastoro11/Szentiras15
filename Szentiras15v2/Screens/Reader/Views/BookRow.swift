@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BookRow: View {
+    @Environment(\.colorScheme) var colorScheme
     @State var isOpen: Bool
     @Binding var showBookslist: Bool
     var fetch: (Book, Int) -> Void
@@ -37,7 +38,7 @@ struct BookRow: View {
                                 .font(.Theme.heavy(size: 17))
                                 .frame(width: 44, height: 44)
                                 .background(Rectangle().fill (
-                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color.Theme.background
+                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color.Theme.background2
                                 ))
                         }
                     }
@@ -53,7 +54,7 @@ struct BookRow: View {
                 Text(book.abbrev)
                     .font(.Theme.medium(size: 17))
             }
-            .foregroundColor(.Theme.title)
+            .foregroundColor(.Theme.grey3)
         }
         .padding(.horizontal)
         Divider()
@@ -64,5 +65,8 @@ struct BookRow: View {
 struct BookRow_Previews: PreviewProvider {
     static var previews: some View {
         BookRow(showBookslist: .constant(true), fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
+            .preferredColorScheme(.dark)
+        BookRow(showBookslist: .constant(true), fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
+            .preferredColorScheme(.light)
     }
 }

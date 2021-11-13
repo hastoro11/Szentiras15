@@ -81,7 +81,7 @@ struct FilterView: View {
                     .onTapGesture {
                         filter.translation = 0
                     }
-                    .foregroundColor(filter.translation != 0 ? Color.Theme.dark : Color.Theme.text)
+                    .foregroundColor(filter.translation != 0 ? Color.Theme.grey4 : Color.Theme.grey1)
                     ForEach(Translation.all()) { tr in
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: filter.translation == tr.id)
                         .onTapGesture {

@@ -17,7 +17,8 @@ struct HistoryListView: View {
         NavigationView {
             List {
                 ForEach(historyVM.historyList.indices, id: \.self) { index in
-                    historyRow(index: index)
+//                    historyRow(index: index)
+                    HistoryRow(history: historyVM.historyList[index])
                         .onTapGesture {
                             readerVM.current = historyVM.historyList[index]
                             dismiss()
@@ -31,6 +32,7 @@ struct HistoryListView: View {
                     }
                     
                 }
+                .listRowSeparatorTint(.accentColor)
             }
             .overlay(overlay)
             .listStyle(.plain)
@@ -48,7 +50,7 @@ struct HistoryListView: View {
                 ToolbarItem(placement: .principal) {
                     Text("Előzmények")
                         .font(.Theme.heavy(size: 19))
-                        .foregroundColor(.black)
+                        .foregroundColor(.primary)
                         .padding()
                 }
                 ToolbarItem(placement: .confirmationAction) {
@@ -82,24 +84,36 @@ struct HistoryListView: View {
             EmptyView()
         }
     }
-    
-    func historyRow(index: Int) -> some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text("\(historyVM.historyList[index].book.abbrev)  \(historyVM.historyList[index].chapter)")
-                .font(.Theme.medium(size: 17))
-            Text("\(historyVM.historyList[index].book.name) \(historyVM.historyList[index].chapter). fejezet")
-                .font(.Theme.book(size: 17))
-                .lineLimit(2)
-                .foregroundColor(.Theme.button)
-                .padding(.bottom,6)
-            HStack {
-                Text(historyVM.historyList[index].translation.name)
+}
+
+struct HistoryRow: View {
+    var history: Current
+    var body: some View {
+        HStack {
+            Text("\(String(history.book.abbrev.prefix(3)))\(history.chapter)")
+                .frame(width: 54, height: 44)
+                .background(Color.Theme.background2)
+                .foregroundColor(.white)
+                .font(.Theme.heavy(size: 14))
+            VStack(alignment: .leading, spacing: 0) {
+                Text("\(history.book.name) \(history.chapter). fejezet")
+                    .font(.Theme.medium(size: 15))
                     .lineLimit(1)
-                Spacer()
-                Text(historyVM.historyList[index].translation.abbrev.uppercased())
+                    .foregroundColor(.Theme.grey2)
+
+                HStack {
+                    Text(history.translation.name)
+                        .font(.Theme.oblique(size: 15))
+                        .foregroundColor(.Theme.grey1)
+                        .lineLimit(1)
+                    
+                    Spacer()
+                    Text(history.translation.abbrev.uppercased())
+                        .foregroundColor(.accentColor)
+                        .font(.Theme.medium(size: 15))
+                }
+                
             }
-            .font(.Theme.oblique(size: 15))
-            .foregroundColor(.Theme.text)
         }
     }
 }
@@ -107,7 +121,14 @@ struct HistoryListView: View {
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryListView()
+            .preferredColorScheme(.light)
             .environmentObject(HistoryViewModel.preview)
             .environmentObject(ReaderViewModel.preview)
+        HistoryListView()
+            .preferredColorScheme(.dark)
+            .environmentObject(HistoryViewModel.preview)
+            .environmentObject(ReaderViewModel.preview)
+        HistoryRow(history: HistoryViewModel.preview.historyList[0])
+            .previewLayout(.sizeThatFits)
     }
 }

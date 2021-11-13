@@ -144,7 +144,7 @@ extension ReaderView {
             }) {
                 Text(title)
                     .font(.Theme.black(size: 19))
-                    .foregroundColor(.black)
+                    .foregroundColor(.primary)
             }
         }
     }
@@ -243,7 +243,7 @@ extension ReaderView {
         attributedIndex.font = .Theme.black(size: fontSize)
         var attributedString = AttributedString(vers.szoveg)
         attributedString.font = .Theme.light(size: fontSize)
-        attributedString.foregroundColor = .Theme.button
+        attributedString.foregroundColor = .Theme.grey2
         let result = attributedIndex + attributedString
         return result
     }
@@ -267,9 +267,9 @@ extension ReaderView {
         .padding()
         .background(
             Circle().fill(
-                Color.Theme.text.opacity(0.3)
+                Color.Theme.grey1.opacity(0.3)
             )
-                .shadow(color: .Theme.text, radius: 5, y: 5)
+                .shadow(color: .Theme.grey1, radius: 5, y: 5)
         )
     }
 }

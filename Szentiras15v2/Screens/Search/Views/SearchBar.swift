@@ -18,7 +18,7 @@ struct SearchBar: View {
             TextField("Keresés ...", text: $text, onCommit: onCommit)
                 .padding(12)
                 .padding(.horizontal, 25)
-                .background(Color.Theme.background)
+                .background(Color.Theme.background2)
                 .font(.Theme.book(size: 19))
                 .overlay(
                     HStack {
@@ -37,7 +37,7 @@ struct SearchBar: View {
                             }
                         }
                     }
-                        .foregroundColor(.Theme.text)
+                        .foregroundColor(.Theme.grey1)
                 )
                 .onTapGesture {
                     withAnimation {
@@ -69,5 +69,9 @@ struct SearchBar_Previews: PreviewProvider {
         SearchBar(text: .constant(""), onCommit: {}, onClear: {}, onCancel: {})
             .padding()
             .previewLayout(.sizeThatFits)
+        SearchBar(text: .constant(""), onCommit: {}, onClear: {}, onCancel: {})
+            .padding()
+            .previewLayout(.sizeThatFits)
+            .preferredColorScheme(.dark)
     }
 }

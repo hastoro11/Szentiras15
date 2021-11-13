@@ -32,10 +32,10 @@ struct ResultRow: View {
                 .font(.Theme.heavy(size: 15))
             Text(result.translation.abbrev.uppercased())
                 .font(.Theme.oblique(size: 15))
-                .foregroundColor(.Theme.text)
+                .foregroundColor(.Theme.grey1)
             Text(result.text)
                 .font(.Theme.book(size: 15))
-                .foregroundColor(Color.Theme.button)
+                .foregroundColor(Color.Theme.grey2)
                 .lineLimit(3)
         }
     }

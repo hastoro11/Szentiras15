@@ -16,12 +16,12 @@ struct SelectRow: View {
         HStack {
             Text(abbrev.uppercased())
                 .font(.Theme.heavy(size: 15))
-                .foregroundColor(.white)
+                .foregroundColor(Color.white)
                 .frame(width: 50, height: 44)
-                .background(selected ? Color.accentColor : Color.Theme.background)
+                .background(selected ? Color.accentColor : Color.Theme.background2)
             Text(name)
                 .font(.custom("Avenir Book", size: 17))
-                .foregroundColor(selected ? Color.Theme.dark : Color.Theme.text)
+                .foregroundColor(selected ? Color.Theme.grey4 : Color.Theme.grey1)
             Spacer()
         }
     }
@@ -30,9 +30,11 @@ struct SelectRow: View {
 struct SelectRow_Previews: PreviewProvider {
     static var previews: some View {
         SelectRow(abbrev: "ÓSZ", name: "Ószövetség", selected: false)
+            .preferredColorScheme(.dark)
             .padding()
             .previewLayout(.sizeThatFits)
         SelectRow(abbrev: "ÚSZ", name: "Újszövetség", selected: true)
+            .preferredColorScheme(.dark)
             .padding()
             .previewLayout(.sizeThatFits)
     }
