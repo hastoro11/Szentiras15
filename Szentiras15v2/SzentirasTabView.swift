@@ -37,6 +37,7 @@ struct SzentirasTabView: View {
                 }
                 .tag(TabSelection.settings)
         }
+        .overlay(SplashScreen())
     }
 }
 
