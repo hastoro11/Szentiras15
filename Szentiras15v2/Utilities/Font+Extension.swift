@@ -9,28 +9,20 @@ import SwiftUI
 
 extension Font {
     struct Theme {
-        static func book(size: CGFloat) -> Font {
-            .custom("Avenir Book", size: size)
-        }
-        
-        static func oblique(size: CGFloat) -> Font {
-            .custom("Avenir Book Oblique", size: size)
+        static func regular(size: CGFloat) -> Font {
+            .custom("Fira Sans Regular", size: size)
         }
         
         static func light(size: CGFloat) -> Font {
-            .custom("Avenir Light", size: size)
+            .custom("Fira Sans Light", size: size)
         }
         
         static func medium(size: CGFloat) -> Font {
-            .custom("Avenir Medium", size: size)
+            .custom("Fira Sans Medium", size: size)
         }
         
-        static func heavy(size: CGFloat) -> Font {
-            .custom("Avenir Heavy", size: size)
-        }
-        
-        static func black(size: CGFloat) -> Font {
-            .custom("Avenir Black", size: size)
+        static func bold(size: CGFloat) -> Font {
+            .custom("Fira Sans Bold", size: size)
         }
     }    
 }

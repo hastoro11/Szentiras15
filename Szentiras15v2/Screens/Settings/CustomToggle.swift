@@ -12,7 +12,7 @@ struct CustomToggle: View {
     var action: (Bool) -> Void
     var body: some View {
         ZStack {
-            Rectangle().fill(state ? Color.accentColor : Color.Theme.background)
+            Rectangle().fill(state ? Color.accentColor : Color(uiColor: .systemGray3))
                 
             HStack {
                 if state {
@@ -25,7 +25,7 @@ struct CustomToggle: View {
                 }
             }
         }
-        .overlay(Rectangle().stroke(state ? Color.accentColor : Color.Theme.background, lineWidth: 3))
+        .overlay(Rectangle().stroke(state ? Color.accentColor : Color(uiColor: .systemGray3), lineWidth: 3))
         .frame(width: 60, height: 30)
         .onTapGesture {
             withAnimation {

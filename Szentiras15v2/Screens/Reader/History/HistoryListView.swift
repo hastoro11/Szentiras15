@@ -10,14 +10,38 @@ import SwiftUI
 struct HistoryListView: View {
     @EnvironmentObject var readerVM: ReaderViewModel
     @EnvironmentObject var historyVM: HistoryViewModel
-    
     @Environment(\.dismiss) var dismiss
+
     
     var body: some View {
-        NavigationView {
+        VStack {
+            ZStack {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                    Text("Vissza")
+                    Spacer()
+                }
+                .foregroundColor(.accentColor)
+                .font(.Theme.regular(size: 17))
+                Text("Előzmények")
+                    .font(.Theme.bold(size: 17))
+                    .foregroundColor(.primary)
+                HStack {
+                    Spacer()
+                    Button {
+                        historyVM.removeAllHistory()
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .font(.Theme.regular(size: 17))
+                }
+            }
+            .padding([.top, .horizontal])
+            .padding(.bottom, 6)
             List {
                 ForEach(historyVM.historyList.indices, id: \.self) { index in
-//                    historyRow(index: index)
                     HistoryRow(history: historyVM.historyList[index])
                         .onTapGesture {
                             readerVM.current = historyVM.historyList[index]
@@ -36,34 +60,6 @@ struct HistoryListView: View {
             }
             .overlay(overlay)
             .listStyle(.plain)
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button {
-                        dismiss()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                        Text("Vissza")
-                    }
-                    .font(.Theme.medium(size: 19))
-                }
-                ToolbarItem(placement: .principal) {
-                    Text("Előzmények")
-                        .font(.Theme.heavy(size: 19))
-                        .foregroundColor(.primary)
-                        .padding()
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button {
-                        historyVM.removeAllHistory()
-                    } label: {
-                        Image(systemName: "trash")
-                    }
-                    .font(.Theme.medium(size: 17))
-                    
-                }
-            }
-            
         }
         .onAppear {
             historyVM.fetch()
@@ -77,7 +73,7 @@ struct HistoryListView: View {
             VStack {
                 Spacer()
                 Text("Nincsenek előzmények")
-                    .font(.Theme.book(size: 18))
+                    .font(.Theme.medium(size: 18))
                 Spacer()
             }
         } else {
@@ -92,19 +88,19 @@ struct HistoryRow: View {
         HStack {
             Text("\(String(history.book.abbrev.prefix(3)))\(history.chapter)")
                 .frame(width: 54, height: 44)
-                .background(Color.Theme.background2)
+                .background(Color(uiColor: .systemGray3))
                 .foregroundColor(.white)
-                .font(.Theme.heavy(size: 14))
-            VStack(alignment: .leading, spacing: 0) {
+                .font(.Theme.bold(size: 16))
+            VStack(alignment: .leading, spacing: 2) {
                 Text("\(history.book.name) \(history.chapter). fejezet")
                     .font(.Theme.medium(size: 15))
                     .lineLimit(1)
-                    .foregroundColor(.Theme.grey2)
+                    .foregroundColor(.primary)
 
                 HStack {
                     Text(history.translation.name)
-                        .font(.Theme.oblique(size: 15))
-                        .foregroundColor(.Theme.grey1)
+                        .font(.Theme.light(size: 14))
+                        .foregroundColor(Color(uiColor: UIColor.systemGray))
                         .lineLimit(1)
                     
                     Spacer()

@@ -9,14 +9,13 @@ import SwiftUI
 
 struct BookRow: View {
     @Environment(\.colorScheme) var colorScheme
+    @Environment(\.dismiss) var dismiss
     @State var isOpen: Bool
-    @Binding var showBookslist: Bool
     var fetch: (Book, Int) -> Void
     var current: Current
     var book: Book
     
-    init(showBookslist: Binding<Bool>, fetch: @escaping (Book, Int) -> Void, current: Current, book: Book) {
-        _showBookslist = showBookslist
+    init(fetch: @escaping (Book, Int) -> Void, current: Current, book: Book) {
         self.fetch = fetch
         self.current = current
         self.book = book
@@ -29,16 +28,15 @@ struct BookRow: View {
                 LazyVGrid(columns: [GridItem(.adaptive(minimum: 50, maximum: 60))], spacing: 15) {
                     ForEach(1...(book.chapters), id:\.self) { ch in
                         Button(action: {
-                            showBookslist.toggle()
-                            
+                            dismiss()
                             fetch(book, ch)
                         }) {
                             Text("\(ch)")
                                 .foregroundColor(.white)
-                                .font(.Theme.heavy(size: 17))
+                                .font(.Theme.medium(size: 17))
                                 .frame(width: 44, height: 44)
                                 .background(Rectangle().fill (
-                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color.Theme.background2
+                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color(uiColor: .systemGray3)
                                 ))
                         }
                     }
@@ -48,13 +46,13 @@ struct BookRow: View {
         } label: {
             HStack {
                 Text(book.name)
-                    .font(.Theme.book(size: 17))
+                    .font(.Theme.light(size: 17))
                     .lineLimit(1)
                 Spacer()
                 Text(book.abbrev)
                     .font(.Theme.medium(size: 17))
             }
-            .foregroundColor(.Theme.grey3)
+            .foregroundColor(Color(uiColor: .systemGray))
         }
         .padding(.horizontal)
         Divider()
@@ -64,9 +62,9 @@ struct BookRow: View {
 
 struct BookRow_Previews: PreviewProvider {
     static var previews: some View {
-        BookRow(showBookslist: .constant(true), fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
+        BookRow(fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
             .preferredColorScheme(.dark)
-        BookRow(showBookslist: .constant(true), fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
+        BookRow(fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
             .preferredColorScheme(.light)
     }
 }

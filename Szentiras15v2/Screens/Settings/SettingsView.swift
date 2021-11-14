@@ -24,7 +24,6 @@ struct SettingsView: View {
             List {
                 HStack {
                     Text("Betűméret elmentése")
-                        
                     Spacer()
                     CustomToggle(state: $isFontSizeSaved) { value in
                         UserDefaults.standard.setFontSizeSaved(value: value)
@@ -52,12 +51,12 @@ struct SettingsView: View {
             .onChange(of: historyCapacity, perform: { newValue in
                 UserDefaults.standard.setHistoryCapacity(to: newValue)
             })
-            .font(.Theme.book(size: 17))
+            .font(.Theme.light(size: 15))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Beállítások")
-                        .font(.Theme.heavy(size: 19))
+                        .font(.Theme.bold(size: 17))
                 }
             }
         }

@@ -13,29 +13,36 @@ struct TranslationSelectView: View {
     var load: (Current) -> Void
     var body: some View {
         VStack(alignment: .leading) {
-            Button(action: {
-                showTranslations.toggle()
-            }) {
-                Image(systemName: "chevron.left")
-                Text("Vissza")
-                Spacer()
-            }
-            .foregroundColor(.accentColor)
-            .font(.Theme.heavy(size: 19))
-            
-            Divider()
-            ForEach(Translation.all()) { tr in
-                SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == current.translation.id)
-                .onTapGesture {
-                    fetch(translation: tr)
-                    showTranslations = false
+            ZStack {
+                Button(action: {
+                    showTranslations.toggle()
+                }) {
+                    Image(systemName: "chevron.left")
+                    Text("Vissza")
+                    Spacer()
                 }
-                .padding(4)
-                Divider()
+                .foregroundColor(.accentColor)
+                .font(.Theme.regular(size: 17))
+                Text("Fordítások")
+                    .font(.Theme.bold(size: 17))
+                    .foregroundColor(.primary)
             }
+            .padding([.top, .horizontal])
+            .padding(.bottom, 6)
+            List {
+                ForEach(Translation.all()) { tr in
+                    VStack {
+                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == current.translation.id)
+                            .onTapGesture {
+                                fetch(translation: tr)
+                                showTranslations = false
+                            }
+                    }
+                }
+            }
+            .listStyle(.plain)
             Spacer()
         }
-        .padding()
     }
     
     func fetch(translation: Translation) {

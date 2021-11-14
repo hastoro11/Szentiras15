@@ -27,17 +27,18 @@ struct SearchResultList: View {
 struct ResultRow: View {
     var result: TextResult.Result
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 2) {
             Text("\(result.book.abbrev) \(result.chapter),\(result.numv)")
-                .font(.Theme.heavy(size: 15))
+                .font(.Theme.medium(size: 15))
             Text(result.translation.abbrev.uppercased())
-                .font(.Theme.oblique(size: 15))
-                .foregroundColor(.Theme.grey1)
+                .font(.Theme.regular(size: 15))
+                .foregroundColor(Color(uiColor: .systemGray3))
             Text(result.text)
-                .font(.Theme.book(size: 15))
-                .foregroundColor(Color.Theme.grey2)
+                .font(.Theme.light(size: 15))
+                .foregroundColor(Color.primary)
                 .lineLimit(3)
         }
+        .padding(.bottom, 6)
     }
 }
 

@@ -18,8 +18,9 @@ struct SearchBar: View {
             TextField("Keresés ...", text: $text, onCommit: onCommit)
                 .padding(12)
                 .padding(.horizontal, 25)
-                .background(Color.Theme.background2)
-                .font(.Theme.book(size: 19))
+                .background(Color(uiColor: .systemGray5))
+                .cornerRadius(8)
+                .font(.Theme.light(size: 17))
                 .overlay(
                     HStack {
                         Image(systemName: "magnifyingglass")
@@ -37,7 +38,7 @@ struct SearchBar: View {
                             }
                         }
                     }
-                        .foregroundColor(.Theme.grey1)
+                        .foregroundColor(Color(uiColor: .systemGray))
                 )
                 .onTapGesture {
                     withAnimation {
@@ -54,8 +55,8 @@ struct SearchBar: View {
                     // Dismiss the keyboard
                     UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                 }) {
-                    Text("Cancel")
-                        .font(.Theme.medium(size: 19))
+                    Text("Mégsem")
+                        .font(.Theme.regular(size: 17))
                 }
                 .padding(.trailing, 10)
                 .transition(.move(edge: .trailing))

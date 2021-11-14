@@ -41,17 +41,18 @@ struct FilterView: View {
                 Section {
                     Picker(selection: $filter.book) {
                         Text("Nincs szűrés").tag(0)
+                            .font(.Theme.regular(size: 17))
                         ForEach(books) { book in
                             Text(book.name)
-                                .font(.Theme.book(size: 17))
+                                .font(.Theme.light(size: 17))
                                 .tag(book.number)
                         }
                     } label: {
                         Text(filter.book == 0 ? "" : selectedBookName)
-                            .font(.Theme.heavy(size: 15))
+                            .font(.Theme.bold(size: 15))
                             .foregroundColor(.white)
                             .frame(width: 50, height: 44)
-                            .background(filter.book == 0 ? Color.Theme.background : Color.accentColor)
+                            .background(filter.book == 0 ? Color(uiColor: .systemGray3) : Color.accentColor)
                     }
                     
                 } header: {
@@ -81,7 +82,7 @@ struct FilterView: View {
                     .onTapGesture {
                         filter.translation = 0
                     }
-                    .foregroundColor(filter.translation != 0 ? Color.Theme.grey4 : Color.Theme.grey1)
+                    .foregroundColor(filter.translation != 0 ? Color.primary : Color(uiColor: UIColor.systemGray3))
                     ForEach(Translation.all()) { tr in
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: filter.translation == tr.id)
                         .onTapGesture {
@@ -93,7 +94,7 @@ struct FilterView: View {
                 }
             }
             .listStyle(.grouped)
-            .font(.Theme.book(size: 17))
+            .font(.Theme.regular(size: 17))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: ToolbarItemPlacement.cancellationAction) {
@@ -102,19 +103,19 @@ struct FilterView: View {
                         showFilter.toggle()
                     } label: {
                         Image(systemName: "trash")
-                        .font(.Theme.heavy(size: 17))
+                        .font(.Theme.regular(size: 17))
                     }
 
                 }
                 ToolbarItem(placement: ToolbarItemPlacement.principal) {
-                    Text("Találatok szűrése").font(.Theme.black(size: 19))
+                    Text("Találatok szűrése").font(.Theme.bold(size: 17))
                 }
                 ToolbarItem(placement: ToolbarItemPlacement.confirmationAction) {
                     Button {
                         showFilter.toggle()
                     } label: {
                         Text("Kész")
-                        .font(.Theme.heavy(size: 19))
+                        .font(.Theme.regular(size: 17))
                     }
 
                 }

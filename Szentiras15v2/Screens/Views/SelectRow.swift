@@ -15,13 +15,13 @@ struct SelectRow: View {
     var body: some View {
         HStack {
             Text(abbrev.uppercased())
-                .font(.Theme.heavy(size: 15))
+                .font(.Theme.bold(size: 15))
                 .foregroundColor(Color.white)
                 .frame(width: 50, height: 44)
-                .background(selected ? Color.accentColor : Color.Theme.background2)
+                .background(selected ? Color.accentColor : Color(uiColor: UIColor.systemGray3))
             Text(name)
-                .font(.custom("Avenir Book", size: 17))
-                .foregroundColor(selected ? Color.Theme.grey4 : Color.Theme.grey1)
+                .font(.Theme.light(size: 17))
+                .foregroundColor(selected ? .primary : Color(uiColor: .systemGray3))
             Spacer()
         }
     }
@@ -35,6 +35,10 @@ struct SelectRow_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
         SelectRow(abbrev: "ÚSZ", name: "Újszövetség", selected: true)
             .preferredColorScheme(.dark)
+            .padding()
+            .previewLayout(.sizeThatFits)
+        SelectRow(abbrev: "ÚSZ", name: "Újszövetség", selected: true)
+            .preferredColorScheme(.light)
             .padding()
             .previewLayout(.sizeThatFits)
     }

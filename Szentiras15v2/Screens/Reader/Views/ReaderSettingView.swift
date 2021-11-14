@@ -11,14 +11,15 @@ struct ReaderSettingView: View {
     @Binding var fontSize: Double
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Betűméret".uppercased())
-                .font(.Theme.heavy(size: 17))
+            Text("Betűméret")
+                .font(.Theme.medium(size: 17))
                 .frame(maxWidth: .infinity, alignment: .leading)
             Slider(value: $fontSize, in: 15.0...21.0, step: 2) { _ in
                 if UserDefaults.standard.isFontSizeSaved {
                     UserDefaults.standard.saveFontSize(fontSize: fontSize)
                 }
             }
+            .padding(.bottom)
         }
         .padding()
     }

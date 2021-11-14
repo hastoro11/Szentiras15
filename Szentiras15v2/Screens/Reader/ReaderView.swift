@@ -57,7 +57,7 @@ struct ReaderView: View {
             vm.load()
         }
         .sheet(isPresented: $showBooklist) {
-            BooksListView(showBookslist: $showBooklist, current: vm.current, load: vm.load)
+            BooksListView(current: vm.current, load: vm.load)
         }
         .sheet(isPresented: $showTranslationList) {
             TranslationSelectView(current: vm.current, showTranslations: $showTranslationList, load: vm.load)
@@ -94,7 +94,7 @@ extension ReaderView {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineSpacing(3)
                         .id(tag(index: index))
-                        .listRowBackground(tag(index: index) == vm.searchTag ? Color.Theme.background : Color.clear)
+                        .listRowBackground(tag(index: index) == vm.searchTag ? Color(uiColor: .systemGray3) : Color.clear)
                 }
             }
             .listStyle(.plain)
@@ -123,7 +123,7 @@ extension ReaderView {
                 showHistory.toggle()
             } label: {
                 Image(systemName: "list.bullet")
-                    .font(.Theme.heavy(size: 17))
+                    .font(.Theme.regular(size: 17))
             }
 
         }
@@ -143,7 +143,7 @@ extension ReaderView {
                 showBooklist.toggle()
             }) {
                 Text(title)
-                    .font(.Theme.black(size: 19))
+                    .font(.Theme.bold(size: 17))
                     .foregroundColor(.primary)
             }
         }
@@ -156,7 +156,7 @@ extension ReaderView {
                 showTranslationList.toggle()
             }) {
                 Text(vm.current.translation.abbrev)
-                    .font(.Theme.heavy(size: 19))
+                    .font(.Theme.regular(size: 17))
             }
         }
     }
@@ -170,7 +170,7 @@ extension ReaderView {
                 }
             }) {
                 Text("Aa")
-                    .font(.Theme.heavy(size: 19))
+                    .font(.Theme.regular(size: 17))
             }
             
         })
@@ -189,8 +189,8 @@ extension ReaderView {
             VStack(alignment: .leading) {
                 Text(attributedEmptyMessage(name:vm.current.book.name))
                 
-                Text("Bizonyos fordítások csak az Újszövetséget tartalmazzák")
-                    .font(.Theme.book(size: 19))
+                Text("Bizonyos fordítások csak az Újszövetséget tartalmazzák, a katolikus fordításokban pedig több könyv is megtalálható, mint a protestánsokban")
+                    .font(.Theme.regular(size: 17))
                     .padding(.top)
             }
             .multilineTextAlignment(.center)
@@ -208,10 +208,10 @@ extension ReaderView {
                         .background(Color.accentColor)
                         .foregroundColor(.white)
                         .padding(.horizontal)
-                        .font(.Theme.book(size: 19))
+                        .font(.Theme.regular(size: 17))
                 }
             }
-            .font(.Theme.light(size: 19))
+            .font(.Theme.light(size: 17))
         case .success(_):
             if showArrows {
                 HStack {
@@ -229,9 +229,9 @@ extension ReaderView {
     // MARK: - AttributedText generators
     func attributedEmptyMessage(name: String) -> AttributedString {
         var attributedString = AttributedString("\(name) nem található meg ebben a fordításban.")
-        attributedString.font = .Theme.book(size: 19)
+        attributedString.font = .Theme.regular(size: 17)
         if let range = attributedString.range(of: name) {
-            attributedString[range].font = .Theme.heavy(size: 19)
+            attributedString[range].font = .Theme.bold(size: 17)
         }
         return attributedString
     }
@@ -240,10 +240,10 @@ extension ReaderView {
         let vers = versek[index]
         var attributedIndex = AttributedString("\(vers.versSzam) ")
         attributedIndex.foregroundColor = .accentColor
-        attributedIndex.font = .Theme.black(size: fontSize)
+        attributedIndex.font = .Theme.bold(size: fontSize)
         var attributedString = AttributedString(vers.szoveg)
         attributedString.font = .Theme.light(size: fontSize)
-        attributedString.foregroundColor = .Theme.grey2
+        attributedString.foregroundColor = Color("Title")
         let result = attributedIndex + attributedString
         return result
     }
@@ -267,9 +267,9 @@ extension ReaderView {
         .padding()
         .background(
             Circle().fill(
-                Color.Theme.grey1.opacity(0.3)
+                Color.gray.opacity(0.3)
             )
-                .shadow(color: .Theme.grey1, radius: 5, y: 5)
+                .shadow(color: .gray, radius: 5, y: 5)
         )
     }
 }

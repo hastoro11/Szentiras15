@@ -33,7 +33,7 @@ struct SplashScreen: View {
                     Spacer()
                     Text("Szentírás")
                         .foregroundColor(.white)
-                        .font(.Theme.heavy(size: 48))
+                        .font(.Theme.bold(size: 48))
                     Spacer()
                 }
                 

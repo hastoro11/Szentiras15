@@ -74,7 +74,7 @@ struct SearchView: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Keresés")
-                        .font(.Theme.heavy(size: 19))
+                        .font(.Theme.bold(size: 17))
                 }
             }
         }
@@ -89,7 +89,7 @@ struct SearchView: View {
                     .imageScale(.large)
                     .frame(width: 50, height: 44)
                     .foregroundColor(.white)
-                    .background(filterIsOn ? Color.accentColor : Color.Theme.background)
+                    .background(filterIsOn ? Color.accentColor : Color(uiColor: .systemGray3))
             }
             .opacity(returnSucces ? 1 : 0)
             
@@ -97,7 +97,7 @@ struct SearchView: View {
             Text("\(filteredResults.count) találat")
                 .opacity(returnSucces ? 1 : 0)
         }
-        .font(.Theme.book(size: 17))
+        .font(.Theme.regular(size: 17))
         .padding(.horizontal)
     }
     
@@ -126,14 +126,21 @@ struct SearchView: View {
                 Image(systemName: "exclamationmark.icloud.fill")
                     .font(.Theme.light(size: 48))
                 Text("\(error.description)")
-                    .font(.Theme.light(size: 19))
+                    .font(.Theme.light(size: 17))
             }
             
         case .empty:
-            if searched && filteredResults.isEmpty {
-                Text("Nincs találat a(z) '\(search)' kifejezésre")
-            } else {
-                Text("Kifejezés keresése a Bibliában...")
+            VStack {
+                Spacer()
+                if searched && filteredResults.isEmpty {
+                    Text("Nincs találat a(z) '\(search)' kifejezésre")
+                        .font(.Theme.light(size: 17))
+                } else {
+                    Text("Kifejezés keresése a Bibliában...")
+                        .font(.Theme.light(size: 17))
+                }
+                Spacer()
+                Spacer()
             }
         }
     }
