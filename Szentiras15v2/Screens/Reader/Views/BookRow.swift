@@ -36,7 +36,7 @@ struct BookRow: View {
                                 .font(.Theme.medium(size: 17))
                                 .frame(width: 44, height: 44)
                                 .background(Rectangle().fill (
-                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color(uiColor: .systemGray3)
+                                    book.number == current.book.number && ch == current.chapter ? Color.accentColor : Color.light
                                 ))
                         }
                     }

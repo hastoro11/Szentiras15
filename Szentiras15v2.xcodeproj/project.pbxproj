@@ -28,6 +28,7 @@
 		211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7032741351D00B5E4D5 /* FiraSans-Medium.ttf */; };
 		211EE7082741351D00B5E4D5 /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7042741351D00B5E4D5 /* FiraSans-Regular.ttf */; };
 		211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7052741351D00B5E4D5 /* FiraSans-Bold.ttf */; };
+		211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211EE70D27414F1700B5E4D5 /* Color+Extension.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
 		21AC166527218FF800D2DA84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166427218FF800D2DA84 /* ContentView.swift */; };
 		21AC166727218FF900D2DA84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21AC166627218FF900D2DA84 /* Assets.xcassets */; };
@@ -83,6 +84,7 @@
 		211EE7042741351D00B5E4D5 /* FiraSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Regular.ttf"; sourceTree = "<group>"; };
 		211EE7052741351D00B5E4D5 /* FiraSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Bold.ttf"; sourceTree = "<group>"; };
 		211EE70A2741353A00B5E4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		211EE70D27414F1700B5E4D5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		21AC165F27218FF800D2DA84 /* Szentiras15v2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Szentiras15v2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2App.swift; sourceTree = "<group>"; };
 		21AC166427218FF800D2DA84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -285,6 +287,7 @@
 				21AC168627219C1E00D2DA84 /* Util.swift */,
 				21AC168927219FB400D2DA84 /* Font+Extension.swift */,
 				210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */,
+				211EE70D27414F1700B5E4D5 /* Color+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				210CC4962733C1A20009D17B /* PartialSheetViewModifier.swift in Sources */,
 				21AC1682272196F400D2DA84 /* Book.swift in Sources */,
 				21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */,
+				211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */,
 				210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,

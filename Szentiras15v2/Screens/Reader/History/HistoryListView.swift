@@ -88,7 +88,7 @@ struct HistoryRow: View {
         HStack {
             Text("\(String(history.book.abbrev.prefix(3)))\(history.chapter)")
                 .frame(width: 54, height: 44)
-                .background(Color(uiColor: .systemGray3))
+                .background(Color.light)
                 .foregroundColor(.white)
                 .font(.Theme.bold(size: 16))
             VStack(alignment: .leading, spacing: 2) {
@@ -100,7 +100,8 @@ struct HistoryRow: View {
                 HStack {
                     Text(history.translation.name)
                         .font(.Theme.light(size: 14))
-                        .foregroundColor(Color(uiColor: UIColor.systemGray))
+                        .foregroundColor(Color.dark
+                        )
                         .lineLimit(1)
                     
                     Spacer()

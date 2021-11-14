@@ -52,7 +52,7 @@ struct FilterView: View {
                             .font(.Theme.bold(size: 15))
                             .foregroundColor(.white)
                             .frame(width: 50, height: 44)
-                            .background(filter.book == 0 ? Color(uiColor: .systemGray3) : Color.accentColor)
+                            .background(filter.book == 0 ? Color.light : Color.accentColor)
                     }
                     
                 } header: {
@@ -82,7 +82,7 @@ struct FilterView: View {
                     .onTapGesture {
                         filter.translation = 0
                     }
-                    .foregroundColor(filter.translation != 0 ? Color("Title"): Color(uiColor: UIColor.systemGray3))
+                    .foregroundColor(filter.translation != 0 ? Color("Title"): Color.light)
                     ForEach(Translation.all()) { tr in
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: filter.translation == tr.id)
                         .onTapGesture {

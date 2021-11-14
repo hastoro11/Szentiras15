@@ -89,7 +89,7 @@ struct SearchView: View {
                     .imageScale(.large)
                     .frame(width: 50, height: 44)
                     .foregroundColor(.white)
-                    .background(filterIsOn ? Color.accentColor : Color(uiColor: .systemGray3))
+                    .background(filterIsOn ? Color.accentColor : Color.light)
             }
             .opacity(returnSucces ? 1 : 0)
             

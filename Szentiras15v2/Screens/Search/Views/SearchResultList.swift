@@ -32,7 +32,7 @@ struct ResultRow: View {
                 .font(.Theme.medium(size: 15))
             Text(result.translation.abbrev.uppercased())
                 .font(.Theme.regular(size: 15))
-                .foregroundColor(Color(uiColor: .systemGray3))
+                .foregroundColor(Color.light)
             Text(result.text)
                 .font(.Theme.light(size: 15))
                 .foregroundColor(Color("Title"))

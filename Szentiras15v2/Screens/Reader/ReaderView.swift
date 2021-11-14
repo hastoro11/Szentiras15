@@ -94,7 +94,7 @@ extension ReaderView {
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .lineSpacing(3)
                         .id(tag(index: index))
-                        .listRowBackground(tag(index: index) == vm.searchTag ? Color(uiColor: .systemGray3) : Color.clear)
+                        .listRowBackground(tag(index: index) == vm.searchTag ? Color.light : Color.clear)
                 }
             }
             .listStyle(.plain)

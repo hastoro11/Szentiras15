@@ -38,7 +38,7 @@ struct SearchBar: View {
                             }
                         }
                     }
-                        .foregroundColor(Color(uiColor: .systemGray))
+                        .foregroundColor(Color.dark)
                 )
                 .onTapGesture {
                     withAnimation {

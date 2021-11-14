@@ -18,10 +18,10 @@ struct SelectRow: View {
                 .font(.Theme.bold(size: 15))
                 .foregroundColor(Color.white)
                 .frame(width: 50, height: 44)
-                .background(selected ? Color.accentColor : Color(uiColor: UIColor.systemGray3))
+                .background(selected ? Color.accentColor : Color.light)
             Text(name)
                 .font(.Theme.light(size: 17))
-                .foregroundColor(selected ? Color("Title") : Color(uiColor: .systemGray3))
+                .foregroundColor(selected ? Color("Title") : Color.light)
             Spacer()
         }
     }
