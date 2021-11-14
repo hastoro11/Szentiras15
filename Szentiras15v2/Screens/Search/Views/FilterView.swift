@@ -82,7 +82,7 @@ struct FilterView: View {
                     .onTapGesture {
                         filter.translation = 0
                     }
-                    .foregroundColor(filter.translation != 0 ? Color.primary : Color(uiColor: UIColor.systemGray3))
+                    .foregroundColor(filter.translation != 0 ? Color("Title"): Color(uiColor: UIColor.systemGray3))
                     ForEach(Translation.all()) { tr in
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: filter.translation == tr.id)
                         .onTapGesture {

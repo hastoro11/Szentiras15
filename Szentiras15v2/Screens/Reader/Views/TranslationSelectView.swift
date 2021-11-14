@@ -25,7 +25,7 @@ struct TranslationSelectView: View {
                 .font(.Theme.regular(size: 17))
                 Text("Fordítások")
                     .font(.Theme.bold(size: 17))
-                    .foregroundColor(.primary)
+                    .foregroundColor(Color("Title"))
             }
             .padding([.top, .horizontal])
             .padding(.bottom, 6)

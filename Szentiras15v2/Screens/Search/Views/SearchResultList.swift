@@ -35,7 +35,7 @@ struct ResultRow: View {
                 .foregroundColor(Color(uiColor: .systemGray3))
             Text(result.text)
                 .font(.Theme.light(size: 15))
-                .foregroundColor(Color.primary)
+                .foregroundColor(Color("Title"))
                 .lineLimit(3)
         }
         .padding(.bottom, 6)

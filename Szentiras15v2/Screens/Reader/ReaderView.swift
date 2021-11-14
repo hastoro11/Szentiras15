@@ -144,7 +144,7 @@ extension ReaderView {
             }) {
                 Text(title)
                     .font(.Theme.bold(size: 17))
-                    .foregroundColor(.primary)
+                    .foregroundColor(Color("Title"))
             }
         }
     }

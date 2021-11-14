@@ -27,7 +27,7 @@ struct HistoryListView: View {
                 .font(.Theme.regular(size: 17))
                 Text("Előzmények")
                     .font(.Theme.bold(size: 17))
-                    .foregroundColor(.primary)
+                    .foregroundColor(Color("Title"))
                 HStack {
                     Spacer()
                     Button {
@@ -95,7 +95,7 @@ struct HistoryRow: View {
                 Text("\(history.book.name) \(history.chapter). fejezet")
                     .font(.Theme.medium(size: 15))
                     .lineLimit(1)
-                    .foregroundColor(.primary)
+                    .foregroundColor(Color("Title"))
 
                 HStack {
                     Text(history.translation.name)

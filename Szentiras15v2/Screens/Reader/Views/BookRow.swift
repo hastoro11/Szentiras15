@@ -52,7 +52,7 @@ struct BookRow: View {
                 Text(book.abbrev)
                     .font(.Theme.medium(size: 17))
             }
-            .foregroundColor(Color(uiColor: .systemGray))
+            .foregroundColor(Color("Title"))
         }
         .padding(.horizontal)
         Divider()
@@ -63,8 +63,8 @@ struct BookRow: View {
 struct BookRow_Previews: PreviewProvider {
     static var previews: some View {
         BookRow(fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
-            .preferredColorScheme(.dark)
-        BookRow(fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
             .preferredColorScheme(.light)
+        BookRow(fetch: {_, _ in}, current: Current.init(translation: Translation.default, book: Book.default, chapter: 1), book: Book.default)
+            .preferredColorScheme(.dark)
     }
 }

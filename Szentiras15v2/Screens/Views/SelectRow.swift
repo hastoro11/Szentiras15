@@ -21,7 +21,7 @@ struct SelectRow: View {
                 .background(selected ? Color.accentColor : Color(uiColor: UIColor.systemGray3))
             Text(name)
                 .font(.Theme.light(size: 17))
-                .foregroundColor(selected ? .primary : Color(uiColor: .systemGray3))
+                .foregroundColor(selected ? Color("Title") : Color(uiColor: .systemGray3))
             Spacer()
         }
     }
