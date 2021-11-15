@@ -14,8 +14,13 @@ struct SplashScreen: View {
     var body: some View {
         if !removeSplashScreen {
             ZStack {
-                Color("Title")
+                Image("andrik-langfield")
+                    .resizable()
+                    .scaledToFill()
                     .ignoresSafeArea()
+                    .overlay(
+                        LinearGradient(colors: [.clear, .black], startPoint: UnitPoint(x: 0.5, y: 0.2), endPoint: UnitPoint(x: 0.5, y: 2.2))
+                    )
                 VStack {
                     Spacer()
                     Image("bible")
@@ -24,20 +29,13 @@ struct SplashScreen: View {
                         .scaledToFit()
                         .shadow(color: Color.white.opacity(startAnimation ? 1 : 0), radius: 30)
                         .foregroundColor(.white)
-                        .colorMultiply(color)
-                        
-                        
-                        
-                    Spacer()
-                    Spacer()
-                    Spacer()
                     Text("Szentírás")
                         .foregroundColor(.white)
-                        .font(.Theme.bold(size: 48))
+                        .font(.custom("Zapfino", size: 42))
+                        .offset(y: -100)
+                    Spacer()
                     Spacer()
                 }
-                
-                    
             }
             .onAppear {
                 withAnimation(.easeInOut(duration: 1.5)) {
