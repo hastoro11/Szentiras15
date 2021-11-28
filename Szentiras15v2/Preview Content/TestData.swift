@@ -16,4 +16,11 @@ struct TestData {
         let idezet: Idezet = Util.getItemFromBundle(filename: "1Sam17")
         return idezet
     }
+    
+    static var current: Current {
+        Current(
+            translation: Translation.default,
+            book: Book.default,
+            chapter: 1)
+    }
 }
