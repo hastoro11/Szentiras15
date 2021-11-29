@@ -23,4 +23,8 @@ struct TestData {
             book: Book.default,
             chapter: 1)
     }
+    
+    static var books: [Book] {
+        Translation.default.getBooks()
+    }
 }

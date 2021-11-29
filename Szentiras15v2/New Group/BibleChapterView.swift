@@ -16,9 +16,7 @@ struct BibleChapterView: View {
             Content(idezet: idezet)
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
-                        Button(action: {
-//                            showTranslationList.toggle()
-                        }) {
+                        Button(action: {}) {
                             Text(current.translation.abbrev.uppercased())
                                 .font(.Theme.regular(size: 17))
                         }
@@ -40,6 +38,61 @@ extension BibleChapterView {
                 .navigationTitle(idezet.keres.hivatkozas)
         }
     }
+}
+
+// MARK: - BookListView
+extension BibleChapterView {
+    struct BookListView: View {
+        var books: [Book]
+        var current: Current
+        var body: some View {
+            ScrollViewReader { proxy in
+                ScrollView {
+                    ForEach(books.indices, id:\.self) { index in
+                        BookRow(book: books[index], current: current)
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// MARK: - BookRow
+extension BibleChapterView.BookListView {
+    struct BookRow: View {
+        var book: Book
+        var current: Current
+        var body: some View {
+            DisclosureGroup {
+                ScrollView {
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 50, maximum: 60))], spacing: 15) {
+                        ForEach(1...(book.chapters), id:\.self) { ch in
+                            Button(action: {}) {
+                                Text("\(ch)")
+                                    .foregroundColor(.white)
+                                    .font(.Theme.medium(size: 17))
+                                    .frame(width: 44, height: 44)
+                                    .background(Rectangle().fill (Color.light))
+                            }
+                        }
+                    }
+                }
+                .padding(.vertical)
+            } label: {
+                HStack {
+                    Text(book.name)
+                        .font(.Theme.light(size: 17))
+                        .lineLimit(1)
+                    Spacer()
+                    Text(book.abbrev)
+                        .font(.Theme.medium(size: 17))
+                }
+                .foregroundColor(Color("Title"))
+            }
+        }
+    }
+
 }
 
 // MARK: - TranslationListView
@@ -173,5 +226,12 @@ struct BibleChapterView_Previews: PreviewProvider {
         BibleChapterView.TranslationListView()
             .previewLayout(.sizeThatFits)
             .previewDisplayName("TranslationList")
+        
+        BibleChapterView.BookListView.BookRow(book: TestData.current.book, current: TestData.current)
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("BookRow")
+        
+        BibleChapterView.BookListView(books: TestData.books, current: TestData.current)
+            .previewDisplayName("BookLisView")
     }
 }

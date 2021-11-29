@@ -49,6 +49,71 @@ extension Book {
 }
 
 extension Book {
+    struct Category {
+        var id: Int
+        var title: String
+        var books: [Book]
+    }
+    
+    static func getBooksByCategories(byTranslationID: Int) -> [Category] {
+        let translation = Translation.get(by: byTranslationID)
+        let isCatholic = translation.denom == "katolikus"
+        var categories = [
+            Category(
+                id: 0,
+                title: "A Törvény könyvei",
+                books: getBookByNumbers(numbers: Array(101...105), translationID: byTranslationID)),
+            Category(
+                id: 1,
+                title: "Ószövetségi történelmi könyvek",
+                books: isCatholic ? getBookByNumbers(numbers: Array(106...119), translationID: byTranslationID) : getBookByNumbers(numbers: Array(106...119), translationID: byTranslationID)
+            ),
+            Category(
+                id: 2,
+                title: "Költői könyvek",
+                books: isCatholic ? getBookByNumbers(numbers: Array(120...125), translationID: byTranslationID) : getBookByNumbers(numbers: Array(120...124), translationID: byTranslationID)
+            ),
+            Category(
+                id: 3,
+                title: "Ószövetség prófétai könyvek",
+                books: isCatholic ? getBookByNumbers(numbers: Array(126...146), translationID: byTranslationID) : getBookByNumbers(numbers: Array(126...144), translationID: byTranslationID)
+            ),
+            Category(
+                id: 4,
+                title: "Evangéliumok",
+                books: getBookByNumbers(numbers: Array(201...204), translationID: byTranslationID)
+            ),
+            Category(
+                id: 5,
+                title: "Újszövetség történelmi könyvek",
+                books: getBookByNumbers(numbers: [205], translationID: byTranslationID)
+            ),
+            Category(
+                id: 6,
+                title: "Levelek",
+                books: getBookByNumbers(numbers: Array(206...226), translationID: byTranslationID)
+            ),
+            Category(
+                id: 7,
+                title: "Újszövetség prófétai könyvek",
+                books: getBookByNumbers(numbers: [227], translationID: byTranslationID)
+            ),
+        ]
+        
+        if translation.id == 5 || translation.id == 7 {
+            categories = categories.filter({$0.id >= 4})
+        }
+        
+        return categories
+    }
+    
+    private static func getBookByNumbers(numbers: [Int], translationID: Int) -> [Book] {
+        let books = Translation.get(by: translationID).getBooks()
+        return books.filter({numbers.contains($0.number)})
+    }
+}
+
+extension Book {
     static var `default`: Book {
         Book.all(by: 6)[0]
     }

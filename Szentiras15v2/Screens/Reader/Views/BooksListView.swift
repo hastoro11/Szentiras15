@@ -53,7 +53,7 @@ struct BooksListView: View {
 }
 
 struct BooksListView_Previews: PreviewProvider {
-    static var current: Current = Current(translation: Translation.get(by: 4)!, book: Book.default, chapter: 1)
+    static var current: Current = Current(translation: Translation.get(by: 4), book: Book.default, chapter: 1)
     static var previews: some View {
         BooksListView(current: current, load: {_ in})
     }

@@ -46,15 +46,15 @@ extension Translation {
         return translations
     }
     
-    static func get(by translationID: Int) -> Translation? {
+    static func get(by translationID: Int) -> Translation {
         let translations: [Translation] = Util.getItemFromBundle(filename: "translations")
-        return translations.first { $0.id == translationID }
+        return translations.first { $0.id == translationID }!
     }
 }
 
 extension Translation {
     static var `default`: Translation {
-        Translation.get(by: 6)!
+        Translation.get(by: 6)
     }
     
     func getBooks() -> [Book] {

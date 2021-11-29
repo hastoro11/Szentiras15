@@ -104,7 +104,8 @@ struct SearchView: View {
     func jumpToVers(result: TextResult.Result) {
         readerVM.seekSearched = true
         readerVM.searchTag = "\(result.translation.id)/\(result.book.number)/\(result.chapter)/\(result.numv)"
-        guard let book = Book.get(by: result.translation.id, and: result.book.number), let translation = Translation.get(by: result.translation.id), let chapter = Int(result.chapter) else { return }
+        guard let book = Book.get(by: result.translation.id, and: result.book.number), let chapter = Int(result.chapter) else { return }
+        let translation = Translation.get(by: result.translation.id)
         
         readerVM.current = Current(
             translation: translation,
