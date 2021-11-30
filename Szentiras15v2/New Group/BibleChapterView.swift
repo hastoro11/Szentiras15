@@ -13,15 +13,8 @@ struct BibleChapterView: View {
     
     var body: some View {
         NavigationView {
-            Content(idezet: idezet)
-                .toolbar {
-                    ToolbarItem(placement: .primaryAction) {
-                        Button(action: {}) {
-                            Text(current.translation.abbrev.uppercased())
-                                .font(.Theme.regular(size: 17))
-                        }
-                    }
-                }
+            Content(idezet: idezet, current: current)
+                      
         }
     }
 }
@@ -32,10 +25,36 @@ extension BibleChapterView {
         typealias VersList = BibleChapterView.VersList
         
         var idezet: Idezet
+        var current: Current
+        @State var showBookList: Bool = false
+        @State var showTranslationList: Bool = false
         var body: some View {
             VersList(versek: idezet.valasz.versek)
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationTitle(idezet.keres.hivatkozas)
+                .toolbar {
+                    ToolbarItem(placement: .primaryAction) {
+                        Button(action: {
+                            showTranslationList.toggle()
+                        }) {
+                            Text(current.translation.abbrev.uppercased())
+                                .font(.Theme.regular(size: 17))
+                        }
+                    }
+                    ToolbarItem(placement: .principal) {
+                        Button {
+                            showBookList.toggle()
+                        } label: {
+                            Text(idezet.keres.hivatkozas)
+                                .font(.Theme.medium(size: 17))
+                        }
+                    }
+                }
+                .sheet(isPresented: $showBookList) {
+                    BibleChapterView.BookListView(current: current, showBookList: showBookList)
+                }
+                .sheet(isPresented: $showTranslationList) {
+                    BibleChapterView.TranslationListView(currentTranslationID: current.translation.id)
+                }
         }
     }
 }
@@ -43,19 +62,26 @@ extension BibleChapterView {
 // MARK: - BookListView
 extension BibleChapterView {
     struct BookListView: View {
-        var books: [Book]
         var current: Current
+        @State var showBookList = false
         var body: some View {
             ScrollViewReader { proxy in
-                ScrollView {
-                    ForEach(books.indices, id:\.self) { index in
-                        BookRow(book: books[index], current: current)
+                List {
+                    ForEach(Book.getBooksByCategories(byTranslationID: current.translation.id), id:\.id) { category in
+                        Section {
+                            ForEach(category.books.indices, id:\.self) { index in
+                                BookRow(book: category.books[index], current: current)
+                            }
+                        } header: {
+                            Text(category.title)
+                        }
                     }
                 }
+                .listStyle(.grouped)
             }
         }
     }
-
+    
 }
 
 // MARK: - BookRow
@@ -63,8 +89,15 @@ extension BibleChapterView.BookListView {
     struct BookRow: View {
         var book: Book
         var current: Current
+        @State var isExpanded: Bool
+        init(book: Book, current: Current) {
+            self.book = book
+            self.current = current
+            //            _isExpanded = State(initialValue: book.number == current.book.number)
+            _isExpanded = State(initialValue: false)
+        }
         var body: some View {
-            DisclosureGroup {
+            DisclosureGroup(isExpanded: $isExpanded) {
                 ScrollView {
                     LazyVGrid(columns: [GridItem(.adaptive(minimum: 50, maximum: 60))], spacing: 15) {
                         ForEach(1...(book.chapters), id:\.self) { ch in
@@ -98,11 +131,10 @@ extension BibleChapterView.BookListView {
 // MARK: - TranslationListView
 extension BibleChapterView {
     struct TranslationListView: View {
-        var translations: [Translation] = Translation.all()
-        var currentTranslationID: Int = 6
+        var currentTranslationID: Int
         var body: some View {
             List {
-                ForEach(translations) { tr in
+                ForEach(Translation.all()) { tr in
                     VStack {
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
                             
@@ -223,7 +255,7 @@ struct BibleChapterView_Previews: PreviewProvider {
         .previewLayout(.sizeThatFits)
         .previewDisplayName("TranslationRow")
         
-        BibleChapterView.TranslationListView()
+        BibleChapterView.TranslationListView(currentTranslationID: 6)
             .previewLayout(.sizeThatFits)
             .previewDisplayName("TranslationList")
         
@@ -231,7 +263,7 @@ struct BibleChapterView_Previews: PreviewProvider {
             .previewLayout(.sizeThatFits)
             .previewDisplayName("BookRow")
         
-        BibleChapterView.BookListView(books: TestData.books, current: TestData.current)
+        BibleChapterView.BookListView(current: TestData.current)
             .previewDisplayName("BookLisView")
     }
 }
