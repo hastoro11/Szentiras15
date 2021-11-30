@@ -13,8 +13,7 @@ struct BibleChapterView: View {
     
     var body: some View {
         NavigationView {
-            Content(idezet: idezet, current: current)
-                      
+            Content(idezet: idezet, current: current)                      
         }
     }
 }
@@ -28,6 +27,7 @@ extension BibleChapterView {
         var current: Current
         @State var showBookList: Bool = false
         @State var showTranslationList: Bool = false
+        @State var showHistoryList: Bool = false
         var body: some View {
             VersList(versek: idezet.valasz.versek)
                 .navigationBarTitleDisplayMode(.inline)
@@ -48,12 +48,23 @@ extension BibleChapterView {
                                 .font(.Theme.medium(size: 17))
                         }
                     }
+                    ToolbarItem(placement: .cancellationAction) {
+                        Button {
+                            showHistoryList.toggle()
+                        } label: {
+                            Image(systemName: "list.star")
+                                .font(.Theme.medium(size: 17))
+                        }
+                    }
                 }
                 .sheet(isPresented: $showBookList) {
                     BibleChapterView.BookListView(current: current, showBookList: showBookList)
                 }
                 .sheet(isPresented: $showTranslationList) {
                     BibleChapterView.TranslationListView(currentTranslationID: current.translation.id)
+                }
+                .sheet(isPresented: $showHistoryList) {
+                    BibleChapterView.HistoryListView(historyList: TestData.history)
                 }
         }
     }
@@ -94,7 +105,6 @@ extension BibleChapterView.BookListView {
             self.book = book
             self.current = current
             _isExpanded = State(initialValue: book.number == current.book.number)
-//            _isExpanded = State(initialValue: false)
         }
         var body: some View {
             DisclosureGroup(isExpanded: $isExpanded) {
@@ -204,8 +214,56 @@ extension BibleChapterView.VersList {
             return result
         }
     }
-    
-    
+}
+
+// MARK: - HistoryListView
+extension BibleChapterView {
+    struct HistoryListView: View {
+        var historyList: [Current]
+        var body: some View {
+            List {
+                ForEach(historyList.indices, id:\.self) { index in
+                    HistoryRow(history: historyList[index])
+                }
+            }
+            .listStyle(.plain)
+        }
+    }
+
+}
+
+// MARK: - HistoryRow
+extension BibleChapterView.HistoryListView {
+    struct HistoryRow: View {
+        var history: Current
+        var body: some View {
+            HStack {
+                Text("\(String(history.book.abbrev.prefix(3)))\(history.chapter)")
+                    .iconButtonStyle(active: false)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("\(history.book.name) \(history.chapter). fejezet")
+                        .font(.Theme.medium(size: 15))
+                        .lineLimit(1)
+                        .foregroundColor(Color("Title"))
+
+                    HStack {
+                        Text(history.translation.name)
+                            .font(.Theme.light(size: 14))
+                            .foregroundColor(Color.dark
+                            )
+                            .lineLimit(1)
+                        
+                        Spacer()
+                        Text(history.translation.abbrev.uppercased())
+                            .foregroundColor(.accentColor)
+                            .font(.Theme.medium(size: 15))
+                    }
+                    
+                }
+            }
+        }
+    }
+
 }
 
 // MARK: - Previews
@@ -242,5 +300,13 @@ struct BibleChapterView_Previews: PreviewProvider {
         
         BibleChapterView.BookListView(current: TestData.current)
             .previewDisplayName("BookLisView")
+        
+        BibleChapterView.HistoryListView(historyList: TestData.history)
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("HistoryListView")
+        
+        BibleChapterView.HistoryListView.HistoryRow(history: TestData.history[0])
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("HistoryRow")
     }
 }
