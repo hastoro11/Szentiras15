@@ -30,6 +30,7 @@
 		211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7052741351D00B5E4D5 /* FiraSans-Bold.ttf */; };
 		211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211EE70D27414F1700B5E4D5 /* Color+Extension.swift */; };
 		21456209275583B50000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456208275583190000202D /* Rom16.json */; };
+		2145620B275607480000202D /* Viewmodifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145620A275607480000202D /* Viewmodifiers.swift */; };
 		21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */; };
 		21810A2327540690001D29B9 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A2127540690001D29B9 /* BookTest.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
@@ -103,6 +104,7 @@
 		21456202275552B20000202D /* translations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.json; sourceTree = "<group>"; };
 		21456203275552B20000202D /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		21456208275583190000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
+		2145620A275607480000202D /* Viewmodifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewmodifiers.swift; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2Tests.swift; sourceTree = "<group>"; };
 		21810A2127540690001D29B9 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
+				2145620A275607480000202D /* Viewmodifiers.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				21AC168727219C1E00D2DA84 /* Util.swift in Sources */,
 				21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */,
 				210CC4992733C1A20009D17B /* PartialSheetStyle.swift in Sources */,
+				2145620B275607480000202D /* Viewmodifiers.swift in Sources */,
 				210CC4982733C1A20009D17B /* PartialSheetManager.swift in Sources */,
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
 				210CC4972733C1A20009D17B /* BlurEffectView.swift in Sources */,

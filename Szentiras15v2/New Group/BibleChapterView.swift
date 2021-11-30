@@ -93,8 +93,8 @@ extension BibleChapterView.BookListView {
         init(book: Book, current: Current) {
             self.book = book
             self.current = current
-            //            _isExpanded = State(initialValue: book.number == current.book.number)
-            _isExpanded = State(initialValue: false)
+            _isExpanded = State(initialValue: book.number == current.book.number)
+//            _isExpanded = State(initialValue: false)
         }
         var body: some View {
             DisclosureGroup(isExpanded: $isExpanded) {
@@ -103,10 +103,7 @@ extension BibleChapterView.BookListView {
                         ForEach(1...(book.chapters), id:\.self) { ch in
                             Button(action: {}) {
                                 Text("\(ch)")
-                                    .foregroundColor(.white)
-                                    .font(.Theme.medium(size: 17))
-                                    .frame(width: 44, height: 44)
-                                    .background(Rectangle().fill (Color.light))
+                                    .iconButtonStyle(active: ch == current.chapter, size: .small)
                             }
                         }
                     }
@@ -136,7 +133,7 @@ extension BibleChapterView {
             List {
                 ForEach(Translation.all()) { tr in
                     VStack {
-                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
+                        BibleChapterView.TranslationListView.Row(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
                             
                     }
                 }
@@ -149,34 +146,18 @@ extension BibleChapterView {
 // MARK: - Row
 extension BibleChapterView.TranslationListView {
     struct Row: View {
-        typealias RowIcon = BibleChapterView.TranslationListView.RowIcon
         var abbrev: String
         var name: String
         var selected: Bool
         var body: some View {
             HStack {
-                RowIcon(text: abbrev.uppercased(), selected: selected)
+                Text(abbrev.uppercased())
+                    .iconButtonStyle(active: selected)
                 Text(name)
                     .font(.Theme.light(size: 17))
                     .foregroundColor(selected ? Color("Title") : Color.light)
                 Spacer()
             }
-        }
-    }
-
-}
-
-// MARK: - RowIcon
-extension BibleChapterView.TranslationListView {
-    struct RowIcon: View {
-        var text: String
-        var selected: Bool
-        var body: some View {
-            Text(text)
-                .font(.Theme.bold(size: 15))
-                .foregroundColor(Color.white)
-                .frame(width: 50, height: 44)
-                .background(selected ? Color.accentColor : Color.light)
         }
     }
 
@@ -239,10 +220,6 @@ struct BibleChapterView_Previews: PreviewProvider {
         .previewLayout(.sizeThatFits)
         .previewDisplayName("VersRow")
         
-        HStack {
-            BibleChapterView.TranslationListView.RowIcon(text: "SZIT", selected: true)
-            BibleChapterView.TranslationListView.RowIcon(text: "SZIT", selected: false)
-        }
         .padding()
         .previewLayout(.sizeThatFits)
         .previewDisplayName("RowIcon")
