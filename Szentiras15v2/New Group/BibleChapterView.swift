@@ -272,6 +272,11 @@ struct BibleChapterView_Previews: PreviewProvider {
     static var current: Current = TestData.current
     static var previews: some View {
         BibleChapterView(idezet: idezet, current: current)
+        BibleChapterView(idezet: idezet, current: current)
+            .environment(\.sizeCategory, .accessibilityMedium)
+        BibleChapterView(idezet: idezet, current: current)
+            .environment(\.sizeCategory, .accessibilityLarge)
+            
         Group {
             BibleChapterView.VersList.VersRow(vers: idezet.valasz.versek[0], index: 0, fontSize: 17)
         }
