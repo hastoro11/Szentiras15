@@ -29,8 +29,14 @@
 		211EE7082741351D00B5E4D5 /* FiraSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7042741351D00B5E4D5 /* FiraSans-Regular.ttf */; };
 		211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7052741351D00B5E4D5 /* FiraSans-Bold.ttf */; };
 		211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211EE70D27414F1700B5E4D5 /* Color+Extension.swift */; };
-		21456209275583B50000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456208275583190000202D /* Rom16.json */; };
 		2145620B275607480000202D /* Viewmodifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145620A275607480000202D /* Viewmodifiers.swift */; };
+		2145620D27566C6C0000202D /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145620C27566C6C0000202D /* SearchingView.swift */; };
+		21456211275674CB0000202D /* UtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21456210275674CB0000202D /* UtilTest.swift */; };
+		21456212275675EB0000202D /* SearchBuszke.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456200275552B20000202D /* SearchBuszke.json */; };
+		21456213275675FB0000202D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC168627219C1E00D2DA84 /* Util.swift */; };
+		21456218275677AA0000202D /* SearchTengeri.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456217275677A60000202D /* SearchTengeri.json */; };
+		21456219275677AB0000202D /* SearchTengeri.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456217275677A60000202D /* SearchTengeri.json */; };
+		2145621B275684A60000202D /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621A275684A30000202D /* books.json */; };
 		21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */; };
 		21810A2327540690001D29B9 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A2127540690001D29B9 /* BookTest.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
@@ -97,14 +103,17 @@
 		211EE70A2741353A00B5E4D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		211EE70D27414F1700B5E4D5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		214561FD275552B20000202D /* 1Sam17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1Sam17.json; sourceTree = "<group>"; };
-		214561FE275552B20000202D /* SearchTengeri.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchTengeri.json; sourceTree = "<group>"; };
 		214561FF275552B20000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		21456200275552B20000202D /* SearchBuszke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchBuszke.json; sourceTree = "<group>"; };
 		21456201275552B20000202D /* IdezetError.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = IdezetError.json; sourceTree = "<group>"; };
 		21456202275552B20000202D /* translations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = translations.json; sourceTree = "<group>"; };
 		21456203275552B20000202D /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
-		21456208275583190000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		2145620A275607480000202D /* Viewmodifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewmodifiers.swift; sourceTree = "<group>"; };
+		2145620C27566C6C0000202D /* SearchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingView.swift; sourceTree = "<group>"; };
+		21456210275674CB0000202D /* UtilTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilTest.swift; sourceTree = "<group>"; };
+		21456217275677A60000202D /* SearchTengeri.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchTengeri.json; sourceTree = "<group>"; };
+		2145621A275684A30000202D /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
+		2145621C275685BF0000202D /* SearchBuszke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchBuszke.json; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2Tests.swift; sourceTree = "<group>"; };
 		21810A2127540690001D29B9 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
@@ -230,8 +239,8 @@
 		214561FC275552B20000202D /* JSON */ = {
 			isa = PBXGroup;
 			children = (
+				21456217275677A60000202D /* SearchTengeri.json */,
 				21456200275552B20000202D /* SearchBuszke.json */,
-				214561FE275552B20000202D /* SearchTengeri.json */,
 				21456202275552B20000202D /* translations.json */,
 				214561FF275552B20000202D /* Rom16.json */,
 				21456201275552B20000202D /* IdezetError.json */,
@@ -244,8 +253,11 @@
 		21810A1927540669001D29B9 /* Szentiras15v2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2145621C275685BF0000202D /* SearchBuszke.json */,
+				2145621A275684A30000202D /* books.json */,
 				21810A2127540690001D29B9 /* BookTest.swift */,
 				21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */,
+				21456210275674CB0000202D /* UtilTest.swift */,
 			);
 			path = Szentiras15v2Tests;
 			sourceTree = "<group>";
@@ -315,7 +327,6 @@
 		21AC1671272191BC00D2DA84 /* JSON */ = {
 			isa = PBXGroup;
 			children = (
-				21456208275583190000202D /* Rom16.json */,
 				21AC167B2721961B00D2DA84 /* translations.json */,
 				21AC167D2721962600D2DA84 /* books.json */,
 			);
@@ -405,6 +416,7 @@
 			children = (
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
 				2145620A275607480000202D /* Viewmodifiers.swift */,
+				2145620C27566C6C0000202D /* SearchingView.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -494,6 +506,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2145621B275684A60000202D /* books.json in Resources */,
+				21456212275675EB0000202D /* SearchBuszke.json in Resources */,
+				21456218275677AA0000202D /* SearchTengeri.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,13 +518,13 @@
 			files = (
 				21AC167E2721962600D2DA84 /* books.json in Resources */,
 				21AC166A27218FF900D2DA84 /* Preview Assets.xcassets in Resources */,
+				21456219275677AB0000202D /* SearchTengeri.json in Resources */,
 				211EE7082741351D00B5E4D5 /* FiraSans-Regular.ttf in Resources */,
 				21AC167C2721961B00D2DA84 /* translations.json in Resources */,
 				21AC166727218FF900D2DA84 /* Assets.xcassets in Resources */,
 				211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */,
 				211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */,
 				211EE7062741351D00B5E4D5 /* FiraSans-Light.ttf in Resources */,
-				21456209275583B50000202D /* Rom16.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,7 +536,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21810A2327540690001D29B9 /* BookTest.swift in Sources */,
+				21456211275674CB0000202D /* UtilTest.swift in Sources */,
 				21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */,
+				21456213275675FB0000202D /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,6 +560,7 @@
 				21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */,
 				210CC4992733C1A20009D17B /* PartialSheetStyle.swift in Sources */,
 				2145620B275607480000202D /* Viewmodifiers.swift in Sources */,
+				2145620D27566C6C0000202D /* SearchingView.swift in Sources */,
 				210CC4982733C1A20009D17B /* PartialSheetManager.swift in Sources */,
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
 				210CC4972733C1A20009D17B /* BlurEffectView.swift in Sources */,

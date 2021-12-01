@@ -46,6 +46,7 @@ extension BibleChapterView {
                         } label: {
                             Text(idezet.keres.hivatkozas)
                                 .font(.Theme.medium(size: 17))
+                                .foregroundColor(.primary)
                         }
                     }
                     ToolbarItem(placement: .cancellationAction) {

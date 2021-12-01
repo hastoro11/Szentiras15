@@ -48,4 +48,10 @@ struct TestData {
     static var books: [Book] {
         Translation.default.getBooks()
     }
+    
+    static var results: [TextResult.Result] {
+        let searchResult: SearchResult = Util.getItemFromBundle(filename: "SearchTengeri")
+        let fullTextResult = searchResult.fullTextResult!
+        return fullTextResult.results.flatMap({$0.results})
+    }
 }
