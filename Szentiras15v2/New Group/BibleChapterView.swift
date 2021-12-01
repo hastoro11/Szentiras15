@@ -144,7 +144,8 @@ extension BibleChapterView {
             List {
                 ForEach(Translation.all()) { tr in
                     VStack {
-                        BibleChapterView.TranslationListView.Row(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
+                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
+//                        BibleChapterView.TranslationListView.Row(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
                             
                     }
                 }
@@ -152,26 +153,6 @@ extension BibleChapterView {
             .listStyle(.plain)
         }
     }
-}
-
-// MARK: - Row
-extension BibleChapterView.TranslationListView {
-    struct Row: View {
-        var abbrev: String
-        var name: String
-        var selected: Bool
-        var body: some View {
-            HStack {
-                Text(abbrev.uppercased())
-                    .iconButtonStyle(active: selected)
-                Text(name)
-                    .font(.Theme.light(size: 17))
-                    .foregroundColor(selected ? Color("Title") : Color.light)
-                Spacer()
-            }
-        }
-    }
-
 }
 
 // MARK: - VersList
@@ -288,10 +269,6 @@ struct BibleChapterView_Previews: PreviewProvider {
         .previewLayout(.sizeThatFits)
         .previewDisplayName("RowIcon")
         
-        VStack {
-            BibleChapterView.TranslationListView.Row(abbrev: "RUF", name: "Magyar Bibliatársulat újfordítású Bibliája (2014)", selected: false)
-            BibleChapterView.TranslationListView.Row(abbrev: "RUF", name: "Magyar Bibliatársulat újfordítású Bibliája (2014)", selected: true)
-        }
         .padding()
         .previewLayout(.sizeThatFits)
         .previewDisplayName("TranslationRow")

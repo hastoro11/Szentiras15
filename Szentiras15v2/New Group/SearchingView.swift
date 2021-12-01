@@ -11,16 +11,104 @@ import SwiftUI
 struct SearchingView: View {
     var results: [TextResult.Result]
     var body: some View {
-        VStack {
-            SearchingView.SearchField(onCommit: {}, onClear: {}, onCancel: {})
-                .padding()
-            FilterBar(count: results.count)
-                .padding(.horizontal)
-            SearchListView(results: results)
-            Spacer()
+        NavigationView {
+            Content(results: results)
+        }
+    }
+}
+
+extension SearchingView {
+    struct Content: View {
+        var results: [TextResult.Result]
+        @State var showFilterView: Bool = false
+        var body: some View {
+            VStack {
+                SearchingView.SearchField(onCommit: {}, onClear: {}, onCancel: {})
+                    .padding()
+                SearchingView.FilterBar(count: results.count, showFilterView: $showFilterView)
+                    .padding(.horizontal)
+                SearchingView.SearchListView(results: results)
+                Spacer()
+                
+            }
+            .sheet(isPresented: $showFilterView) {
+                SearchingView.FilterView()
+            }
+            .navigationBarTitleDisplayMode(.inline)
+        }
+    }
+}
+
+// MARK: - Filter Struct
+struct SearchFilter {
+    enum Testament: String, CaseIterable {
+        case none = ""
+        case oldTestament = "Ószövetség"
+        case newTestament = "Újszövetség"
+    }
+    var book: Int = 0
+    var testament: Testament = .none
+    var translation: Int = 0
+}
+
+
+// MARK: - FilterView
+extension SearchingView {
+    struct FilterView: View {
+        @State var activeFilter: SearchFilter = SearchFilter()
+        var body: some View {
+            NavigationView {
+                List {
+                        Section {
+                            Picker(selection: $activeFilter.book) {
+                                Text("Nincs kiválasztás")
+                                    .tag(0)
+                                ForEach(Book.combined) { book in
+                                    Text(book.name)
+                                        .tag(book.number)
+                                }
+                            } label: {
+                                Text(activeFilter.book == 0 ? "" : Book.getBookInCombined(byNumber: activeFilter.book).abbrev.prefix(4))
+                                    .iconButtonStyle(active: true)
+                            }
+
+                        } header: {
+                            Text("Könyvek")
+                        }
+                        
+                        Section {
+                            Group {
+                                SelectingRow(abbrev: "", text: "Nincs kiválasztás", selected: activeFilter.testament == .none, isAligned: true)
+                                    .tag(SearchFilter.Testament.none)
+                                SelectingRow(abbrev: "Ósz", text: "Ószövetség", selected: activeFilter.testament == .oldTestament, isAligned: true)
+                                    .tag(SearchFilter.Testament.oldTestament)
+                                SelectingRow(abbrev: "Úsz", text: "Újszövetség", selected: activeFilter.testament == .newTestament, isAligned: true)
+                                    .tag(SearchFilter.Testament.newTestament)
+                            }
+                        } header: {
+                            Text("Ó- vagy Újszövetség")
+                        }
+                    
+                    Section {
+                        SelectingRow(abbrev: "", text: "Nincs kiválasztás", selected: activeFilter.translation == 0, isAligned: true)
+                            .tag(0)
+                        ForEach(Translation.all()) { tr in
+                            SelectingRow(abbrev: tr.abbrev.uppercased(), text: tr.name, selected: activeFilter.translation == tr.id, isAligned: true)
+                                .tag(tr.id)
+                        }
+                    } header: {
+                        Text("Fordítások")
+                    }
+
+
+                }
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle("Szűrő")
+            }
             
         }
     }
+
 }
 
 // MARK: - FilterBar
@@ -28,9 +116,12 @@ extension SearchingView {
     struct FilterBar: View {
         var count: Int
         var isActive: Bool = false
+        @Binding var showFilterView: Bool
         var body: some View {
             HStack {
-                Button(action: {}) {
+                Button(action: {
+                    showFilterView.toggle()
+                }) {
                     Image(systemName: "line.3.horizontal.decrease.circle")
                         .font(.title2)
                         .iconButtonStyle(active: isActive)
@@ -151,11 +242,15 @@ struct SearchingView_Previews: PreviewProvider {
     static var previews: some View {
         SearchingView(results: TestData.results)
         
-        SearchingView.FilterBar(count: 212)
+        SearchingView.FilterView()
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("FilterView")
+        
+        SearchingView.FilterBar(count: 212, showFilterView: .constant(false))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
         
-        SearchingView.FilterBar(count: 212, isActive: true)
+        SearchingView.FilterBar(count: 212, isActive: true, showFilterView: .constant(true))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
         

@@ -37,6 +37,10 @@
 		21456218275677AA0000202D /* SearchTengeri.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456217275677A60000202D /* SearchTengeri.json */; };
 		21456219275677AB0000202D /* SearchTengeri.json in Resources */ = {isa = PBXBuildFile; fileRef = 21456217275677A60000202D /* SearchTengeri.json */; };
 		2145621B275684A60000202D /* books.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621A275684A30000202D /* books.json */; };
+		2145621E275761BA0000202D /* FilterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145621D275761BA0000202D /* FilterTest.swift */; };
+		214562222757628A0000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
+		21456223275762A00000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
+		2145622527578D410000202D /* SelectingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145622427578D410000202D /* SelectingRow.swift */; };
 		21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */; };
 		21810A2327540690001D29B9 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A2127540690001D29B9 /* BookTest.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
@@ -114,6 +118,9 @@
 		21456217275677A60000202D /* SearchTengeri.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchTengeri.json; sourceTree = "<group>"; };
 		2145621A275684A30000202D /* books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = books.json; sourceTree = "<group>"; };
 		2145621C275685BF0000202D /* SearchBuszke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchBuszke.json; sourceTree = "<group>"; };
+		2145621D275761BA0000202D /* FilterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTest.swift; sourceTree = "<group>"; };
+		2145621F275762840000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
+		2145622427578D410000202D /* SelectingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingRow.swift; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2Tests.swift; sourceTree = "<group>"; };
 		21810A2127540690001D29B9 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
@@ -253,11 +260,13 @@
 		21810A1927540669001D29B9 /* Szentiras15v2Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2145621F275762840000202D /* Rom16.json */,
 				2145621C275685BF0000202D /* SearchBuszke.json */,
 				2145621A275684A30000202D /* books.json */,
 				21810A2127540690001D29B9 /* BookTest.swift */,
 				21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */,
 				21456210275674CB0000202D /* UtilTest.swift */,
+				2145621D275761BA0000202D /* FilterTest.swift */,
 			);
 			path = Szentiras15v2Tests;
 			sourceTree = "<group>";
@@ -415,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
+				2145622427578D410000202D /* SelectingRow.swift */,
 				2145620A275607480000202D /* Viewmodifiers.swift */,
 				2145620C27566C6C0000202D /* SearchingView.swift */,
 			);
@@ -509,6 +519,7 @@
 				2145621B275684A60000202D /* books.json in Resources */,
 				21456212275675EB0000202D /* SearchBuszke.json in Resources */,
 				21456218275677AA0000202D /* SearchTengeri.json in Resources */,
+				214562222757628A0000202D /* Rom16.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +536,7 @@
 				211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */,
 				211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */,
 				211EE7062741351D00B5E4D5 /* FiraSans-Light.ttf in Resources */,
+				21456223275762A00000202D /* Rom16.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,6 +549,7 @@
 			files = (
 				21810A2327540690001D29B9 /* BookTest.swift in Sources */,
 				21456211275674CB0000202D /* UtilTest.swift in Sources */,
+				2145621E275761BA0000202D /* FilterTest.swift in Sources */,
 				21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */,
 				21456213275675FB0000202D /* Util.swift in Sources */,
 			);
@@ -585,6 +598,7 @@
 				211EE7002740009900B5E4D5 /* SplashScreen.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
 				210CC4A027344FF10009D17B /* CustomToggle.swift in Sources */,
+				2145622527578D410000202D /* SelectingRow.swift in Sources */,
 				210CC4872732EA4B0009D17B /* ReaderSettingView.swift in Sources */,
 				210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */,
 				21EDBDEC2752B549000D06A4 /* BibleChapterView.swift in Sources */,

@@ -27,6 +27,7 @@ struct Book : Codable, Identifiable {
     }
 }
 
+// MARK: - All, combined, getByNumber, getByTranslation
 extension Book {
     static func all(by translationID: Int) -> [Book] {
         let booksInTranslation: [BooksInTranslation] = Util.getItemFromBundle(filename: "books")
@@ -41,6 +42,11 @@ extension Book {
         return (basic+catholic).sorted(by: {$0.number < $1.number})
     }
     
+    static func getBookInCombined(byNumber: Int) -> Book {
+        let books = Self.combined.filter({$0.number == byNumber})
+        return books[0]
+    }
+    
     static func get(by translationID: Int, and bookNumber: Int) -> Book? {
         let books = Self.all(by: translationID)
         
@@ -48,6 +54,7 @@ extension Book {
     }
 }
 
+// MARK: - Categorized
 extension Book {
     struct Category {
         var id: Int
@@ -113,12 +120,14 @@ extension Book {
     }
 }
 
+// MARK: - Default
 extension Book {
     static var `default`: Book {
         Book.all(by: 6)[0]
     }
 }
 
+// MARK: - BooksInTranslation<#note#>
 struct BooksInTranslation: Codable {
     struct Translation: Codable {
         var abbrev: String
