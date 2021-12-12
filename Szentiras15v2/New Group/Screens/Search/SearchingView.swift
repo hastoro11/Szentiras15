@@ -11,9 +11,7 @@ import SwiftUI
 struct SearchingView: View {
     var results: [TextResult.Result]
     var body: some View {
-        NavigationView {
-            Content(results: results)
-        }
+        Content(results: results)
     }
 }
 
@@ -240,7 +238,9 @@ extension SearchingView {
 // MARK: - Previews
 struct SearchingView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchingView(results: TestData.results)
+        NavigationView {
+            SearchingView(results: TestData.results)
+        }
         
         SearchingView.FilterView()
             .previewLayout(.sizeThatFits)

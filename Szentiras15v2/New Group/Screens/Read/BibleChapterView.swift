@@ -12,9 +12,7 @@ struct BibleChapterView: View {
     var current: Current
     
     var body: some View {
-        NavigationView {
-            Content(idezet: idezet, current: current)                      
-        }
+        Content(verses: idezet.valasz.versek, title: idezet.keres.hivatkozas, current: current)
     }
 }
 
@@ -23,13 +21,14 @@ extension BibleChapterView {
     struct Content: View {
         typealias VersList = BibleChapterView.VersList
         
-        var idezet: Idezet
+        var verses: [Vers]
+        var title: String
         var current: Current
         @State var showBookList: Bool = false
         @State var showTranslationList: Bool = false
         @State var showHistoryList: Bool = false
         var body: some View {
-            VersList(versek: idezet.valasz.versek)
+            VersList(verses: verses)
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
@@ -44,7 +43,7 @@ extension BibleChapterView {
                         Button {
                             showBookList.toggle()
                         } label: {
-                            Text(idezet.keres.hivatkozas)
+                            Text(title)
                                 .font(.Theme.medium(size: 17))
                                 .foregroundColor(.primary)
                         }
@@ -158,12 +157,12 @@ extension BibleChapterView {
 // MARK: - VersList
 extension BibleChapterView {
     struct VersList: View {
-        var versek: [Vers]
+        var verses: [Vers]
         var body: some View {
             ScrollViewReader { proxy in
                 List {
-                    ForEach(versek.indices, id:\.self) { index in
-                        VersRow(vers: versek[index], index: index, fontSize: 17)
+                    ForEach(verses.indices, id:\.self) { index in
+                        VersRow(vers: verses[index], index: index, fontSize: 17)
                             
                     }
                 }
@@ -253,7 +252,9 @@ struct BibleChapterView_Previews: PreviewProvider {
     static var idezet: Idezet = TestData.idezetRom16
     static var current: Current = TestData.current
     static var previews: some View {
-        BibleChapterView(idezet: idezet, current: current)
+        NavigationView {
+            BibleChapterView(idezet: idezet, current: current)
+        }
         BibleChapterView(idezet: idezet, current: current)
             .environment(\.sizeCategory, .accessibilityMedium)
         BibleChapterView(idezet: idezet, current: current)

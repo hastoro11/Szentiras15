@@ -41,6 +41,7 @@
 		214562222757628A0000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
 		21456223275762A00000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
 		2145622527578D410000202D /* SelectingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145622427578D410000202D /* SelectingRow.swift */; };
+		215069EC2765EF7B00C3C248 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215069EB2765EF7B00C3C248 /* MainTabView.swift */; };
 		21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */; };
 		21810A2327540690001D29B9 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A2127540690001D29B9 /* BookTest.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
@@ -121,6 +122,7 @@
 		2145621D275761BA0000202D /* FilterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTest.swift; sourceTree = "<group>"; };
 		2145621F275762840000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		2145622427578D410000202D /* SelectingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingRow.swift; sourceTree = "<group>"; };
+		215069EB2765EF7B00C3C248 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2Tests.swift; sourceTree = "<group>"; };
 		21810A2127540690001D29B9 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
@@ -255,6 +257,39 @@
 				214561FD275552B20000202D /* 1Sam17.json */,
 			);
 			path = JSON;
+			sourceTree = "<group>";
+		};
+		215069ED2765F07500C3C248 /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
+			);
+			path = Read;
+			sourceTree = "<group>";
+		};
+		215069EE2765F07C00C3C248 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2145620C27566C6C0000202D /* SearchingView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		215069F12765F0CA00C3C248 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				215069EE2765F07C00C3C248 /* Search */,
+				215069ED2765F07500C3C248 /* Read */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		215069F22765F0D300C3C248 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2145622427578D410000202D /* SelectingRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		21810A1927540669001D29B9 /* Szentiras15v2Tests */ = {
@@ -423,10 +458,10 @@
 		21EDBDEA2752B536000D06A4 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
-				2145622427578D410000202D /* SelectingRow.swift */,
+				215069F22765F0D300C3C248 /* Views */,
+				215069F12765F0CA00C3C248 /* Screens */,
 				2145620A275607480000202D /* Viewmodifiers.swift */,
-				2145620C27566C6C0000202D /* SearchingView.swift */,
+				215069EB2765EF7B00C3C248 /* MainTabView.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -588,6 +623,7 @@
 				21AC1682272196F400D2DA84 /* Book.swift in Sources */,
 				21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */,
 				211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */,
+				215069EC2765EF7B00C3C248 /* MainTabView.swift in Sources */,
 				210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,
