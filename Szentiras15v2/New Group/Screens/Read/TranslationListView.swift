@@ -19,8 +19,7 @@ struct TranslationListView: View {
                     VStack {
                         SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == current.translation.id)
                             .onTapGesture {
-                                current.translation = Translation.get(by: tr.id)
-                                dismiss()
+                                changeTranslation(ID: tr.id)
                             }
                     }
                 }
@@ -33,6 +32,15 @@ struct TranslationListView: View {
                 }
             }
         }
+    }
+    
+    // MARK: changeTranslation(ID:)
+    func changeTranslation(ID: Int) {
+        let translation = Translation.get(by: ID)
+        let book = translation.getBooks().first(where: {$0.number == current.book.number}) ?? current.book
+        current.translation = translation
+        current.book = book
+        dismiss()
     }
 }
 
