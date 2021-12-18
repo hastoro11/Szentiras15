@@ -23,6 +23,8 @@
 		210CC49B2733C1A20009D17B /* View+IfDeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4952733C1A20009D17B /* View+IfDeviceType.swift */; };
 		210CC49E2733C3480009D17B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC49D2733C3480009D17B /* SettingsView.swift */; };
 		210CC4A027344FF10009D17B /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC49F27344FF10009D17B /* CustomToggle.swift */; };
+		211BD8122765F3D500B337E1 /* NetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BD8112765F3D500B337E1 /* NetworkTest.swift */; };
+		211BD814276606B000B337E1 /* BibleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BD813276606B000B337E1 /* BibleController.swift */; };
 		211EE7002740009900B5E4D5 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211EE6FF2740009900B5E4D5 /* SplashScreen.swift */; };
 		211EE7062741351D00B5E4D5 /* FiraSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7022741351D00B5E4D5 /* FiraSans-Light.ttf */; };
 		211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 211EE7032741351D00B5E4D5 /* FiraSans-Medium.ttf */; };
@@ -42,6 +44,9 @@
 		21456223275762A00000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
 		2145622527578D410000202D /* SelectingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145622427578D410000202D /* SelectingRow.swift */; };
 		215069EC2765EF7B00C3C248 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215069EB2765EF7B00C3C248 /* MainTabView.swift */; };
+		2179B722276DE7FD00095DC1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179B721276DE7FD00095DC1 /* NetworkService.swift */; };
+		2179B726276DF41E00095DC1 /* 1Sam17.json in Resources */ = {isa = PBXBuildFile; fileRef = 214561FD275552B20000202D /* 1Sam17.json */; };
+		2179B728276DF7D000095DC1 /* BibleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179B727276DF7D000095DC1 /* BibleError.swift */; };
 		21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */; };
 		21810A2327540690001D29B9 /* BookTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21810A2127540690001D29B9 /* BookTest.swift */; };
 		21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */; };
@@ -100,6 +105,8 @@
 		210CC4952733C1A20009D17B /* View+IfDeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+IfDeviceType.swift"; sourceTree = "<group>"; };
 		210CC49D2733C3480009D17B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		210CC49F27344FF10009D17B /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
+		211BD8112765F3D500B337E1 /* NetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTest.swift; sourceTree = "<group>"; };
+		211BD813276606B000B337E1 /* BibleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleController.swift; sourceTree = "<group>"; };
 		211EE6FF2740009900B5E4D5 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		211EE7022741351D00B5E4D5 /* FiraSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.ttf"; sourceTree = "<group>"; };
 		211EE7032741351D00B5E4D5 /* FiraSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -123,6 +130,8 @@
 		2145621F275762840000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		2145622427578D410000202D /* SelectingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingRow.swift; sourceTree = "<group>"; };
 		215069EB2765EF7B00C3C248 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2179B721276DE7FD00095DC1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2179B727276DF7D000095DC1 /* BibleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleError.swift; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Szentiras15v2Tests.swift; sourceTree = "<group>"; };
 		21810A2127540690001D29B9 /* BookTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTest.swift; sourceTree = "<group>"; };
@@ -280,6 +289,7 @@
 			children = (
 				215069EE2765F07C00C3C248 /* Search */,
 				215069ED2765F07500C3C248 /* Read */,
+				2179B727276DF7D000095DC1 /* BibleError.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -302,6 +312,7 @@
 				21810A1A27540669001D29B9 /* Szentiras15v2Tests.swift */,
 				21456210275674CB0000202D /* UtilTest.swift */,
 				2145621D275761BA0000202D /* FilterTest.swift */,
+				211BD8112765F3D500B337E1 /* NetworkTest.swift */,
 			);
 			path = Szentiras15v2Tests;
 			sourceTree = "<group>";
@@ -462,6 +473,8 @@
 				215069F12765F0CA00C3C248 /* Screens */,
 				2145620A275607480000202D /* Viewmodifiers.swift */,
 				215069EB2765EF7B00C3C248 /* MainTabView.swift */,
+				211BD813276606B000B337E1 /* BibleController.swift */,
+				2179B721276DE7FD00095DC1 /* NetworkService.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -571,6 +584,7 @@
 				211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */,
 				211EE7092741351D00B5E4D5 /* FiraSans-Bold.ttf in Resources */,
 				211EE7062741351D00B5E4D5 /* FiraSans-Light.ttf in Resources */,
+				2179B726276DF41E00095DC1 /* 1Sam17.json in Resources */,
 				21456223275762A00000202D /* Rom16.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -586,6 +600,7 @@
 				21456211275674CB0000202D /* UtilTest.swift in Sources */,
 				2145621E275761BA0000202D /* FilterTest.swift in Sources */,
 				21810A1B27540669001D29B9 /* Szentiras15v2Tests.swift in Sources */,
+				211BD8122765F3D500B337E1 /* NetworkTest.swift in Sources */,
 				21456213275675FB0000202D /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,7 +620,10 @@
 				210C1B3B272BD46A005CEAFF /* FilterView.swift in Sources */,
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
 				21AC168727219C1E00D2DA84 /* Util.swift in Sources */,
+				2179B728276DF7D000095DC1 /* BibleError.swift in Sources */,
+				211BD814276606B000B337E1 /* BibleController.swift in Sources */,
 				21AC16982722919F00D2DA84 /* SzentirasError.swift in Sources */,
+				2179B722276DE7FD00095DC1 /* NetworkService.swift in Sources */,
 				210CC4992733C1A20009D17B /* PartialSheetStyle.swift in Sources */,
 				2145620B275607480000202D /* Viewmodifiers.swift in Sources */,
 				2145620D27566C6C0000202D /* SearchingView.swift in Sources */,

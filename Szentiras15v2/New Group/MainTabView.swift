@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @StateObject var bibleController: BibleController = BibleController()
     var body: some View {
         TabView {
             NavigationView {
-                BibleChapterView(idezet: TestData.idezetRom16, current: TestData.current)
+                BibleChapterView()
+                    .environmentObject(bibleController)
             }
             .tabItem {
                 Label("Biblia", systemImage: "book.fill")

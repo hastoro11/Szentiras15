@@ -14,11 +14,12 @@ struct Szentiras15v2App: App {
     @StateObject var historyVM: HistoryViewModel = HistoryViewModel()
     var body: some Scene {
         WindowGroup {
-            SzentirasTabView(idezet: Idezet.example(filename: "Rom16"))
-                .environmentObject(readerVM)
-                .environmentObject(searchVM)
-                .environmentObject(historyVM)
-                .environmentObject(PartialSheetManager())
+//            SzentirasTabView(idezet: Idezet.example(filename: "Rom16"))
+//                .environmentObject(readerVM)
+//                .environmentObject(searchVM)
+//                .environmentObject(historyVM)
+//                .environmentObject(PartialSheetManager())
+            MainTabView()
         }
     }
     

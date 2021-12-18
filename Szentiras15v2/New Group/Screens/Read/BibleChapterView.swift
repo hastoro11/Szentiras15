@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct BibleChapterView: View {
-    var idezet: Idezet
-    var current: Current
+    @EnvironmentObject var bibleController: BibleController
     
     var body: some View {
-        Content(verses: idezet.valasz.versek, title: idezet.keres.hivatkozas, current: current)
+        switch bibleController.phase {
+        case .success:
+            Content(
+                verses: bibleController.idezet.valasz.versek,
+                title: bibleController.idezet.keres.hivatkozas,
+                current: bibleController.current)
+        case .isLoading:
+            ProgressView("Keresés...")
+        case .failure:
+            Text(bibleController.error?.errorDescription ?? "OK")
+        default:
+            EmptyView()
+        }
+        
+        
     }
 }
 
@@ -251,13 +264,17 @@ extension BibleChapterView.HistoryListView {
 struct BibleChapterView_Previews: PreviewProvider {
     static var idezet: Idezet = TestData.idezetRom16
     static var current: Current = TestData.current
+    static var bibleController = BibleController.preview
     static var previews: some View {
         NavigationView {
-            BibleChapterView(idezet: idezet, current: current)
+            BibleChapterView()
+                .environmentObject(bibleController)
         }
-        BibleChapterView(idezet: idezet, current: current)
+        BibleChapterView()
+            .environmentObject(bibleController)
             .environment(\.sizeCategory, .accessibilityMedium)
-        BibleChapterView(idezet: idezet, current: current)
+        BibleChapterView()
+            .environmentObject(bibleController)
             .environment(\.sizeCategory, .accessibilityLarge)
             
         Group {
