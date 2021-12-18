@@ -81,7 +81,7 @@ extension BibleChapterView {
                         await bibleController.fetch()
                     }
                 }) {
-                    TranslationListView(currentTranslationID: current.translation.id)
+                    TranslationListView(current: $bibleController.current)
                         .environmentObject(bibleController)
                 }
                 .sheet(isPresented: $showHistoryList) {

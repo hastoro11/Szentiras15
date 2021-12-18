@@ -9,18 +9,17 @@ import SwiftUI
 
 // MARK: - TranslationListView
 struct TranslationListView: View {
-    @EnvironmentObject var bibleController: BibleController
     @Environment(\.dismiss) var dismiss
-    var currentTranslationID: Int
+    @Binding var current: Current
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(Translation.all()) { tr in
                     VStack {
-                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
+                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == current.translation.id)
                             .onTapGesture {
-                                bibleController.changeTranslation(to: tr.id)
+                                current.translation = Translation.get(by: tr.id)
                                 dismiss()
                             }
                     }
@@ -41,7 +40,7 @@ struct TranslationListView: View {
 // MARK: - Previews
 struct Previews_TranslationListView_Previews: PreviewProvider {
     static var previews: some View {
-        TranslationListView(currentTranslationID: 6)
+        TranslationListView(current: .constant(TestData.current))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("TranslationList")
         
