@@ -74,6 +74,7 @@
 		21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16A627246ACD00D2DA84 /* SearchBar.swift */; };
 		21AC16AE2725861400D2DA84 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16AD2725861400D2DA84 /* SearchResult.swift */; };
 		21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */; };
+		21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA4276E4982001E19F4 /* TranslationListView.swift */; };
 		21EDBDE92752B170000D06A4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDE82752B170000D06A4 /* TestData.swift */; };
 		21EDBDEC2752B549000D06A4 /* BibleChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */; };
 /* End PBXBuildFile section */
@@ -161,6 +162,7 @@
 		21AC16A627246ACD00D2DA84 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		21AC16AD2725861400D2DA84 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		21D76CA4276E4982001E19F4 /* TranslationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationListView.swift; sourceTree = "<group>"; };
 		21EDBDE82752B170000D06A4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
+				21D76CA4276E4982001E19F4 /* TranslationListView.swift */,
 			);
 			path = Read;
 			sourceTree = "<group>";
@@ -651,6 +654,7 @@
 				21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */,
 				211EE7002740009900B5E4D5 /* SplashScreen.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
+				21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */,
 				210CC4A027344FF10009D17B /* CustomToggle.swift in Sources */,
 				2145622527578D410000202D /* SelectingRow.swift in Sources */,
 				210CC4872732EA4B0009D17B /* ReaderSettingView.swift in Sources */,

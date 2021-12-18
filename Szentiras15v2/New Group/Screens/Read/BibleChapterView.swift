@@ -24,14 +24,13 @@ struct BibleChapterView: View {
         default:
             EmptyView()
         }
-        
-        
     }
 }
 
 // MARK: - Content
 extension BibleChapterView {
     struct Content: View {
+        @EnvironmentObject var bibleController: BibleController
         typealias VersList = BibleChapterView.VersList
         
         var verses: [Vers]
@@ -73,8 +72,13 @@ extension BibleChapterView {
                 .sheet(isPresented: $showBookList) {
                     BibleChapterView.BookListView(current: current, showBookList: showBookList)
                 }
-                .sheet(isPresented: $showTranslationList) {
-                    BibleChapterView.TranslationListView(currentTranslationID: current.translation.id)
+                .sheet(isPresented: $showTranslationList, onDismiss: {
+                    Task {
+                        await bibleController.fetch()
+                    }
+                }) {
+                    TranslationListView(currentTranslationID: current.translation.id)
+                        .environmentObject(bibleController)
                 }
                 .sheet(isPresented: $showHistoryList) {
                     BibleChapterView.HistoryListView(historyList: TestData.history)
@@ -146,25 +150,6 @@ extension BibleChapterView.BookListView {
         }
     }
 
-}
-
-// MARK: - TranslationListView
-extension BibleChapterView {
-    struct TranslationListView: View {
-        var currentTranslationID: Int
-        var body: some View {
-            List {
-                ForEach(Translation.all()) { tr in
-                    VStack {
-                        SelectRow(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
-//                        BibleChapterView.TranslationListView.Row(abbrev: tr.abbrev.uppercased(), name: tr.name, selected: tr.id == currentTranslationID)
-                            
-                    }
-                }
-            }
-            .listStyle(.plain)
-        }
-    }
 }
 
 // MARK: - VersList
@@ -289,11 +274,7 @@ struct BibleChapterView_Previews: PreviewProvider {
         
         .padding()
         .previewLayout(.sizeThatFits)
-        .previewDisplayName("TranslationRow")
-        
-        BibleChapterView.TranslationListView(currentTranslationID: 6)
-            .previewLayout(.sizeThatFits)
-            .previewDisplayName("TranslationList")
+        .previewDisplayName("TranslationRow")        
         
         BibleChapterView.BookListView.BookRow(book: TestData.current.book, current: TestData.current)
             .previewLayout(.sizeThatFits)

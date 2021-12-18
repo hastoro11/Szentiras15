@@ -26,9 +26,18 @@ class BibleController: ObservableObject {
     init() {
         current = Current(translation: Translation.default, book: Book.default, chapter: 1)
         idezet = Idezet.default
+        Task {
+            await fetch()
+        }
     }
     
-    func fetch() async throws {
+    func changeTranslation(to translationID: Int) {
+        let translation = Translation.get(by: translationID)
+        current.translation = translation
+    }
+    
+    @MainActor
+    func fetch() async {
         phase = .isLoading
         do {
             let idezet = try await NetworkService.shared.fetchIdezet(
