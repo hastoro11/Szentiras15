@@ -69,8 +69,12 @@ extension BibleChapterView {
                         }
                     }
                 }
-                .sheet(isPresented: $showBookList) {
-                    BibleChapterView.BookListView(current: current, showBookList: showBookList)
+                .sheet(isPresented: $showBookList, onDismiss: {
+                    Task {
+                        await bibleController.fetch()
+                    }
+                }) {
+                    BookListView(current: $bibleController.current)
                 }
                 .sheet(isPresented: $showTranslationList, onDismiss: {
                     Task {
@@ -87,70 +91,6 @@ extension BibleChapterView {
     }
 }
 
-// MARK: - BookListView
-extension BibleChapterView {
-    struct BookListView: View {
-        var current: Current
-        @State var showBookList = false
-        var body: some View {
-            ScrollViewReader { proxy in
-                List {
-                    ForEach(Book.getBooksByCategories(byTranslationID: current.translation.id), id:\.id) { category in
-                        Section {
-                            ForEach(category.books.indices, id:\.self) { index in
-                                BookRow(book: category.books[index], current: current)
-                            }
-                        } header: {
-                            Text(category.title)
-                        }
-                    }
-                }
-                .listStyle(.grouped)
-            }
-        }
-    }
-    
-}
-
-// MARK: - BookRow
-extension BibleChapterView.BookListView {
-    struct BookRow: View {
-        var book: Book
-        var current: Current
-        @State var isExpanded: Bool
-        init(book: Book, current: Current) {
-            self.book = book
-            self.current = current
-            _isExpanded = State(initialValue: book.number == current.book.number)
-        }
-        var body: some View {
-            DisclosureGroup(isExpanded: $isExpanded) {
-                ScrollView {
-                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 50, maximum: 60))], spacing: 15) {
-                        ForEach(1...(book.chapters), id:\.self) { ch in
-                            Button(action: {}) {
-                                Text("\(ch)")
-                                    .iconButtonStyle(active: ch == current.chapter, size: .small)
-                            }
-                        }
-                    }
-                }
-                .padding(.vertical)
-            } label: {
-                HStack {
-                    Text(book.name)
-                        .font(.Theme.light(size: 17))
-                        .lineLimit(1)
-                    Spacer()
-                    Text(book.abbrev)
-                        .font(.Theme.medium(size: 17))
-                }
-                .foregroundColor(Color("Title"))
-            }
-        }
-    }
-
-}
 
 // MARK: - VersList
 extension BibleChapterView {
@@ -267,21 +207,6 @@ struct BibleChapterView_Previews: PreviewProvider {
         }
         .previewLayout(.sizeThatFits)
         .previewDisplayName("VersRow")
-        
-        .padding()
-        .previewLayout(.sizeThatFits)
-        .previewDisplayName("RowIcon")
-        
-        .padding()
-        .previewLayout(.sizeThatFits)
-        .previewDisplayName("TranslationRow")        
-        
-        BibleChapterView.BookListView.BookRow(book: TestData.current.book, current: TestData.current)
-            .previewLayout(.sizeThatFits)
-            .previewDisplayName("BookRow")
-        
-        BibleChapterView.BookListView(current: TestData.current)
-            .previewDisplayName("BookLisView")
         
         BibleChapterView.HistoryListView(historyList: TestData.history)
             .previewLayout(.sizeThatFits)

@@ -75,6 +75,7 @@
 		21AC16AE2725861400D2DA84 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16AD2725861400D2DA84 /* SearchResult.swift */; };
 		21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */; };
 		21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA4276E4982001E19F4 /* TranslationListView.swift */; };
+		21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA6276E4F6C001E19F4 /* BookListView.swift */; };
 		21EDBDE92752B170000D06A4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDE82752B170000D06A4 /* TestData.swift */; };
 		21EDBDEC2752B549000D06A4 /* BibleChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		21AC16AD2725861400D2DA84 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		21D76CA4276E4982001E19F4 /* TranslationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationListView.swift; sourceTree = "<group>"; };
+		21D76CA6276E4F6C001E19F4 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		21EDBDE82752B170000D06A4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -275,6 +277,7 @@
 			children = (
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
 				21D76CA4276E4982001E19F4 /* TranslationListView.swift */,
+				21D76CA6276E4F6C001E19F4 /* BookListView.swift */,
 			);
 			path = Read;
 			sourceTree = "<group>";
@@ -619,6 +622,7 @@
 				21AC16A527245BFB00D2DA84 /* SearchView.swift in Sources */,
 				21AC1678272192ED00D2DA84 /* Idezet.swift in Sources */,
 				21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */,
+				21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */,
 				210CC49E2733C3480009D17B /* SettingsView.swift in Sources */,
 				210C1B3B272BD46A005CEAFF /* FilterView.swift in Sources */,
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
