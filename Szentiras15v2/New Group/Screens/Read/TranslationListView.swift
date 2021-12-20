@@ -26,6 +26,7 @@ struct TranslationListView: View {
             }
             .listStyle(.plain)
             .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Fordítások")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Mégsem") { dismiss() }

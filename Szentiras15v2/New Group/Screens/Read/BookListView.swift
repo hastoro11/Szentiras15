@@ -30,6 +30,7 @@ struct BookListView: View {
                 .listStyle(.plain)
             }
             .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("A Biblia könyvei")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Mégsem") {
