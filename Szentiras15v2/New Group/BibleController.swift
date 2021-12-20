@@ -40,7 +40,7 @@ class BibleController: ObservableObject {
     func fetch() async {
         phase = .isLoading
         do {
-            let idezet = try await NetworkService.shared.fetchIdezet(
+            let idezet = try await NetworkService.shared.fetchIdezetWithRequest(
                 translation: current.translation.abbrev.uppercased(),
                 book: current.book.abbrev,
                 chapter: current.chapter)

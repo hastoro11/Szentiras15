@@ -12,13 +12,49 @@ protocol NetworkServiceProtocol {
 }
 
 struct NetworkService: NetworkServiceProtocol {
-    private init() {}
+    private init() {
+        cache = URLCache(
+            memoryCapacity: 1024 * 1024 * 5,
+            diskCapacity: 1024 * 1024 * 20)
+    }
     static var shared = NetworkService()
+    private var cache: URLCache
     
     func fetchIdezet(translation: String, book: String, chapter: Int) async throws -> Idezet {
         let url = generateIdezetURL(translation: translation, book: book, chapter: chapter)
         guard let url = url else { return Idezet.default }
         return try await fetch(url: url)
+    }
+    
+    func fetchIdezetWithRequest(translation: String, book: String, chapter: Int) async throws -> Idezet {
+        let request = generateIdezetURLRequest(translation: translation, book: book, chapter: chapter)
+        guard let request = request else { return Idezet.default }
+        return try await fetch(request: request)
+    }
+    
+    private func fetch<T: Codable>(request: URLRequest) async throws -> T {
+        let data: Data
+        let response: URLResponse
+        if let cachedResponse = cache.cachedResponse(for: request) {
+            data = cachedResponse.data
+            response = cachedResponse.response
+        } else {
+            (data, response) = try await URLSession.shared.data(for: request)
+        }
+        if let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode) {
+            throw BibleError.server
+        }
+        if data.isEmpty {
+            throw BibleError.server
+        }
+        let decoder = JSONDecoder()
+        do {
+            let result = try decoder.decode(T.self, from: data)
+            return result
+        } catch {
+            print(error)
+            throw BibleError.decoding
+        }
     }
     
     private func fetch<T: Codable>(url: URL) async throws -> T {
@@ -45,5 +81,15 @@ struct NetworkService: NetworkServiceProtocol {
         components?.path = path
         
         return components?.url
+    }
+    
+    private func generateIdezetURLRequest(translation: String, book: String, chapter: Int) -> URLRequest? {
+        var components = URLComponents(string: "https://szentiras.hu")
+        let path = "/api/idezet/\(book)\(chapter)/\(translation)"
+        components?.path = path
+        if let url = components?.url {
+            return URLRequest(url: url)
+        }
+        return nil
     }
 }
