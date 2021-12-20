@@ -167,6 +167,7 @@
 		21D76CA4276E4982001E19F4 /* TranslationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationListView.swift; sourceTree = "<group>"; };
 		21D76CA6276E4F6C001E19F4 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		21D76CA92770F3AD001E19F4 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		21D76CAB2770FDE5001E19F4 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.markdown; };
 		21EDBDE82752B170000D06A4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -484,6 +485,7 @@
 				215069EB2765EF7B00C3C248 /* MainTabView.swift */,
 				211BD813276606B000B337E1 /* BibleController.swift */,
 				2179B721276DE7FD00095DC1 /* NetworkService.swift */,
+				21D76CAB2770FDE5001E19F4 /* TODO.md */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
