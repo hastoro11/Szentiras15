@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HistoryListView: View {
+struct HistoriesListView: View {
     @EnvironmentObject var readerVM: ReaderViewModel
     @EnvironmentObject var historyVM: HistoryViewModel
     @Environment(\.dismiss) var dismiss
@@ -117,11 +117,11 @@ struct HistoryRow: View {
 
 struct HistoryListView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryListView()
+        HistoriesListView()
             .preferredColorScheme(.light)
             .environmentObject(HistoryViewModel.preview)
             .environmentObject(ReaderViewModel.preview)
-        HistoryListView()
+        HistoriesListView()
             .preferredColorScheme(.dark)
             .environmentObject(HistoryViewModel.preview)
             .environmentObject(ReaderViewModel.preview)

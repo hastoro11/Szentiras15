@@ -11,7 +11,7 @@
 		210C1B3E272C398E005CEAFF /* SelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C1B3D272C398E005CEAFF /* SelectRow.swift */; };
 		210C1B41272C4B12005CEAFF /* SearchResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210C1B40272C4B12005CEAFF /* SearchResultList.swift */; };
 		210CC474272EE3120009D17B /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC473272EE3120009D17B /* HistoryViewModel.swift */; };
-		210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC475272EE6A60009D17B /* HistoryListView.swift */; };
+		210CC476272EE6A60009D17B /* HistoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC475272EE6A60009D17B /* HistoriesListView.swift */; };
 		210CC478272F0EB80009D17B /* HistoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC477272F0EB80009D17B /* HistoryService.swift */; };
 		210CC4872732EA4B0009D17B /* ReaderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4862732EA4B0009D17B /* ReaderSettingView.swift */; };
 		210CC4892732F0B90009D17B /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */; };
@@ -76,6 +76,7 @@
 		21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */; };
 		21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA4276E4982001E19F4 /* TranslationListView.swift */; };
 		21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA6276E4F6C001E19F4 /* BookListView.swift */; };
+		21D76CAA2770F3AD001E19F4 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA92770F3AD001E19F4 /* HistoryListView.swift */; };
 		21EDBDE92752B170000D06A4 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDE82752B170000D06A4 /* TestData.swift */; };
 		21EDBDEC2752B549000D06A4 /* BibleChapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */; };
 /* End PBXBuildFile section */
@@ -95,7 +96,7 @@
 		210C1B3D272C398E005CEAFF /* SelectRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRow.swift; sourceTree = "<group>"; };
 		210C1B40272C4B12005CEAFF /* SearchResultList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultList.swift; sourceTree = "<group>"; };
 		210CC473272EE3120009D17B /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
-		210CC475272EE6A60009D17B /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
+		210CC475272EE6A60009D17B /* HistoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesListView.swift; sourceTree = "<group>"; };
 		210CC477272F0EB80009D17B /* HistoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryService.swift; sourceTree = "<group>"; };
 		210CC4862732EA4B0009D17B /* ReaderSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderSettingView.swift; sourceTree = "<group>"; };
 		210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 		21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		21D76CA4276E4982001E19F4 /* TranslationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationListView.swift; sourceTree = "<group>"; };
 		21D76CA6276E4F6C001E19F4 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		21D76CA92770F3AD001E19F4 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
 		21EDBDE82752B170000D06A4 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleChapterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -242,7 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				210CC473272EE3120009D17B /* HistoryViewModel.swift */,
-				210CC475272EE6A60009D17B /* HistoryListView.swift */,
+				210CC475272EE6A60009D17B /* HistoriesListView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -275,6 +277,7 @@
 		215069ED2765F07500C3C248 /* Read */ = {
 			isa = PBXGroup;
 			children = (
+				21D76CA92770F3AD001E19F4 /* HistoryListView.swift */,
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
 				21D76CA4276E4982001E19F4 /* TranslationListView.swift */,
 				21D76CA6276E4F6C001E19F4 /* BookListView.swift */,
@@ -624,6 +627,7 @@
 				21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */,
 				21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */,
 				210CC49E2733C3480009D17B /* SettingsView.swift in Sources */,
+				21D76CAA2770F3AD001E19F4 /* HistoryListView.swift in Sources */,
 				210C1B3B272BD46A005CEAFF /* FilterView.swift in Sources */,
 				21AC168D2721A09300D2DA84 /* ReaderView.swift in Sources */,
 				21AC168727219C1E00D2DA84 /* Util.swift in Sources */,
@@ -649,7 +653,7 @@
 				21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */,
 				211EE70E27414F1700B5E4D5 /* Color+Extension.swift in Sources */,
 				215069EC2765EF7B00C3C248 /* MainTabView.swift in Sources */,
-				210CC476272EE6A60009D17B /* HistoryListView.swift in Sources */,
+				210CC476272EE6A60009D17B /* HistoriesListView.swift in Sources */,
 				21AC169627220D2E00D2DA84 /* SzentirasAPI.swift in Sources */,
 				21AC166327218FF800D2DA84 /* Szentiras15v2App.swift in Sources */,
 				210C1B3E272C398E005CEAFF /* SelectRow.swift in Sources */,

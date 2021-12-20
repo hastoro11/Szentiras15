@@ -21,11 +21,15 @@ class BibleController: ObservableObject {
     @Published var idezet: Idezet = Idezet.default
     @Published var error: BibleError?
     
+    var history: [Current]
+    var historySize: Int
     var current: Current
     
     init() {
         current = Current(translation: Translation.default, book: Book.default, chapter: 1)
         idezet = Idezet.default
+        historySize = 5
+        history = []
         Task {
             await fetch()
         }
@@ -47,12 +51,24 @@ class BibleController: ObservableObject {
             if Task.isCancelled { return }
             phase = .success
             self.idezet = idezet
+            addToHistory()
         } catch {
             print("⛔️ BibleController - fetch()", error)
             if Task.isCancelled { return }
             phase = .failure
             self.error = error as? BibleError ?? .unknown
         }        
+    }
+    
+    func deleteAllHistory() {
+        history = []
+    }
+    
+    private func addToHistory() {
+        if !history.contains(self.current) {
+            history.insert(self.current, at: 0)
+            history = Array(history.prefix(historySize))
+        }
     }
     
     // MARK: - Preview

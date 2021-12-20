@@ -84,8 +84,12 @@ extension BibleChapterView {
                     TranslationListView(current: $bibleController.current)
                         .environmentObject(bibleController)
                 }
-                .sheet(isPresented: $showHistoryList) {
-                    BibleChapterView.HistoryListView(historyList: TestData.history)
+                .sheet(isPresented: $showHistoryList, onDismiss: {
+                    Task {
+                        await bibleController.fetch()
+                    }
+                }) {
+                    HistoryListView(historyList: bibleController.history, current: $bibleController.current) { bibleController.deleteAllHistory()}
                 }
         }
     }
@@ -135,55 +139,7 @@ extension BibleChapterView.VersList {
     }
 }
 
-// MARK: - HistoryListView
-extension BibleChapterView {
-    struct HistoryListView: View {
-        var historyList: [Current]
-        var body: some View {
-            List {
-                ForEach(historyList.indices, id:\.self) { index in
-                    HistoryRow(history: historyList[index])
-                }
-            }
-            .listStyle(.plain)
-        }
-    }
 
-}
-
-// MARK: - HistoryRow
-extension BibleChapterView.HistoryListView {
-    struct HistoryRow: View {
-        var history: Current
-        var body: some View {
-            HStack {
-                Text("\(String(history.book.abbrev.prefix(3)))\(history.chapter)")
-                    .iconButtonStyle(active: false)
-                VStack(alignment: .leading, spacing: 2) {
-                    Text("\(history.book.name) \(history.chapter). fejezet")
-                        .font(.Theme.medium(size: 15))
-                        .lineLimit(1)
-                        .foregroundColor(Color("Title"))
-
-                    HStack {
-                        Text(history.translation.name)
-                            .font(.Theme.light(size: 14))
-                            .foregroundColor(Color.dark
-                            )
-                            .lineLimit(1)
-                        
-                        Spacer()
-                        Text(history.translation.abbrev.uppercased())
-                            .foregroundColor(.accentColor)
-                            .font(.Theme.medium(size: 15))
-                    }
-                    
-                }
-            }
-        }
-    }
-
-}
 
 // MARK: - Previews
 struct BibleChapterView_Previews: PreviewProvider {
@@ -208,12 +164,6 @@ struct BibleChapterView_Previews: PreviewProvider {
         .previewLayout(.sizeThatFits)
         .previewDisplayName("VersRow")
         
-        BibleChapterView.HistoryListView(historyList: TestData.history)
-            .previewLayout(.sizeThatFits)
-            .previewDisplayName("HistoryListView")
-        
-        BibleChapterView.HistoryListView.HistoryRow(history: TestData.history[0])
-            .previewLayout(.sizeThatFits)
-            .previewDisplayName("HistoryRow")
+       
     }
 }

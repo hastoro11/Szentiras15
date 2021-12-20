@@ -23,6 +23,7 @@ struct Current: Codable, Equatable {
     var key: String {
         "\(book.abbrev)/\(chapter)/\(translation.abbrev.uppercased())"
     }
+   
 }
 
 enum FetchPhase {

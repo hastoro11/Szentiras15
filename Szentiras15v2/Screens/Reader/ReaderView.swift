@@ -65,7 +65,7 @@ struct ReaderView: View {
         .sheet(isPresented: $showHistory) {
             vm.load()
         } content: {
-            HistoryListView()
+            HistoriesListView()
                 
         }
         .addPartialSheet()
