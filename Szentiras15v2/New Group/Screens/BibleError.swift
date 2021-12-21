@@ -10,6 +10,7 @@ import Foundation
 enum BibleError: Error {
     case badURL
     case server
+    case data
     case decoding
     case unknown
     
@@ -19,8 +20,10 @@ enum BibleError: Error {
             return "URL hiba"
         case .server:
             return "Szerverhiba"
-        case .decoding:
+        case .data:
             return "Adathiba"
+        case .decoding:
+            return "Dekódolás hiba"
         case .unknown:
             return "Ismeretlen hiba"
         }

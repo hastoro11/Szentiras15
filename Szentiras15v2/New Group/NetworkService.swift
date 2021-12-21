@@ -33,11 +33,14 @@ struct NetworkService: NetworkServiceProtocol {
     }
     
     private func fetch<T: Codable>(request: URLRequest) async throws -> T {
-        let data: Data
-        let response: URLResponse
+        var data: Data
+        var response: URLResponse
         if let cachedResponse = cache.cachedResponse(for: request) {
             data = cachedResponse.data
             response = cachedResponse.response
+            if let resp = response as? HTTPURLResponse, !(200...299).contains(resp.statusCode) {
+                (data, response) = try await URLSession.shared.data(for: request)
+            }
         } else {
             (data, response) = try await URLSession.shared.data(for: request)
         }

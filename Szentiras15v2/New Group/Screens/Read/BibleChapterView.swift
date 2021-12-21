@@ -20,7 +20,14 @@ struct BibleChapterView: View {
         case .isLoading:
             ProgressView("Keresés...")
         case .failure:
-            Text(bibleController.error?.errorDescription ?? "OK")
+            VStack {
+                Text(bibleController.error?.errorDescription ?? "OK")
+                Button("Újra") {
+                    Task {
+                        await bibleController.fetch()
+                    }
+                }
+            }
         default:
             EmptyView()
         }
