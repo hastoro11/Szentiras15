@@ -65,10 +65,11 @@ class BibleController: ObservableObject {
     }
     
     private func addToHistory() {
-        if !history.contains(self.current) {
-            history.insert(self.current, at: 0)
-            history = Array(history.prefix(historySize))
+        if history.contains(self.current) {
+            history = history.filter { $0 != self.current}
         }
+        history.insert(self.current, at: 0)
+        history = Array(history.prefix(historySize))
     }
     
     // MARK: - Preview
