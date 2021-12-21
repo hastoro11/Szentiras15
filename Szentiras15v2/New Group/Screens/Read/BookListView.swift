@@ -20,6 +20,7 @@ struct BookListView: View {
                         Section {
                             ForEach(category.books.indices, id:\.self) { index in
                                 BookRow(book: category.books[index], current: $current, dismiss: {dismiss()})
+                                    .id(category.books[index].number)
                             }
                         } header: {
                             Text(category.title)
@@ -28,6 +29,9 @@ struct BookListView: View {
                     }
                 }
                 .listStyle(.plain)
+                .onAppear {
+                    proxy.scrollTo(current.book.number, anchor: .top)
+                }
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("A Biblia könyvei")
@@ -56,6 +60,7 @@ extension BookListView {
             _isExpanded = State(initialValue: book.number == current.wrappedValue.book.number)
             self.dismiss = dismiss
         }
+        
         var body: some View {
             DisclosureGroup(isExpanded: $isExpanded) {
                 ScrollView {
@@ -67,7 +72,7 @@ extension BookListView {
                                 dismiss()
                             }) {
                                 Text("\(ch)")
-                                    .iconButtonStyle(active: ch == current.chapter, size: .small)
+                                    .iconButtonStyle(active: activeChapter(chapter: ch))
                             }
                         }
                     }
@@ -84,6 +89,9 @@ extension BookListView {
                 }
                 .foregroundColor(Color("Title"))
             }
+        }
+        func activeChapter(chapter: Int) -> Bool {
+            book.number == current.book.number && current.chapter == chapter
         }
     }
     
