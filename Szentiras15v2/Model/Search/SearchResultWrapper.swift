@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct SearchResult : Codable {
+struct SearchResultWrapper : Codable {
     
-    var fullTextResult : FullTextResult?
+    var fullTextResult : FullTextResults?
     
     enum CodingKeys: String, CodingKey {
         case fullTextResult = "fullTextResult"
     }
 }
 
-struct FullTextResult : Codable {
+struct FullTextResults : Codable {
     
     var hitCount : Int
     private var apiResults : [TextResult]?

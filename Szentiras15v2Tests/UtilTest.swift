@@ -14,14 +14,14 @@ class UtilTest: XCTestCase {
         let url = Bundle.main.url(forResource: "SearchBuszke", withExtension: "json")!
         let data = try? Data(contentsOf: url)
         XCTAssertNotNil(data)
-        let searchResult = try? JSONDecoder().decode(SearchResult.self, from: data!)
+        let searchResult = try? JSONDecoder().decode(SearchResultWrapper.self, from: data!)
         XCTAssertNotNil(searchResult)
         XCTAssertNotNil(searchResult!.fullTextResult!)
         XCTAssertFalse(searchResult!.fullTextResult!.results.isEmpty)
     }
 
     func testUtilGetItemFromBundle() {
-        let searchResult: SearchResult = Util.getItemFromBundle(filename: "SearchBuszke")
+        let searchResult: SearchResultWrapper = Util.getItemFromBundle(filename: "SearchBuszke")
         XCTAssertNotNil(searchResult)
         XCTAssertNotNil(searchResult.fullTextResult!)
         XCTAssertFalse(searchResult.fullTextResult!.results.isEmpty)

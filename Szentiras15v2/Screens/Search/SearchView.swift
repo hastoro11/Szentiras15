@@ -23,7 +23,7 @@ struct SearchView: View {
     @State var filter: Filter = Filter(book: 0, translation: 0, testament: .none)
     
     var filteredResults: [TextResult.Result] {
-        if case .success(let res) = vm.phase, let searchResult = res as? SearchResult, let fullTextResult = searchResult.fullTextResult{
+        if case .success(let res) = vm.phase, let searchResult = res as? SearchResultWrapper, let fullTextResult = searchResult.fullTextResult{
             
             var filteredResults = fullTextResult.results.flatMap { $0.results}
             
@@ -44,7 +44,7 @@ struct SearchView: View {
         }
         return []
     }
-
+    
     var returnSucces: Bool {
         if case .success(_) = vm.phase {
             return true
@@ -66,7 +66,7 @@ struct SearchView: View {
                 SearchResultList(results: filteredResults, onTap: jumpToVers(result:))
                     .overlay(overlay)
                     .sheet(isPresented: $showFilter) {
-                        FilterView(showFilter: $showFilter, filter: $filter)
+                        FiltersView(showFilter: $showFilter, filter: $filter)
                     }
                 Spacer()
             }
@@ -165,6 +165,7 @@ struct SearchView: View {
     }
 }
 
+// MARK: - Previews
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView(tabSelection: .constant(.search))

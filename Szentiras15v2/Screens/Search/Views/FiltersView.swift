@@ -24,7 +24,7 @@ struct Filter: Equatable {
     var testament: Testament
 }
 
-struct FilterView: View {
+struct FiltersView: View {
     var books: [Book] = Book.combined
     
     @Binding var showFilter: Bool
@@ -126,6 +126,6 @@ struct FilterView: View {
 
 struct FilterView_Previews: PreviewProvider {
     static var previews: some View {
-        FilterView(showFilter: .constant(false), filter: .constant(Filter(book: 0, translation: 0, testament: .none)))
+        FiltersView(showFilter: .constant(false), filter: .constant(Filter(book: 0, translation: 0, testament: .none)))
     }
 }

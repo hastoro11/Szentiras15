@@ -49,9 +49,15 @@ struct TestData {
         Translation.default.getBooks()
     }
     
-    static var results: [TextResult.Result] {
-        let searchResult: SearchResult = Util.getItemFromBundle(filename: "SearchTengeri")
-        let fullTextResult = searchResult.fullTextResult!
-        return fullTextResult.results.flatMap({$0.results})
+//    static var results: [TextResult.Result] {
+//        let searchResult: SearchResult = Util.getItemFromBundle(filename: "SearchTengeri")
+//        let fullTextResult = searchResult.fullTextResult!
+//        return fullTextResult.results.flatMap({$0.results})
+//    }
+    
+    
+    static var searchResults: [SearchResult] {
+        let wrapper: SearchWrapper = Util.getItemFromBundle(filename: "SearchTengeri")
+        return wrapper.textResult.searchResults
     }
 }

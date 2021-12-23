@@ -18,10 +18,10 @@ class SzentirasAPI {
         return idezet
     }
     
-    func search(_ searchTerm: String) async throws -> SearchResult {
+    func search(_ searchTerm: String) async throws -> SearchResultWrapper {
         let url = buildURL(searchTerm: searchTerm)
 //        let url = URL(string: "https://szentiras.hu/api/search/23232/sdfsdfsdf")!
-        let searchResult: SearchResult = try await fetch(from: url)
+        let searchResult: SearchResultWrapper = try await fetch(from: url)
         return searchResult
     }
     

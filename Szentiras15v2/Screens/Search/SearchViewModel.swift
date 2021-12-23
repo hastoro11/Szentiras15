@@ -38,7 +38,7 @@ class SearchViewModel: ObservableObject {
     
     static var preview: SearchViewModel {
         let vm = SearchViewModel()
-        let result: SearchResult = Util.getItemFromBundle(filename: "SearchBuszke")
+        let result: SearchResultWrapper = Util.getItemFromBundle(filename: "SearchBuszke")
         vm.phase = .success(result)
         return vm
     }
