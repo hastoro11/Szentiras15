@@ -32,6 +32,12 @@ struct NetworkService: NetworkServiceProtocol {
         return try await fetch(request: request)
     }
     
+    func fetchSearchWithRequest(searchTerm: String) async throws -> [SearchResult] {
+        guard let request = generateSearchRequestURL(searchTerm: searchTerm) else { return [] }
+        let wrapper: SearchWrapper = try await fetch(request: request)
+        return wrapper.textResult.searchResults
+    }
+    
     private func fetch<T: Codable>(request: URLRequest) async throws -> T {
         var data: Data
         var response: URLResponse
@@ -58,6 +64,16 @@ struct NetworkService: NetworkServiceProtocol {
             print(error)
             throw BibleError.decoding
         }
+    }
+    
+    private func generateSearchRequestURL(searchTerm: String) -> URLRequest? {
+        var components = URLComponents(string: "https://szentiras.hu")
+        let path = "/api/search/\(searchTerm)"
+        components?.path = path
+        if let url = components?.url {
+            return URLRequest(url: url)
+        }
+        return nil
     }
     
     private func fetch<T: Codable>(url: URL) async throws -> T {

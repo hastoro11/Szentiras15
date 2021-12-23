@@ -9,7 +9,11 @@ import Foundation
 
 // MARK: - SearchWrapper
 struct SearchWrapper: Codable {
-    var fullTextResult: FullTextResult
+    var fullTextResult: FullTextResult?
+    
+    var textResult: FullTextResult {
+        fullTextResult ?? FullTextResult(results: [], hitCount: 0)
+    }
 }
 
 // MARK: - FullTextResult
@@ -45,19 +49,9 @@ struct FullTextResult: Codable {
                 
     }
     
-    struct SearchResult {
-        var bookNumber: Int
-        var translationID: Int
-        var chapter: Int
-        var numv: Int
-        var text: String
-        
-        var abbrev: String {
-            "\(bookNumber)/\(chapter)/\(numv)/\(translationID)"
-        }
-    }
 }
 
+// MARK: - searchResults property
 extension FullTextResult {
     var searchResults: [SearchResult] {
         var searchResults = [SearchResult]()
@@ -75,3 +69,17 @@ extension FullTextResult {
         return searchResults
     }
 }
+
+// MARK: - SearchResult
+struct SearchResult {
+    var bookNumber: Int
+    var translationID: Int
+    var chapter: Int
+    var numv: Int
+    var text: String
+    
+    var abbrev: String {
+        "\(bookNumber)/\(chapter)/\(numv)/\(translationID)"
+    }
+}
+

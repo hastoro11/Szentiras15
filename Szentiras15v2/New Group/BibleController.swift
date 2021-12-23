@@ -7,14 +7,15 @@
 
 import Foundation
 
+enum Phase {
+    case empty
+    case isLoading
+    case failure
+    case success
+}
+
 class BibleController: ObservableObject {
     
-    enum Phase {
-        case empty
-        case isLoading
-        case failure
-        case success
-    }
     
     @Published var phase: Phase = .empty
     
