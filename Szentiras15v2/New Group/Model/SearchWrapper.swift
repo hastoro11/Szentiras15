@@ -81,5 +81,9 @@ struct SearchResult {
     var abbrev: String {
         "\(bookNumber)/\(chapter)/\(numv)/\(translationID)"
     }
+    
+    static var `default`: SearchResult {
+        SearchResult(bookNumber: 101, translationID: 6, chapter: 1, numv: 1, text: "")
+    }
 }
 

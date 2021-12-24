@@ -80,6 +80,9 @@
 		21AC16AE2725861400D2DA84 /* SearchResultWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16AD2725861400D2DA84 /* SearchResultWrapper.swift */; };
 		21AC16B227258F0C00D2DA84 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */; };
 		21C2B17027731DA4009DA75A /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2B16F27731DA4009DA75A /* SearchController.swift */; };
+		21C2B1722775CE69009DA75A /* SearchVersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2B1712775CE69009DA75A /* SearchVersListView.swift */; };
+		21C2B1742775D306009DA75A /* VersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2B1732775D306009DA75A /* VersListView.swift */; };
+		21C2B1762775D448009DA75A /* SearchVersListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C2B1752775D448009DA75A /* SearchVersListViewModel.swift */; };
 		21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA4276E4982001E19F4 /* TranslationListView.swift */; };
 		21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA6276E4F6C001E19F4 /* BookListView.swift */; };
 		21D76CAA2770F3AD001E19F4 /* HistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D76CA92770F3AD001E19F4 /* HistoryListView.swift */; };
@@ -175,6 +178,9 @@
 		21AC16AD2725861400D2DA84 /* SearchResultWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultWrapper.swift; sourceTree = "<group>"; };
 		21AC16B127258F0C00D2DA84 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		21C2B16F27731DA4009DA75A /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		21C2B1712775CE69009DA75A /* SearchVersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVersListView.swift; sourceTree = "<group>"; };
+		21C2B1732775D306009DA75A /* VersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersListView.swift; sourceTree = "<group>"; };
+		21C2B1752775D448009DA75A /* SearchVersListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVersListViewModel.swift; sourceTree = "<group>"; };
 		21D76CA4276E4982001E19F4 /* TranslationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationListView.swift; sourceTree = "<group>"; };
 		21D76CA6276E4F6C001E19F4 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		21D76CA92770F3AD001E19F4 /* HistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryListView.swift; sourceTree = "<group>"; };
@@ -299,6 +305,7 @@
 			children = (
 				21D76CA92770F3AD001E19F4 /* HistoryListView.swift */,
 				21EDBDEB2752B549000D06A4 /* BibleChapterView.swift */,
+				21C2B1732775D306009DA75A /* VersListView.swift */,
 				21D76CA4276E4982001E19F4 /* TranslationListView.swift */,
 				21D76CA6276E4F6C001E19F4 /* BookListView.swift */,
 			);
@@ -311,6 +318,8 @@
 				2145620C27566C6C0000202D /* SearchingView.swift */,
 				2143895B27723F200022AC8E /* SearchField.swift */,
 				2143895D27723FA90022AC8E /* FilterView.swift */,
+				21C2B1712775CE69009DA75A /* SearchVersListView.swift */,
+				21C2B1752775D448009DA75A /* SearchVersListViewModel.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -654,6 +663,7 @@
 				21AC1678272192ED00D2DA84 /* Idezet.swift in Sources */,
 				2143895E27723FA90022AC8E /* FilterView.swift in Sources */,
 				21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */,
+				21C2B1762775D448009DA75A /* SearchVersListViewModel.swift in Sources */,
 				21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */,
 				2143895C27723F200022AC8E /* SearchField.swift in Sources */,
 				210CC49E2733C3480009D17B /* SettingsView.swift in Sources */,
@@ -670,6 +680,7 @@
 				2145620D27566C6C0000202D /* SearchingView.swift in Sources */,
 				210CC4982733C1A20009D17B /* PartialSheetManager.swift in Sources */,
 				21AC167A2721945400D2DA84 /* Vers.swift in Sources */,
+				21C2B1742775D306009DA75A /* VersListView.swift in Sources */,
 				210CC4972733C1A20009D17B /* BlurEffectView.swift in Sources */,
 				21AC16912721B5A700D2DA84 /* SzentirasTabView.swift in Sources */,
 				21AC166527218FF800D2DA84 /* ContentView.swift in Sources */,
@@ -694,6 +705,7 @@
 				21AC16A727246ACD00D2DA84 /* SearchBar.swift in Sources */,
 				211EE7002740009900B5E4D5 /* SplashScreen.swift in Sources */,
 				21AC169327220A5800D2DA84 /* ReaderViewModel.swift in Sources */,
+				21C2B1722775CE69009DA75A /* SearchVersListView.swift in Sources */,
 				21D76CA5276E4982001E19F4 /* TranslationListView.swift in Sources */,
 				210CC4A027344FF10009D17B /* CustomToggle.swift in Sources */,
 				2145622527578D410000202D /* SelectingRow.swift in Sources */,

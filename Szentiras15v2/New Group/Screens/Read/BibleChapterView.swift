@@ -13,10 +13,7 @@ struct BibleChapterView: View {
     var body: some View {
         switch bibleController.phase {
         case .success:
-            Content(
-                verses: bibleController.idezet.valasz.versek,
-                title: bibleController.idezet.keres.hivatkozas,
-                current: bibleController.current)
+            Content()
         case .isLoading:
             ProgressView("Keresés...")
         case .failure:
@@ -37,12 +34,17 @@ struct BibleChapterView: View {
 // MARK: - Content
 extension BibleChapterView {
     struct Content: View {
-        @EnvironmentObject var bibleController: BibleController
-        typealias VersList = BibleChapterView.VersList
+        @EnvironmentObject var bibleController: BibleController        
         
-        var verses: [Vers]
-        var title: String
-        var current: Current
+        var verses: [Vers] {
+            bibleController.idezet.valasz.versek
+        }
+        var title: String {
+            bibleController.idezet.keres.hivatkozas
+        }
+        var current: Current {
+            bibleController.current
+        }
         @State var showBookList: Bool = false
         @State var showTranslationList: Bool = false
         @State var showHistoryList: Bool = false
@@ -103,51 +105,6 @@ extension BibleChapterView {
 }
 
 
-// MARK: - VersList
-extension BibleChapterView {
-    struct VersList: View {
-        var verses: [Vers]
-        var body: some View {
-            ScrollViewReader { proxy in
-                List {
-                    ForEach(verses.indices, id:\.self) { index in
-                        VersRow(vers: verses[index], index: index, fontSize: 17)
-                            
-                    }
-                }
-                .listStyle(.plain)
-            }
-        }
-    }
-}
-
-// MARK: - VersRow
-extension BibleChapterView.VersList {
-    struct VersRow: View {
-        var vers: Vers
-        var index: Int
-        var fontSize: CGFloat
-        
-        var body: some View {
-            Text(attributedText)
-                .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        
-        var attributedText: AttributedString {
-            var attributedIndex = AttributedString("\(vers.versSzam) ")
-            attributedIndex.foregroundColor = .accentColor
-            attributedIndex.font = .Theme.bold(size: fontSize)
-            var attributedString = AttributedString(vers.szoveg)
-            attributedString.font = .Theme.light(size: fontSize)
-            attributedString.foregroundColor = Color("Title")
-            let result = attributedIndex + attributedString
-            return result
-        }
-    }
-}
-
-
-
 // MARK: - Previews
 struct BibleChapterView_Previews: PreviewProvider {
     static var idezet: Idezet = TestData.idezetRom16
@@ -165,11 +122,7 @@ struct BibleChapterView_Previews: PreviewProvider {
             .environmentObject(bibleController)
             .environment(\.sizeCategory, .accessibilityLarge)
             
-        Group {
-            BibleChapterView.VersList.VersRow(vers: idezet.valasz.versek[0], index: 0, fontSize: 17)
-        }
-        .previewLayout(.sizeThatFits)
-        .previewDisplayName("VersRow")
+        
         
        
     }

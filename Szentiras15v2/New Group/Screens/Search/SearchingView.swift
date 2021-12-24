@@ -49,10 +49,24 @@ struct SearchingView: View {
 extension SearchingView {
     struct SearchListView: View {
         var results: [SearchResult]
+        @State var selectedVers: SearchResult = .default
+        @State var selected: Bool = false
         var body: some View {
+            NavigationLink(isActive: $selected) {
+                SearchVersListView(searchResult: selectedVers)
+            } label: {
+                EmptyView()
+            }
+            .padding(.bottom, 4)
+            
             List {
                 ForEach(results.indices, id:\.self) { index in
                     SearchListRow(result: results[index])
+                        .onTapGesture {
+                            selected.toggle()
+                            selectedVers = results[index]
+                            print(selectedVers)
+                        }
                 }
             }
             .listStyle(.plain)
