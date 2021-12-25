@@ -8,7 +8,7 @@
 - Make fontsize adjustable
 
 ## Search
-- Filtering
+~~- Filtering~~
 
 ## Settings
 - History size

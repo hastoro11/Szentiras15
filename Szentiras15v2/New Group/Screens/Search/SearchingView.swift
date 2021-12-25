@@ -12,6 +12,8 @@ struct SearchingView: View {
     @EnvironmentObject var searchController: SearchController
     @State var showFilterView: Bool = false
     @State var searchTerm: String = ""
+    @State var searchFilter: SearchFilter = SearchFilter()
+    
     var body: some View {
         VStack {
             SearchField(text: $searchTerm, onCommit: {
@@ -20,10 +22,10 @@ struct SearchingView: View {
                 }
             }, onClear: resetSearchResults, onCancel: resetSearchResults)
                 .padding()
-            SearchingView.FilterBar(count: searchController.searchResults.count, showFilterView: $showFilterView, disabled: searchController.searchResults.isEmpty)
+            SearchingView.FilterBar(count: filterResults().count, showFilterView: $showFilterView, isActive: searchFilter != SearchFilter(), disabled: searchController.searchResults.isEmpty)
                 .padding(.horizontal)
             if searchController.phase == .success {
-                SearchingView.SearchListView(results: searchController.searchResults)                
+                SearchingView.SearchListView(results: filterResults())
             } else if searchController.phase == .isLoading {
                 Spacer()
                 ProgressView("Keresés...")
@@ -33,7 +35,7 @@ struct SearchingView: View {
             Spacer()
         }       
         .sheet(isPresented: $showFilterView) {
-            FilterView()
+            FilterView(searchFilter: $searchFilter)
         }
         .navigationTitle("Keresés")
         .navigationBarTitleDisplayMode(.inline)
@@ -42,6 +44,26 @@ struct SearchingView: View {
     func resetSearchResults() {
         searchController.resetSearchResults()
         searchTerm = ""
+        searchFilter = SearchFilter()
+    }
+    
+    func filterResults() ->[SearchResult]  {
+        var results = searchController.searchResults
+        switch searchFilter.testament {
+        case .newTestament:
+            results = results.filter { $0.bookNumber > 200}
+        case .oldTestament:
+            results = results.filter { $0.bookNumber < 200}
+        default:
+            break
+        }
+        if searchFilter.book != 0 {
+            results = results.filter { $0.bookNumber == searchFilter.book }
+        }
+        if searchFilter.translation != 0 {
+            results = results.filter { $0.translationID == searchFilter.translation}
+        }
+        return results.sorted(by: {$0.bookNumber < $1.bookNumber })
     }
 }
 
@@ -108,8 +130,8 @@ extension SearchingView.SearchListView {
 extension SearchingView {
     struct FilterBar: View {
         var count: Int
-        var isActive: Bool = false
         @Binding var showFilterView: Bool
+        var isActive: Bool
         var disabled: Bool
         var body: some View {
             HStack {
@@ -150,11 +172,11 @@ struct SearchingView_Previews: PreviewProvider {
             .previewDisplayName("SearchListRow")
 
         
-        SearchingView.FilterBar(count: 212, showFilterView: .constant(false), disabled: false)
+        SearchingView.FilterBar(count: 212, showFilterView: .constant(false), isActive: true, disabled: false)
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
 
-        SearchingView.FilterBar(count: 212, isActive: true, showFilterView: .constant(true), disabled: false)
+        SearchingView.FilterBar(count: 212, showFilterView: .constant(true), isActive: true, disabled: false)
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
         
