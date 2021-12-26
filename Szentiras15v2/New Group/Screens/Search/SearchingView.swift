@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+// MARK: - Filter Struct
+struct SearchFilter: Equatable {
+    enum Testament: String, CaseIterable {
+        case none = ""
+        case oldTestament = "Ószövetség"
+        case newTestament = "Újszövetség"
+    }
+    var book: Int = 0
+    var testament: Testament = .none
+    var translation: Int = 0
+}
+
 // MARK: - SearchingView
 struct SearchingView: View {
     @EnvironmentObject var searchController: SearchController
@@ -21,8 +33,8 @@ struct SearchingView: View {
                     await searchController.fetch(searchTerm: searchTerm)
                 }
             }, onClear: resetSearchResults, onCancel: resetSearchResults)
-                .padding()
-            SearchingView.FilterBar(count: filterResults().count, showFilterView: $showFilterView, isActive: searchFilter != SearchFilter(), disabled: searchController.searchResults.isEmpty)
+                .padding(.horizontal)
+            SearchingView.FilterBar(count: filterResults().count, showFilterView: $showFilterView, searchFilter: $searchFilter)
                 .padding(.horizontal)
             if searchController.phase == .success {
                 SearchingView.SearchListView(results: filterResults())
@@ -87,7 +99,6 @@ extension SearchingView {
                         .onTapGesture {
                             selected.toggle()
                             selectedVers = results[index]
-                            print(selectedVers)
                         }
                 }
             }
@@ -131,21 +142,48 @@ extension SearchingView {
     struct FilterBar: View {
         var count: Int
         @Binding var showFilterView: Bool
-        var isActive: Bool
-        var disabled: Bool
+        @Binding var searchFilter: SearchFilter
+        
         var body: some View {
-            HStack {
-                Button(action: {
-                    showFilterView.toggle()
-                }) {
-                    Image(systemName: "line.3.horizontal.decrease.circle")
-                        .font(.title2)
-                        .iconButtonStyle(active: isActive)
+            VStack {
+                HStack {
+                    Spacer()
+                    Text("\(count) találat")
+                        .font(.Theme.regular(size: 17))
                 }
-                .disabled(disabled)
-                Spacer()
-                Text("\(count) találat")
-                    .font(.Theme.regular(size: 17))
+                Picker(selection: $searchFilter.translation) {
+                    Text("Mind").tag(0)
+                    ForEach(Translation.all()) { tr in
+                        Text(tr.abbrev).tag(tr.id)
+                    }
+                    
+                } label: {
+                    Text("")
+                }
+                .pickerStyle(.segmented)
+                Picker("", selection: $searchFilter.testament) {
+                    Text("Mind").tag(SearchFilter.Testament.none)
+                    Text("Ószöv").tag(SearchFilter.Testament.oldTestament)
+                    Text("Újszöv").tag(SearchFilter.Testament.newTestament)
+                }
+                .pickerStyle(.segmented)
+                
+                HStack {
+                    Text("Könyvek")
+                        .font(.Theme.regular(size: 17))
+                    Spacer()
+                    Picker("", selection: $searchFilter.book) {
+                        Text("Mind")
+                            .tag(0)
+                        ForEach(Book.combined) { book in
+                            Text(book.name)
+                                .tag(book.number)
+                            
+                        }
+                    }
+                    .pickerStyle(MenuPickerStyle.menu)
+                }
+                .padding(.bottom)
             }
         }
     }
@@ -172,11 +210,11 @@ struct SearchingView_Previews: PreviewProvider {
             .previewDisplayName("SearchListRow")
 
         
-        SearchingView.FilterBar(count: 212, showFilterView: .constant(false), isActive: true, disabled: false)
+        SearchingView.FilterBar(count: 212, showFilterView: .constant(false), searchFilter: .constant(SearchFilter()))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
 
-        SearchingView.FilterBar(count: 212, showFilterView: .constant(true), isActive: true, disabled: false)
+        SearchingView.FilterBar(count: 212, showFilterView: .constant(true), searchFilter: .constant(SearchFilter()))
             .previewLayout(.sizeThatFits)
             .previewDisplayName("FilterBar")
         

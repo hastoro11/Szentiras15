@@ -61,7 +61,7 @@ struct NetworkService: NetworkServiceProtocol {
             let result = try decoder.decode(T.self, from: data)
             return result
         } catch {
-            print(error)
+            print("⛔️ NetworkService - fetch(request:)", error)
             throw BibleError.decoding
         }
     }

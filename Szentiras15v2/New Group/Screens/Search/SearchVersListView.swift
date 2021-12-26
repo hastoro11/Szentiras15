@@ -39,6 +39,7 @@ extension SearchVersListView {
         var body: some View {
             VStack {
                 VersList(verses: verses, scrollTo: true, index: index)
+                    .navigationBarTitleDisplayMode(.inline)
                     .navigationTitle(title)
                     .toolbar {
                         ToolbarItem(placement: .primaryAction) {

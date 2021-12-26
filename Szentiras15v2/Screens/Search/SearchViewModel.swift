@@ -22,8 +22,7 @@ class SearchViewModel: ObservableObject {
     }
     
     @MainActor
-    private func fetch(searchTerm: String) async {
-        print("✏️")
+    private func fetch(searchTerm: String) async {        
         phase = .isFetching
         do {
             let searchResult = try await SzentirasAPI.instance.search(searchTerm)

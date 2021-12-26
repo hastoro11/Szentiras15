@@ -35,7 +35,6 @@
 		21438958277230E80022AC8E /* SearchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21438957277230E80022AC8E /* SearchTest.swift */; };
 		2143895A277232A20022AC8E /* SearchBuszke.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621C275685BF0000202D /* SearchBuszke.json */; };
 		2143895C27723F200022AC8E /* SearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143895B27723F200022AC8E /* SearchField.swift */; };
-		2143895E27723FA90022AC8E /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2143895D27723FA90022AC8E /* FilterView.swift */; };
 		2145620B275607480000202D /* Viewmodifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145620A275607480000202D /* Viewmodifiers.swift */; };
 		2145620D27566C6C0000202D /* SearchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145620C27566C6C0000202D /* SearchingView.swift */; };
 		21456211275674CB0000202D /* UtilTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21456210275674CB0000202D /* UtilTest.swift */; };
@@ -129,7 +128,6 @@
 		21438955277222100022AC8E /* SearchWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWrapper.swift; sourceTree = "<group>"; };
 		21438957277230E80022AC8E /* SearchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTest.swift; sourceTree = "<group>"; };
 		2143895B27723F200022AC8E /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
-		2143895D27723FA90022AC8E /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		214561FD275552B20000202D /* 1Sam17.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = 1Sam17.json; sourceTree = "<group>"; };
 		214561FF275552B20000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		21456200275552B20000202D /* SearchBuszke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchBuszke.json; sourceTree = "<group>"; };
@@ -317,7 +315,6 @@
 			children = (
 				2145620C27566C6C0000202D /* SearchingView.swift */,
 				2143895B27723F200022AC8E /* SearchField.swift */,
-				2143895D27723FA90022AC8E /* FilterView.swift */,
 				21C2B1712775CE69009DA75A /* SearchVersListView.swift */,
 				21C2B1752775D448009DA75A /* SearchVersListViewModel.swift */,
 			);
@@ -661,7 +658,6 @@
 				21EDBDE92752B170000D06A4 /* TestData.swift in Sources */,
 				21AC16A527245BFB00D2DA84 /* SearchView.swift in Sources */,
 				21AC1678272192ED00D2DA84 /* Idezet.swift in Sources */,
-				2143895E27723FA90022AC8E /* FilterView.swift in Sources */,
 				21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */,
 				21C2B1762775D448009DA75A /* SearchVersListViewModel.swift in Sources */,
 				21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */,
