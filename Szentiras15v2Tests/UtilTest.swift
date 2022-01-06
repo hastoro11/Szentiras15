@@ -26,4 +26,15 @@ class UtilTest: XCTestCase {
         XCTAssertNotNil(searchResult.fullTextResult!)
         XCTAssertFalse(searchResult.fullTextResult!.results.isEmpty)
     }
+    
+    func testRemoveHtmlFromString() {
+        let strs = [
+            "This is an example</br>",
+            "This is an <i>example</i>",
+        ]
+        
+        let htmlReplaceString: String = "<[^>]+>"
+        let str = strs[1].replacingOccurrences(of: htmlReplaceString, with: "", options: .regularExpression, range: nil)
+        XCTAssertEqual(str, "This is an example")
+    }
 }

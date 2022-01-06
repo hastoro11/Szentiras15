@@ -52,7 +52,7 @@ extension VersList {
             var attributedIndex = AttributedString("\(vers.versSzam) ")
             attributedIndex.foregroundColor = .accentColor
             attributedIndex.font = .Theme.bold(size: fontSize)
-            var attributedString = AttributedString(vers.szoveg)
+            var attributedString = AttributedString(vers.szoveg.htmlString)
             attributedString.font = .Theme.light(size: fontSize)
             attributedString.foregroundColor = Color("Title")
             let result = attributedIndex + attributedString

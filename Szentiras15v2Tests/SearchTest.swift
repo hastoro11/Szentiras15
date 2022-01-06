@@ -17,13 +17,13 @@ class SearchTest: XCTestCase {
         let searchWrapper = try JSONDecoder().decode(SearchWrapper.self, from: data)
         var total = 0
         
-        for r in searchWrapper.fullTextResult.results {
+        for r in searchWrapper.fullTextResult!.results {
             total += r.verses.count
         }
         print("total", total)
-        print(searchWrapper.fullTextResult.searchResults.count)
-        XCTAssertEqual(total, searchWrapper.fullTextResult.searchResults.count)
+        print(searchWrapper.fullTextResult!.searchResults.count)
+        XCTAssertEqual(total, searchWrapper.fullTextResult!.searchResults.count)
         XCTAssertNotNil(searchWrapper)
-        print(searchWrapper.fullTextResult.searchResults[0].abbrev)
+        print(searchWrapper.fullTextResult!.searchResults[0].abbrev)
     }
 }

@@ -48,6 +48,7 @@
 		21456223275762A00000202D /* Rom16.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621F275762840000202D /* Rom16.json */; };
 		2145622527578D410000202D /* SelectingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2145622427578D410000202D /* SelectingRow.swift */; };
 		215069EC2765EF7B00C3C248 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 215069EB2765EF7B00C3C248 /* MainTabView.swift */; };
+		2154914F27875AA40041AD2D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2154914E27875AA40041AD2D /* Extensions.swift */; };
 		2179B722276DE7FD00095DC1 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179B721276DE7FD00095DC1 /* NetworkService.swift */; };
 		2179B726276DF41E00095DC1 /* 1Sam17.json in Resources */ = {isa = PBXBuildFile; fileRef = 214561FD275552B20000202D /* 1Sam17.json */; };
 		2179B728276DF7D000095DC1 /* BibleError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2179B727276DF7D000095DC1 /* BibleError.swift */; };
@@ -144,6 +145,7 @@
 		2145621F275762840000202D /* Rom16.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Rom16.json; sourceTree = "<group>"; };
 		2145622427578D410000202D /* SelectingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectingRow.swift; sourceTree = "<group>"; };
 		215069EB2765EF7B00C3C248 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2154914E27875AA40041AD2D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2179B721276DE7FD00095DC1 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		2179B727276DF7D000095DC1 /* BibleError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibleError.swift; sourceTree = "<group>"; };
 		21810A1827540669001D29B9 /* Szentiras15v2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Szentiras15v2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -339,6 +341,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		2154914D27875A970041AD2D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2154914E27875AA40041AD2D /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		21810A1927540669001D29B9 /* Szentiras15v2Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +517,7 @@
 		21EDBDEA2752B536000D06A4 /* New Group */ = {
 			isa = PBXGroup;
 			children = (
+				2154914D27875A970041AD2D /* Extensions */,
 				21438954277221AF0022AC8E /* Model */,
 				215069F22765F0D300C3C248 /* Views */,
 				215069F12765F0CA00C3C248 /* Screens */,
@@ -659,6 +670,7 @@
 				21AC16A527245BFB00D2DA84 /* SearchView.swift in Sources */,
 				21AC1678272192ED00D2DA84 /* Idezet.swift in Sources */,
 				21AC169F2723269C00D2DA84 /* BookRow.swift in Sources */,
+				2154914F27875AA40041AD2D /* Extensions.swift in Sources */,
 				21C2B1762775D448009DA75A /* SearchVersListViewModel.swift in Sources */,
 				21D76CA7276E4F6C001E19F4 /* BookListView.swift in Sources */,
 				2143895C27723F200022AC8E /* SearchField.swift in Sources */,
