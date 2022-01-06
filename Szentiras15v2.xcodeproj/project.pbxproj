@@ -326,6 +326,7 @@
 		215069F12765F0CA00C3C248 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				210CC49C2733C32D0009D17B /* Settings */,
 				215069EE2765F07C00C3C248 /* Search */,
 				215069ED2765F07500C3C248 /* Read */,
 				2179B727276DF7D000095DC1 /* BibleError.swift */,
@@ -396,7 +397,6 @@
 				21AC168B2721A07500D2DA84 /* Screens */,
 				21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */,
 				21AC16902721B5A700D2DA84 /* SzentirasTabView.swift */,
-				211EE6FF2740009900B5E4D5 /* SplashScreen.swift */,
 				21AC166427218FF800D2DA84 /* ContentView.swift */,
 				21AC166627218FF900D2DA84 /* Assets.xcassets */,
 				21AC166827218FF900D2DA84 /* Preview Content */,
@@ -460,7 +460,6 @@
 		21AC168B2721A07500D2DA84 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				210CC49C2733C32D0009D17B /* Settings */,
 				210C1B3C272C3980005CEAFF /* Views */,
 				21AC16A327245BC500D2DA84 /* Search */,
 				21AC16992722A01400D2DA84 /* Reader */,
@@ -522,10 +521,11 @@
 				215069F22765F0D300C3C248 /* Views */,
 				215069F12765F0CA00C3C248 /* Screens */,
 				2145620A275607480000202D /* Viewmodifiers.swift */,
-				215069EB2765EF7B00C3C248 /* MainTabView.swift */,
+				2179B721276DE7FD00095DC1 /* NetworkService.swift */,
 				211BD813276606B000B337E1 /* BibleController.swift */,
 				21C2B16F27731DA4009DA75A /* SearchController.swift */,
-				2179B721276DE7FD00095DC1 /* NetworkService.swift */,
+				215069EB2765EF7B00C3C248 /* MainTabView.swift */,
+				211EE6FF2740009900B5E4D5 /* SplashScreen.swift */,
 				21D76CAB2770FDE5001E19F4 /* TODO.md */,
 			);
 			path = "New Group";

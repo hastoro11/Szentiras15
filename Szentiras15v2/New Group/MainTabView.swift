@@ -27,7 +27,12 @@ struct MainTabView: View {
             .tabItem {
                 Label("Keresés", systemImage: "magnifyingglass")
             }
+            SettingsView()
+                .tabItem {
+                    Label("Beállítások", systemImage: "gear")
+                }
         }
+        .overlay(SplashScreen())
     }
 }
 

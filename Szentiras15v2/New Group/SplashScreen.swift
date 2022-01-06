@@ -24,12 +24,6 @@ struct SplashScreen: View {
                 
                 VStack {
                     Spacer()
-//                    Image("bible")
-//                        .resizable()
-//                        .frame(width: 100, height: 100)
-//                        .scaledToFit()
-                    //                        .shadow(color: Color.white.opacity(startAnimation ? 1 : 0), radius: 30)
-                    //                        .foregroundColor(.white)
                     Text("Szentírás")
                         .foregroundColor(.white)
                         .font(.custom("Zapfino", size: 56))
