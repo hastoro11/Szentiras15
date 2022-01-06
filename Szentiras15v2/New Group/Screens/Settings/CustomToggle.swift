@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomToggle: View {
     @Binding var state: Bool
     var action: (Bool) -> Void
+    
     var body: some View {
         ZStack {
             Rectangle().fill(state ? Color.accentColor : .light)
@@ -37,6 +38,7 @@ struct CustomToggle: View {
     }
 }
 
+// MARK: - Previews
 struct CustomToggle_Previews: PreviewProvider {
     static var previews: some View {
         Group {

@@ -63,16 +63,17 @@ struct SettingsView: View {
     }
 }
 
+// MARK: - Previews
 struct SettingsView_Previews: PreviewProvider {
     @State var histroyCapacity: Int = 5
     static var previews: some View {
         SettingsView()
 
-//        BibleToggle(state: .constant(true))
-//            .padding()
-//            .previewLayout(.sizeThatFits)
-//        BibleToggle(state: .constant(false))
-//            .padding()
-//            .previewLayout(.sizeThatFits)
+        HStack {
+            CustomToggle(state: .constant(true)) {_ in }
+            CustomToggle(state: .constant(false)) {_ in }
+        }
+        .padding()
+        .previewLayout(.sizeThatFits)
     }
 }

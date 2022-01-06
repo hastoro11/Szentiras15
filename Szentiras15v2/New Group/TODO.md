@@ -1,7 +1,7 @@
 #  TODO
 
 ## Reader
-- Remove HTML characters from text
+~~- Remove HTML characters from text~~
 - Use UserDefaults for defaults:
     - History size
     - Last read chapter
@@ -16,4 +16,4 @@
 - Privacy policy 
 
 ## General
-- Splashscreen
+~~- Splashscreen~~
