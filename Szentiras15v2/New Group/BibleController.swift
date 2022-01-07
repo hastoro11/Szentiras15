@@ -54,9 +54,15 @@ class BibleController: ObservableObject {
                 book: current.book.abbrev,
                 chapter: current.chapter)
             if Task.isCancelled { return }
-            phase = .success
-            self.idezet = idezet
-            addToHistory()
+            if idezet.valasz.versek.isEmpty {
+                self.idezet = Idezet.default
+                phase = .empty
+            } else {
+                phase = .success
+                self.idezet = idezet
+                addToHistory()
+            }
+
         } catch {
             print("⛔️ BibleController - fetch()", error)
             if Task.isCancelled { return }

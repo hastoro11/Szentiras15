@@ -6,7 +6,8 @@
 ~~    - History size~~
 ~~    - Last read chapter~~
 ~~- Make fontsize adjustable~~
-- redaction and progressview in overlay 
+~~- redaction and progressview in overlay~~ 
+- Paging between chapters
 
 ## Search
 ~~- Filtering~~

@@ -11,24 +11,59 @@ struct BibleChapterView: View {
     @EnvironmentObject var bibleController: BibleController
     
     var body: some View {
-        switch bibleController.phase {
-        case .success:
-            Content()
-        case .isLoading:
-            ProgressView("Keresés...")
+        Content()
+            .isLoading(isLoading: bibleController.phase == .isLoading)
+            .overlay(overlay(phase: bibleController.phase))
+    }
+    
+    
+    @ViewBuilder
+    func overlay(phase: Phase) -> some View {
+        switch phase {
+        case .empty:
+            OverlayView(text: "Ez a fordítás nem tartalmazza a keresett fejezetet", icon: "xmark.circle", isError: false) {}
         case .failure:
-            VStack {
-                Text(bibleController.error?.errorDescription ?? "OK")
-                Button("Újra") {
-                    Task {
-                        await bibleController.fetch()
-                    }
-                }
-            }
-        default:
+            OverlayView(text: bibleController.error?.errorDescription ?? "Hiba történt", icon: "xmark.icloud", isError: true) {}
+        case .success, .isLoading:
             EmptyView()
         }
     }
+}
+
+// MARK: - ErrorView
+extension BibleChapterView {
+    struct OverlayView: View {
+        var text: String
+        var icon: String
+        var isError: Bool
+        var action: () -> Void
+        var body: some View {
+            VStack(spacing: 16) {
+                Spacer()
+                Spacer()
+                Image(systemName: icon)
+                    .font(.system(size: 56))
+                Text(text)
+                    .font(.title3)
+                    .multilineTextAlignment(.center)
+                Button(action: action) {
+                    Text("Próbálja meg újra")
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 54)
+                        .font(.title2)                        
+                        .foregroundColor(.white)
+                        .background(Color.accentColor)
+                        .cornerRadius(4)
+                        .padding(.horizontal)
+                }
+                .opacity(isError ? 1 : 0)
+                Spacer()
+                Spacer()
+                Spacer()
+            }
+        }
+    }
+
 }
 
 // MARK: - Content
@@ -126,11 +161,7 @@ extension BibleChapterView {
                 Text("Betűméret")
                     .font(.Theme.medium(size: 17))
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Slider(value: $fontSize, in: 15.0...21.0, step: 2) { _ in
-//                    if UserDefaults.standard.isFontSizeSaved {
-//                        UserDefaults.standard.saveFontSize(fontSize: fontSize)
-//                    }
-                }
+                Slider(value: $fontSize, in: 15.0...21.0, step: 2) { _ in }
                 .padding(.bottom)
             }
             .padding()
@@ -146,18 +177,24 @@ struct BibleChapterView_Previews: PreviewProvider {
     static var current: Current = TestData.current
     static var bibleController = BibleController.preview
     static var previews: some View {
-        NavigationView {
-            BibleChapterView()
-                .environmentObject(bibleController)
-        }
-        BibleChapterView()
-            .environmentObject(bibleController)
-            .environment(\.sizeCategory, .accessibilityMedium)
-        BibleChapterView()
-            .environmentObject(bibleController)
-            .environment(\.sizeCategory, .accessibilityLarge)
+//        NavigationView {
+//            BibleChapterView()
+//                .environmentObject(bibleController)
+//        }
+//        BibleChapterView()
+//            .environmentObject(bibleController)
+//            .environment(\.sizeCategory, .accessibilityMedium)
+//        BibleChapterView()
+//            .environmentObject(bibleController)
+//            .environment(\.sizeCategory, .accessibilityLarge)
             
+        BibleChapterView.OverlayView(text: "Szerver hiba", icon: "xmark.circle.fill", isError: true, action: {})
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("ErrorView")
         
+        BibleChapterView.OverlayView(text: "Ez a fordítás...", icon: "xmark.circle", isError: false, action: {})
+            .previewLayout(.sizeThatFits)
+            .previewDisplayName("ErrorView")
         
        
     }

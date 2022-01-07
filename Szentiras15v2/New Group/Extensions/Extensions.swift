@@ -5,7 +5,22 @@
 //  Created by Gabor Sornyei on 2022. 01. 06..
 //
 
-import Foundation
+import SwiftUI
+
+// MARK: - View
+extension View {
+    @ViewBuilder
+    func isLoading(isLoading: Bool) -> some View {
+        self.redacted(reason: isLoading ? .placeholder : [])
+            .overlay(
+                ProgressView("Keresés...")
+                    .padding()
+                    .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 8.0))
+                    .opacity(isLoading ? 1.0 : 0)
+            )
+        
+    }
+}
 
 // MARK: - String
 extension String {
