@@ -32,6 +32,8 @@ struct SearchVersListView: View {
 
 extension SearchVersListView {
     struct Content: View {
+        @AppStorage("fontSize") var fontSize: Double = 17
+        @EnvironmentObject var partialSheet: PartialSheetManager
         var verses: [Vers]
         var title: String
         var index: Int
@@ -43,10 +45,21 @@ extension SearchVersListView {
                     .navigationTitle(title)
                     .toolbar {
                         ToolbarItem(placement: .primaryAction) {
-                            Text(translationAbbrev)
-                                .foregroundColor(.accentColor)
+                            HStack {
+                                Button(action: {
+                                    partialSheet.showPartialSheet {
+                                        ReaderSettingView(fontSize: $fontSize)
+                                    }
+                                }) {
+                                    Text("Aa")
+                                        .bold()
+                                }
+                                Text(translationAbbrev)
+                                    .foregroundColor(.accentColor)
+                            }
                         }
                     }
+                    .addPartialSheet()
             }
         }
     }

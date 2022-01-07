@@ -8,13 +8,11 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @StateObject var bibleController: BibleController = BibleController()
-    @StateObject var searchController: SearchController = SearchController()
+
     var body: some View {
         TabView {
             NavigationView {
                 BibleChapterView()
-                    .environmentObject(bibleController)
             }
             .tabItem {
                 Label("Biblia", systemImage: "book.fill")
@@ -22,7 +20,6 @@ struct MainTabView: View {
             
             NavigationView {
                 SearchingView()
-                    .environmentObject(searchController)
             }
             .tabItem {
                 Label("Keresés", systemImage: "magnifyingglass")

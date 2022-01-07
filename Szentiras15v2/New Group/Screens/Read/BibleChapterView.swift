@@ -34,8 +34,9 @@ struct BibleChapterView: View {
 // MARK: - Content
 extension BibleChapterView {
     struct Content: View {
-        @EnvironmentObject var bibleController: BibleController        
-        
+        @EnvironmentObject var bibleController: BibleController
+        @EnvironmentObject var partialSheet: PartialSheetManager
+        @AppStorage("fontSize") var fontSize: Double = 17
         var verses: [Vers] {
             bibleController.idezet.valasz.versek
         }
@@ -53,11 +54,22 @@ extension BibleChapterView {
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbar {
                     ToolbarItem(placement: .primaryAction) {
-                        Button(action: {
-                            showTranslationList.toggle()
-                        }) {
-                            Text(current.translation.abbrev.uppercased())
-                                .font(.Theme.regular(size: 17))
+                        
+                        HStack {
+                            Button(action: {
+                                partialSheet.showPartialSheet {
+                                    ReaderSettingView(fontSize: $fontSize)
+                                }
+                            }) {
+                                Text("Aa")
+                            }
+                            Button(action: {
+                                showTranslationList.toggle()
+                            }) {
+                                Text(current.translation.abbrev.uppercased())
+                                    .font(.Theme.regular(size: 17))
+                            }
+                            
                         }
                     }
                     ToolbarItem(placement: .principal) {
@@ -100,8 +112,31 @@ extension BibleChapterView {
                 }) {
                     HistoryListView(historyList: bibleController.history, current: $bibleController.current) { bibleController.deleteAllHistory()}
                 }
+                .addPartialSheet()
         }
     }
+}
+
+// MARK: - FontSettingsView
+extension BibleChapterView {
+    struct FontSettingsView: View {
+        @Binding var fontSize: Double
+        var body: some View {
+            VStack(alignment: .leading) {
+                Text("Betűméret")
+                    .font(.Theme.medium(size: 17))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                Slider(value: $fontSize, in: 15.0...21.0, step: 2) { _ in
+//                    if UserDefaults.standard.isFontSizeSaved {
+//                        UserDefaults.standard.saveFontSize(fontSize: fontSize)
+//                    }
+                }
+                .padding(.bottom)
+            }
+            .padding()
+        }
+    }
+
 }
 
 

@@ -9,17 +9,25 @@ import SwiftUI
 
 @main
 struct Szentiras15v2App: App {
-    @StateObject var readerVM: ReaderViewModel = ReaderViewModel()
-    @StateObject var searchVM: SearchViewModel = SearchViewModel()
-    @StateObject var historyVM: HistoryViewModel = HistoryViewModel()
+    @Environment(\.scenePhase) var scenePhase
+    
+    @StateObject var bibleController: BibleController = BibleController()
+    @StateObject var searchController: SearchController = SearchController()
+    
     var body: some Scene {
         WindowGroup {
-//            SzentirasTabView(idezet: Idezet.example(filename: "Rom16"))
-//                .environmentObject(readerVM)
-//                .environmentObject(searchVM)
-//                .environmentObject(historyVM)
-//                .environmentObject(PartialSheetManager())
             MainTabView()
+                .environmentObject(bibleController)
+                .environmentObject(searchController)
+                .environmentObject(PartialSheetManager())
+        }
+        .onChange(of: scenePhase) { phase in
+            switch phase {
+            case .inactive:
+                bibleController.saveUserDefaults()
+            default:
+                break
+            }
         }
     }
     

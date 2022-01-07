@@ -337,6 +337,7 @@
 		215069F22765F0D300C3C248 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				210CC48F2733C1A20009D17B /* PartialSheet */,
 				2145622427578D410000202D /* SelectingRow.swift */,
 			);
 			path = Views;
@@ -448,7 +449,6 @@
 		21AC168527219BFA00D2DA84 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				210CC48F2733C1A20009D17B /* PartialSheet */,
 				21AC168627219C1E00D2DA84 /* Util.swift */,
 				21AC168927219FB400D2DA84 /* Font+Extension.swift */,
 				210CC4882732F0B90009D17B /* UserDefaults+Extension.swift */,

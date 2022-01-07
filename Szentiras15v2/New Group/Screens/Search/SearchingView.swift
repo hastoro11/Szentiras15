@@ -46,9 +46,6 @@ struct SearchingView: View {
             }
             Spacer()
         }       
-//        .sheet(isPresented: $showFilterView) {
-//            FilterView(searchFilter: $searchFilter)
-//        }
         .navigationTitle("Keresés")
         .navigationBarTitleDisplayMode(.inline)
     }

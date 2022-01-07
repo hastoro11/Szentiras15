@@ -8,12 +8,10 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var isFontSizeSaved: Bool
     @State var historyCapacity: Int
     @State var isCurrentSaved: Bool
     
     init() {
-        _isFontSizeSaved = State(initialValue: UserDefaults.standard.isFontSizeSaved)
         let capacity = UserDefaults.standard.historyCapacity
         _historyCapacity = State(initialValue: capacity)
         _isCurrentSaved = State(initialValue: UserDefaults.standard.isCurrentSaved)
@@ -22,14 +20,6 @@ struct SettingsView: View {
     var body: some View {
         NavigationView {
             List {
-                HStack {
-                    Text("Betűméret elmentése")
-                    Spacer()
-                    CustomToggle(state: $isFontSizeSaved) { value in
-                        UserDefaults.standard.setFontSizeSaved(value: value)
-                    }
-                }
-
                 HStack {
                     Text("Előzmények száma")
                     Picker("", selection: $historyCapacity) {

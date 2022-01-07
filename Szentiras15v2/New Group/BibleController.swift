@@ -16,7 +16,6 @@ enum Phase {
 
 class BibleController: ObservableObject {
     
-    
     @Published var phase: Phase = .empty
     
     @Published var idezet: Idezet = Idezet.default
@@ -27,13 +26,18 @@ class BibleController: ObservableObject {
     var current: Current
     
     init() {
-        current = Current(translation: Translation.default, book: Book.default, chapter: 1)
+        current = UserDefaults.standard.savedCurrent
         idezet = Idezet.default
-        historySize = 5
+        historySize = UserDefaults.standard.historyCapacity
         history = []
         Task {
             await fetch()
         }
+    }
+    
+    func saveUserDefaults() {
+        UserDefaults.standard.saveCurrent(current: self.current)
+        UserDefaults.standard.setHistoryCapacity(to: self.historySize)
     }
     
     func changeTranslation(to translationID: Int) {

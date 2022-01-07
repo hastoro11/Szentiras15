@@ -15,9 +15,9 @@ struct ReaderSettingView: View {
                 .font(.Theme.medium(size: 17))
                 .frame(maxWidth: .infinity, alignment: .leading)
             Slider(value: $fontSize, in: 15.0...21.0, step: 2) { _ in
-                if UserDefaults.standard.isFontSizeSaved {
-                    UserDefaults.standard.saveFontSize(fontSize: fontSize)
-                }
+//                if UserDefaults.standard.isFontSizeSaved {
+//                    UserDefaults.standard.saveFontSize(fontSize: fontSize)
+//                }
             }
             .padding(.bottom)
         }

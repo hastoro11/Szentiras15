@@ -17,28 +17,6 @@ extension String {
 // MARK: - UserDefaults
 extension UserDefaults {
     
-    //MARK:  Font
-    func saveFontSize(fontSize: Double) {
-        self.set(fontSize, forKey: "fontSize")
-    }
-        
-    var getFontSize: Double {
-        let size = self.double(forKey: "fontSize")
-        if size == 0 {
-            return 17
-        }
-        
-        return size
-    }
-    
-    func setFontSizeSaved(value: Bool) {
-        self.set(value, forKey: "isFontSizeSaved")
-    }
-    
-    var isFontSizeSaved: Bool {
-        self.bool(forKey: "isFontSizeSaved")
-    }
-    
     // MARK: History
     var historyCapacity: Int {
         let capacity = self.integer(forKey: "historyCapacity")

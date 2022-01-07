@@ -16,7 +16,7 @@ struct VersList: View {
         ScrollViewReader { proxy in
             List {
                 ForEach(verses.indices, id:\.self) { index in
-                    VersRow(vers: verses[index], index: index, fontSize: 17)
+                    VersRow(vers: verses[index], index: index)
                         .id(index)
                         .background(scrollTo && index == self.index ? Color(uiColor: .systemGray5) : Color.clear)
                     
@@ -39,9 +39,10 @@ struct VersList: View {
 // MARK: - VersRow
 extension VersList {
     struct VersRow: View {
+        @AppStorage("fontSize") var fontSize: Double = 17
         var vers: Vers
         var index: Int
-        var fontSize: CGFloat
+//        var fontSize: CGFloat
         
         var body: some View {
             Text(attributedText)
@@ -71,10 +72,10 @@ struct Previews_VersListView_Previews: PreviewProvider {
        
         
         Group {
-            VersList.VersRow(vers: idezet.valasz.versek[0], index: 0, fontSize: 17)
+            VersList.VersRow(vers: idezet.valasz.versek[0], index: 0)
                 .background(Color(uiColor: .systemGray5))
             
-            VersList.VersRow(vers: idezet.valasz.versek[0], index: 0, fontSize: 17)
+            VersList.VersRow(vers: idezet.valasz.versek[0], index: 0)
         }
         .previewLayout(.sizeThatFits)
         .previewDisplayName("VersRow")
