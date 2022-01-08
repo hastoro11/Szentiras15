@@ -19,34 +19,48 @@ struct SettingsView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                HStack {
-                    Text("Előzmények száma")
-                    Picker("", selection: $historyCapacity) {
-                        Text("5").tag(5)
-                        Text("10").tag(10)
-                        Text("15").tag(15)
+            VStack {
+                Form {
+                    Section {
+                        HStack {
+                            Text("Előzmények száma")
+                                .font(.Theme.light(size: 17))
+                            Picker("", selection: $historyCapacity) {
+                                Text("5").tag(5)
+                                Text("10").tag(10)
+                                Text("15").tag(15)
+                            }
+                            
+                        }
+                        HStack {
+                            Text("Utolsó olvasott helytől folytat")
+                                .font(.Theme.light(size: 17))
+                            Spacer()
+                            CustomToggle(state: $isCurrentSaved) { value in
+                                UserDefaults.standard.setCurrentSaved(value: value)
+                            }
+                        }
                     }
                     
-                }
-                HStack {
-                    Text("Utolsó olvasott helytől folytat")
-                        
-                    Spacer()
-                    CustomToggle(state: $isCurrentSaved) { value in
-                        UserDefaults.standard.setCurrentSaved(value: value)
+                    Section {
+                        Link("Adatvédelmi politika", destination: URL(string: "https://sornyei.hu/szentiras/")!)                                                    
                     }
                 }
+                                
+                
+              
+                
+                
+                
             }
             .onChange(of: historyCapacity, perform: { newValue in
                 UserDefaults.standard.setHistoryCapacity(to: newValue)
             })
-            .font(.Theme.light(size: 15))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Beállítások")
-                        .font(.Theme.bold(size: 17))
+                        .font(.Theme.regular(size: 17))
                 }
             }
         }
@@ -58,7 +72,7 @@ struct SettingsView_Previews: PreviewProvider {
     @State var histroyCapacity: Int = 5
     static var previews: some View {
         SettingsView()
-
+        
         HStack {
             CustomToggle(state: .constant(true)) {_ in }
             CustomToggle(state: .constant(false)) {_ in }
