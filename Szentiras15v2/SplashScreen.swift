@@ -62,9 +62,6 @@ extension View {
             .shadow(
                 color: .white.opacity(opacity),
                 radius: 15)
-            .shadow(
-                color: .white.opacity(opacity),
-                radius: 20)
     }
 }
 
