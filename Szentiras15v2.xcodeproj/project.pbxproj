@@ -26,6 +26,7 @@
 		211F0C332789924B00C34258 /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F0C322789924B00C34258 /* Current.swift */; };
 		211F0C37278992CB00C34258 /* ReaderSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F0C36278992CB00C34258 /* ReaderSettingView.swift */; };
 		211F0C39278992D200C34258 /* SelectRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211F0C38278992D200C34258 /* SelectRow.swift */; };
+		211F0C412789A57100C34258 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 211F0C402789A57100C34258 /* README.md */; };
 		21438956277222100022AC8E /* SearchWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21438955277222100022AC8E /* SearchWrapper.swift */; };
 		21438958277230E80022AC8E /* SearchTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21438957277230E80022AC8E /* SearchTest.swift */; };
 		2143895A277232A20022AC8E /* SearchBuszke.json in Resources */ = {isa = PBXBuildFile; fileRef = 2145621C275685BF0000202D /* SearchBuszke.json */; };
@@ -99,6 +100,7 @@
 		211F0C322789924B00C34258 /* Current.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
 		211F0C36278992CB00C34258 /* ReaderSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderSettingView.swift; sourceTree = "<group>"; };
 		211F0C38278992D200C34258 /* SelectRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectRow.swift; sourceTree = "<group>"; };
+		211F0C402789A57100C34258 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		21438955277222100022AC8E /* SearchWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWrapper.swift; sourceTree = "<group>"; };
 		21438957277230E80022AC8E /* SearchTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTest.swift; sourceTree = "<group>"; };
 		2143895B27723F200022AC8E /* SearchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchField.swift; sourceTree = "<group>"; };
@@ -363,6 +365,7 @@
 				21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */,
 				21AC166627218FF900D2DA84 /* Assets.xcassets */,
 				21AC166827218FF900D2DA84 /* Preview Content */,
+				211F0C402789A57100C34258 /* README.md */,
 			);
 			path = Szentiras15v2;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				21AC166A27218FF900D2DA84 /* Preview Assets.xcassets in Resources */,
 				21456219275677AB0000202D /* SearchTengeri.json in Resources */,
 				211EE7082741351D00B5E4D5 /* FiraSans-Regular.ttf in Resources */,
+				211F0C412789A57100C34258 /* README.md in Resources */,
 				21AC167C2721961B00D2DA84 /* translations.json in Resources */,
 				21AC166727218FF900D2DA84 /* Assets.xcassets in Resources */,
 				211EE7072741351D00B5E4D5 /* FiraSans-Medium.ttf in Resources */,
