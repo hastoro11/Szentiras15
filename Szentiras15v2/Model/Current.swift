@@ -25,4 +25,10 @@ struct Current: Codable, Equatable {
         "\(book.abbrev)/\(chapter)/\(translation.abbrev.uppercased())"
     }
    
+    static var `default`: Current {
+        Current(
+            translation: Translation.get(by: 6),
+            book: Book.default,
+            chapter: 1)
+    }
 }

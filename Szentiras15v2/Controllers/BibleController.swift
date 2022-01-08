@@ -25,7 +25,11 @@ class BibleController: ObservableObject {
     var current: Current
     
     init() {
-        current = UserDefaults.standard.savedCurrent
+        if UserDefaults.standard.isCurrentSaved {
+            current = UserDefaults.standard.savedCurrent
+        } else {
+            current = Current.default
+        }
         idezet = Idezet.default
         historySize = UserDefaults.standard.historyCapacity
         history = []
