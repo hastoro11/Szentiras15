@@ -15,7 +15,6 @@ enum Phase {
 }
 
 class BibleController: ObservableObject {
-    
     @Published var phase: Phase = .empty
     
     @Published var idezet: Idezet = Idezet.default

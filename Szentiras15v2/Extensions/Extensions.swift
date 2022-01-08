@@ -7,6 +7,40 @@
 
 import SwiftUI
 
+// MARK: - Color
+extension Color {
+    static var light: Color {
+        Color("lightGray")
+    }
+    
+    static var dark: Color {
+        Color("darkGray")
+    }
+
+}
+
+// MARK: - Font
+extension Font {
+    struct Theme {
+        static func regular(size: CGFloat) -> Font {
+            .custom("Fira Sans Regular", size: size)
+        }
+        
+        static func light(size: CGFloat) -> Font {
+            .custom("Fira Sans Light", size: size)
+        }
+        
+        static func medium(size: CGFloat) -> Font {
+            .custom("Fira Sans Medium", size: size)
+        }
+        
+        static func bold(size: CGFloat) -> Font {
+            .custom("Fira Sans Bold", size: size)
+        }
+    }
+}
+
+
 // MARK: - View
 extension View {
     @ViewBuilder

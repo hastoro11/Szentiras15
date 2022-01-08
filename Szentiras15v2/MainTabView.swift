@@ -29,7 +29,7 @@ struct MainTabView: View {
                     Label("Beállítások", systemImage: "gear")
                 }
         }
-        .overlay(SplashScreen())
+//        .overlay(SplashScreen())
     }
 }
 
