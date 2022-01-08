@@ -29,6 +29,7 @@ class SearchController: ObservableObject {
     }
     
     func resetSearchResults() {
+        phase = .empty
         searchResults = []
     }
     

@@ -37,12 +37,16 @@ struct SearchingView: View {
             SearchingView.FilterBar(count: filterResults().count, showFilterView: $showFilterView, searchFilter: $searchFilter)
                 .padding(.horizontal)
             if searchController.phase == .success {
-                SearchingView.SearchListView(results: filterResults())
+                if filterResults().isEmpty {
+                    message(text: "Nincs találat!")
+                } else {
+                    SearchingView.SearchListView(results: filterResults())
+                }
             } else if searchController.phase == .isLoading {
                 Spacer()
                 ProgressView("Keresés...")
             } else {
-                EmptyView()
+                message(text: "Írj be egy kifejezést, amire keresni szeretnél")
             }
             Spacer()
         }       
@@ -73,6 +77,14 @@ struct SearchingView: View {
             results = results.filter { $0.translationID == searchFilter.translation}
         }
         return results.sorted(by: {$0.bookNumber < $1.bookNumber })
+    }
+    
+    func message(text: String) -> some View {
+        Text(text)
+            .font(.Theme.light(size: 17))
+            .multilineTextAlignment(.center)
+            .padding(.top, 40)
+            .padding(.horizontal)
     }
 }
 
