@@ -331,6 +331,7 @@
 		21AC165627218FF800D2DA84 = {
 			isa = PBXGroup;
 			children = (
+				211F0C402789A57100C34258 /* README.md */,
 				21AC166127218FF800D2DA84 /* Szentiras15v2 */,
 				21810A1927540669001D29B9 /* Szentiras15v2Tests */,
 				21AC166027218FF800D2DA84 /* Products */,
@@ -365,7 +366,6 @@
 				21AC166227218FF800D2DA84 /* Szentiras15v2App.swift */,
 				21AC166627218FF900D2DA84 /* Assets.xcassets */,
 				21AC166827218FF900D2DA84 /* Preview Content */,
-				211F0C402789A57100C34258 /* README.md */,
 			);
 			path = Szentiras15v2;
 			sourceTree = "<group>";
